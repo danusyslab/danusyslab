@@ -1,0 +1,599 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* common */
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+  background: #121212;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e;
+  border: none;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  border: none;
+  border-radius: 0px;
+}
+
+
+// font setting
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//@font-face {
+//  font-family: 'IBMPlexSansKR-Regular';
+//  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+//  font-weight: 200;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'IBMPlexSansKR-Regular';
+//  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+//  font-weight: 300;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'IBMPlexSansKR-Regular';
+//  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+//  font-weight: 400;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'IBMPlexSansKR-Regular';
+//  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+//  font-weight: 500;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'IBMPlexSansKR-Regular';
+//  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+//  font-weight: 600;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Noto Sans KR', sans-serif;
+//  src: url(../../static/fonts/NotoSansKR-Light.otf) format('truetype');
+//  font-weight: 100;
+//}
+//
+//@font-face {
+//  font-family: 'Noto Sans KR', sans-serif;
+//  src: url(../../static/fonts/NotoSansKR-Regular.otf) format('truetype');
+//  font-weight: 300;
+//}
+//
+//@font-face {
+//  font-family: 'Noto Sans KR', sans-serif;
+//  src: url(../../static/fonts/NotoSansKR-Medium.otf) format('truetype');
+//  font-weight: 600;
+//}
+//
+//@font-face {
+//  font-family: 'Noto Sans KR', sans-serif;
+//  src: url(../../static/fonts/NotoSansKR-Bold.otf) format('truetype');
+//  font-weight: 900;
+//}
+
+// color system
+// background color
+$bg_default: #0b0b0b;
+$bg_nav: #000000;
+$bg_cate: #212121;
+$bg_box1: #444444;
+$bg_box2: #333333;
+$bg_box3: #3e3e3e;
+$bg_box4: #595959;
+$gray_50: #888888;
+
+$white: #FFFFFF;
+$gray_0: #FAFAFA;
+$gray_5: #EEEEEE;
+$gray_10: #E2E2E2;
+$gray_20: #C9C9C9;
+$gray_30: #B1B1B1;
+$gray_40: #9C9C9C;
+$gray_50: #888888;
+$gray_60: #757575;
+$gray_70: #646464;
+$gray_80: #545454;
+$gray_90: #444444;
+$gray_100: #333333;
+$gray_110: #212121;
+$gray_120: #0B0B0B;
+$black: #000000;
+
+
+// button
+$button_default: #444444;
+$button_hover: #545454;
+$button_light: #444444;
+
+// text
+$text_high: #ffffff;
+$text_medium: #e2e2e2;
+$text_low: #b1b1b1;
+
+// color palette
+$primary: #5C9AFF;
+$primary_variant: #5C9AFF;
+$primary_hover: #85B4FF;
+$secondary: #9CD6AE;
+$secondary_variant: #52BA77;
+$third: #F47966;
+$status_1: #77daff;
+$status_2: #99f871;
+$status_3: #ffca29;
+$status_4: #ff5c5c;
+$status_5: #b091fe;
+
+// color palette : marker
+$map_blue: #0F6BFF;
+$map_yellow: #F69D37;
+$map_green: #00c853;
+$map_red: #DD2C00;
+$map_purple: #7c4dff;
+$map_brown: #9b7556;
+$map_mustard: #dab226;
+$map_navy: #262dda;
+$map_magenta: #ff00c7;
+
+// color system : yellow
+$yellow5: #ffefad;
+$yellow10: #ffe16b;
+$yellow20: #f5c400;
+
+// font-size
+$font_size: 16px;
+
+// px size
+$px28: 1.75rem;
+$px26: 1.625rem;
+$px24: 1.5rem;
+$px22: 1.375rem;
+$px20: 1.25rem;
+$px18: 1.125rem;
+$px16: 1rem;
+$px14: 0.875rem;
+$px13: 0.8125rem;
+$px12: 0.75rem;
+$px10: 0.625rem;
+$px8: 0.5rem;
+$px6: 0.375rem;
+$px4: 0.25rem;
+$px2: 0.125rem;
+$px1: 0.0625rem;
+
+//layout
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'IBMPlexSansKR-Regular';
+  font-weight: 300;
+  font-size: $font_size;
+}
+
+/* input type="text" */
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2rem;
+  margin: 0;
+  padding: 0 $px12;
+  color: $text_medium;
+  font-size: $px14;
+  font-weight: 300;
+  border: $px1 solid $gray_50;
+  border-radius: $px4;
+  background: transparent;
+  font-family: 'IBMPlexSansKR-Regular', sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input.input_search {
+  padding: 0 2.625rem 0 $px12;
+  background: url('/anyang-tax-web/images/default/icon_search.svg') right 12px center no-repeat transparent;
+  background-size: $px20 $px20;
+}
+
+textarea {
+  resize: none;
+  //box-sizing: none;
+  width: 100%;
+  height: 6.75rem;
+  margin: 0;
+  padding: $px6 $px12;
+  color: $text_medium;
+  font-size: $px14;
+  font-weight: 300;
+  border: $px1 solid $gray_50;
+  border-radius: $px4;
+  background: transparent;
+  font-family: 'IBMPlexSansKR-Regular', sans-serif;
+}
+
+/* select */
+select {
+  width: 60%;
+  height: 34px;
+  margin: 0px;
+  padding: 0px 40px 0px 8px;
+  color: $text_medium;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid $gray_50;
+  background: transparent;
+  border-radius: 4px;
+  font-family: 'Noto Sans', sans-serif;
+  background: url('/anyang-tax-web/images/default/arrow_open.svg') no-repeat 90% 56% !important;
+  background-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  background: $gray_110;
+}
+
+
+///* select */
+//select {
+//  box-sizing: border-box;
+//  width: 60%;
+//  height: 2.25rem;
+//  margin: 0;
+//  padding: 0 $px12;
+//  color: $text_medium;
+//  font-size: $px14;
+//  font-weight: 300;
+//  border: $px1 solid $gray_50;
+//  border-radius: $px4;
+//  font-family: 'IBMPlexSansKR-Regular', sans-serif;
+//  background: url('../images/default/arrow_open.svg') right $px16 center no-repeat transparent;
+//  -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//}
+//
+//select::-ms-expand {
+//  display: none;
+//}
+//
+//input, select, textarea:focus {
+//  outline: none;
+//}
+
+
+// header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.75rem;
+  min-height: 3.75rem;
+  background: $bg_nav;
+  border-bottom: 1px solid $bg_box1;
+  position: sticky;
+
+  h1 {
+    display: flex;
+    padding: 0 1rem;
+    color: $text_high;
+    font-size: $px20;
+    font-weight: 600;
+
+    img {
+      padding: 0 $px12 0 0;
+    }
+  }
+
+  .gnm {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 53.75rem;
+    height: 100%;
+    color: $text_medium;
+
+    li {
+      position: relative;
+      flex: 1;
+      height: 100%;
+      border-bottom: $px4 solid $bg_nav;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: $text_medium;
+        font: {
+          size: $px18;
+          weight: 300;
+        }
+      }
+
+      .gnm_sub {
+        z-index: 10;
+        position: absolute;
+        top: 3.75rem;
+        overflow: hidden;
+        background: $bg_cate;
+        border-bottom-left-radius: $px4;
+        border-bottom-right-radius: $px4;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 10);
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+        li {
+          margin: 0;
+          padding: 0;
+          height: 3.75rem;
+          display: flex;
+          align-items: center;
+          border: 0;
+
+          a {
+            height: 2.875rem;
+            margin: 0;
+            color: $text_medium;
+            font: {
+              size: $px18;
+              weight: 300;
+            }
+            border: none;
+
+            &:hover {
+              color: $primary;
+              font-weight: 600;
+              border: none;
+            }
+          }
+        }
+      }
+      &:hover{
+        border-bottom: $px4 solid $primary;
+        transition: 0.2s;
+        a{
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+      &:active, &.active{
+        border-bottom: $px4 solid $primary;
+        transition: 0.2s;
+        a{
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+    }
+
+    //& > li.hover {
+    //  .gnm_sub {
+    //    display: block;
+    //  }
+    //}
+  }
+
+  .util {
+    display: flex;
+    height: 100%;
+    color: $text_medium;
+
+    li {
+      display: flex;
+      justify-content: center;
+      grid-gap: $px8;
+      width: 7.5rem;
+      border-left: $px1 solid $bg_box1;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: $px4;
+        color: $text_medium;
+        font: {
+          size: $px16;
+          weight: 300;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// input : checkbox
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: $text_medium;
+  line-height: $px24;
+  font-size: $px14;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: $px20;
+  height: $px20;
+  min-width: $px20;
+  min-height: $px20;
+  max-width: $px20;
+  max-height: $px20;
+  margin: 0 0 0 0 !important;
+  vertical-align: middle;
+  background: url('/anyang-tax-web/images/default/checkbox_defalt.svg') center center no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+  background: url('/anyang-tax-web/images/default/checkbox_active.svg') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+// input : radio
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: flex;
+  align-items: center;
+  grid-gap: $px4;
+  padding: 0;
+  line-height: $px24;
+  color: $text_medium;
+  font-size: $px14;
+  cursor: pointer;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: $px20;
+  height: $px20;
+  min-width: $px20;
+  min-height: $px20;
+  max-width: $px20;
+  max-height: $px20;
+  margin: $px2 0 0 0;
+  font-size: 0;
+  vertical-align: middle;
+  background: url('/anyang-tax-web/images/default/radio_default.svg') no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+  background: url('/anyang-tax-web/images/default/radio_active.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+
+/* date + month + week + time */
+/* input[type="date" i]{color: #dee0e4;}
+input[type="month" i]{color: #dee0e4;}
+input[type="week" i]{color: #dee0e4;}
+input[type="time" i]{color: #dee0e4;}
+input[type="date"]{background: url(../images/default/calendar.svg) 94% center no-repeat; background-size: 18px;}
+input[type="date"]::-webkit-inner-spin-button{display: none;}
+input[type="date"]::-webkit-calendar-picker-indicator{opacity: 0;}
+input[type="month"]{background: url(../images/default/calendar.svg) 94% center no-repeat; background-size: 18px;}
+input[type="month"]::-webkit-inner-spin-button{display: none;}
+input[type="month"]::-webkit-calendar-picker-indicator{opacity: 0;}
+input[type="week"]{background: url(../images/default/calendar.svg) 94% center no-repeat; background-size: 18px;}
+input[type="week"]::-webkit-inner-spin-button{display: none;}
+input[type="week"]::-webkit-calendar-picker-indicator{opacity: 0;}
+input[type="time"]{background: url(../images/default/clock.svg) 94% center no-repeat; background-size: 18px;}
+input[type="time"]::-webkit-inner-spin-button{display: none;}
+input[type="time"]::-webkit-calendar-picker-indicator{opacity: 0;} */
+
+/* progress */
+/* progress[value]::-webkit-progress-bar{background-color: whitesmoke; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;}
+#progress[value]{appearance: none; border-radius: 15px; overflow: hidden; position: relative; display: flex; align-items: center;}
+#progress[value]::-webkit-progress-value{background-image: linear-gradient(to left, #2ecc71, #3498db);}
+::-webkit-meter-inner-element{}
+::-webkit-meter-even-less-good-value{}
+::-webkit-meter-optimum-value{}
+::-webkit-meter-suboptimum-value{}
+#details[open]{background-color: #cdedfd; background-image: linear-gradient(319deg, #cdedfd 0%, #ffed82 37%, #ffcfd2 100%);} */
+
+/* button */
+/* .button{display: flex; align-items: center; justify-content: center;}
+.button li{display: flex; align-items: center; justify-content: flex-start; grid-gap: 8px; height: 34px; line-height: 32px; margin: 0px; padding: 0px 14px; color: #7f8491; background: #292c34; border-radius: 4px; cursor: pointer;}
+.button li:hover{color: #dee0e4;} */
+
+/* i */
+/* i{display: flex; align-items: center; justify-content: center; width: 20px; height: 20px;}
+i.circle{width: 14px; height: 14px; border-radius: 14px; background: #434751;}
+i.circle.green{background: #3eaf69;}
+i.circle.red{background: #cd4841;} */
