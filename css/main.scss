@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import 'reset.scss';
+
+
+body {
+    background: $gray_5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    padding: 0 16px;
+    background: $white;
+    border-bottom: 1px solid $gray_10;
+    
+    .logo_title {
+        cursor: pointer;
+        display: flex;
+        margin-right: 100px;
+
+        img {
+            margin-right: 8px;
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 32px;
+            margin-top: 6px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid $white; 
+
+            &.active {
+                border-bottom: 4px solid $danu_blue_60;
+                font-weight: 600;
+            }
+
+            &:hover {
+                font-weight: 600;
+            }
+
+            a {
+                cursor: pointer;
+                color: $gray_110;
+                font-size: 16px;
+            }
+
+
+        }
+    }
+}
+
+.side_menu_wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: transform .15s cubic-bezier(.2,.2,.38,.9),top .11s;
+    width: 317px;
+    height: 100%;
+    z-index: 999;
+    color: $gray_110;
+    overflow: hidden;
+
+    nav {
+        background: $gray_0;
+        border-right: 1px solid $gray_10;
+        position: fixed;
+
+        &.left_side {
+            display: flex;
+            flex-direction: column;
+            top: 48px;
+            height: 100%;
+            width: 317px;
+
+            ul.list_con {
+                width: 100%;
+                padding: 16px 0;
+
+                .side_submenu {
+                    cursor: pointer;
+                    height: 32px;
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: left;
+                    color: $gray_70;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 16px !important;
+                    margin: 4px 0 4px 0 !important;
+
+                    &:hover {
+                        background: $gray_5;
+                        color: $gray_110;
+                    }
+
+                    span {
+                        pointer-events: none;
+                    }
+
+                    svg {
+                        pointer-events: none;
+                    }
+                }
+
+                li.list_con_item[data-roll="subMenuOpen"] {
+
+                    button {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+
+                        svg {
+                            transform: rotate(-180deg);
+                        }
+                    }
+
+                    ul {
+                        display: block;
+                    }
+                }
+
+                li.list_con_item {
+                    width: 100%;
+                    height: inherit;
+
+                    button {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+
+                        &:hover {
+                            background-color: $gray_5;
+                            color: $gray_110;
+                        }
+
+                    }
+
+                    ul {
+                        width: 100%;
+                        padding: 0 0 16px 0;
+                        border-bottom: 1px solid $gray_10;
+                        margin-bottom: 16px;
+                        display: none;
+
+                        li {
+                            cursor: pointer;
+                            height: inherit;
+                            width: 100%;
+                            padding: 8px 16px;
+                            font-size: 14px;
+
+                            &:hover {
+                                background: $gray_5;
+                                color: $gray_110;
+                            }
+
+                            a {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
