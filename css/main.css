@@ -48,9 +48,9 @@ a {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 12px;
   height: 7px;
-  background: #121212;
+  background: #C9C9C9;
 }
 
 ::-webkit-scrollbar-button {
@@ -59,13 +59,13 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3e3e3e;
+  background: #C9C9C9;
   border: none;
   border-radius: 30px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: #EEEEEE;
   border: none;
   border-radius: 0px;
 }
@@ -344,26 +344,49 @@ input[type=radio]:checked + label span {
   background-size: 100% 100%;
 }
 
+@keyframes accordionOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes accordionClose {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translateY(120px);
+  }
+}
 body {
   background: #EEEEEE;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .wrapper {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
   width: 100%;
   height: 48px;
   display: flex;
+  z-index: 999;
   position: fixed;
   align-items: center;
   padding: 0 16px;
   background: #FFFFFF;
   border-bottom: 1px solid #E2E2E2;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 header .logo_title {
   cursor: pointer;
@@ -448,18 +471,6 @@ header ul li a {
 .side_menu_wrapper nav.left_side ul.list_con .side_submenu svg {
   pointer-events: none;
 }
-.side_menu_wrapper nav.left_side ul.list_con li.list_con_item[data-roll=subMenuOpen] button {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-.side_menu_wrapper nav.left_side ul.list_con li.list_con_item[data-roll=subMenuOpen] button svg {
-  transform: rotate(-180deg);
-}
-.side_menu_wrapper nav.left_side ul.list_con li.list_con_item[data-roll=subMenuOpen] ul {
-  display: block;
-}
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item {
   width: 100%;
   height: inherit;
@@ -474,12 +485,16 @@ header ul li a {
   background-color: #EEEEEE;
   color: #212121;
 }
+.side_menu_wrapper nav.left_side ul.list_con li.list_con_item button.active svg {
+  transform: rotate(-180deg);
+}
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul {
   width: 100%;
   padding: 0 0 16px 0;
   border-bottom: 1px solid #E2E2E2;
   margin-bottom: 16px;
   display: none;
+  animation: accordionOpen 0.2s ease-in-out;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li {
   cursor: pointer;
@@ -494,4 +509,19 @@ header ul li a {
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li a {
   cursor: pointer;
+}
+
+main.main_container {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 48px;
+  position: relative;
+  height: calc(100% - 48px);
+  background: #EEEEEE;
+  overflow-x: hidden;
+}
+main.main_container .top_image_con {
+  padding-left: 424px;
+  height: 400px;
+  background: #0F6BFF;
 }

@@ -50,9 +50,9 @@ a {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 12px;
   height: 7px;
-  background: #121212;
+  background: #C9C9C9;
 }
 
 ::-webkit-scrollbar-button {
@@ -61,13 +61,13 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3e3e3e;
+  background: #C9C9C9;
   border: none;
   border-radius: 30px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: #EEEEEE;
   border: none;
   border-radius: 0px;
 }
