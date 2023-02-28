@@ -215,6 +215,29 @@ main {
             padding-left: 424px;
             height: 400px;
             background: $danu_blue_60;
+            display: flex;
+            align-items: center;
+
+            span {
+                color: white;
+                font-size: 60px;
+
+                &.main_text {
+                    margin-right: 24px;
+                }
+
+                &.text_efficiency {
+                    font-weight: 600;
+                }
+
+                &.text_simple {
+                    font-weight: 600;
+                }
+
+                &.text_convenience {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

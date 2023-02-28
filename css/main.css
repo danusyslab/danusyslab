@@ -524,4 +524,22 @@ main.main_container .top_image_con {
   padding-left: 424px;
   height: 400px;
   background: #0F6BFF;
+  display: flex;
+  align-items: center;
+}
+main.main_container .top_image_con span {
+  color: white;
+  font-size: 60px;
+}
+main.main_container .top_image_con span.main_text {
+  margin-right: 24px;
+}
+main.main_container .top_image_con span.text_efficiency {
+  font-weight: 600;
+}
+main.main_container .top_image_con span.text_simple {
+  font-weight: 600;
+}
+main.main_container .top_image_con span.text_convenience {
+  font-weight: 600;
 }
