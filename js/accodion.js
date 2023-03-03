@@ -14,4 +14,21 @@
         });
       });
 
+
+      // mobile menu
+      const hamburgerBtn = document.querySelector('.hamburger_btn');
+      const hamCloseBtn = document.querySelector('.ham_cancel_btn');
+
+      hamburgerBtn.addEventListener('click', ()=> {
+        document.querySelector('.side_menu_wrapper_mo').style.transform = 'none';
+        hamburgerBtn.style.display = 'none';
+        hamCloseBtn.style.display = 'flex';
+      });
+
+      hamCloseBtn.addEventListener('click', ()=> {
+        document.querySelector('.side_menu_wrapper_mo').style.transform = 'translateX(-100%)';
+        hamburgerBtn.style.display = 'flex';
+        hamCloseBtn.style.display = 'none';
+      })
+
 })();
