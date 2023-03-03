@@ -17,6 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  word-break: keep-all;
 }
 
 ol, ul {
@@ -604,7 +605,6 @@ header .hd_pc {
   align-items: center;
 }
 header .hd_pc .logo_title {
-  cursor: pointer;
   display: flex;
   margin-right: 40px;
   justify-content: center;
@@ -675,7 +675,7 @@ header .hd_mo .ham_cancel_btn {
   transition: transform 0.15s cubic-bezier(0.2, 0.2, 0.38, 0.9), top 0.11s;
   width: 317px;
   height: 100%;
-  z-index: 999;
+  z-index: 998;
   color: #212121;
   overflow: hidden;
 }
@@ -694,6 +694,11 @@ header .hd_mo .ham_cancel_btn {
 .side_menu_wrapper nav.left_side ul.list_con {
   width: 100%;
   padding: 16px 0;
+}
+.side_menu_wrapper nav.left_side ul.list_con .acco_active {
+  background: #EEEEEE !important;
+  color: #0F6BFF !important;
+  border-left: 2px solid #0F6BFF;
 }
 .side_menu_wrapper nav.left_side ul.list_con .one_menu {
   cursor: pointer;
@@ -911,6 +916,51 @@ main.main_container {
   position: relative;
   background: white;
   overflow-x: hidden;
+}
+main.main_container .top_sub_con {
+  background: #212121 !important;
+  display: flex;
+  flex-direction: column;
+}
+main.main_container .top_sub_con .sub_top_text {
+  margin-right: 0;
+  margin-bottom: 16px;
+}
+main.main_container .top_sub_con p {
+  color: #B1B1B1;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+main.main_container .top_sub_con .top_visual_btn_con {
+  display: flex;
+  flex-direction: row !important;
+}
+main.main_container .top_sub_con .top_visual_btn_con li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B1B1B1;
+  border-radius: 999px;
+  padding: 16px 28px;
+  color: #212121;
+  animation: none;
+  cursor: pointer;
+  margin-right: 24px;
+}
+main.main_container .top_sub_con .top_visual_btn_con li:last-child {
+  margin-right: 0;
+}
+main.main_container .top_sub_con .top_visual_btn_con li:hover {
+  background: #C9C9C9;
+}
+main.main_container .top_sub_con .top_visual_btn_con li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.main_container .top_sub_con .top_visual_btn_con li a .top_btn_text {
+  font-size: 16px;
+  color: #212121;
 }
 main.main_container .top_image_con {
   width: 100%;

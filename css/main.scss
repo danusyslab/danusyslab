@@ -372,7 +372,6 @@ header {
 
 
         .logo_title {
-            cursor: pointer;
             display: flex;
             margin-right: 40px;
             justify-content: center;
@@ -461,7 +460,7 @@ header {
     transition: transform .15s cubic-bezier(.2,.2,.38,.9),top .11s;
     width: 317px;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
     color: $gray_110;
     overflow: hidden;
 
@@ -480,6 +479,12 @@ header {
             ul.list_con {
                 width: 100%;
                 padding: 16px 0;
+
+                .acco_active {
+                    background: $gray_5 !important;
+                    color: $danu_blue_60 !important;
+                    border-left: 2px solid $danu_blue_60;
+                }
 
                 .one_menu {
                     cursor: pointer;
@@ -744,6 +749,59 @@ main {
         position: relative;
         background: white;
         overflow-x: hidden;
+
+        .top_sub_con {
+            background: $gray_110 !important;
+            display: flex;
+            flex-direction: column;
+
+            .sub_top_text {
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+
+            p{
+                color: $gray_30;
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+
+            .top_visual_btn_con {
+                display: flex;
+                flex-direction: row !important;
+                
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $gray_30;
+                    border-radius: 999px;
+                    padding: 16px 28px;
+                    color: $gray_110;
+                    animation: none;
+                    cursor: pointer;
+                    margin-right: 24px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        background: $gray_20;
+                    }
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .top_btn_text {
+                            font-size: 16px;
+                            color: $gray_110;
+                        }
+                    }
+                }
+            }
+        }
 
         .top_image_con {
             width: 100%;
