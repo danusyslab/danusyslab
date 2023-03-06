@@ -1328,6 +1328,7 @@ header {
         background: $gray_0;
         border-right: 1px solid $gray_10;
         position: fixed;
+        overflow: auto;
 
         &.left_side {
             display: flex;
@@ -1335,6 +1336,7 @@ header {
             top: 48px;
             height: 100%;
             width: 317px;
+            padding-bottom: 50px;
 
             ul.list_con {
                 width: 100%;

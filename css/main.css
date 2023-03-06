@@ -1360,6 +1360,7 @@ header .hd_mo .ham_cancel_btn {
   background: #FAFAFA;
   border-right: 1px solid #E2E2E2;
   position: fixed;
+  overflow: auto;
 }
 .side_menu_wrapper nav.left_side {
   display: flex;
@@ -1367,6 +1368,7 @@ header .hd_mo .ham_cancel_btn {
   top: 48px;
   height: 100%;
   width: 317px;
+  padding-bottom: 50px;
 }
 .side_menu_wrapper nav.left_side ul.list_con {
   width: 100%;
@@ -2194,4 +2196,4 @@ main.main_container .overview_area .elements_pc_con .element_container ul .circl
   color: #B1B1B1;
   line-height: 1.4;
   text-align: center;
-}
+}/*# sourceMappingURL=main.css.map */
