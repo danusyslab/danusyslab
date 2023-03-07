@@ -1,0 +1,326 @@
+@charset "utf-8";
+@import 'reset.scss';
+
+.blue_col {
+    background: $danu_blue_60 !important;
+}
+
+.sub_second_con {
+    width: 100%;
+    padding: 120px 100px 20px 418px;
+}
+
+.desc_text {
+    font-size: 16px;
+    color: $gray_110; 
+    line-height: 1.5;
+}
+
+.content_container {
+    width: 100%;
+    padding: 40px 100px 0px 418px;
+
+    .content_title {
+        color: $gray_110;
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .desc_text_con {
+        width: 1120px;
+        margin-bottom: 40px;
+    }
+
+    .primary_col_con {
+        width: 1120px;
+        margin-bottom: 40px;
+
+        .primary_col_area {
+            display: flex;
+            width: 100%;
+
+            .primary_col_item {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .primary_color_1 {
+                    background: $danu_blue_p;
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_2 {
+                    background: $danu_blue_60;
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_3 {
+                    background: $black;
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_4 {
+                    background: $white;
+                    width: 100%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_5 {
+                    background: $sys_green_p;
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_6 {
+                    background: $danu_blue_p;
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_7 {
+                    background: $sys_green_10;
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .primary_color_8 {
+                    background: $danu_blue_60;
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 40%;
+                        background-size: contain;
+                    } 
+                }
+
+                .name_area {
+
+                    p {
+                        color: $gray_110;
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gray_con {
+        width: 1120px;
+        height: 348px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .ratio_con {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 44px;
+
+            .ratio_value {
+                background: $gray_110;
+                padding: 4px 8px;
+                border-radius: 99px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+            }
+
+            .ratio_value_2 {
+                background: $gray_110;
+                padding: 4px 8px;
+                border-radius: 99px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+            }
+
+            .line_con {
+                width: 7%;
+                height: 20px;
+                border-left: 1px solid $gray_110;
+                border-top: 1px solid $gray_110;
+                border-right: 1px solid $gray_110;
+            }
+
+            .line_con_bottom {
+                width: 90%;
+                height: 20px;
+                border-left: 1px solid $gray_110;
+                border-bottom: 1px solid $gray_110;
+                border-right: 1px solid $gray_110;
+            }
+        }
+
+        .gray_area {
+            width: 100%;
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 150px;
+                width: 6.4%;
+
+                span {
+                    font-size: 14px;
+                }
+
+                .black_text {
+                    color: $black;
+                }
+
+                .white_text {
+                    color: $white;
+                }
+            }
+
+            .white_con {
+                background: $white;
+                border-radius: 999px 0 0 999px;
+            }
+
+            .gray0_con {
+                background: $gray_0;
+            }
+
+            .gray5_con {
+                background: $gray_5;
+            }
+
+            .gray10_con {
+                background: $gray_10;
+            }
+
+            .gray20_con {
+                background: $gray_20;
+            }
+
+            .gray30_con {
+                background: $gray_30;
+            }
+
+            .gray40_con {
+                background: $gray_40;
+            }
+
+            .gray50_con {
+                background: $gray_50;
+            }
+
+            .gray60_con {
+                background: $gray_60;
+            }
+
+            .gray70_con {
+                background: $gray_70;
+            }
+
+            .gray80_con {
+                background: $gray_80;
+            }
+
+            .gray90_con {
+                background: $gray_90;
+            }
+
+            .gray100_con {
+                background: $gray_100;
+            }
+
+            .gray110_con {
+                background: $gray_110;
+            }
+
+            .gray120_con {
+                background: $gray_120;
+            }
+
+            .black_con {
+                background: $black;
+                border-radius: 0 999px 999px 0;
+            }
+        }
+    }
+
+}
