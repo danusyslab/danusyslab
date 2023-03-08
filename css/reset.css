@@ -619,6 +619,16 @@ input[type=radio]:checked + label span {
     transform: none;
   }
 }
+@keyframes fade_right {
+  0% {
+    opacity: 0;
+    transform: translatex(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 @keyframes change {
   0% {
     transform: translate3d(0, 0, 0);
@@ -671,5 +681,21 @@ input[type=radio]:checked + label span {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes ani_opacity {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background_color {
+  0% {
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: none;
   }
 }

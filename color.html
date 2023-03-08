@@ -343,7 +343,7 @@
                 </ul>
             </nav>
         </div>
-        <main class="main_container">
+        <main class="main_container contents_back">
             <div id="scrollSection0" class="top_sub_con blue_col">
                 <span class="sub_top_text">
                    Color System
@@ -388,7 +388,7 @@
                 <div class="primary_col_con">
                     <ul class="primary_col_area">
                         <li class="primary_col_item">
-                            <div class="primary_color_3">
+                            <div class="primary_color_3 ani_opacity">
                                 <img src="images/logo_primary_2.png">
                             </div>
                             <div class="name_area">
@@ -396,7 +396,7 @@
                             </div>
                         </li>
                         <li class="primary_col_item">
-                            <div class="primary_color_4">
+                            <div class="primary_color_4 ani_opacity">
                                 <img src="images/logo_primary_1.png">
                             </div>
                             <div class="name_area">
@@ -414,10 +414,10 @@
                 <div class="primary_col_con">
                     <ul class="primary_col_area">
                         <li class="primary_col_item">
-                            <div class="primary_color_5">
+                            <div class="primary_color_5 ani_opacity">
                                 <img src="images/logo_primary_5.png">
                             </div>
-                            <div class="primary_color_6">
+                            <div class="primary_color_6 ani_opacity">
                                 <img src="images/logo_primary_4.png">
                             </div>
                             <div class="name_area">
@@ -426,7 +426,7 @@
                             </div>
                         </li>
                         <li class="primary_col_item">
-                            <div class="primary_color_7">
+                            <div class="primary_color_7 ani_opacity">
                                 <img src="images/logo_primary_1.png">
                             </div>
                             <div class="primary_color_8">
@@ -445,7 +445,7 @@
                 <div class="desc_text_con">
                     <p class="desc_text">White와 Black 간의 명도 대비는 21:1입니다. White와 Black 사이를 균일한 명도 대비를 이루도록 12단계로 나누어 Gray 10 ~ Gray 110을 생성하였으며 각 단계별 명도 대비는 약 1.289입니다.</p>
                 </div>
-                <div class="gray_con">
+                <div id="grayArea1" class="gray_con">
                     <div class="ratio_con">
                         <div class="ratio_value_3">
                             <span>1.289</span>
@@ -587,386 +587,922 @@
                     <p class="desc_text">같은 등급의 회색과의 명도 대비가 1:1이 되는 무지개 색채표입니다. (* 즉, Gray 5 와 Danu Blue 5, Red 5, Purple 5 는 모두 명도 대비가 1:1입니다.)
                         120등급의 유채색은 불가피한 경우를 제외하고는 사용하지 않습니다.</p>
                 </div>
-                <div class="color_con">
-                    <div class="color_con_hex">
+                <div class="color_con_val">
+                    <div class="sticky_con">
+                        <div id="sticky1" class="sticky_area">
+                            <button id="hexTab" type="button" class="sticky_btn">
+                                <span>HEX</span>
+                            </button>
+                            <button id="rgbTab" type="button" class="sticky_btn">
+                                <span>RGB</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="hex" class="color_con">
                         <ul class="red_con">
                             <li class="red_120">
                                 <span class="white_color">Red 120</span>
                                 <span class="white_color">#1C0603</span>
                             </li>
-                            <li class="red_110">
+                            <li class="red_110 ani_opacity">
                                 <span class="white_color">Red 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#460F07</span>
                             </li>
                             <li class="red_100">
                                 <span class="white_color">Red 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#641307</span>
                             </li>
                             <li class="red_90">
                                 <span class="white_color">Red 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#851A0A</span>
                             </li>
-                            <li class="red_80">
+                            <li class="red_80 ani_opacity">
                                 <span class="white_color">Red 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#A21F0B</span>
                             </li>
                             <li class="red_70">
                                 <span class="white_color">Red 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#C4260E</span>
                             </li>
-                            <li class="red_60">
+                            <li class="red_60 ani_opacity">
                                 <span class="white_color">Red 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#E02C10</span>
                             </li>
                             <li class="red_50">
                                 <span class="black_color">Red 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F15037</span>
                             </li>
                             <li class="red_40">
                                 <span class="black_color">Red 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F47966</span>
                             </li>
-                            <li class="red_30">
+                            <li class="red_30 ani_opacity">
                                 <span class="black_color">Red 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F5988A</span>
                             </li>
                             <li class="red_20">
                                 <span class="black_color">Red 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F9B8AE</span>
                             </li>
                             <li class="red_10">
                                 <span class="black_color">Red 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FBDAD5</span>
                             </li>
-                            <li class="red_5">
+                            <li class="red_5 ani_opacity">
                                 <span class="black_color">Red 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FDE9E8</span>
                             </li>
                         </ul>
                         <ul class="orange_con">
                             <li class="orange_120">
                                 <span class="white_color">Orange 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#120B02</span>
                             </li>
                             <li class="orange_110">
                                 <span class="white_color">Orange 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#341E04</span>
                             </li>
-                            <li class="orange_100">
+                            <li class="orange_100 ani_opacity">
                                 <span class="white_color">Orange 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#4E2B04</span>
                             </li>
                             <li class="orange_90">
                                 <span class="white_color">Orange 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#663905</span>
                             </li>
-                            <li class="orange_80">
+                            <li class="orange_80 ani_opacity">
                                 <span class="white_color">Orange 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#7F4606</span>
                             </li>
                             <li class="orange_70">
                                 <span class="white_color">Orange 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#975407</span>
                             </li>
                             <li class="orange_60">
                                 <span class="white_color">Orange 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#AF6108</span>
                             </li>
-                            <li class="orange_50">
+                            <li class="orange_50 ani_opacity">
                                 <span class="black_color">Orange 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#CD720A</span>
                             </li>
                             <li class="orange_40">
                                 <span class="black_color">Orange 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#EA820B</span>
                             </li>
                             <li class="orange_30">
                                 <span class="black_color">Orange 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F69D37</span>
                             </li>
-                            <li class="orange_20">
+                            <li class="orange_20 ani_opacity">
                                 <span class="black_color">Orange 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FABE7B</span>
                             </li>
                             <li class="orange_10">
                                 <span class="black_color">Orange 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F9DEBE</span>
                             </li>
                             <li class="orange_5">
                                 <span class="black_color">Orange 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FBECDA</span>
                             </li>
                         </ul>
                         <ul class="yellow_con">
                             <li class="yellow_120">
                                 <span class="white_color">Yellow 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#140F00</span>
                             </li>
-                            <li class="yellow_110">
+                            <li class="yellow_110 ani_opacity">
                                 <span class="white_color">Yellow 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#292100</span>
                             </li>
                             <li class="yellow_100">
                                 <span class="white_color">Yellow 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#3D3100</span>
                             </li>
-                            <li class="yellow_90">
+                            <li class="yellow_90 ani_opacity">
                                 <span class="white_color">Yellow 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#524100</span>
                             </li>
                             <li class="yellow_80">
                                 <span class="white_color">Yellow 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#665200</span>
                             </li>
                             <li class="yellow_70">
                                 <span class="white_color">Yellow 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#7A6200</span>
                             </li>
-                            <li class="yellow_60">
+                            <li class="yellow_60 ani_opacity">
                                 <span class="white_color">Yellow 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#8F7200</span>
                             </li>
                             <li class="yellow_50">
                                 <span class="black_color">Yellow 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#A88700</span>
                             </li>
-                            <li class="yellow_40">
+                            <li class="yellow_40 ani_opacity">
                                 <span class="black_color">Yellow 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#BD9700</span>
                             </li>
                             <li class="yellow_30">
                                 <span class="black_color">Yellow 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#DBAF00</span>
                             </li>
                             <li class="yellow_20">
                                 <span class="black_color">Yellow 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#F5C400</span>
                             </li>
                             <li class="yellow_10">
                                 <span class="black_color">Yellow 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FFE16B</span>
                             </li>
-                            <li class="yellow_5">
+                            <li class="yellow_5 ani_opacity">
                                 <span class="black_color">Yellow 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#FFEFAD</span>
                             </li>
                         </ul>
                         <ul class="green_con">
-                            <li class="green_120">
+                            <li class="green_120 ani_opacity">
                                 <span class="white_color">Green 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#050D02</span>
                             </li>
                             <li class="green_110">
                                 <span class="white_color">Green 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#0C2504</span>
                             </li>
                             <li class="green_100">
                                 <span class="white_color">Green 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#163B07</span>
                             </li>
                             <li class="green_90">
                                 <span class="white_color">Green 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#1C4D0A</span>
                             </li>
                             <li class="green_80">
                                 <span class="white_color">Green 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#20600B</span>
                             </li>
-                            <li class="green_70">
+                            <li class="green_70 ani_opacity">
                                 <span class="white_color">Green 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#26730D</span>
                             </li>
                             <li class="green_60">
                                 <span class="white_color">Green 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#2C850F</span>
                             </li>
-                            <li class="green_50">
+                            <li class="green_50 ani_opacity">
                                 <span class="black_color">Green 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#349C11</span>
                             </li>
                             <li class="green_40">
                                 <span class="black_color">Green 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#3CB314</span>
                             </li>
                             <li class="green_30">
                                 <span class="black_color">Green 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#43CA16</span>
                             </li>
-                            <li class="green_20">
+                            <li class="green_20 ani_opacity">
                                 <span class="black_color">Green 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#4DE619</span>
                             </li>
                             <li class="green_10">
                                 <span class="black_color">Green 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#B1F39B</span>
                             </li>
                             <li class="green_5">
                                 <span class="black_color">Green 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#D1F8C4</span>
                             </li>
                         </ul>
                         <ul class="cyon_con">
                             <li class="cyon_120">
                                 <span class="white_color">Cyon 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#020F12</span>
                             </li>
                             <li class="cyon_110">
                                 <span class="white_color">Cyon 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#04262F</span>
                             </li>
                             <li class="cyon_100">
                                 <span class="white_color">Cyon 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#053842</span>
                             </li>
                             <li class="cyon_90">
                                 <span class="white_color">Cyon 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#064B5B</span>
                             </li>
-                            <li class="cyon_80">
+                            <li class="cyon_80 ani_opacity">
                                 <span class="white_color">Cyon 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#095C71</span>
                             </li>
                             <li class="cyon_70">
                                 <span class="white_color">Cyon 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#0A6C85</span>
                             </li>
-                            <li class="cyon_60">
+                            <li class="cyon_60 ani_opacity">
                                 <span class="white_color">Cyon 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#0D7F9C</span>
                             </li>
                             <li class="cyon_50">
                                 <span class="black_color">Cyon 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#1096B7</span>
                             </li>
-                            <li class="cyon_40">
+                            <li class="cyon_40 ani_opacity">
                                 <span class="black_color">Cyon 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#12A9CE</span>
                             </li>
                             <li class="cyon_30">
                                 <span class="black_color">Cyon 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#14C0EB</span>
                             </li>
                             <li class="cyon_20">
                                 <span class="black_color">Cyon 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#6ED8F2</span>
                             </li>
                             <li class="cyon_10">
                                 <span class="black_color">Cyon 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#B4EBF9</span>
                             </li>
-                            <li class="cyon_5">
+                            <li class="cyon_5 ani_opacity">
                                 <span class="black_color">Cyon 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#D5F4FB</span>
                             </li>
                         </ul>
                         <ul class="blue_con">
                             <li class="blue_120">
                                 <span class="white_color">Blue 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#000C1F</span>
                             </li>
                             <li class="blue_110">
                                 <span class="white_color">Blue 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#001F52</span>
                             </li>
                             <li class="blue_100">
                                 <span class="white_color">Blue 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#002F7A</span>
                             </li>
-                            <li class="blue_90">
+                            <li class="blue_90 ani_opacity">
                                 <span class="white_color">Blue 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#003D9E</span>
                             </li>
                             <li class="blue_80">
                                 <span class="white_color">Blue 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#004AC2</span>
                             </li>
                             <li class="blue_70">
                                 <span class="white_color">Blue 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#0058E6</span>
                             </li>
                             <li class="blue_60">
                                 <span class="white_color">Blue 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">#0F6BFF</span>
                             </li>
-                            <li class="blue_50">
+                            <li class="blue_50 ani_opacity">
                                 <span class="black_color">Blue 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#3884FF</span>
                             </li>
                             <li class="blue_40">
                                 <span class="black_color">Blue 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#5C9AFF</span>
                             </li>
                             <li class="blue_30">
                                 <span class="black_color">Blue 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#85B4FF</span>
                             </li>
-                            <li class="blue_20">
+                            <li class="blue_20 ani_opacity">
                                 <span class="black_color">Blue 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#A8CAFF</span>
                             </li>
                             <li class="blue_10">
                                 <span class="black_color">Blue 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#D1E0FF</span>
                             </li>
                             <li class="blue_5">
                                 <span class="black_color">Blue 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">#E5EEFF</span>
+                            </li>
+                        </ul>
+                        <ul class="purple_con">
+                            <li class="purple_120 ani_opacity">
+                                <span class="white_color">Purple 120</span>
+                                <span class="white_color">#1B0420</span>
+                            </li>
+                            <li class="purple_110">
+                                <span class="white_color">Purple 110</span>
+                                <span class="white_color">#360656</span>
+                            </li>
+                            <li class="purple_100">
+                                <span class="white_color">Purple 100</span>
+                                <span class="white_color">#4E067F</span>
+                            </li>
+                            <li class="purple_90">
+                                <span class="white_color">Purple 90</span>
+                                <span class="white_color">#6609A5</span>
+                            </li>
+                            <li class="purple_80 ani_opacity">
+                                <span class="white_color">Purple 80</span>
+                                <span class="white_color">#7E0BCB</span>
+                            </li>
+                            <li class="purple_70">
+                                <span class="white_color">Purple 70</span>
+                                <span class="white_color">#930CED</span>
+                            </li>
+                            <li class="purple_60 ani_opacity">
+                                <span class="white_color">Purple 60</span>
+                                <span class="white_color">#A938F5</span>
+                            </li>
+                            <li class="purple_50">
+                                <span class="black_color">Purple 50</span>
+                                <span class="black_color">#B85AF6</span>
+                            </li>
+                            <li class="purple_40">
+                                <span class="black_color">Purple 40</span>
+                                <span class="black_color">#C77BF9</span>
+                            </li>
+                            <li class="purple_30 ani_opacity">
+                                <span class="black_color">Purple 30</span>
+                                <span class="black_color">#D39AF9</span>
+                            </li>
+                            <li class="purple_20">
+                                <span class="black_color">Purple 20</span>
+                                <span class="black_color">#DFB9F9</span>
+                            </li>
+                            <li class="purple_10">
+                                <span class="black_color">Purple 10</span>
+                                <span class="black_color">#EDDAFB</span>
+                            </li>
+                            <li class="purple_5 ani_opacity">
+                                <span class="black_color">Purple 5</span>
+                                <span class="black_color">#F4E8FD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rgb" class="color_con" style="display: none;">
+                        <ul class="red_con">
+                            <li class="red_120 ani_opacity">
+                                <span class="white_color">Red 120</span>
+                                <span class="white_color">R:28 G:6 B:3</span>
+                            </li>
+                            <li class="red_110">
+                                <span class="white_color">Red 110</span>
+                                <span class="white_color">R:70 G:15 B:7</span>
+                            </li>
+                            <li class="red_100">
+                                <span class="white_color">Red 100</span>
+                                <span class="white_color">R:100 G:19 B:7</span>
+                            </li>
+                            <li class="red_90 ani_opacity">
+                                <span class="white_color">Red 90</span>
+                                <span class="white_color">R:133 G:26 B:10</span>
+                            </li>
+                            <li class="red_80">
+                                <span class="white_color">Red 80</span>
+                                <span class="white_color">R:162 G:31 B:11</span>
+                            </li>
+                            <li class="red_70">
+                                <span class="white_color">Red 70</span>
+                                <span class="white_color">R:196 G:38 B:14</span>
+                            </li>
+                            <li class="red_60 ani_opacity">
+                                <span class="white_color">Red 60</span>
+                                <span class="white_color">R:244 G:44 B:16</span>
+                            </li>
+                            <li class="red_50">
+                                <span class="black_color">Red 50</span>
+                                <span class="black_color">R:241 G:80 B:55</span>
+                            </li>
+                            <li class="red_40">
+                                <span class="black_color">Red 40</span>
+                                <span class="black_color">R:244 G:121 B:102</span>
+                            </li>
+                            <li class="red_30 ani_opacity">
+                                <span class="black_color">Red 30</span>
+                                <span class="black_color">R:245 G:152 B:138</span>
+                            </li>
+                            <li class="red_20">
+                                <span class="black_color">Red 20</span>
+                                <span class="black_color">R:249 G:184 B:174</span>
+                            </li>
+                            <li class="red_10">
+                                <span class="black_color">Red 10</span>
+                                <span class="black_color">R:251 G:218 B:213</span>
+                            </li>
+                            <li class="red_5 ani_opacity">
+                                <span class="black_color">Red 5</span>
+                                <span class="black_color">R:253 G:233 B:232</span>
+                            </li>
+                        </ul>
+                        <ul class="orange_con">
+                            <li class="orange_120">
+                                <span class="white_color">Orange 120</span>
+                                <span class="white_color">R:18 G:11 B:2</span>
+                            </li>
+                            <li class="orange_110 ani_opacity">
+                                <span class="white_color">Orange 110</span>
+                                <span class="white_color">R:52 G:30 B:4</span>
+                            </li>
+                            <li class="orange_100">
+                                <span class="white_color">Orange 100</span>
+                                <span class="white_color">R:78 G:43 B:4</span>
+                            </li>
+                            <li class="orange_90 ani_opacity">
+                                <span class="white_color">Orange 90</span>
+                                <span class="white_color">R:102 G:57 B:5</span>
+                            </li>
+                            <li class="orange_80">
+                                <span class="white_color">Orange 80</span>
+                                <span class="white_color">R:127 G:70 B:6</span>
+                            </li>
+                            <li class="orange_70">
+                                <span class="white_color">Orange 70</span>
+                                <span class="white_color">R:151 G:84 B:7</span>
+                            </li>
+                            <li class="orange_60">
+                                <span class="white_color">Orange 60</span>
+                                <span class="white_color">R:175 G:97 B:8</span>
+                            </li>
+                            <li class="orange_50">
+                                <span class="black_color">Orange 50</span>
+                                <span class="black_color">R:205 G:114 B:10</span>
+                            </li>
+                            <li class="orange_40">
+                                <span class="black_color">Orange 40</span>
+                                <span class="black_color">R:234 G:130 B:11</span>
+                            </li>
+                            <li class="orange_30 ani_opacity">
+                                <span class="black_color">Orange 30</span>
+                                <span class="black_color">R:246 G:157 B:55</span>
+                            </li>
+                            <li class="orange_20">
+                                <span class="black_color">Orange 20</span>
+                                <span class="black_color">R:250 G:190 B:123</span>
+                            </li>
+                            <li class="orange_10">
+                                <span class="black_color">Orange 10</span>
+                                <span class="black_color">R:249 G:222 B:190</span>
+                            </li>
+                            <li class="orange_5 ani_opacity">
+                                <span class="black_color">Orange 5</span>
+                                <span class="black_color">R:251 G:236 B:218</span>
+                            </li>
+                        </ul>
+                        <ul class="yellow_con">
+                            <li class="yellow_120 ani_opacity">
+                                <span class="white_color">Yellow 120</span>
+                                <span class="white_color">R:20 G:15 B:0</span>
+                            </li>
+                            <li class="yellow_110">
+                                <span class="white_color">Yellow 110</span>
+                                <span class="white_color">R:41 G:33 B:0</span>
+                            </li>
+                            <li class="yellow_100">
+                                <span class="white_color">Yellow 100</span>
+                                <span class="white_color">R:61 G:49 B:0</span>
+                            </li>
+                            <li class="yellow_90">
+                                <span class="white_color">Yellow 90</span>
+                                <span class="white_color">R:82 G:65 B:0</span>
+                            </li>
+                            <li class="yellow_80 ani_opacity">
+                                <span class="white_color">Yellow 80</span>
+                                <span class="white_color">R:102 G:82 B:0</span>
+                            </li>
+                            <li class="yellow_70">
+                                <span class="white_color">Yellow 70</span>
+                                <span class="white_color">R:122 G:98 B:0</span>
+                            </li>
+                            <li class="yellow_60">
+                                <span class="white_color">Yellow 60</span>
+                                <span class="white_color">R:143 G:114 B:0</span>
+                            </li>
+                            <li class="yellow_50 ani_opacity">
+                                <span class="black_color">Yellow 50</span>
+                                <span class="black_color">R:168 G:135 B:0</span>
+                            </li>
+                            <li class="yellow_40">
+                                <span class="black_color">Yellow 40</span>
+                                <span class="black_color">R:199 G:151 B:0</span>
+                            </li>
+                            <li class="yellow_30 ani_opacity">
+                                <span class="black_color">Yellow 30</span>
+                                <span class="black_color">R:219 G:175 B:0</span>
+                            </li>
+                            <li class="yellow_20">
+                                <span class="black_color">Yellow 20</span>
+                                <span class="black_color">R:245 G:196 B:0</span>
+                            </li>
+                            <li class="yellow_10 ani_opacity">
+                                <span class="black_color">Yellow 10</span>
+                                <span class="black_color">R:255 G:225 B:107</span>
+                            </li>
+                            <li class="yellow_5">
+                                <span class="black_color">Yellow 5</span>
+                                <span class="black_color">R:255 G:239 B:173</span>
+                            </li>
+                        </ul>
+                        <ul class="green_con">
+                            <li class="green_120">
+                                <span class="white_color">Green 120</span>
+                                <span class="white_color">R:5 G:13 B:2</span>
+                            </li>
+                            <li class="green_110">
+                                <span class="white_color">Green 110</span>
+                                <span class="white_color">R:12 G:37 B:4</span>
+                            </li>
+                            <li class="green_100">
+                                <span class="white_color">Green 100</span>
+                                <span class="white_color">R:22 G:59 B:7</span>
+                            </li>
+                            <li class="green_90">
+                                <span class="white_color">Green 90</span>
+                                <span class="white_color">R:28 G:77 B:10</span>
+                            </li>
+                            <li class="green_80 ani_opacity">
+                                <span class="white_color">Green 80</span>
+                                <span class="white_color">R:32 G:96 B:11</span>
+                            </li>
+                            <li class="green_70">
+                                <span class="white_color">Green 70</span>
+                                <span class="white_color">R:38 G:115 B:13</span>
+                            </li>
+                            <li class="green_60 ani_opacity">
+                                <span class="white_color">Green 60</span>
+                                <span class="white_color">R:44 G:133 B:15</span>
+                            </li>
+                            <li class="green_50">
+                                <span class="black_color">Green 50</span>
+                                <span class="black_color">R:52 G:156 B:17</span>
+                            </li>
+                            <li class="green_40">
+                                <span class="black_color">Green 40</span>
+                                <span class="black_color">R:60 G:179 B:20</span>
+                            </li>
+                            <li class="green_30 ani_opacity">
+                                <span class="black_color">Green 30</span>
+                                <span class="black_color">R:67 G:202 B:22</span>
+                            </li>
+                            <li class="green_20">
+                                <span class="black_color">Green 20</span>
+                                <span class="black_color">R:77 G:230 B:25</span>
+                            </li>
+                            <li class="green_10">
+                                <span class="black_color">Green 10</span>
+                                <span class="black_color">R:177 G:243 B:155</span>
+                            </li>
+                            <li class="green_5">
+                                <span class="black_color">Green 5</span>
+                                <span class="black_color">R:209 G:248 B:196</span>
+                            </li>
+                        </ul>
+                        <ul class="cyon_con">
+                            <li class="cyon_120 ani_opacity">
+                                <span class="white_color">Cyon 120</span>
+                                <span class="white_color">R:2 G:15 B:18</span>
+                            </li>
+                            <li class="cyon_110">
+                                <span class="white_color">Cyon 110</span>
+                                <span class="white_color">R:4 G:38 B:47</span>
+                            </li>
+                            <li class="cyon_100">
+                                <span class="white_color">Cyon 100</span>
+                                <span class="white_color">R:5 G:56 B:66</span>
+                            </li>
+                            <li class="cyon_90">
+                                <span class="white_color">Cyon 90</span>
+                                <span class="white_color">R:6 G:75 B:91</span>
+                            </li>
+                            <li class="cyon_80">
+                                <span class="white_color">Cyon 80</span>
+                                <span class="white_color">R:9 G:92 B:113</span>
+                            </li>
+                            <li class="cyon_70 ani_opacity">
+                                <span class="white_color">Cyon 70</span>
+                                <span class="white_color">R:10 G:108 B:133</span>
+                            </li>
+                            <li class="cyon_60">
+                                <span class="white_color">Cyon 60</span>
+                                <span class="white_color">R:13 G:127 B:156</span>
+                            </li>
+                            <li class="cyon_50">
+                                <span class="black_color">Cyon 50</span>
+                                <span class="black_color">R:16 G:150 B:183</span>
+                            </li>
+                            <li class="cyon_40 ani_opacity">
+                                <span class="black_color">Cyon 40</span>
+                                <span class="black_color">R:18 G:169 B:206</span>
+                            </li>
+                            <li class="cyon_30">
+                                <span class="black_color">Cyon 30</span>
+                                <span class="black_color">R:20 G:192 B:235</span>
+                            </li>
+                            <li class="cyon_20">
+                                <span class="black_color">Cyon 20</span>
+                                <span class="black_color">R:110 G:216 B:242</span>
+                            </li>
+                            <li class="cyon_10">
+                                <span class="black_color">Cyon 10</span>
+                                <span class="black_color">R:180 G:235 B:249</span>
+                            </li>
+                            <li class="cyon_5 ani_opacity">
+                                <span class="black_color">Cyon 5</span>
+                                <span class="black_color">R:213 G:244 B:251</span>
+                            </li>
+                        </ul>
+                        <ul class="blue_con">
+                            <li class="blue_120">
+                                <span class="white_color">Blue 120</span>
+                                <span class="white_color">R:0 G:12 B:31</span>
+                            </li>
+                            <li class="blue_110 ani_opacity">
+                                <span class="white_color">Blue 110</span>
+                                <span class="white_color">R:0 G:31 B:82</span>
+                            </li>
+                            <li class="blue_100">
+                                <span class="white_color">Blue 100</span>
+                                <span class="white_color">R:0 G:47 B:122</span>
+                            </li>
+                            <li class="blue_90">
+                                <span class="white_color">Blue 90</span>
+                                <span class="white_color">R:0 G:61 B:158</span>
+                            </li>
+                            <li class="blue_80">
+                                <span class="white_color">Blue 80</span>
+                                <span class="white_color">R:0 G:74 B:194</span>
+                            </li>
+                            <li class="blue_70 ani_opacity">
+                                <span class="white_color">Blue 70</span>
+                                <span class="white_color">R:0 G:88 B:230</span>
+                            </li>
+                            <li class="blue_60">
+                                <span class="white_color">Blue 60</span>
+                                <span class="white_color">R:15 G:107 B:255</span>
+                            </li>
+                            <li class="blue_50 ani_opacity">
+                                <span class="black_color">Blue 50</span>
+                                <span class="black_color">R:56 G:132 B:255</span>
+                            </li>
+                            <li class="blue_40">
+                                <span class="black_color">Blue 40</span>
+                                <span class="black_color">R:92 G:154 B:255</span>
+                            </li>
+                            <li class="blue_30">
+                                <span class="black_color">Blue 30</span>
+                                <span class="black_color">R:133 G:180 B:255</span>
+                            </li>
+                            <li class="blue_20">
+                                <span class="black_color">Blue 20</span>
+                                <span class="black_color">R:168 G:202 B:255</span>
+                            </li>
+                            <li class="blue_10 ani_opacity">
+                                <span class="black_color">Blue 10</span>
+                                <span class="black_color">R:209 G:224 B:255</span>
+                            </li>
+                            <li class="blue_5">
+                                <span class="black_color">Blue 5</span>
+                                <span class="black_color">R:229 G:238 B:255</span>
                             </li>
                         </ul>
                         <ul class="purple_con">
                             <li class="purple_120">
                                 <span class="white_color">Purple 120</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:27 G:4 B:32</span>
                             </li>
                             <li class="purple_110">
                                 <span class="white_color">Purple 110</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:54 G:6 B:86</span>
                             </li>
                             <li class="purple_100">
                                 <span class="white_color">Purple 100</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:78 G:6 B:127</span>
                             </li>
                             <li class="purple_90">
                                 <span class="white_color">Purple 90</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:102 G:9 B:165</span>
                             </li>
                             <li class="purple_80">
                                 <span class="white_color">Purple 80</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:126 G:11 B:203</span>
                             </li>
                             <li class="purple_70">
                                 <span class="white_color">Purple 70</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:147 G:12 B:237</span>
                             </li>
                             <li class="purple_60">
                                 <span class="white_color">Purple 60</span>
-                                <span class="white_color">#1C0603</span>
+                                <span class="white_color">R:169 G:56 B:245</span>
                             </li>
-                            <li class="purple_50">
+                            <li class="purple_50 ani_opacity">
                                 <span class="black_color">Purple 50</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:184 G:90 B:246</span>
                             </li>
                             <li class="purple_40">
                                 <span class="black_color">Purple 40</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:199 G:123 B:249</span>
                             </li>
-                            <li class="purple_30">
+                            <li class="purple_30 ani_opacity">
                                 <span class="black_color">Purple 30</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:211 G:154 B:249</span>
                             </li>
                             <li class="purple_20">
                                 <span class="black_color">Purple 20</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:223 G:185 B:249</span>
                             </li>
-                            <li class="purple_10">
+                            <li class="purple_10 ani_opacity">
                                 <span class="black_color">Purple 10</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:237 G:218 B:251</span>
                             </li>
                             <li class="purple_5">
                                 <span class="black_color">Purple 5</span>
-                                <span class="black_color">#1C0603</span>
+                                <span class="black_color">R:244 G:232 B:253</span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="scrollSection5" class="content_container">
+                <h2 class="content_title">Sementic Color</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">동일한 색상으로 심각도를 표현할 경우 아래 팔레트를 이용하며 심각도가 높아질수록 진한 색상을 사용합니다.</p>
+                    <ul class="sementic_text_con">
+                        <li>
+                            <span class="circle_red"></span>
+                            <p>Red-60: 파괴적 버튼, 심각한 오류</p>
+                        </li>
+                        <li>
+                            <span class="circle_yellow"></span>
+                            <p>Yellow-20: 경고, 작은 오류</p>
+                        </li>
+                        <li>
+                            <span class="circle_green"></span>
+                            <p>Green-20: 긍정적 버튼, 성공</p>
+                        </li>
+                        <li>
+                            <span class="circle_blue"></span>
+                            <p>Blue-60: 액션, 정보 상태</p>
+                        </li>
+                        <li>
+                            <span class="circle_gray"></span>
+                            <p>Gray-30: 꺼짐</p>
+                        </li>
+                        <li>
+                            <span class="circle_purple"></span>
+                            <p>Purple-60: 매우 높은 심각도</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sementic_col_con">
+                    <div class="sementic_col_area">
+                        <div class="sementic_col_item semen_white_back">
+                            <ul class="sementic_list_con">
+                                <li class="sementic_red">
+                                    <span class="white_text">Red 60</span>
+                                </li>
+                                <li class="sementic_yellow">
+                                    <span class="black_text">Yellow 20</span>
+                                </li>
+                                <li class="sementic_green">
+                                    <span class="black_text">Green 20</span>
+                                </li>
+                                <li class="sementic_blue">
+                                    <span class="white_text">Blue 60</span>
+                                </li>
+                                <li class="sementic_gray">
+                                    <span class="black_text">Gray 30</span>
+                                </li>
+                                <li class="sementic_purple">
+                                    <span class="white_text">Purple 60</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sementic_col_item semen_black_back">
+                            <ul class="sementic_list_con">
+                                <li class="sementic_red">
+                                    <span class="white_text">Red 60</span>
+                                </li>
+                                <li class="sementic_yellow">
+                                    <span class="black_text">Yellow 20</span>
+                                </li>
+                                <li class="sementic_green">
+                                    <span class="black_text">Green 20</span>
+                                </li>
+                                <li class="sementic_blue">
+                                    <span class="white_text">Blue 60</span>
+                                </li>
+                                <li class="sementic_gray">
+                                    <span class="black_text">Gray 30</span>
+                                </li>
+                                <li class="sementic_purple">
+                                    <span class="white_text">Purple 60</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="scrollSection6" class="content_container">
+                <h2 class="content_title">Theme & Layering Model</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">테마는 어두운 테마와 밝은 테마가 있습니다.</p>
+                </div>
+                <div class="them_con">
+                    <div class="sticky_con">
+                        <div id="sticky2" class="sticky_area">
+                            <button id="darkTab" type="button" class="sticky_btn">
+                                <span>Dark</span>
+                            </button>
+                            <button id="lightTab" type="button" class="sticky_btn">
+                                <span>Light</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="darkTheme" class="them_area">
+                        <div class="them_item">
+                            <div class="dark_1">
+                                <span>Gray 120</span>
+                                <div class="dark_2">
+                                    <span>Gray 110</span>
+                                    <div class="dark_3">
+                                        <span>Gray 100</span>
+                                        <div class="dark_4">
+                                            <span>Gray 90</span>
+                                            <div class="dark_5">
+                                                <span>Gray 80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc_text_con">
+                            <p class="desc_text">
+                                기본 테마로 Gray 120을 전역 배경색으로 사용합니다.</br> 이후 첫 번째 계층은 Gray 110, 두 번째 계층은 Gray 100, 세 번째 계층은 Gray 90, 네 번째 계층은 Gray 80을 사용합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="lightTheme" class="them_area" style="display: none;">
+                        <div class="them_item">
+                            <div class="light_1">
+                                <span class="white_text">Gray 0</span>
+                                <div class="light_2">
+                                    <span class="white_text">Gray 5</span>
+                                    <div class="light_3">
+                                        <span class="white_text">Gray 0</span>
+                                        <div class="light_4">
+                                            <span class="white_text">Gray 5</span>
+                                            <div class="light_5">
+                                                <span class="white_text">Gray 0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc_text_con">
+                            <p class="desc_text">
+                                Gray 0을 전역 배경색으로 사용합니다.</br> 이후 계층이 바뀔 때 Gray 5와 Gray 0을 번갈아 사용합니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -978,6 +1514,6 @@
         </main>
     </div>
     <script src="js/accodion.js"></script>
-    <script src="js/scrollColor.js"></script>
+    <script src="js/color.js"></script>
 </body>
 </html>
