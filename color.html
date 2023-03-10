@@ -65,7 +65,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="side_item">
+                                <a href="typography.html" class="side_item">
                                     <span class="submenu_item">Typhography</span>
                                 </a>
                             </li>
@@ -220,7 +220,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="side_item">
+                                <a href="typography.html" class="side_item">
                                     <span class="submenu_item">Typhography</span>
                                 </a>
                             </li>
@@ -344,6 +344,9 @@
             </nav>
         </div>
         <main class="main_container contents_back">
+            <button onclick="goToTop()" type="button" class="gototop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 24V0h24v24z"/></mask><g mask="url(#a)"><path fill="#333" d="m18 17-1.4 1.4-4.6-4.6-4.6 4.6L6 17l6-6 6 6Zm0-9H6V6h12v2Z"/></g></svg>
+            </button>
             <div id="scrollSection0" class="top_sub_con blue_col">
                 <span class="sub_top_text">
                    Color System
@@ -574,7 +577,7 @@
                     </ul>
                     <div class="ratio_con_ab_2">
                         <div class="ratio_value">
-                            <span class="class_con">A</span>
+                            <span class="class_con">AA</span>
                             <span>7:1</span>
                         </div>
                         <div class="line_con_4"></div>
@@ -1443,7 +1446,7 @@
             <div id="scrollSection6" class="content_container">
                 <h2 class="content_title">Theme & Layering Model</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">테마는 어두운 테마와 밝은 테마가 있습니다.</p>
+                    <p class="desc_text">테마는 어두운 테마와 밝은 테마가 있습니다.<p>
                 </div>
                 <div class="them_con">
                     <div class="sticky_con">
@@ -1506,6 +1509,155 @@
                     </div>
                 </div>
             </div>
+            <div id="scrollSection7" class="content_container">
+                <h2 class="content_title">State Color</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">컴포넌트 상태는 상호작용에 따라 대체로 6가지 값으로 나뉩니다.
+                    <p>
+                    <ul class="sementic_text_con">
+                        <li>
+                            <p><strong>Normal:</strong> 일반적인 상태로 테마와 계층 구조 색상을 따릅니다.</p>
+                        </li>
+                        <li>
+                            <p><strong>Hover:</strong> Dark Theme에서는 Normal 보다 한 단계 밝아집니다. Light Theme에서는 Normal 보다 한 단계 어두워집니다.</p>
+                        </li>
+                        <li>
+                            <p><strong>Selected:</strong> Dark Theme에서는 Normal 보다 두 단계 밝아집니다. Light Theme에서는 Normal 보다 두 단계 어두워집니다.</p>
+                        </li>
+                        <li>
+                            <p><strong>Active(Pressed):</strong> Dark Theme에서는 Normal 보다 세 단계 밝아집니다. Light Theme에서는 Normal 보다 세 단계 어두워집니다.</p>
+                        </li>
+                        <li>
+                            <p><strong>Focused:</strong> Dark Theme에서는 테두리 White 컬러를 가집니다. Light Theme에서는 테두리 Primary 컬러를 가집니다.</p>
+                        </li>
+                        <li>
+                            <p><strong>Disabled:</strong> 사용 불가능한 상태로 alpha 35%를 가집니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="state_con">
+                    <div class="state_area">
+                        <div class="state_item">
+                            <ul class="state_list_con">
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Normal</span>
+                                        <span>일반</span>
+                                    </div>
+                                    <div class="normal_box">
+                                        <span>Gray 60</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Hover</span>
+                                        <span>호버</span>
+                                    </div>
+                                    <div class="hover_box">
+                                        <span>Gray 50</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Selected</span>
+                                        <span>선택됨</span>
+                                    </div>
+                                    <div class="selected_box">
+                                        <span>Gray 40</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Active</span>
+                                        <span>활성화</span>
+                                    </div>
+                                    <div class="active_box">
+                                        <span>Gray 30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Focused</span>
+                                        <span>초점</span>
+                                    </div>
+                                    <div class="focused_box">
+                                        <span>Gray 60</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Disabled</span>
+                                        <span>비활성화</span>
+                                    </div>
+                                    <div class="disabled_box">
+                                        <span>Gray 60</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="state_area_white">
+                        <div class="state_item">
+                            <ul class="state_list_con">
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Normal</span>
+                                        <span>일반</span>
+                                    </div>
+                                    <div class="normal_box_white">
+                                        <span>White</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Hover</span>
+                                        <span>호버</span>
+                                    </div>
+                                    <div class="hover_box_white">
+                                        <span>Gray 0</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Selected</span>
+                                        <span>선택됨</span>
+                                    </div>
+                                    <div class="selected_box_white">
+                                        <span>Gray 5</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Active</span>
+                                        <span>활성화</span>
+                                    </div>
+                                    <div class="active_box_white">
+                                        <span>Gray 10</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Focused</span>
+                                        <span>초점</span>
+                                    </div>
+                                    <div class="focused_box_white">
+                                        <span>White</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="value_text_con">
+                                        <span class="state_title">Disabled</span>
+                                        <span>비활성화</span>
+                                    </div>
+                                    <div class="disabled_box_white">
+                                        <span>White</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <footer>
                 <div class="footer_inner">
                     <p class="copyright">Copyright © 2023 Danusys</p>
@@ -1515,5 +1667,14 @@
     </div>
     <script src="js/accodion.js"></script>
     <script src="js/color.js"></script>
+    <script src="js/topButton.js"></script>
+    <script>
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
