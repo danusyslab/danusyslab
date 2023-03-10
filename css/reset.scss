@@ -1045,6 +1045,7 @@ input[type="radio"]:checked + label span {
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+  z-index: 997;
 
   &.show {
     opacity: 1;
