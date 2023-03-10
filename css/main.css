@@ -711,6 +711,7 @@ input[type=radio]:checked + label span {
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
+  z-index: 997;
 }
 .gototop.show {
   opacity: 1;
@@ -2085,7 +2086,7 @@ main.main_container .whats_new_area ul li .thum_con img {
   opacity: 0.8;
 }
 main.main_container .whats_new_area ul li .arrow_con {
-  background: #FAFAFA;
+  background: #EEEEEE;
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -2094,7 +2095,7 @@ main.main_container .whats_new_area ul li .arrow_con {
   cursor: pointer;
 }
 main.main_container .whats_new_area ul li .arrow_con:hover {
-  background: #EEEEEE;
+  background: #E2E2E2;
 }
 main.main_container .whats_new_area ul li .arrow_con h4 {
   color: #212121;
