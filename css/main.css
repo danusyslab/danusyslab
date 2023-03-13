@@ -326,7 +326,7 @@ input[type=radio]:checked + label span {
   top: 0;
   bottom: 0;
   transition: transform 0.15s cubic-bezier(0.2, 0.2, 0.38, 0.9), top 0.11s;
-  width: 317px;
+  width: 260px;
   height: 100%;
   z-index: 998;
   color: #212121;
@@ -343,7 +343,7 @@ input[type=radio]:checked + label span {
   flex-direction: column;
   top: 48px;
   height: 100%;
-  width: 317px;
+  width: 260px;
   padding-bottom: 50px;
 }
 .side_menu_wrapper nav.left_side ul.list_con {
@@ -366,7 +366,6 @@ input[type=radio]:checked + label span {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px !important;
   margin: 4px 0 4px 0 !important;
   align-items: center;
 }
@@ -379,6 +378,12 @@ input[type=radio]:checked + label span {
 }
 .side_menu_wrapper nav.left_side ul.list_con .one_menu svg {
   pointer-events: none;
+}
+.side_menu_wrapper nav.left_side ul.list_con .one_menu a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 }
 .side_menu_wrapper nav.left_side ul.list_con .side_submenu {
   cursor: pointer;
@@ -407,6 +412,7 @@ input[type=radio]:checked + label span {
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item {
   width: 100%;
   height: inherit;
+  animation: accordionOpen 0.2s ease-in-out;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item button {
   background: none;
@@ -427,13 +433,11 @@ input[type=radio]:checked + label span {
   border-bottom: 1px solid #E2E2E2;
   margin-bottom: 16px;
   display: none;
-  animation: accordionOpen 0.2s ease-in-out;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li {
   cursor: pointer;
   height: inherit;
   width: 100%;
-  padding: 8px 16px;
   font-size: 14px;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li:hover {
@@ -442,6 +446,9 @@ input[type=radio]:checked + label span {
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li a {
   cursor: pointer;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
 }
 
 .side_menu_wrapper_mo {
@@ -513,8 +520,13 @@ input[type=radio]:checked + label span {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px !important;
   margin: 4px 0 4px 0 !important;
+  align-items: center;
+}
+.side_menu_wrapper_mo nav.left_side ul.list_con .one_menu a {
+  padding: 0 16px !important;
+  width: 100%;
+  display: flex;
   align-items: center;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con .one_menu:hover {
@@ -580,7 +592,6 @@ input[type=radio]:checked + label span {
   cursor: pointer;
   height: inherit;
   width: 100%;
-  padding: 20px 16px;
   font-size: 16px;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con li.list_con_item ul li:hover {
@@ -588,6 +599,10 @@ input[type=radio]:checked + label span {
   color: #212121;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con li.list_con_item ul li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 16px;
   cursor: pointer;
 }
 
@@ -839,6 +854,9 @@ input[type=radio]:checked + label span {
     margin-right: 0 !important;
     margin-bottom: 0;
   }
+  main.main_container .whats_new_area ul li .arrow_con {
+    height: 120px !important;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   main.main_container .top_sub_con {
@@ -963,6 +981,9 @@ input[type=radio]:checked + label span {
     margin-right: 0 !important;
     margin-bottom: 0;
   }
+  main.main_container .whats_new_area ul li .arrow_con {
+    height: 116px !important;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   header .hd_pc {
@@ -1032,6 +1053,9 @@ input[type=radio]:checked + label span {
   }
   .main_container .whats_new_area {
     padding-left: 0 !important;
+  }
+  .main_container .whats_new_area ul li .arrow_con {
+    height: 110px !important;
   }
   .main_container footer {
     padding: 24px 0 24px 0 !important;
@@ -1237,6 +1261,9 @@ input[type=radio]:checked + label span {
   }
   .main_container .whats_new_area {
     padding-left: 0 !important;
+  }
+  .main_container .whats_new_area ul li .arrow_con {
+    height: 112px !important;
   }
   .main_container footer {
     padding: 24px 0 24px 0 !important;
@@ -1470,6 +1497,10 @@ input[type=radio]:checked + label span {
     width: 48% !important;
     margin-right: 0 !important;
     margin-bottom: 24px !important;
+  }
+  .main_container .whats_new_area ul li .arrow_con {
+    padding: 16px !important;
+    height: 100px !important;
   }
   .main_container footer {
     padding: 24px 0 24px 0 !important;
@@ -1721,7 +1752,7 @@ main.main_container .top_sub_con {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 418px;
+  padding-left: 380px;
   width: 100%;
   padding-bottom: 60px;
 }
@@ -1991,7 +2022,7 @@ main.main_container .qna_con h2 {
   font-size: 32px;
   color: #212121;
   line-height: 1.2;
-  margin-right: 12px;
+  margin-right: 32px;
 }
 main.main_container .qna_con ul {
   width: 55%;
@@ -2076,20 +2107,20 @@ main.main_container .whats_new_area ul li:last-child {
 }
 main.main_container .whats_new_area ul li .thum_con {
   width: 100%;
-  height: 140px;
-  background-size: cover;
-  background: #212121;
+  background-size: contain;
 }
 main.main_container .whats_new_area ul li .thum_con img {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 1;
+  background-size: contain;
+  vertical-align: bottom;
 }
 main.main_container .whats_new_area ul li .arrow_con {
   background: #EEEEEE;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 140px;
   padding: 20px;
   justify-content: space-between;
   cursor: pointer;
@@ -2102,10 +2133,18 @@ main.main_container .whats_new_area ul li .arrow_con h4 {
   font-size: 16px;
   font-weight: 600;
 }
-main.main_container .whats_new_area ul li .arrow_con span {
+main.main_container .whats_new_area ul li .arrow_con .date_con {
+  display: flex;
+  flex-direction: column;
+}
+main.main_container .whats_new_area ul li .arrow_con .date_con span {
   color: #212121;
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 8px;
+}
+main.main_container .whats_new_area ul li .arrow_con .date_con span:last-child {
+  margin-bottom: 0;
 }
 main.main_container footer {
   width: 100%;
@@ -2121,7 +2160,7 @@ main.main_container footer {
 main.main_container .white_back {
   background: #FFFFFF;
   width: 100%;
-  padding: 125px 100px 125px 418px;
+  padding: 125px 116px 125px 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2211,7 +2250,7 @@ main.main_container .white_back .purpose_con .purpose_area .purpose_item .ico_4 
 main.main_container .overview_area {
   background: #212121;
   width: 100%;
-  padding: 125px 100px 125px 418px;
+  padding: 125px 116px 125px 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2258,7 +2297,6 @@ main.main_container .overview_area .elements_pc_con .title_area {
   justify-content: center;
   color: white;
   font-size: 24px;
-  animation: fadeRight 0.8s ease-in-out;
   z-index: 20;
 }
 main.main_container .overview_area .elements_pc_con .element_container {
@@ -2272,7 +2310,7 @@ main.main_container .overview_area .elements_pc_con .element_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeRight 0.5s ease-in-out;
+  animation: fadeRight 0.2s ease-in-out;
 }
 main.main_container .overview_area .elements_pc_con .element_container ul {
   display: flex;

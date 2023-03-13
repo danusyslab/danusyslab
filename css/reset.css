@@ -326,7 +326,7 @@ input[type=radio]:checked + label span {
   top: 0;
   bottom: 0;
   transition: transform 0.15s cubic-bezier(0.2, 0.2, 0.38, 0.9), top 0.11s;
-  width: 317px;
+  width: 260px;
   height: 100%;
   z-index: 998;
   color: #212121;
@@ -343,7 +343,7 @@ input[type=radio]:checked + label span {
   flex-direction: column;
   top: 48px;
   height: 100%;
-  width: 317px;
+  width: 260px;
   padding-bottom: 50px;
 }
 .side_menu_wrapper nav.left_side ul.list_con {
@@ -366,7 +366,6 @@ input[type=radio]:checked + label span {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px !important;
   margin: 4px 0 4px 0 !important;
   align-items: center;
 }
@@ -379,6 +378,12 @@ input[type=radio]:checked + label span {
 }
 .side_menu_wrapper nav.left_side ul.list_con .one_menu svg {
   pointer-events: none;
+}
+.side_menu_wrapper nav.left_side ul.list_con .one_menu a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
 }
 .side_menu_wrapper nav.left_side ul.list_con .side_submenu {
   cursor: pointer;
@@ -407,6 +412,7 @@ input[type=radio]:checked + label span {
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item {
   width: 100%;
   height: inherit;
+  animation: accordionOpen 0.2s ease-in-out;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item button {
   background: none;
@@ -427,13 +433,11 @@ input[type=radio]:checked + label span {
   border-bottom: 1px solid #E2E2E2;
   margin-bottom: 16px;
   display: none;
-  animation: accordionOpen 0.2s ease-in-out;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li {
   cursor: pointer;
   height: inherit;
   width: 100%;
-  padding: 8px 16px;
   font-size: 14px;
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li:hover {
@@ -442,6 +446,9 @@ input[type=radio]:checked + label span {
 }
 .side_menu_wrapper nav.left_side ul.list_con li.list_con_item ul li a {
   cursor: pointer;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
 }
 
 .side_menu_wrapper_mo {
@@ -513,8 +520,13 @@ input[type=radio]:checked + label span {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px !important;
   margin: 4px 0 4px 0 !important;
+  align-items: center;
+}
+.side_menu_wrapper_mo nav.left_side ul.list_con .one_menu a {
+  padding: 0 16px !important;
+  width: 100%;
+  display: flex;
   align-items: center;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con .one_menu:hover {
@@ -580,7 +592,6 @@ input[type=radio]:checked + label span {
   cursor: pointer;
   height: inherit;
   width: 100%;
-  padding: 20px 16px;
   font-size: 16px;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con li.list_con_item ul li:hover {
@@ -588,6 +599,10 @@ input[type=radio]:checked + label span {
   color: #212121;
 }
 .side_menu_wrapper_mo nav.left_side ul.list_con li.list_con_item ul li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 16px;
   cursor: pointer;
 }
 

@@ -573,7 +573,7 @@ input[type="radio"]:checked + label span {
   top: 0;
   bottom: 0;
   transition: transform .15s cubic-bezier(.2,.2,.38,.9),top .11s;
-  width: 317px;
+  width: 260px;
   height: 100%;
   z-index: 998;
   color: $gray_110;
@@ -590,7 +590,7 @@ input[type="radio"]:checked + label span {
           flex-direction: column;
           top: 48px;
           height: 100%;
-          width: 317px;
+          width: 260px;
           padding-bottom: 50px;
 
           ul.list_con {
@@ -614,7 +614,6 @@ input[type="radio"]:checked + label span {
                   font-weight: 600;
                   display: flex;
                   justify-content: space-between;
-                  padding: 0 16px !important;
                   margin: 4px 0 4px 0 !important;
                   align-items: center;
 
@@ -629,6 +628,13 @@ input[type="radio"]:checked + label span {
 
                   svg {
                       pointer-events: none;
+                  }
+
+                  a {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0 16px;
                   }
               }
 
@@ -663,6 +669,7 @@ input[type="radio"]:checked + label span {
               li.list_con_item {
                   width: 100%;
                   height: inherit;
+                  animation: accordionOpen 0.2s ease-in-out;
 
                   button {
                       background: none;
@@ -689,13 +696,12 @@ input[type="radio"]:checked + label span {
                       border-bottom: 1px solid $gray_10;
                       margin-bottom: 16px;
                       display: none;
-                      animation: accordionOpen 0.2s ease-in-out;
+                      // animation: accordionOpen 0.2s ease-in-out;
 
                       li {
                           cursor: pointer;
                           height: inherit;
                           width: 100%;
-                          padding: 8px 16px;
                           font-size: 14px;
 
                           &:hover {
@@ -705,6 +711,9 @@ input[type="radio"]:checked + label span {
 
                           a {
                               cursor: pointer;
+                              padding: 8px 16px;
+                              display: flex;
+                              align-items: center;
                           }
                       }
                   }
@@ -790,9 +799,15 @@ input[type="radio"]:checked + label span {
                   font-weight: 600;
                   display: flex;
                   justify-content: space-between;
-                  padding: 0 16px !important;
                   margin: 4px 0 4px 0 !important;
                   align-items: center;
+
+                  a {
+                    padding: 0 16px !important;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                  }
 
                   &:hover {
                       background: $gray_5;
@@ -871,7 +886,6 @@ input[type="radio"]:checked + label span {
                           cursor: pointer;
                           height: inherit;
                           width: 100%;
-                          padding: 20px 16px;
                           font-size: 16px;
 
                           &:hover {
@@ -880,7 +894,11 @@ input[type="radio"]:checked + label span {
                           }
 
                           a {
-                              cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            padding: 20px 16px;
+                            cursor: pointer;
                           }
                       }
                   }
