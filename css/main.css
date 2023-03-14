@@ -737,10 +737,10 @@ input[type=radio]:checked + label span {
 
 @media (min-width: 1400px) and (max-width: 1600px) {
   main.main_container .top_sub_con {
-    padding-left: 372px !important;
+    padding-left: 320px !important;
   }
   main.main_container .overview_area {
-    padding: 120px 50px 120px 372px !important;
+    padding: 120px 50px 120px 320px !important;
   }
   main.main_container .overview_area .left_text {
     width: 1040px !important;
@@ -830,7 +830,7 @@ input[type=radio]:checked + label span {
     text-align: center;
   }
   main.main_container .white_back {
-    padding: 120px 50px 120px 372px !important;
+    padding: 120px 50px 120px 320px !important;
   }
   main.main_container .white_back .purpose_con {
     width: 1040px !important;
@@ -860,10 +860,10 @@ input[type=radio]:checked + label span {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   main.main_container .top_sub_con {
-    padding-left: 372px !important;
+    padding-left: 320px !important;
   }
   main.main_container .overview_area {
-    padding: 120px 50px 120px 372px !important;
+    padding: 120px 50px 120px 320px !important;
   }
   main.main_container .overview_area .left_text {
     width: 840px !important;
@@ -954,7 +954,7 @@ input[type=radio]:checked + label span {
     text-align: center;
   }
   main.main_container .white_back {
-    padding: 120px 50px 120px 372px !important;
+    padding: 120px 50px 120px 320px !important;
   }
   main.main_container .white_back .left_text {
     width: 840px !important;

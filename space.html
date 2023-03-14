@@ -64,7 +64,7 @@
                                     <span class="submenu_item">Color</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="typography.html" class="side_item">
                                     <span class="submenu_item">Typhography</span>
                                 </a>
@@ -74,7 +74,7 @@
                                     <span class="submenu_item">Iconography</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="space.html" class="side_item">
                                     <span class="submenu_item">Space&Grid</span>
                                 </a>
@@ -339,109 +339,464 @@
             </button>
             <div id="scrollSection0" class="top_sub_con blue_col">
                 <span class="sub_top_text">
-                   Typhography
+                   Space & Grid
                 </span>
             </div>
             <div id="scrollSection1" class="sub_second_con">
-                <p class="desc_text">폰트 스타일은 IBM의 'IBM Plex Sans KR'을 사용합니다. 폰트 굵기는 얇은 굵기의 폰트(Light: 300), 중간 굵기의 폰트(Regular: 400), 그리고 굵은 굵기의 폰트(Bold: 700)으로 구성됩니다.</p>
+                <p class="desc_text">4의 배수를 활용하여 그리드를 나누고 간격을 조정합니다.</p>
             </div>
             <div id="scrollSection2" class="content_container">
-                <h2 class="content_title">Type Color</h2>
+                <h2 class="content_title">Space</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">텍스트 색상은 해당 텍스트가 위치한 배경색과의 명도 대비에 따라 상대적으로 적용합니다.</p>
+                    <p class="desc_text">공간 시스템에서 크기나 길이를 결정하는 기본 단위는 8px입니다.
+                        미세 조정이 필요한 경우(ex. 텍스트 사이 공간)에 한해서는 2px, 4px 단위를 사용할 수 있습니다. 홀수의 사이즈를 허용하지 않습니다.</p>
                 </div>
-                <div class="typo_color_con">
-                    <div class="typo_color_area">
-                        <ul class="typo_color_list">
-                            <li>
-                                <span class="typo_color_item_1">
-                                    제목이나 중요한 정보처럼 강조되어야 하는 텍스트는 배경색과 100등급 이상 차이나는 색을 사용합니다.
-                                </span>
-                            </li>
-                            <li>
-                                <span class="typo_color_item_2">
-                                    부제, 본문은 배경색과 80등급 이상 차이나는 색을 사용합니다.
-                                </span>
-                            </li>
-                            <li>
-                                <span class="typo_color_item_3">
-                                    중요도가 낮은 내용은 배경색과 60등급 이상 차이나는 색을 사용합니다.
-                                </span>
-                            </li>
-                            <li>
-                                <span class="typo_color_item_4">
-                                    표기해야 하나 사용자의 눈에 잘 띄지 않아야 하는 텍스트는 배경색과 40등급 이상 차이나는 색을 사용합니다.
-                                </span>
-                            </li>
-                        </ul>
+                <div class="space_con">
+                    <div class="space_area">
+                        <div class="space_img">
+                            <img src="images/space_img_1.png"/>
+                        </div>
                     </div>
+                </div>
+                <div class="space_sets_area">
+                    <ul class="list_title_con">
+                        <li class="list_title_item">
+                            <span class="list_title_text">Name</span>
+                        </li>
+                        <li class="list_title_item">
+                            <span class="list_title_text">Sizing scale (px)</span>
+                        </li>
+                        <li class="list_title_item">
+                            <span class="list_title_text">Token</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 2</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">2</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-2</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 4</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">4</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-4</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 8</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">8</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-8</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 16</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">16</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-16</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 24</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">24</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-24</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 32</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">32</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-32</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 40</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">40</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-40</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 48</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">48</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-48</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 56</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">56</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-56</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 64</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">64</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-64</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 72</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">72</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-72</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 80</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">80</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-80</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 88</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">88</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-88</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Space 96</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_text">96</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$space-96</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space_align_area">
+                    <ul class="space_align_list">
+                        <li class="space_align_item">
+                            <div class="available_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"></path></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"></path></svg>
+                            </div>
+                            <img src="images/space_img_2.png">
+                            <p>사용 가능한 정렬</p>
+                        </li>
+                        <li class="space_align_item donot_item">
+                            <div class="donot_con">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"></path></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"></path></g></svg>
+                            </div>
+                            <img src="images/space_img_3.png">
+                            <p>사용 불가능한 정렬</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="scrollSection3" class="content_container">
-                <h2 class="content_title">Type Scale</h2>
+                <h2 class="content_title">Shadows</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">가장 작은 텍스트 사이즈는 12px이며 가장 큰 텍스트 사이즈는 60px 입니다. 짝수 사이즈만 사용합니다.</p>
+                    <p class="desc_text">직사광선에 의해 빛의 경로에 따라 생기는 Hard Shadow와 주변광에 의해 빛의 경로와 무관하게 물질 주변에 퍼지는 Soft Shadow로 나뉘어집니다.
+                        자연스러운 그림자를 형성하기 위해 Hard Shadow와 Soft Shadow를 조합하여 사용합니다.
+                        그 생성 규칙은 물질이 상승한 높이가 n px라고 할 때 다음과 같습니다.</p>
+                        <dl class="shadow_text_con">
+                            <dt>Hard Shadow</dt>
+                            <dd>X = 0 | Y = n | Blur = 3 * n / 2 | Opacity = 32%</dd>
+                        </dl>
+                        <dl class="shadow_text_con">
+                            <dt>Soft Shadow</dt>
+                            <dd>X = 0 | Y = 0 | Blur = 4n | Opacity = 16%</dd>
+                        </dl>
+                        <dl class="shadow_text_con">
+                            <dt>Mixed Shadow</dt>
+                            <dd>X = 0 | Y = n | Blur = 4n | Opacity = 32%</dd>
+                        </dl>
                 </div>
-                <div class="typo_scale_con">
-                    <div class="typo_scale_area">
-                        <ul class="typo_scale_list">
-                            <li class="typo_scale_item">
-                                <span class="typo_size_12">
-                                    12px 동틀 녘 햇빛 포개짐
+                <div class="shadow_con">
+                    <div class="shadow_area">
+                        <ul class="shadow_list">
+                            <li class="shadow_item">
+                                <span class="shadow_text">
+                                    Hard shadows
                                 </span>
+                                <ul class="shadow_box_area">
+                                    <li class="hard_shadow_1">
+                                        2px
+                                    </li>
+                                    <li class="hard_shadow_2">
+                                        4px
+                                    </li>
+                                    <li class="hard_shadow_3">
+                                        8px
+                                    </li>
+                                    <li class="hard_shadow_4">
+                                        12px
+                                    </li>
+                                    <li class="hard_shadow_5">
+                                        16px
+                                    </li>
+                                    <li class="hard_shadow_6">
+                                        24px
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_14">
-                                    14px 동틀 녘 햇빛 포개짐
+                            <li class="shadow_item">
+                                <span class="shadow_text">
+                                    Soft shadows
                                 </span>
+                                <ul class="shadow_box_area">
+                                    <li class="soft_shadow_1">
+                                        2px
+                                    </li>
+                                    <li class="soft_shadow_2">
+                                        4px
+                                    </li>
+                                    <li class="soft_shadow_3">
+                                        8px
+                                    </li>
+                                    <li class="soft_shadow_4">
+                                        12px
+                                    </li>
+                                    <li class="soft_shadow_5">
+                                        16px
+                                    </li>
+                                    <li class="soft_shadow_6">
+                                        24px
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_16">
-                                    16px 동틀 녘 햇빛 포개짐
+                            <li class="shadow_item">
+                                <span class="shadow_text">
+                                    Mixed shadows
                                 </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_18">
-                                    18px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_20">
-                                    20px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_24">
-                                    24px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_28">
-                                    28px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_32">
-                                    32px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_36">
-                                    36px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_48">
-                                    48px 동틀 녘 햇빛 포개짐
-                                </span>
-                            </li>
-                            <li class="typo_scale_item">
-                                <span class="typo_size_60">
-                                    60px 동틀 녘 햇빛 포개짐
-                                </span>
+                                <ul class="shadow_box_area">
+                                    <li class="mixed_shadow_1">
+                                        2px
+                                    </li>
+                                    <li class="mixed_shadow_2">
+                                        4px
+                                    </li>
+                                    <li class="mixed_shadow_3">
+                                        8px
+                                    </li>
+                                    <li class="mixed_shadow_4">
+                                        12px
+                                    </li>
+                                    <li class="mixed_shadow_5">
+                                        16px
+                                    </li>
+                                    <li class="mixed_shadow_6">
+                                        24px
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="shadow_sets_area">
+                    <ul class="list_title_con">
+                        <li class="list_title_item">
+                            <span class="list_title_text">Name</span>
+                        </li>
+                        <li class="list_title_item">
+                            <span class="list_title_text">Token</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 2</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-2</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 4</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-4</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 8</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-8</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 12</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-12</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 16</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-16</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Hard shadow 24</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$hard-shadow-24</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 2</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-2</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 4</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-4</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 8</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-8</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 12</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-12</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 16</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-16</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Soft shadow 24</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$soft-shadow-24</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 2</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-2</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 4</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-4</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 8</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-8</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 12</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-12</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 16</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-16</span>
+                        </li>
+                    </ul>
+                    <ul class="list_text_con">
+                        <li class="list_text_item">
+                            <span class="list_text_text">Mixed shadow 24</span>
+                        </li>
+                        <li class="list_text_item">
+                            <span class="list_text_token">$mixed-shadow-24</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="scrollSection4" class="content_container">
