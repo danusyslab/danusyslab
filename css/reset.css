@@ -353,7 +353,7 @@ input[type=radio]:checked + label span {
 .side_menu_wrapper nav.left_side ul.list_con .acco_active {
   background: #EEEEEE !important;
   color: #0F6BFF !important;
-  border-left: 2px solid #0F6BFF;
+  border-left: 6px solid #0F6BFF;
   font-weight: 600 !important;
 }
 .side_menu_wrapper nav.left_side ul.list_con .one_menu {

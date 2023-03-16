@@ -1946,6 +1946,7 @@
             .color_con {
 
                 flex-wrap: wrap;
+                padding: 24px !important;
 
                 .red_con {
                     width: 50% !important;
@@ -3572,14 +3573,15 @@
 
             .sticky_btn {
                 padding: 16px;
-                background: white;
+                background: $gray_110;
+                color: $gray_10;
                 width: 14%;
                 cursor: pointer;
-                border-top: 4px solid white;
+                border-top: 4px solid $gray_110;
 
                 &:hover {
-                    background: $gray_0;
-                    border-top: 4px solid $gray_0;
+                    background: $gray_100;
+                    border-top: 4px solid $gray_100;
                 }
             }
 
@@ -3587,12 +3589,12 @@
                 animation: background_color 0.2s ease-in-out;
                 transform-origin: 0% 100%;
                 transition: all 0.5s ease-in-out;
-                background: $gray_120;
-                color: white;
+                background: $white;
+                color: $gray_110;
                 border-top: 4px solid $danu_blue_60;
 
                 &:hover {
-                    background: $gray_110;
+                    background: $gray_5;
                     border-top: 4px solid $danu_blue_60;
                 }
             }
@@ -3609,6 +3611,8 @@
         .color_con {
             width: 100%;
             display: flex;
+            background: $white;
+            padding: 60px;
 
             .red_con {
                 width: 14.2%;
@@ -5728,7 +5732,7 @@
         padding: 60px;
         font-size: 14px;
         flex-direction: column;
-        margin-bottom: 16px;
+        margin-top: 16px;
 
 
         .list_title_con {
