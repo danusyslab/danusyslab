@@ -747,7 +747,7 @@ input[type=radio]:checked + label span {
     margin-right: 24px;
   }
   .res_btn_item:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .res_btn_item:hover {
     background: #FAFAFA;
@@ -922,7 +922,7 @@ input[type=radio]:checked + label span {
     margin-right: 24px;
   }
   .res_btn_item:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .res_btn_item:hover {
     background: #FAFAFA;
@@ -1383,7 +1383,7 @@ input[type=radio]:checked + label span {
     margin-right: 24px;
   }
   .res_btn_item:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .res_btn_item:hover {
     background: #FAFAFA;
@@ -1740,7 +1740,7 @@ input[type=radio]:checked + label span {
     margin-right: 24px;
   }
   .res_btn_item:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .res_btn_item:hover {
     background: #FAFAFA;
@@ -2285,7 +2285,7 @@ input[type=radio]:checked + label span {
     margin-right: 16px !important;
   }
   .res_btn_item:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .res_btn_item:hover {
     background: #FAFAFA;
