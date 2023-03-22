@@ -15,6 +15,22 @@
     main {
         &.main_container {
 
+            .text_area {
+                padding: 0 60px 0 320px !important;
+            }
+
+            .btn_area {
+                padding: 0 60px 0 320px !important;
+            }
+
+            .text_line {
+                padding: 60px 60px 60px 320px !important;
+            }
+
+            .qna_con {
+                padding: 60px 60px 60px 320px !important;
+            }
+
             .overview_area {
                 padding: 120px 50px 120px 320px !important;
 
@@ -153,6 +169,8 @@
 
             .whats_new_area {
 
+                padding: 0 60px 0 320px !important;
+
                 ul {
 
                     li{
@@ -182,6 +200,22 @@
 
     main {
         &.main_container {
+
+            .text_area {
+                padding: 0 60px 0 320px !important;
+            }
+
+            .btn_area {
+                padding: 0 60px 0 320px !important;
+            }
+
+            .text_line {
+                padding: 60px 60px 60px 320px !important;
+            }
+
+            .qna_con {
+                padding: 60px 60px 60px 320px !important;
+            }
 
             .overview_area {
                 padding: 120px 50px 120px 320px !important;
@@ -370,7 +404,7 @@
     .main_container {
 
         .top_image_con {
-            padding: 0 24px !important;
+            padding: 40px 40px 40px 40px !important;
             flex-direction: column;
 
             .main_text {
@@ -390,15 +424,14 @@
         }
     
         .text_area {
-            padding: 0 40px !important;
+            padding: 0px 40px 0px 40px !important;
             margin-top: 60px !important;
         }
 
         .btn_area {
-            padding-left: 0 !important;
+            padding: 0px 40px 0px 40px !important;
 
             ul {
-                padding: 0 40px !important;
 
                 li {
                     width: 33.3% !important;
@@ -425,7 +458,7 @@
         }
 
         .qna_con {
-            padding: 68px 0 60px 0 !important;
+            padding: 60px 0 60px 0 !important;
             flex-direction: column;
             justify-content: flex-start !important;
             align-items: center;
@@ -445,7 +478,7 @@
         }
 
         .whats_new_area {
-            padding-left: 0 !important;
+            padding: 0 40px 0 40px !important;
 
             ul {
 
@@ -667,15 +700,14 @@
         }
     
         .text_area {
-            padding: 0 40px !important;
+            padding: 0px 40px 0px 40px !important;
             margin-top: 60px !important;
         }
 
         .btn_area {
-            padding-left: 0 !important;
+            padding: 0px 40px 0px 40px !important;
 
             ul {
-                padding: 0 40px !important;
 
                 li {
                     width: 33.3% !important;
@@ -722,7 +754,7 @@
         }
 
         .whats_new_area {
-            padding-left: 0 !important;
+            padding: 0px 40px 0px 40px !important;
 
             ul {
 
@@ -971,17 +1003,16 @@
         }
 
         .btn_area {
-            padding-left: 0 !important;
+            padding: 0 24px !important;
 
             ul {
-                padding: 0 24px !important;
                 flex-direction: column;
 
                 li {
                     width: 100% !important;
                     height: 150px !important;
                     margin-right: 0 !important;
-                    margin-bottom: 24px !important;
+                    margin-bottom: 16px !important;
 
                     .btn_text {
                         h3 {
@@ -993,7 +1024,7 @@
         }
 
         .text_line {
-            padding: 60px 40px !important;
+            padding: 60px 24px !important;
             margin-top: 60px !important;
             flex-direction: column;
             justify-content: center;
@@ -1012,7 +1043,7 @@
         }
 
         .qna_con {
-            padding: 68px 0 60px 0 !important;
+            padding: 60px 0 60px 0 !important;
             flex-direction: column;
             justify-content: flex-start !important;
             align-items: center;
@@ -1021,26 +1052,26 @@
                 width: 100% !important;
                 text-align: center;
                 margin-right: 0 !important;
-                padding: 0 40px;
+                padding: 0 24px;
                 margin-bottom: 40px;
                 font-size: 28px !important;
             }
 
             ul {
                 width: 100% !important;
-                padding: 0 40px;
+                padding: 0 24px;
             }
         }
 
         .whats_new_area {
-            padding-left: 0 !important;
+            padding: 0 24px 0 24px !important;
 
             ul {
                 flex-wrap: wrap;
                 justify-content: space-between !important;
 
                 li {
-                    width: 48% !important;
+                    width: 47% !important;
                     margin-right: 0 !important;
                     margin-bottom: 24px !important;
 
@@ -1479,7 +1510,7 @@ main {
 
         .top_image_con {
             width: 100%;
-            padding-left: 317px;
+            padding-left: 260px;
             height: 400px;
             background: $danu_blue_60;
             display: flex;
@@ -1514,7 +1545,7 @@ main {
 
         .color_pal_con {
             width: 100%;
-            padding-left: 317px;
+            padding-left: 260px;
 
             ul {
                 display: flex;
@@ -1586,8 +1617,8 @@ main {
 
         .text_area {
             width: 100%;
-            margin-top: 160px;
-            padding: 0 24px 0 341px;
+            margin-top: 80px;
+            padding: 0 116px 0 380px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -1610,7 +1641,7 @@ main {
         }
 
         .btn_area {
-            padding-left: 317px;
+            padding: 0 116px 0 380px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -1627,7 +1658,7 @@ main {
                 li {
                     display: flex;
                     flex-direction: column;
-                    width: 28%;
+                    width: 33.3%;
                     height: 180px;
                     justify-content: space-between;
                     border: 1px solid $gray_10;
@@ -1696,12 +1727,10 @@ main {
             padding-left: 341px;
             background: $gray_110;
             color: white;
-            margin-top: 160px;
-            padding-right: 24px;
-            padding-top: 60px;
-            padding-bottom: 60px;
+            margin-top: 80px;
+            padding: 60px 116px 60px 380px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             transition: all 0.2s ease-in-out;
 
 
@@ -1730,12 +1759,9 @@ main {
         .qna_con {
             width: 100%;
             background: $gray_5;
-            padding-top: 160px;
-            padding-bottom: 160px;
-            padding-left: 341px;
-            padding-right: 24px;
+            padding: 80px 116px 80px 380px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             transition: all 0.2s ease-in-out;
 
             h2{
@@ -1754,7 +1780,6 @@ main {
                 li {
                     width: 100%;
                     border-bottom: 1px solid $gray_60;
-                    padding-bottom: 16px;
                     padding-top: 16px;
                     transition: 0.3s ease-in-out;
 
@@ -1778,7 +1803,7 @@ main {
                         font-size: 16px;
                         color: $gray_60;
                         display: flex;
-                        align-items: flex-start;
+                        align-items: center;
                         justify-content: space-between;
                         text-align: left;
 
@@ -1825,7 +1850,7 @@ main {
         .whats_new_area {
             display: flex;
             width: 100%;
-            padding-left: 317px;
+            padding: 0 116px 0 380px;
             justify-content: center;
             transition: all 0.2s ease-in-out;
 
@@ -1833,12 +1858,11 @@ main {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                padding: 0 24px;
                 
                 li{
                     display: flex;
                     flex-direction: column;
-                    width: 22%;
+                    width: 25%;
                     margin-right: 16px;
 
                     &:last-child {
