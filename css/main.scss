@@ -1870,59 +1870,73 @@ main {
                         margin-right: 0;
                     }
 
-                    .thum_con {
-                        width: 100%;
-                        background-size: contain;
-                        overflow: hidden;
-
-                        img {
+                    a {
+                        .thum_con {
                             width: 100%;
-                            height: 100%;
-                            opacity: 1;
                             background-size: contain;
-                            vertical-align: bottom;
-
-                            &:hover {
-                            transform: scale(1.2);
-                            transition: all 300ms ease-in-out;
+                            overflow: hidden;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                opacity: 1;
+                                background-size: contain;
+                                vertical-align: bottom;
+    
+                                // &:hover {
+                                // transform: scale(1.2);
+                                // transition: all 300ms ease-in-out;
+                                // }
                             }
                         }
-                    }
 
-                    .arrow_con {
-                        background: $gray_5;
-                        display: flex;
-                        flex-direction: column;
-                        height: 140px;
-                        padding: 20px;
-                        justify-content: space-between;
-                        cursor: pointer;
-
-                        &:hover {
-                            background: $gray_10;
+                        &:hover .thum_con {
+                            img {
+                                transform: scale(1.2);
+                                transition: all 300ms ease-in-out;
+                                }
                         }
-
-                        h4 {
-                            color: $gray_110;
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-
-                        .date_con {
+    
+                        .arrow_con {
+                            background: $gray_5;
                             display: flex;
                             flex-direction: column;
-
-                            span {
+                            height: 140px;
+                            padding: 20px;
+                            justify-content: space-between;
+                            cursor: pointer;
+    
+                            &:hover {
+                                background: $gray_10;
+                            }
+    
+                            h4 {
                                 color: $gray_110;
-                                font-size: 14px;
-                                font-weight: 300;
-                                margin-bottom: 8px;
-
-                                &:last-child {
-                                    margin-bottom: 0;
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+    
+                            .date_con {
+                                display: flex;
+                                flex-direction: column;
+    
+                                span {
+                                    color: $gray_110;
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    margin-bottom: 8px;
+    
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
                                 }
                             }
                         }
+
+                        &:hover .arrow_con {
+                            background: $gray_10;
+                        }
+
                     }
                 }
             }
