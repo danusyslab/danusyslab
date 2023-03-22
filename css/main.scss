@@ -1842,6 +1842,7 @@ main {
                         display: none;
                         animation: accordionOpen 0.3s ease-in-out;
                         line-height: 1.4;
+                        padding-bottom: 16px;
                     }
                 }
             }
@@ -1872,6 +1873,7 @@ main {
                     .thum_con {
                         width: 100%;
                         background-size: contain;
+                        overflow: hidden;
 
                         img {
                             width: 100%;
@@ -1879,6 +1881,11 @@ main {
                             opacity: 1;
                             background-size: contain;
                             vertical-align: bottom;
+
+                            &:hover {
+                            transform: scale(1.2);
+                            transition: all 300ms ease-in-out;
+                            }
                         }
                     }
 
