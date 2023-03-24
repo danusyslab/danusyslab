@@ -2088,6 +2088,7 @@ main.main_container .btn_area ul li .btn_text {
   padding: 40px 24px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  min-height: 226px;
 }
 main.main_container .btn_area ul li .btn_text:hover {
   background: white;
