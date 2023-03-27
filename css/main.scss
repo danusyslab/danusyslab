@@ -15,22 +15,6 @@
     main {
         &.main_container {
 
-            .text_area {
-                padding: 0 60px 0 320px !important;
-            }
-
-            .btn_area {
-                padding: 0 60px 0 320px !important;
-            }
-
-            .text_line {
-                padding: 80px 60px 80px 320px !important;
-            }
-
-            .qna_con {
-                padding: 80px 60px 80px 320px !important;
-            }
-
             .overview_area {
                 padding: 120px 50px 120px 320px !important;
 
@@ -169,7 +153,6 @@
 
             .whats_new_area {
 
-                padding: 0 60px 0 320px !important;
 
                 ul {
 
@@ -201,20 +184,28 @@
     main {
         &.main_container {
 
+            .thum_area {
+                padding: 0 60px 0 60px !important; 
+            }
+
+            .bx_text_line {
+                padding: 80px 60px 80px 60px !important;
+            }
+
             .text_area {
-                padding: 0 60px 0 320px !important;
+                padding: 0 60px 0 60px !important;
             }
 
             .btn_area {
-                padding: 0 60px 0 320px !important;
+                padding: 0 60px 0 60px !important;
             }
 
             .text_line {
-                padding: 80px 60px 80px 320px !important;
+                padding: 80px 60px 80px 60px !important;
             }
 
             .qna_con {
-                padding: 80px 60px 80px 320px !important;
+                padding: 80px 60px 80px 60px !important;
             }
 
             .overview_area {
@@ -359,7 +350,7 @@
             }
 
             .whats_new_area {
-                padding: 0 60px 0 320px !important;
+                padding: 0 60px 0 60px !important;
 
                 ul {
 
@@ -425,12 +416,18 @@
         }
     
         .text_area {
-            padding: 0px 40px 0px 40px !important;
+            padding: 0px 0px 0px 0px !important;
             margin-top: 80px !important;
+            width: 920px !important;
+        }
+
+        .thum_area {
+            width: 920px !important;
         }
 
         .btn_area {
-            padding: 0px 40px 0px 40px !important;
+            padding: 0px 0px 0px 0px !important;
+            width: 920px !important;
 
             ul {
 
@@ -444,46 +441,61 @@
             }
         }
 
-        .text_line {
-            padding: 80px 40px !important;
+        .bx_text_line {
             margin-top: 80px !important;
-            flex-direction: column;
+            .text_line_con {
+                width: 920px !important;
+            }
+        }
+
+        .text_line {
+            padding: 80px 0px !important;
+            margin-top: 80px !important;
+            flex-direction: column !important;
             justify-content: center;
             align-items: center;
-            
-            h2 {
-                text-align: center;
-                width: 100% !important;
-            }
 
-            p {
-                width: 100% !important;
-                text-align: center !important;
+            .text_line_con {
+                flex-direction: column !important;
+                width: 920px !important;
+
+                h2 {
+                    text-align: center;
+                    width: 100% !important;
+                }
+    
+                p {
+                    width: 100% !important;
+                    text-align: center !important;
+                }
             }
+            
         }
 
         .qna_con {
             padding: 80px 0 80px 0 !important;
-            flex-direction: column;
-            justify-content: flex-start !important;
             align-items: center;
 
-            h2 {
-                width: 100% !important;
-                text-align: center;
-                margin-right: 0 !important;
-                padding: 0 40px;
-                margin-bottom: 40px;
-            }
-
-            ul {
-                width: 100% !important;
-                padding: 0 40px;
+            .qna_con_con {
+                flex-direction: column !important; 
+                width: 920px !important;
+                justify-content: center;
+                h2 {
+                    width: 100% !important;
+                    text-align: center;
+                    margin-right: 0 !important;
+                    margin-bottom: 40px;
+                }
+    
+                ul {
+                    width: 100% !important;
+                } 
             }
         }
 
         .whats_new_area {
-            padding: 0 40px 0 40px !important;
+            padding: 0 0px 0 0px !important;
+            width: 920px !important;
 
             ul {
 
@@ -707,10 +719,23 @@
         .text_area {
             padding: 0px 40px 0px 40px !important;
             margin-top: 80px !important;
+            width: 100% !important;
+        }
+
+        .thum_area {
+            padding: 0px 40px 0px 40px !important;
+            width: 100% !important;
+        }
+
+        .bx_text_line {
+            padding: 60px 40px 60px 40px !important;
+            width: 100% !important;
+            margin-top: 80px !important;
         }
 
         .btn_area {
             padding: 0px 40px 0px 40px !important;
+            width: 100% !important;
 
             ul {
                 flex-wrap: wrap;
@@ -746,6 +771,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .text_line_con {
+                width: 100% !important;
+                flex-direction: column;
+                justify-content: center;
+            }
             
             h2 {
                 text-align: center;
@@ -763,6 +794,14 @@
             flex-direction: column;
             justify-content: flex-start !important;
             align-items: center;
+            width: 100% !important;
+
+            .qna_con_con {
+                flex-direction: column;
+                justify-content: flex-start !important;
+                align-items: center;
+                width: 100% !important;
+            }
 
             h2 {
                 width: 100% !important;
@@ -780,6 +819,7 @@
 
         .whats_new_area {
             padding: 0px 40px 0px 40px !important;
+            width: 100% !important;
 
             ul {
 
@@ -1020,6 +1060,7 @@
         .text_area {
             padding: 0 24px !important;
             margin-top: 60px !important;
+            width: 100% !important;
 
             .main_title {
                 font-size: 32px !important;
@@ -1027,8 +1068,41 @@
             }
         }
 
+        .thum_area {
+            width: 100% !important;
+            
+            ul {
+                flex-direction: column;
+                padding: 0 24px;
+
+                li {
+                    width: 100% !important;
+                    margin-bottom: 24px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .bx_text_line {
+            width: 100% !important;
+            padding: 60px 24px 60px 24px !important;
+            margin-top: 60px !important;
+
+            .text_line_con {
+                width: 100% !important;
+
+                h2 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+
         .btn_area {
             padding: 0 24px !important;
+            width: 100% !important;
 
             ul {
                 flex-direction: column;
@@ -1052,9 +1126,16 @@
         .text_line {
             padding: 60px 24px !important;
             margin-top: 60px !important;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100% !important;
+
+            .text_line_con {
+                width: 100% !important;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             
             h2 {
                 text-align: center;
@@ -1070,9 +1151,16 @@
 
         .qna_con {
             padding: 60px 0 60px 0 !important;
-            flex-direction: column;
             justify-content: flex-start !important;
             align-items: center;
+            width: 100% !important;
+
+            .qna_con_con {
+                width: 100% !important;
+                flex-direction: column;
+                justify-content: flex-start !important;
+                align-items: center;
+            }
 
             h2 {
                 width: 100% !important;
@@ -1091,6 +1179,7 @@
 
         .whats_new_area {
             padding: 0 24px 0 24px !important;
+            width: 100% !important;
 
             ul {
                 flex-wrap: wrap;
@@ -1540,10 +1629,15 @@ main {
         position: relative;
         background: $gray_0;
 
+        .section_on {
+            opacity: 1 !important;
+            transform:  translateZ(0) !important;
+            transition: transform 1.5s, opacity 1.5s !important; 
+        }
+
         .top_image_con {
             width: 100%;
-            padding-left: 260px;
-            height: 400px;
+            height: 500px;
             background: $danu_blue_60;
             display: flex;
             align-items: center;
@@ -1577,7 +1671,6 @@ main {
 
         .color_pal_con {
             width: 100%;
-            padding-left: 260px;
 
             ul {
                 display: flex;
@@ -1648,15 +1741,15 @@ main {
         }
 
         .text_area {
-            width: 100%;
+            max-width: 1200px;
             margin-top: 120px;
-            padding: 0 116px 0 380px;
+            padding: 0;
             display: flex;
             align-items: center;
             flex-direction: column;
             text-align: center;
             line-height: 1.4;
-            transition: all 0.2s ease-in-out;
+            opacity: 0;
 
             .main_title {
                 font-size: 40px;
@@ -1673,12 +1766,13 @@ main {
         }
 
         .btn_area {
-            padding: 0 116px 0 380px;
-            width: 100%;
+            padding: 1;
+            max-width: 1200px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.2s ease-in-out;
+            transform: translate3d(0, 120px, 0);
+            opacity: 0;
 
             ul {
                 display: flex;
@@ -1691,7 +1785,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    margin-right: 24px;
+                    margin-right: 16px;
                     width: 25%;
 
                     &:last-child {
@@ -1700,6 +1794,7 @@ main {
 
                     .btn_text {
                         width: 100%;
+                        min-height: 250px;
                         display: flex;
                         flex-direction: column;
                         border: 1px solid $gray_10;
@@ -1707,8 +1802,6 @@ main {
                         padding: 40px 24px;
                         transition: 0.2s ease-in-out;
                         cursor: pointer;
-                        min-height: 250px;
-                        justify-content: space-between;
 
                         &:hover {
                             background: white;
@@ -1735,6 +1828,7 @@ main {
                         span {
                             font-size: 16px;
                             line-height: 1.4;
+                            margin-bottom: 16px;
                         }
     
                         .arrow_con {
@@ -1776,10 +1870,17 @@ main {
             background: $gray_110;
             color: white;
             margin-top: 120px;
-            padding: 120px 116px 120px 380px;
+            padding: 120px 116px 120px 116px;
             display: flex;
-            justify-content: space-between;
-            transition: all 0.2s ease-in-out;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+
+            .text_line_con {
+                max-width: 1200px;
+                display: flex;
+                justify-content: space-between;
+            }
 
 
             h2 {
@@ -1807,10 +1908,18 @@ main {
         .qna_con {
             width: 100%;
             background: $gray_5;
-            padding: 120px 116px 120px 380px;
+            padding: 120px 116px 120px 116px;
             display: flex;
-            justify-content: space-between;
-            transition: all 0.2s ease-in-out;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translate3d(0, 120px, 0);
+
+            .qna_con_con {
+                display: flex;
+                width: 1200px;
+                justify-content: space-between;
+            }
 
             h2{
                 width: 35%;
@@ -1903,10 +2012,11 @@ main {
 
         .whats_new_area {
             display: flex;
-            width: 100%;
-            padding: 0 116px 0 380px;
+            width: 1200px;
+            padding: 0;
             justify-content: center;
-            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            transform: translate3d(0, 120px, 0);
 
             ul {
                 width: 100%;
@@ -1935,6 +2045,7 @@ main {
                                 opacity: 1;
                                 background-size: contain;
                                 vertical-align: bottom;
+                                transition: all 0.5s ease-out;
                             }
                         }
 
@@ -1998,7 +2109,7 @@ main {
         .white_back {
             background: $white;
             width: 100%;
-            padding: 125px 116px 125px 380px;
+            padding: 125px 116px 125px 116px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2103,7 +2214,7 @@ main {
         .overview_area {
             background: $gray_110;
             width: 100%;
-            padding: 125px 116px 125px 380px;
+            padding: 125px 116px 125px 116px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2224,6 +2335,143 @@ main {
                     }
 
                 }
+            }
+        }
+
+        .thum_area {
+            display: flex;
+            width: 1200px;
+            padding: 0;
+            justify-content: center;
+            opacity: 1;
+            transform: translate3d(0, 120px, 0);
+            margin-top: 40px;
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    width: 33.3%;
+                    margin-right: 16px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        transition: all 0.2s ease-out;
+                        .thum_con {
+                            width: 100%;
+                            background-size: contain;
+                            overflow: hidden;
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                opacity: 1;
+                                background-size: contain;
+                                vertical-align: bottom;
+                                transition: all 0.5s ease-out;
+                            }
+                        }
+
+                        &:hover .thum_con {
+                            img {
+                                transform: scale(1.2);
+                                transition: all 300ms ease-in-out;
+                                }
+                        }
+    
+                        .arrow_con {
+                            background: $gray_0;
+                            border: 1px solid $gray_10;
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 128px;
+                            padding: 24px;
+                            cursor: pointer;
+                            border-radius: 0 0 4px 4px;
+    
+                            &:hover {
+                                background: $gray_10;
+                            }
+    
+                            h4 {
+                                color: $gray_110;
+                                font-size: 16px;
+                                font-weight: 600;
+                                margin-bottom: 16px;
+                            }
+    
+                            span {
+                                color: $gray_110;
+                                font-size: 16px;
+                                font-weight: 300;
+                                line-height: 1.4;
+                            }
+                        }
+
+                        &:hover {
+                            background: white;
+                            box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.1);
+                            transform: translateY(-4px);
+                        }
+
+                        &:hover .arrow_con {
+                            background: white;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid $danu_blue_60;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .bx_text_line {
+            width: 100%;
+            padding-left: 341px;
+            background: $gray_5;
+            margin-top: 120px;
+            padding: 80px 0 80px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translate3d(0, 120px, 0);
+
+            .text_line_con {
+                max-width: 1200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+            h2 {
+                font-size: 32px;
+                color: $gray_110;
+                margin-bottom: 16px;
+                line-height: 1.2;
+                width: 100%;
+                margin-right: 16px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16px;
+                color: $gray_90;
+                line-height: 1.5;
+                width: 100%;
+                text-align: center;
             }
         }
     }

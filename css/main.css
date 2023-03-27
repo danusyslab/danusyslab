@@ -758,22 +758,58 @@ input[type=radio]:checked + label span {
   fill: white;
 }
 
+@keyframes loading {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+@keyframes loading_spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.before_load .loading {
+  opacity: 1;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  opacity: 0;
+  transition: 0.5s;
+}
+.loading .loading_circle {
+  width: 54px;
+  height: 54px;
+  animation: loading_spin 3s infinite;
+}
+.loading .loading_circle circle {
+  stroke: #0F6BFF;
+  stroke-width: 4;
+  stroke-dasharray: 157;
+  stroke-dashoffset: -157;
+  fill: none;
+  animation: loading 1s infinite;
+}
+
 @media (min-width: 1400px) and (max-width: 1600px) {
   .top_sub_con {
     padding-left: 320px !important;
     padding-right: 60px !important;
-  }
-  main.main_container .text_area {
-    padding: 0 60px 0 320px !important;
-  }
-  main.main_container .btn_area {
-    padding: 0 60px 0 320px !important;
-  }
-  main.main_container .text_line {
-    padding: 80px 60px 80px 320px !important;
-  }
-  main.main_container .qna_con {
-    padding: 80px 60px 80px 320px !important;
   }
   main.main_container .overview_area {
     padding: 120px 50px 120px 320px !important;
@@ -890,9 +926,6 @@ input[type=radio]:checked + label span {
     margin-right: 0 !important;
     margin-bottom: 0;
   }
-  main.main_container .whats_new_area {
-    padding: 0 60px 0 320px !important;
-  }
   main.main_container .whats_new_area ul li .arrow_con {
     height: 120px !important;
   }
@@ -902,17 +935,23 @@ input[type=radio]:checked + label span {
     padding-left: 320px !important;
     padding-right: 60px !important;
   }
+  main.main_container .thum_area {
+    padding: 0 60px 0 60px !important;
+  }
+  main.main_container .bx_text_line {
+    padding: 80px 60px 80px 60px !important;
+  }
   main.main_container .text_area {
-    padding: 0 60px 0 320px !important;
+    padding: 0 60px 0 60px !important;
   }
   main.main_container .btn_area {
-    padding: 0 60px 0 320px !important;
+    padding: 0 60px 0 60px !important;
   }
   main.main_container .text_line {
-    padding: 80px 60px 80px 320px !important;
+    padding: 80px 60px 80px 60px !important;
   }
   main.main_container .qna_con {
-    padding: 80px 60px 80px 320px !important;
+    padding: 80px 60px 80px 60px !important;
   }
   main.main_container .overview_area {
     padding: 120px 50px 120px 320px !important;
@@ -1034,7 +1073,7 @@ input[type=radio]:checked + label span {
     margin-bottom: 0;
   }
   main.main_container .whats_new_area {
-    padding: 0 60px 0 320px !important;
+    padding: 0 60px 0 60px !important;
   }
   main.main_container .whats_new_area ul li .arrow_con {
     height: 116px !important;
@@ -1069,11 +1108,16 @@ input[type=radio]:checked + label span {
     padding-left: 0 !important;
   }
   .main_container .text_area {
-    padding: 0px 40px 0px 40px !important;
+    padding: 0px 0px 0px 0px !important;
     margin-top: 80px !important;
+    width: 920px !important;
+  }
+  .main_container .thum_area {
+    width: 920px !important;
   }
   .main_container .btn_area {
-    padding: 0px 40px 0px 40px !important;
+    padding: 0px 0px 0px 0px !important;
+    width: 920px !important;
   }
   .main_container .btn_area ul li {
     width: 25% !important;
@@ -1081,40 +1125,52 @@ input[type=radio]:checked + label span {
   .main_container .btn_area ul li .btn_text {
     min-height: 230px !important;
   }
-  .main_container .text_line {
-    padding: 80px 40px !important;
+  .main_container .bx_text_line {
     margin-top: 80px !important;
-    flex-direction: column;
+  }
+  .main_container .bx_text_line .text_line_con {
+    width: 920px !important;
+  }
+  .main_container .text_line {
+    padding: 80px 0px !important;
+    margin-top: 80px !important;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
   }
-  .main_container .text_line h2 {
+  .main_container .text_line .text_line_con {
+    flex-direction: column !important;
+    width: 920px !important;
+  }
+  .main_container .text_line .text_line_con h2 {
     text-align: center;
     width: 100% !important;
   }
-  .main_container .text_line p {
+  .main_container .text_line .text_line_con p {
     width: 100% !important;
     text-align: center !important;
   }
   .main_container .qna_con {
     padding: 80px 0 80px 0 !important;
-    flex-direction: column;
-    justify-content: flex-start !important;
     align-items: center;
   }
-  .main_container .qna_con h2 {
+  .main_container .qna_con .qna_con_con {
+    flex-direction: column !important;
+    width: 920px !important;
+    justify-content: center;
+  }
+  .main_container .qna_con .qna_con_con h2 {
     width: 100% !important;
     text-align: center;
     margin-right: 0 !important;
-    padding: 0 40px;
     margin-bottom: 40px;
   }
-  .main_container .qna_con ul {
+  .main_container .qna_con .qna_con_con ul {
     width: 100% !important;
-    padding: 0 40px;
   }
   .main_container .whats_new_area {
-    padding: 0 40px 0 40px !important;
+    padding: 0 0px 0 0px !important;
+    width: 920px !important;
   }
   .main_container .whats_new_area ul li .arrow_con {
     height: 110px !important;
@@ -1280,9 +1336,20 @@ input[type=radio]:checked + label span {
   .main_container .text_area {
     padding: 0px 40px 0px 40px !important;
     margin-top: 80px !important;
+    width: 100% !important;
+  }
+  .main_container .thum_area {
+    padding: 0px 40px 0px 40px !important;
+    width: 100% !important;
+  }
+  .main_container .bx_text_line {
+    padding: 60px 40px 60px 40px !important;
+    width: 100% !important;
+    margin-top: 80px !important;
   }
   .main_container .btn_area {
     padding: 0px 40px 0px 40px !important;
+    width: 100% !important;
   }
   .main_container .btn_area ul {
     flex-wrap: wrap;
@@ -1312,6 +1379,11 @@ input[type=radio]:checked + label span {
     justify-content: center;
     align-items: center;
   }
+  .main_container .text_line .text_line_con {
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: center;
+  }
   .main_container .text_line h2 {
     text-align: center;
     width: 100% !important;
@@ -1325,6 +1397,13 @@ input[type=radio]:checked + label span {
     flex-direction: column;
     justify-content: flex-start !important;
     align-items: center;
+    width: 100% !important;
+  }
+  .main_container .qna_con .qna_con_con {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+    width: 100% !important;
   }
   .main_container .qna_con h2 {
     width: 100% !important;
@@ -1339,6 +1418,7 @@ input[type=radio]:checked + label span {
   }
   .main_container .whats_new_area {
     padding: 0px 40px 0px 40px !important;
+    width: 100% !important;
   }
   .main_container .whats_new_area ul li .arrow_con {
     height: 112px !important;
@@ -1521,13 +1601,40 @@ input[type=radio]:checked + label span {
   .main_container .text_area {
     padding: 0 24px !important;
     margin-top: 60px !important;
+    width: 100% !important;
   }
   .main_container .text_area .main_title {
     font-size: 32px !important;
     line-height: 1.2;
   }
+  .main_container .thum_area {
+    width: 100% !important;
+  }
+  .main_container .thum_area ul {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  .main_container .thum_area ul li {
+    width: 100% !important;
+    margin-bottom: 24px;
+  }
+  .main_container .thum_area ul li:last-child {
+    margin-bottom: 0;
+  }
+  .main_container .bx_text_line {
+    width: 100% !important;
+    padding: 60px 24px 60px 24px !important;
+    margin-top: 60px !important;
+  }
+  .main_container .bx_text_line .text_line_con {
+    width: 100% !important;
+  }
+  .main_container .bx_text_line .text_line_con h2 {
+    font-size: 28px !important;
+  }
   .main_container .btn_area {
     padding: 0 24px !important;
+    width: 100% !important;
   }
   .main_container .btn_area ul {
     flex-direction: column;
@@ -1547,6 +1654,12 @@ input[type=radio]:checked + label span {
   .main_container .text_line {
     padding: 60px 24px !important;
     margin-top: 60px !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .main_container .text_line .text_line_con {
+    width: 100% !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1562,6 +1675,12 @@ input[type=radio]:checked + label span {
   }
   .main_container .qna_con {
     padding: 60px 0 60px 0 !important;
+    justify-content: flex-start !important;
+    align-items: center;
+    width: 100% !important;
+  }
+  .main_container .qna_con .qna_con_con {
+    width: 100% !important;
     flex-direction: column;
     justify-content: flex-start !important;
     align-items: center;
@@ -1580,6 +1699,7 @@ input[type=radio]:checked + label span {
   }
   .main_container .whats_new_area {
     padding: 0 24px 0 24px !important;
+    width: 100% !important;
   }
   .main_container .whats_new_area ul {
     flex-wrap: wrap;
@@ -1953,10 +2073,14 @@ main.main_container {
   position: relative;
   background: #FAFAFA;
 }
+main.main_container .section_on {
+  opacity: 1 !important;
+  transform: translateZ(0) !important;
+  transition: transform 1.5s, opacity 1.5s !important;
+}
 main.main_container .top_image_con {
   width: 100%;
-  padding-left: 260px;
-  height: 400px;
+  height: 500px;
   background: #0F6BFF;
   display: flex;
   align-items: center;
@@ -1985,7 +2109,6 @@ main.main_container .top_image_con ul li {
 }
 main.main_container .color_pal_con {
   width: 100%;
-  padding-left: 260px;
 }
 main.main_container .color_pal_con ul {
   display: flex;
@@ -2040,15 +2163,15 @@ main.main_container .color_pal_con ul li:nth-child(10) {
   background: #002F7A;
 }
 main.main_container .text_area {
-  width: 100%;
+  max-width: 1200px;
   margin-top: 120px;
-  padding: 0 116px 0 380px;
+  padding: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
   line-height: 1.4;
-  transition: all 0.2s ease-in-out;
+  opacity: 0;
 }
 main.main_container .text_area .main_title {
   font-size: 40px;
@@ -2062,12 +2185,13 @@ main.main_container .text_area .desc {
   font-weight: 300;
 }
 main.main_container .btn_area {
-  padding: 0 116px 0 380px;
-  width: 100%;
+  padding: 1;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
+  transform: translate3d(0, 120px, 0);
+  opacity: 0;
 }
 main.main_container .btn_area ul {
   display: flex;
@@ -2080,7 +2204,7 @@ main.main_container .btn_area ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 24px;
+  margin-right: 16px;
   width: 25%;
 }
 main.main_container .btn_area ul li:last-child {
@@ -2088,6 +2212,7 @@ main.main_container .btn_area ul li:last-child {
 }
 main.main_container .btn_area ul li .btn_text {
   width: 100%;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   border: 1px solid #E2E2E2;
@@ -2095,8 +2220,6 @@ main.main_container .btn_area ul li .btn_text {
   padding: 40px 24px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
-  min-height: 250px;
-  justify-content: space-between;
 }
 main.main_container .btn_area ul li .btn_text:hover {
   background: white;
@@ -2119,6 +2242,7 @@ main.main_container .btn_area ul li .btn_text h3 {
 main.main_container .btn_area ul li .btn_text span {
   font-size: 16px;
   line-height: 1.4;
+  margin-bottom: 16px;
 }
 main.main_container .btn_area ul li .btn_text .arrow_con {
   display: flex;
@@ -2151,10 +2275,16 @@ main.main_container .text_line {
   background: #212121;
   color: white;
   margin-top: 120px;
-  padding: 120px 116px 120px 380px;
+  padding: 120px 116px 120px 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+main.main_container .text_line .text_line_con {
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  transition: all 0.2s ease-in-out;
 }
 main.main_container .text_line h2 {
   font-size: 32px;
@@ -2177,10 +2307,17 @@ main.main_container .text_line p span {
 main.main_container .qna_con {
   width: 100%;
   background: #EEEEEE;
-  padding: 120px 116px 120px 380px;
+  padding: 120px 116px 120px 116px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translate3d(0, 120px, 0);
+}
+main.main_container .qna_con .qna_con_con {
+  display: flex;
+  width: 1200px;
   justify-content: space-between;
-  transition: all 0.2s ease-in-out;
 }
 main.main_container .qna_con h2 {
   width: 35%;
@@ -2254,10 +2391,11 @@ main.main_container .qna_con ul li div.text_con {
 }
 main.main_container .whats_new_area {
   display: flex;
-  width: 100%;
-  padding: 0 116px 0 380px;
+  width: 1200px;
+  padding: 0;
   justify-content: center;
-  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transform: translate3d(0, 120px, 0);
 }
 main.main_container .whats_new_area ul {
   width: 100%;
@@ -2284,6 +2422,7 @@ main.main_container .whats_new_area ul li a .thum_con img {
   opacity: 1;
   background-size: contain;
   vertical-align: bottom;
+  transition: all 0.5s ease-out;
 }
 main.main_container .whats_new_area ul li a:hover .thum_con img {
   transform: scale(1.2);
@@ -2329,7 +2468,7 @@ main.main_container .whats_new_area ul li a:focus {
 main.main_container .white_back {
   background: #FFFFFF;
   width: 100%;
-  padding: 125px 116px 125px 380px;
+  padding: 125px 116px 125px 116px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2419,7 +2558,7 @@ main.main_container .white_back .purpose_con .purpose_area .purpose_item .ico_4 
 main.main_container .overview_area {
   background: #212121;
   width: 100%;
-  padding: 125px 116px 125px 380px;
+  padding: 125px 116px 125px 116px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2526,5 +2665,120 @@ main.main_container .overview_area .elements_pc_con .element_container ul .circl
   font-size: 16px;
   color: #B1B1B1;
   line-height: 1.4;
+  text-align: center;
+}
+main.main_container .thum_area {
+  display: flex;
+  width: 1200px;
+  padding: 0;
+  justify-content: center;
+  opacity: 1;
+  transform: translate3d(0, 120px, 0);
+  margin-top: 40px;
+}
+main.main_container .thum_area ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main.main_container .thum_area ul li {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  margin-right: 16px;
+}
+main.main_container .thum_area ul li:last-child {
+  margin-right: 0;
+}
+main.main_container .thum_area ul li a {
+  transition: all 0.2s ease-out;
+}
+main.main_container .thum_area ul li a .thum_con {
+  width: 100%;
+  background-size: contain;
+  overflow: hidden;
+}
+main.main_container .thum_area ul li a .thum_con img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-size: contain;
+  vertical-align: bottom;
+  transition: all 0.5s ease-out;
+}
+main.main_container .thum_area ul li a:hover .thum_con img {
+  transform: scale(1.2);
+  transition: all 300ms ease-in-out;
+}
+main.main_container .thum_area ul li a .arrow_con {
+  background: #FAFAFA;
+  border: 1px solid #E2E2E2;
+  display: flex;
+  flex-direction: column;
+  min-height: 128px;
+  padding: 24px;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+}
+main.main_container .thum_area ul li a .arrow_con:hover {
+  background: #E2E2E2;
+}
+main.main_container .thum_area ul li a .arrow_con h4 {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+main.main_container .thum_area ul li a .arrow_con span {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+main.main_container .thum_area ul li a:hover {
+  background: white;
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+main.main_container .thum_area ul li a:hover .arrow_con {
+  background: white;
+}
+main.main_container .thum_area ul li a:focus {
+  outline: none;
+  border: 1px solid #0F6BFF;
+}
+main.main_container .bx_text_line {
+  width: 100%;
+  padding-left: 341px;
+  background: #EEEEEE;
+  margin-top: 120px;
+  padding: 80px 0 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translate3d(0, 120px, 0);
+}
+main.main_container .bx_text_line .text_line_con {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.main_container .bx_text_line h2 {
+  font-size: 32px;
+  color: #212121;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  width: 100%;
+  margin-right: 16px;
+  text-align: center;
+}
+main.main_container .bx_text_line p {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.5;
+  width: 100%;
   text-align: center;
 }

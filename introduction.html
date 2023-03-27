@@ -15,14 +15,21 @@
     <link rel="stylesheet" type="text/css" href="css/introduction.css">
     <title>Danusys Creative Lab</title>
 </head>
-<body>
+<body class="before_load">
+    <div class="loading">
+        <svg class="loading_circle">
+            <circle cx="50%" cy="50%" r="25"></circle>
+        </svg>
+    </div>
     <div class="wrapper">
         <header>
             <div class="hd_pc">
-                <div class="logo_title">
-                    <img src="images/DANUSYS.svg"/>
-                    <img src="images/logo_text.svg"/>
-                </div>
+                <a href="main.html">
+                    <div class="logo_title">
+                        <img src="images/DANUSYS.svg"/>
+                        <img src="images/logo_text.svg"/>
+                    </div> 
+                </a>
                 <ul>
                     <li>
                         <a href="#">BX Guideline</a>
@@ -548,5 +555,6 @@ UI 디자인에 한하여 일정 수준 이상의 디자인 퀄리티를 유지�
     </div>
     <script src="js/accodion.js"></script>
     <script src="js/introduction.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 </html>
