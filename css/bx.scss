@@ -244,6 +244,46 @@
                 background: $gray_0;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
+                position: relative;
+
+                &.blue {
+                    background: $danu_blue_p;
+
+                    .icon_down {
+                        position: absolute;
+                        bottom: 16px;
+                        right: 16px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+
+                        &:hover {
+                            background: $white;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 999px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            svg {
+                                path {
+                                    fill: $danu_blue_p;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 &.dark {
                     background: $gray_120;

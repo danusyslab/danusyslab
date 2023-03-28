@@ -997,6 +997,37 @@ input[type=radio]:checked + label span {
   background: #FAFAFA;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.bx_main_container .content_container .image_con .image_area_full.blue {
+  background: #0067BE;
+}
+.bx_main_container .content_container .image_con .image_area_full.blue .icon_down {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bx_main_container .content_container .image_con .image_area_full.blue .icon_down svg path {
+  fill: #FFFFFF;
+}
+.bx_main_container .content_container .image_con .image_area_full.blue .icon_down:hover {
+  background: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bx_main_container .content_container .image_con .image_area_full.blue .icon_down:hover svg path {
+  fill: #0067BE;
 }
 .bx_main_container .content_container .image_con .image_area_full.dark {
   background: #0B0B0B;
