@@ -763,6 +763,10 @@
 
 @media (min-width: 1024px) and (max-width: 1199px) {
 
+    footer {
+        padding: 24px 0 24px 0 !important;
+    }
+
     .res_btn_item {
         width: 40% !important;
 
@@ -1208,6 +1212,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    footer {
+        padding: 24px 0 24px 0 !important;
+    }
 
     .res_btn_item {
         width: 40% !important;
@@ -1909,6 +1917,11 @@
 }
 
 @media (max-width: 767px) {
+
+
+    footer {
+        padding: 24px 0 24px 0 !important;
+    }
 
     .res_btn_item {
         width: 50% !important;
@@ -3130,6 +3143,17 @@
     }
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    background: $gray_5;
+    color: $gray_60;
+    border-top: 1px solid $gray_10;
+    font-size: 12px;
+    padding: 24px 0 24px 317px;
+}
 
 
 .blue_col {

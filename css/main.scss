@@ -1411,7 +1411,6 @@ header {
                 display: flex;
                 align-items: center;
                 border-bottom: 4px solid $white; 
-                width: 114px;
     
                 &.active {
                     border-bottom: 4px solid $danu_blue_60;
@@ -1486,7 +1485,11 @@ footer {
     color: $gray_60;
     border-top: 1px solid $gray_10;
     font-size: 12px;
-    padding: 24px 0 24px 317px;
+    padding: 24px 0 24px 0px;
+
+    &.content_footer {
+        padding: 24px 0 24px 317px;
+    }
 }
 
 .top_sub_con {

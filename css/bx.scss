@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import 'reset.scss';
+
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+    .top_title_container {
+        padding: 0px 60px 20px 320px !important;
+    }
+
+    .content_container {
+        padding: 120px 60px 20px 320px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .top_title_container {
+        padding: 0px 60px 20px 320px !important;
+    }
+
+    .content_container {
+        padding: 120px 60px 20px 320px !important;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+    .top_title_container {
+        padding: 0px 40px 20px 40px !important;
+    }
+
+    .content_container {
+        padding: 120px 40px 20px 40px !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .top_title_container {
+        padding: 0px 40px 20px 40px !important;
+    }
+
+    .content_container {
+        padding: 120px 40px 20px 40px !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .top_title_container {
+        padding: 0px 24px 20px 24px !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+
+        .sub_top_text {
+            margin-bottom: 28px !important;
+            font-size: 40px !important;
+        }
+    }
+
+    .content_container {
+        padding: 60px 24px 20px 24px !important;
+
+        .image_con {
+            margin-top: 40px !important;
+
+            .image_area {
+                padding: 60px 24px !important;
+
+                img {
+                    width: 80% !important;
+                }
+            }
+
+            .image_text_area {
+                margin-top: 16px !important;
+                margin-bottom: 24px !important;
+            }
+
+            .top_text_area {
+                margin-bottom: 16px !important;
+                h4 {
+                    font-size: 18px !important;
+                }
+            }
+
+            .image_area_full {
+
+                img{
+                    width: 100% !important;
+                }
+
+                .img_mo {
+                    display: block !important;
+                }
+
+                .img_pc {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+.bx_main_container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    position: relative;
+    background: $white;
+
+    .desc_text {
+        font-size: 16px;
+        color: $gray_110;
+        line-height: 1.5;
+    }
+
+    .top_title_container {
+        background: $white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 116px 60px 380px;
+        width: 100%;
+        border-bottom: 1px solid $gray_10;
+
+        .sub_top_text {
+            margin: 160px 0 0 0;
+            font-size: 60px;
+            color: $gray_110;
+        }
+
+        .date_updated {
+            font-size: 14px;
+            color: $gray_60;
+        }
+    }
+
+    .content_container {
+        width: 100%;
+        padding: 120px 116px 0 380px;
+        margin-bottom: 40px;
+
+        .image_con {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+
+            .top_text_area {
+                margin-bottom: 40px;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .image_area {
+                display: flex;
+                width: 100%;
+                background: $gray_0;
+                align-items: center;
+                justify-content: center;
+                padding: 160px 80px;
+                position: relative;
+
+                &.dark {
+                    background: $gray_120;
+
+                    .icon_down {
+                        position: absolute;
+                        bottom: 16px;
+                        right: 16px;
+                        width: 32px;
+                        height: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        svg {
+                            path {
+                                fill: $white;
+                            }
+                        }
+
+                        &:hover {
+                            background: $gray_90;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 999px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .icon_down {
+                    position: absolute;
+                    bottom: 16px;
+                    right: 16px;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $gray_10;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 999px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            .image_area_full {
+                display: flex;
+                width: 100%;
+                background: $gray_0;
+                align-items: center;
+                justify-content: center;
+
+                &.dark {
+                    background: $gray_120;
+                }
+
+                .img_mo {
+                    display: none;
+                }
+
+                .img_pc {
+                    display: block;
+                }
+
+                img {
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+
+            .image_text_area {
+                margin-top: 24px;
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -29,6 +29,26 @@
         document.querySelector('.side_menu_wrapper_mo').style.transform = 'translateX(-100%)';
         hamburgerBtn.style.display = 'flex';
         hamCloseBtn.style.display = 'none';
+      });
+
+      const bxTab = document.getElementById('bxTab');
+      const bxList = document.getElementById('bxList');
+      const designTab = document.getElementById('designTab');
+      const designList = document.getElementById('designList');
+
+      
+      bxTab.addEventListener('click', ()=>{
+        designTab.classList.remove('active');
+        bxTab.classList.add('active');
+        designList.style.display = 'none';
+        bxList.style.display = 'block';
+      });
+
+      designTab.addEventListener('click', ()=>{
+        designTab.classList.add('active');
+        bxTab.classList.remove('active');
+        designList.style.display = 'block';
+        bxList.style.display = 'none';
       })
 
 })();

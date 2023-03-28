@@ -1893,7 +1893,6 @@ header .hd_pc ul li {
   display: flex;
   align-items: center;
   border-bottom: 4px solid #FFFFFF;
-  width: 114px;
 }
 header .hd_pc ul li.active {
   border-bottom: 4px solid #0F6BFF;
@@ -1951,6 +1950,9 @@ footer {
   color: #757575;
   border-top: 1px solid #E2E2E2;
   font-size: 12px;
+  padding: 24px 0 24px 0px;
+}
+footer.content_footer {
   padding: 24px 0 24px 317px;
 }
 
