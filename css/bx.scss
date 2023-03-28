@@ -71,6 +71,10 @@
             .image_area {
                 padding: 60px 24px !important;
 
+                &.goods {
+                    padding: 0 !important;
+                }
+
                 img {
                     width: 80% !important;
                 }
@@ -177,6 +181,10 @@
                 justify-content: center;
                 padding: 160px 80px;
                 position: relative;
+
+                &.goods {
+                    padding: 0;
+                }
 
                 &.dark {
                     background: $gray_120;

@@ -857,6 +857,9 @@ input[type=radio]:checked + label span {
   .content_container .image_con .image_area {
     padding: 60px 24px !important;
   }
+  .content_container .image_con .image_area.goods {
+    padding: 0 !important;
+  }
   .content_container .image_con .image_area img {
     width: 80% !important;
   }
@@ -940,6 +943,9 @@ input[type=radio]:checked + label span {
   justify-content: center;
   padding: 160px 80px;
   position: relative;
+}
+.bx_main_container .content_container .image_con .image_area.goods {
+  padding: 0;
 }
 .bx_main_container .content_container .image_con .image_area.dark {
   background: #0B0B0B;
