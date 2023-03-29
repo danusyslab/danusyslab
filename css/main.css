@@ -811,8 +811,11 @@ input[type=radio]:checked + label span {
     padding-left: 320px !important;
     padding-right: 60px !important;
   }
+  .top_sub_con.compact_con {
+    padding-left: 60px !important;
+  }
   main.main_container .overview_area {
-    padding: 120px 50px 120px 320px !important;
+    padding: 120px 0 120px 0 !important;
   }
   main.main_container .overview_area .left_text {
     width: 1040px !important;
@@ -902,7 +905,7 @@ input[type=radio]:checked + label span {
     text-align: center;
   }
   main.main_container .white_back {
-    padding: 120px 50px 120px 320px !important;
+    padding: 120px 0 120px 0 !important;
   }
   main.main_container .white_back .purpose_con {
     width: 1040px !important;
@@ -935,6 +938,9 @@ input[type=radio]:checked + label span {
     padding-left: 320px !important;
     padding-right: 60px !important;
   }
+  .top_sub_con.compact_con {
+    padding-left: 60px !important;
+  }
   main.main_container .thum_area {
     padding: 0 60px 0 60px !important;
   }
@@ -954,7 +960,7 @@ input[type=radio]:checked + label span {
     padding: 80px 60px 80px 60px !important;
   }
   main.main_container .overview_area {
-    padding: 120px 50px 120px 320px !important;
+    padding: 120px 60px 120px 60px !important;
   }
   main.main_container .overview_area .left_text {
     width: 840px !important;
@@ -1045,7 +1051,7 @@ input[type=radio]:checked + label span {
     text-align: center;
   }
   main.main_container .white_back {
-    padding: 120px 50px 120px 320px !important;
+    padding: 120px 60px 120px 60px !important;
   }
   main.main_container .white_back .left_text {
     width: 840px !important;
@@ -1092,6 +1098,9 @@ input[type=radio]:checked + label span {
   .top_sub_con {
     padding-left: 40px !important;
     padding-right: 40px !important;
+  }
+  .main_container.without_side {
+    margin-left: 0 !important;
   }
   .main_container .top_image_con {
     padding: 40px 40px 40px 40px !important;
@@ -1318,6 +1327,9 @@ input[type=radio]:checked + label span {
   .top_sub_con {
     padding-left: 40px !important;
     padding-right: 40px !important;
+  }
+  .main_container.without_side {
+    margin-left: 0 !important;
   }
   .main_container .top_image_con {
     padding: 0 24px !important;
@@ -1555,6 +1567,13 @@ input[type=radio]:checked + label span {
   }
 }
 @media (max-width: 767px) {
+  .status_con {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .status_con .status_area {
+    margin-bottom: 28px;
+  }
   .top_sub_con {
     padding-left: 24px !important;
     padding-bottom: 24px !important;
@@ -1578,6 +1597,9 @@ input[type=radio]:checked + label span {
   }
   header .hd_mo {
     display: flex !important;
+  }
+  .main_container.without_side {
+    margin-left: 0 !important;
   }
   .main_container .top_image_con {
     padding: 0 24px !important;
@@ -1718,7 +1740,7 @@ input[type=radio]:checked + label span {
     transform: translateX(-317px);
   }
   .overview_area {
-    padding: 60px 40px 60px 40px !important;
+    padding: 60px 24px 60px 24px !important;
   }
   .overview_area .left_text {
     width: 100% !important;
@@ -1815,7 +1837,7 @@ input[type=radio]:checked + label span {
     text-align: center;
   }
   .white_back {
-    padding: 80px 40px 80px 40px !important;
+    padding: 80px 24px 80px 24px !important;
   }
   .white_back .left_text {
     width: 100% !important;
@@ -1953,7 +1975,58 @@ footer {
   padding: 24px 0 24px 0px;
 }
 footer.content_footer {
-  padding: 24px 0 24px 317px;
+  padding: 24px 0 24px 0;
+}
+
+.status_con {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.status_con .status_area {
+  display: flex;
+}
+.status_con .status_area .status_item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.status_con .status_area .status_item:last-child {
+  margin-right: 0;
+}
+.status_con .status_area .status_item .name_work {
+  font-size: 14px;
+  color: #A8CAFF;
+}
+.status_con .status_area .status_item .status_current {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.status_con .status_area .status_item .status_current .not_ongoing_status {
+  width: 8px;
+  height: 8px;
+  border-radius: 99px;
+  margin-right: 4px;
+  border: 1px solid #85B4FF;
+}
+.status_con .status_area .status_item .status_current .not_text_status {
+  font-size: 16px;
+  color: #85B4FF;
+  margin-bottom: 0;
+}
+.status_con .status_area .status_item .status_current .ongoing_status {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 99px;
+  margin-right: 4px;
+}
+.status_con .status_area .status_item .status_current .text_status {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0;
 }
 
 .top_sub_con {
@@ -1965,6 +2038,9 @@ footer.content_footer {
   width: 100%;
   padding-bottom: 60px;
   padding-right: 116px;
+}
+.top_sub_con.compact_con {
+  padding-left: 120px;
 }
 .top_sub_con .status_con {
   display: flex;
@@ -2023,10 +2099,6 @@ footer.content_footer {
   font-size: 60px;
   color: white;
 }
-.top_sub_con .date_updated {
-  font-size: 14px;
-  color: #85B4FF;
-}
 .top_sub_con p {
   color: #B1B1B1;
   font-size: 16px;
@@ -2064,9 +2136,10 @@ footer.content_footer {
   color: #212121;
 }
 
+main.without_side {
+  margin-left: 260px;
+}
 main.main_container {
-  min-width: 100%;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2470,7 +2543,7 @@ main.main_container .whats_new_area ul li a:focus {
 main.main_container .white_back {
   background: #FFFFFF;
   width: 100%;
-  padding: 125px 116px 125px 116px;
+  padding: 120px 0 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2560,7 +2633,7 @@ main.main_container .white_back .purpose_con .purpose_area .purpose_item .ico_4 
 main.main_container .overview_area {
   background: #212121;
   width: 100%;
-  padding: 125px 116px 125px 116px;
+  padding: 120px 0 120px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
