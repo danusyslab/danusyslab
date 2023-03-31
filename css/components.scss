@@ -427,6 +427,15 @@ $elem_color: (
     }
 }
 
+.radio_button_group_vertical_dark {
+    @extend %radio_button_group_vertical;
+    
+
+    .radio_group_label {
+        @include group_label_dark;
+    }
+}
+
 .radio_button_wrapper_horizontal {
     @extend %radio_button_wrapper_horizontal;
 
@@ -472,6 +481,22 @@ $elem_color: (
 
     .radio_button_label {
         @include radio_label_default_light;
+    }
+}
+
+.radio_button_wrapper_vertical_dark {
+    @extend %radio_button_wrapper_vertical;
+
+    &.with_error {
+        @extend %radio_button_wrapper_with_error;
+    }
+
+    input[type="radio"] {
+        @include radio_input_default_dark;
+    }
+
+    .radio_button_label {
+        @include radio_label_default_dark;
     }
 }
 

@@ -76,15 +76,31 @@
             document.getElementById('html-tab-3').classList.remove('active');
             document.getElementById('scss-tab-3').classList.add('active');
         }
+
+        if(currentTab === document.getElementById('html-tab-4')) {
+            document.getElementById('html-4').style.display = 'block';
+            document.getElementById('scss-4').style.display = 'none';
+            document.getElementById('html-tab-4').classList.add('active');
+            document.getElementById('scss-tab-4').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-4')) {
+            document.getElementById('html-4').style.display = 'none';
+            document.getElementById('scss-4').style.display = 'block';
+            document.getElementById('html-tab-4').classList.remove('active');
+            document.getElementById('scss-tab-4').classList.add('active');
+        }
     }
 
     document.getElementById('code-tab-area-1').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-2').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-3').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-4').addEventListener ('click', sourceTabHandler);
 
 
     // radio selectors
     const directionRadio = document.querySelectorAll('#directionRadio input[name="option-1"]');
+    const directionRadioDark = document.querySelectorAll('#directionRadioDark input[name="option-101"]');
 
     directionRadio.forEach((directRadio) => {
         directRadio.addEventListener('click', ()=>{
@@ -98,6 +114,22 @@
                 document.getElementById('vertical_default').style.display = 'flex';
                 document.getElementById('horizontal_default_code').style.display = 'none';
                 document.getElementById('vertical_default_code').style.display = 'flex';
+            }
+        });
+    });
+
+    directionRadioDark.forEach((directRadioDark) => {
+        directRadioDark.addEventListener('click', ()=>{
+            if(directRadioDark.checked && directRadioDark.value === 'horizontal2') {
+                document.getElementById('horizontal_default2').style.display = 'flex';
+                document.getElementById('vertical_default2').style.display = 'none';
+                document.getElementById('horizontal_default_code2').style.display = 'flex';
+                document.getElementById('vertical_default_code2').style.display = 'none';
+            } else if(directRadioDark.checked && directRadioDark.value === 'vertical2') {
+                document.getElementById('horizontal_default2').style.display = 'none';
+                document.getElementById('vertical_default2').style.display = 'flex';
+                document.getElementById('horizontal_default_code2').style.display = 'none';
+                document.getElementById('vertical_default_code2').style.display = 'flex';
             }
         });
     });

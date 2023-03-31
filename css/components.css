@@ -595,22 +595,22 @@ html, body {
   margin-right: 0;
 }
 
-.radio_button_wrapper_vertical {
+.radio_button_wrapper_vertical_dark, .radio_button_wrapper_vertical {
   display: flex;
   margin-bottom: 8px;
   position: relative;
 }
-.radio_button_wrapper_vertical:last-child {
+.radio_button_wrapper_vertical_dark:last-child, .radio_button_wrapper_vertical:last-child {
   margin-bottom: 0;
 }
 
-.radio_button_wrapper_vertical.with_error, .radio_button_wrapper_horizontal_dark.with_error, .radio_button_wrapper_horizontal.with_error {
+.radio_button_wrapper_vertical_dark.with_error, .radio_button_wrapper_vertical.with_error, .radio_button_wrapper_horizontal_dark.with_error, .radio_button_wrapper_horizontal.with_error {
   width: 150px;
 }
-.radio_button_wrapper_vertical.with_error input[type=radio]:checked + label .radio_button_appearance, .radio_button_wrapper_horizontal_dark.with_error input[type=radio]:checked + label .radio_button_appearance, .radio_button_wrapper_horizontal.with_error input[type=radio]:checked + label .radio_button_appearance {
+.radio_button_wrapper_vertical_dark.with_error input[type=radio]:checked + label .radio_button_appearance, .radio_button_wrapper_vertical.with_error input[type=radio]:checked + label .radio_button_appearance, .radio_button_wrapper_horizontal_dark.with_error input[type=radio]:checked + label .radio_button_appearance, .radio_button_wrapper_horizontal.with_error input[type=radio]:checked + label .radio_button_appearance {
   border: 2px solid #E02C10;
 }
-.radio_button_wrapper_vertical.with_error input[type=radio]:checked + label .radio_button_appearance::before, .radio_button_wrapper_horizontal_dark.with_error input[type=radio]:checked + label .radio_button_appearance::before, .radio_button_wrapper_horizontal.with_error input[type=radio]:checked + label .radio_button_appearance::before {
+.radio_button_wrapper_vertical_dark.with_error input[type=radio]:checked + label .radio_button_appearance::before, .radio_button_wrapper_vertical.with_error input[type=radio]:checked + label .radio_button_appearance::before, .radio_button_wrapper_horizontal_dark.with_error input[type=radio]:checked + label .radio_button_appearance::before, .radio_button_wrapper_horizontal.with_error input[type=radio]:checked + label .radio_button_appearance::before {
   background-color: #E02C10;
   border-radius: 50%;
   content: "";
@@ -620,22 +620,22 @@ html, body {
   transform: scale(0.6);
   position: relative;
 }
-.radio_button_wrapper_vertical.with_error .radio_button_label .radio_button_appearance, .radio_button_wrapper_horizontal_dark.with_error .radio_button_label .radio_button_appearance, .radio_button_wrapper_horizontal.with_error .radio_button_label .radio_button_appearance {
+.radio_button_wrapper_vertical_dark.with_error .radio_button_label .radio_button_appearance, .radio_button_wrapper_vertical.with_error .radio_button_label .radio_button_appearance, .radio_button_wrapper_horizontal_dark.with_error .radio_button_label .radio_button_appearance, .radio_button_wrapper_horizontal.with_error .radio_button_label .radio_button_appearance {
   border: 2px solid #E02C10;
 }
-.radio_button_wrapper_vertical.with_error .error_message, .radio_button_wrapper_horizontal_dark.with_error .error_message, .radio_button_wrapper_horizontal.with_error .error_message {
+.radio_button_wrapper_vertical_dark.with_error .error_message, .radio_button_wrapper_vertical.with_error .error_message, .radio_button_wrapper_horizontal_dark.with_error .error_message, .radio_button_wrapper_horizontal.with_error .error_message {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
   top: 22px;
 }
-.radio_button_wrapper_vertical.with_error .error_message svg, .radio_button_wrapper_horizontal_dark.with_error .error_message svg, .radio_button_wrapper_horizontal.with_error .error_message svg {
+.radio_button_wrapper_vertical_dark.with_error .error_message svg, .radio_button_wrapper_vertical.with_error .error_message svg, .radio_button_wrapper_horizontal_dark.with_error .error_message svg, .radio_button_wrapper_horizontal.with_error .error_message svg {
   margin-right: 8px;
   min-width: 18px;
   max-width: 18px;
 }
-.radio_button_wrapper_vertical.with_error .error_message span, .radio_button_wrapper_horizontal_dark.with_error .error_message span, .radio_button_wrapper_horizontal.with_error .error_message span {
+.radio_button_wrapper_vertical_dark.with_error .error_message span, .radio_button_wrapper_vertical.with_error .error_message span, .radio_button_wrapper_horizontal_dark.with_error .error_message span, .radio_button_wrapper_horizontal.with_error .error_message span {
   color: #E02C10;
   font-family: "IBM Plex Sans";
   font-size: 0.75rem;
@@ -655,7 +655,7 @@ html, body {
   padding: 0;
 }
 
-.radio_button_group_vertical {
+.radio_button_group_vertical_dark, .radio_button_group_vertical {
   align-items: flex-start;
   border: 0;
   box-sizing: border-box;
@@ -765,6 +765,18 @@ html, body {
   margin-bottom: 8px;
   vertical-align: baseline;
   color: #333333;
+}
+
+.radio_button_group_vertical_dark .radio_group_label {
+  display: inline-block;
+  font-family: "IBM Plex Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 8px;
+  vertical-align: baseline;
+  color: #C9C9C9;
 }
 
 .radio_button_wrapper_horizontal input[type=radio] {
@@ -1016,6 +1028,90 @@ html, body {
   margin-left: 8px;
 }
 .radio_button_wrapper_vertical .radio_button_label .radio_button_label_text:disabled {
+  opacity: 0.35;
+}
+
+.radio_button_wrapper_vertical_dark input[type=radio] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  visibility: inherit;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+}
+.radio_button_wrapper_vertical_dark input[type=radio]:checked + label .radio_button_appearance {
+  border: 2px solid #0F6BFF;
+}
+.radio_button_wrapper_vertical_dark input[type=radio]:checked + label .radio_button_appearance::before {
+  background-color: #0F6BFF;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.6);
+  position: relative;
+}
+.radio_button_wrapper_vertical_dark input[type=radio]:disabled + label .radio_button_appearance {
+  opacity: 0.35;
+  cursor: auto;
+}
+.radio_button_wrapper_vertical_dark input[type=radio]:disabled + label .radio_button_label_text {
+  opacity: 0.35;
+  cursor: auto;
+}
+.radio_button_wrapper_vertical_dark input[type=radio].read-only + label .radio_button_appearance {
+  border: 2px solid #888888;
+  cursor: auto;
+}
+.radio_button_wrapper_vertical_dark input[type=radio].read-only + label .radio_button_appearance::before {
+  background-color: #B1B1B1;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.6);
+  position: relative;
+}
+.radio_button_wrapper_vertical_dark input[type=radio].error + label .radio_button_appearance {
+  border: 2px solid #E02C10;
+}
+.radio_button_wrapper_vertical_dark input[type=radio].error + label .radio_button_appearance::before {
+  background-color: #E02C10;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.6);
+  position: relative;
+}
+.radio_button_wrapper_vertical_dark .radio_button_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.radio_button_wrapper_vertical_dark .radio_button_label .radio_button_appearance {
+  background-color: transparent;
+  border: 2px solid #B1B1B1;
+  border-radius: 50%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  height: 18px;
+  width: 18px;
+}
+.radio_button_wrapper_vertical_dark .radio_button_label .radio_button_label_text {
+  font-size: 14px;
+  color: #E2E2E2;
+  margin-left: 8px;
+}
+.radio_button_wrapper_vertical_dark .radio_button_label .radio_button_label_text:disabled {
   opacity: 0.35;
 }
 
