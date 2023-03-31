@@ -1,92 +1,92 @@
 @charset "UTF-8";
 
 // space(px) token
-$space-2: 2px;
-$space-4: 4px;
-$space-8: 8px;
-$space-16: 16px;
-$space-24: 24px;
-$space-32: 32px;
-$space-40: 40px;
-$space-48: 48px;
-$space-56: 56px;
-$space-64: 64px;
-$space-72: 72px;
-$space-80: 80px;
-$space-88: 88px;
-$space-96: 96px;
+$space_2: 2px;
+$space_4: 4px;
+$space_8: 8px;
+$space_16: 16px;
+$space_24: 24px;
+$space_32: 32px;
+$space_40: 40px;
+$space_48: 48px;
+$space_56: 56px;
+$space_64: 64px;
+$space_72: 72px;
+$space_80: 80px;
+$space_88: 88px;
+$space_96: 96px;
 
 
 
 // shadow token
-@mixin soft-shadow-2 {
+@mixin soft_shadow_2 {
     box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-2 {
+@mixin hard_shadow_2 {
     box-shadow: 0px 2px 3px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-2 {
+@mixin mixed_shadow_2 {
     box-shadow: 0px 2px 8px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin soft-shadow-4 {
+@mixin soft_shadow_4 {
     box-shadow: 0px 0px 16px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-4 {
+@mixin hard_shadow_4 {
     box-shadow: 0px 4px 6px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-4 {
+@mixin mixed_shadow_4 {
     box-shadow: 0px 4px 16px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin soft-shadow-8 {
+@mixin soft_shadow_8 {
     box-shadow: 0px 0px 32px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-8 {
+@mixin hard_shadow_8 {
     box-shadow: 0px 8px 12px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-8 {
+@mixin mixed_shadow_8 {
     box-shadow: 0px 8px 32px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin soft-shadow-12 {
+@mixin soft_shadow_12 {
     box-shadow: 0px 0px 48px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-12 {
+@mixin hard_shadow_12 {
     box-shadow: 0px 12px 18px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-12 {
+@mixin mixed_shadow_12 {
     box-shadow: 0px 12px 48px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin soft-shadow-16 {
+@mixin soft_shadow_16 {
     box-shadow: 0px 0px 64px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-16 {
+@mixin hard_shadow_16 {
     box-shadow: 0px 16px 24px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-16 {
+@mixin mixed_shadow_16 {
     box-shadow: 0px 16px 64px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin soft-shadow-24 {
+@mixin soft_shadow_24 {
     box-shadow: 0px 0px 96px rgba($color: #000000, $alpha: 0.16);
 }
   
-@mixin hard-shadow-24 {
+@mixin hard_shadow_24 {
     box-shadow: 0px 24px 36px rgba($color: #000000, $alpha: 0.32);
 }
   
-@mixin mixed-shadow-24 {
+@mixin mixed_shadow_24 {
     box-shadow: 0px 24px 96px rgba($color: #000000, $alpha: 0.32);
 }

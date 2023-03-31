@@ -491,56 +491,812 @@
                     <p class="desc_text">라디오 버튼은 원 형태의 라디오 버튼 입력과 그 오른쪽에 배치된 라디오 버튼 레이블로 구성됩니다. 필요한 경우 그룹 레이블을 추가할 수 있습니다.</p>
                 </div>
                 <div class="config_container">
-                    <div class="config_con">
-                        <div class="config_area">
-                            <fieldset class="radio_button_group">
-                                <legend class="radio_group_label">Radio buttons group label</legend>
-                                <div class="radio_button_wrapper">
-                                    <input type="radio" class="radio_button"  id="radio-1" name="radio-button-group" value="default">
-                                    <label for="radio-1" class="radio_button_label">
-                                        <span class="radio_button_appearance"></span>
-                                        <span class="radio_button_label_text">Label 1</span>
-                                    </label>
-                                </div>
-                                <div class="radio_button_wrapper">
-                                    <input type="radio" class="radio_button"  id="radio-2" name="radio-button-group" value="default">
-                                    <label for="radio-2" class="radio_button_label">
-                                        <span class="radio_button_appearance"></span>
-                                        <span class="radio_button_label_text">Label 1</span>
-                                    </label>
-                                </div>
-                                <div class="radio_button_wrapper">
-                                    <input type="radio" class="radio_button"  id="radio-3" name="radio-button-group" value="default">
-                                    <label for="radio-3" class="radio_button_label">
-                                        <span class="radio_button_appearance"></span>
-                                        <span class="radio_button_label_text">Label 1</span>
-                                    </label>
-                                </div>
-                            </fieldset>
+                    <div class="sticky_con">
+                        <div id="sticky1" class="sticky_area">
+                            <button id="radioLightTab" type="button" class="sticky_btn active">
+                                <span>Light</span>
+                            </button>
+                            <button id="radioDarkTab" type="button" class="sticky_btn">
+                                <span>Dark</span>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="primary_col_con">
-                    <ul class="primary_col_area">
-                        <li class="primary_col_item">
-                            <div class="primary_color_1">
-                                <img src="images/logo_white.png">
+                    <div id="radioLightCon" class="config_code">
+                        <div class="config_con">
+                            <div id="horizontal_default" class="config_area">
+                                <fieldset class="radio_button_group_horizontal">
+                                    <legend class="radio_group_label">Radio buttons group label</legend>
+                                    <div class="radio_button_wrapper_horizontal">
+                                        <input type="radio" class="radio_button"  id="radio-1" name="radio-button-group" checked>
+                                        <label for="radio-1" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 1</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio_button_wrapper_horizontal">
+                                        <input type="radio" class="radio_button"  id="radio-2" name="radio-button-group" value="true">
+                                        <label for="radio-2" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 2</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio_button_wrapper_horizontal">
+                                        <input type="radio" class="radio_button"  id="radio-3" name="radio-button-group" value="true">
+                                        <label for="radio-3" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 3</span>
+                                        </label>
+                                        <!-- <div class="error_message">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#E02C10" d="M9 12.75c.213 0 .39-.072.535-.216A.725.725 0 0 0 9.75 12a.727.727 0 0 0-.215-.535A.727.727 0 0 0 9 11.25a.725.725 0 0 0-.534.215.726.726 0 0 0-.216.535c0 .213.072.39.216.534A.724.724 0 0 0 9 12.75Zm-.75-3h1.5v-4.5h-1.5v4.5ZM9 16.5a7.3 7.3 0 0 1-2.925-.591 7.569 7.569 0 0 1-2.381-1.603 7.569 7.569 0 0 1-1.603-2.381A7.3 7.3 0 0 1 1.5 9a7.3 7.3 0 0 1 .591-2.925 7.569 7.569 0 0 1 1.603-2.381A7.58 7.58 0 0 1 6.075 2.09 7.307 7.307 0 0 1 9 1.5c1.037 0 2.012.197 2.925.59a7.58 7.58 0 0 1 2.381 1.604 7.569 7.569 0 0 1 1.603 2.381A7.3 7.3 0 0 1 16.5 9a7.3 7.3 0 0 1-.591 2.925 7.569 7.569 0 0 1-1.603 2.381 7.569 7.569 0 0 1-2.381 1.603A7.3 7.3 0 0 1 9 16.5ZM9 15c1.675 0 3.094-.581 4.256-1.744C14.42 12.094 15 10.675 15 9c0-1.675-.581-3.094-1.744-4.256C12.094 3.58 10.675 3 9 3c-1.675 0-3.094.581-4.256 1.744C3.58 5.906 3 7.325 3 9c0 1.675.581 3.094 1.744 4.256C5.906 14.42 7.325 15 9 15Z"/></g></svg>
+                                            <span>Error message here</span>
+                                        </div> -->
+                                    </div>
+                                </fieldset>
                             </div>
-                            <div class="name_area">
-                                <p>Danu Blue P (출판&인쇄용)</p>
-                                <p>C: 93  M:55  Y:0  K:0</p>
+                            <div id="vertical_default" class="config_area" style="display: none;">
+                                <fieldset class="radio_button_group_vertical">
+                                    <legend class="radio_group_label">Radio buttons group label</legend>
+                                    <div class="radio_button_wrapper_vertical">
+                                        <input type="radio" class="radio_button"  id="radio-7" name="radio-button-group" checked>
+                                        <label for="radio-7" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 1</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio_button_wrapper_vertical">
+                                        <input type="radio" class="radio_button"  id="radio-8" name="radio-button-group" value="true">
+                                        <label for="radio-8" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 2</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio_button_wrapper_vertical">
+                                        <input type="radio" class="radio_button"  id="radio-9" name="radio-button-group" value="true">
+                                        <label for="radio-9" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Label 3</span>
+                                        </label>
+                                        <!-- <div class="error_message">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#E02C10" d="M9 12.75c.213 0 .39-.072.535-.216A.725.725 0 0 0 9.75 12a.727.727 0 0 0-.215-.535A.727.727 0 0 0 9 11.25a.725.725 0 0 0-.534.215.726.726 0 0 0-.216.535c0 .213.072.39.216.534A.724.724 0 0 0 9 12.75Zm-.75-3h1.5v-4.5h-1.5v4.5ZM9 16.5a7.3 7.3 0 0 1-2.925-.591 7.569 7.569 0 0 1-2.381-1.603 7.569 7.569 0 0 1-1.603-2.381A7.3 7.3 0 0 1 1.5 9a7.3 7.3 0 0 1 .591-2.925 7.569 7.569 0 0 1 1.603-2.381A7.58 7.58 0 0 1 6.075 2.09 7.307 7.307 0 0 1 9 1.5c1.037 0 2.012.197 2.925.59a7.58 7.58 0 0 1 2.381 1.604 7.569 7.569 0 0 1 1.603 2.381A7.3 7.3 0 0 1 16.5 9a7.3 7.3 0 0 1-.591 2.925 7.569 7.569 0 0 1-1.603 2.381 7.569 7.569 0 0 1-2.381 1.603A7.3 7.3 0 0 1 9 16.5ZM9 15c1.675 0 3.094-.581 4.256-1.744C14.42 12.094 15 10.675 15 9c0-1.675-.581-3.094-1.744-4.256C12.094 3.58 10.675 3 9 3c-1.675 0-3.094.581-4.256 1.744C3.58 5.906 3 7.325 3 9c0 1.675.581 3.094 1.744 4.256C5.906 14.42 7.325 15 9 15Z"/></g></svg>
+                                            <span>Error message here</span>
+                                        </div> -->
+                                    </div>
+                                </fieldset>
                             </div>
-                        </li>
-                        <li class="primary_col_item">
-                            <div class="primary_color_2">
-                                <img src="images/logo_white.png">
+                            <div class="config_sel_con">
+                                <div class="config_sel_area">
+                                    <fieldset id="directionRadio" class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">방향</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-11" name="option-1" value="horizontal" checked>
+                                            <label for="radio-11" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">가로</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-12" name="option-1" value="vertical">
+                                            <label for="radio-12" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">세로</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="config_sel_area">
+                                    <fieldset id="statesRadio" class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">상태 값</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-13" name="option-2" value="default" checked>
+                                            <label for="radio-13" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Default</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-14" name="option-2" value="true">
+                                            <label for="radio-14" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Read only</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-15" name="option-2" value="true">
+                                            <label for="radio-15" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Focus</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-16" name="option-2" value="true">
+                                            <label for="radio-16" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Error</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-17" name="option-2" value="true">
+                                            <label for="radio-17" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Disabled</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
                             </div>
-                            <div class="name_area">
-                                <p>Danu Blue 60 (모니터 스크린용)</p>
-                                <p>Hex: #0F6BFF</p>
+                            <button class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
+                        </div>
+                        <div class="code_container">
+                            <div id="horizontal_default_code" class="code_con">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-1" class="code_tab_area">
+                                        <li id="html-tab-1" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-1" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>Java script</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-1" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">fieldset </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_group_horizontal"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">legend </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_group_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Radio buttons group label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">legend</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_wrapper_horizontal"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">input </span>
+                                                    <span class="token class">type</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button" </span>
+                                                    <span class="token class">id </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">for</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_appearance" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                ::before</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label_text" </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-1" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_group_horizontal {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_group_horizontal</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  .radio_group_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">group_label_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_wrapper_horizontal {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_horizontal</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   &.with_error</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_with_error</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   input[type="radio"] {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_input_default_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   .radio_button_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_label_default_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div id="vertical_default_code" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-3" class="code_tab_area">
+                                        <li id="html-tab-3" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-3" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>Java script</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-3" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">fieldset </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_group_vertical"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">legend </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_group_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Radio buttons group label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">legend</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_wrapper_vertical"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">input </span>
+                                                    <span class="token class">type</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button" </span>
+                                                    <span class="token class">id </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">for</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_appearance" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                ::before</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label_text" </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-3" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_group_vertical {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_group_vertical</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  .radio_group_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">group_label_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_wrapper_vertical {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_vertical</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   &.with_error</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_with_error</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   input[type="radio"] {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_input_default_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   .radio_button_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_label_default_light</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="radioDarkCon" class="config_code" style="display: none;">
+                        <div class="config_con">
+                            <div id="horizontal_default" class="config_area dark">
+                                <div class="dark_mode_area">
+                                    <fieldset class="radio_button_group_horizontal_dark">
+                                        <legend class="radio_group_label">Radio buttons group label</legend>
+                                        <div class="radio_button_wrapper_horizontal_dark">
+                                            <input type="radio" class="radio_button"  id="radio-4" name="radio-button-group-2" value="true">
+                                            <label for="radio-4" class="radio_button_label">
+                                                <span class="radio_button_appearance"></span>
+                                                <span class="radio_button_label_text">Label 1</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_horizontal_dark">
+                                            <input type="radio" class="radio_button"  id="radio-5" name="radio-button-group-2" value="true" checked>
+                                            <label for="radio-5" class="radio_button_label">
+                                                <span class="radio_button_appearance"></span>
+                                                <span class="radio_button_label_text">Label 2</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_horizontal_dark">
+                                            <input type="radio" class="radio_button"  id="radio-6" name="radio-button-group-2" value="true">
+                                            <label for="radio-6" class="radio_button_label">
+                                                <span class="radio_button_appearance"></span>
+                                                <span class="radio_button_label_text">Label 3</span>
+                                            </label>
+                                            <!-- <div class="error_message">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#E02C10" d="M9 12.75c.213 0 .39-.072.535-.216A.725.725 0 0 0 9.75 12a.727.727 0 0 0-.215-.535A.727.727 0 0 0 9 11.25a.725.725 0 0 0-.534.215.726.726 0 0 0-.216.535c0 .213.072.39.216.534A.724.724 0 0 0 9 12.75Zm-.75-3h1.5v-4.5h-1.5v4.5ZM9 16.5a7.3 7.3 0 0 1-2.925-.591 7.569 7.569 0 0 1-2.381-1.603 7.569 7.569 0 0 1-1.603-2.381A7.3 7.3 0 0 1 1.5 9a7.3 7.3 0 0 1 .591-2.925 7.569 7.569 0 0 1 1.603-2.381A7.58 7.58 0 0 1 6.075 2.09 7.307 7.307 0 0 1 9 1.5c1.037 0 2.012.197 2.925.59a7.58 7.58 0 0 1 2.381 1.604 7.569 7.569 0 0 1 1.603 2.381A7.3 7.3 0 0 1 16.5 9a7.3 7.3 0 0 1-.591 2.925 7.569 7.569 0 0 1-1.603 2.381 7.569 7.569 0 0 1-2.381 1.603A7.3 7.3 0 0 1 9 16.5ZM9 15c1.675 0 3.094-.581 4.256-1.744C14.42 12.094 15 10.675 15 9c0-1.675-.581-3.094-1.744-4.256C12.094 3.58 10.675 3 9 3c-1.675 0-3.094.581-4.256 1.744C3.58 5.906 3 7.325 3 9c0 1.675.581 3.094 1.744 4.256C5.906 14.42 7.325 15 9 15Z"/></g></svg>
+                                                <span>Error message here</span>
+                                            </div> -->
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="config_sel_con">
+                                <div class="config_sel_area">
+                                    <fieldset class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">방향</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-11" name="option1" value="true" checked>
+                                            <label for="radio-11" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">가로</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-12" name="option1" value="true">
+                                            <label for="radio-12" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">세로</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="config_sel_area">
+                                    <fieldset class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">상태 값</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-13" name="option2" value="true" checked>
+                                            <label for="radio-13" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Default</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-14" name="option2" value="true">
+                                            <label for="radio-14" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Read only</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-15" name="option2" value="true">
+                                            <label for="radio-15" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Focus</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-16" name="option2" value="true">
+                                            <label for="radio-16" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Error</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="radio-17" name="option2" value="true">
+                                            <label for="radio-17" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Disabled</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
+                        </div>
+                        <div class="code_container">
+                            <div id="horizontal_default2" class="code_con">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-2" class="code_tab_area">
+                                        <li id="html-tab-2" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-2" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>Java script</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-2" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">fieldset </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_group_horizontal_dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">legend </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_group_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Radio buttons group label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">legend</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_wrapper_horizontal_dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">input </span>
+                                                    <span class="token class">type</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button" </span>
+                                                    <span class="token class">id </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">for</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"id_name" </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_appearance" </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                ::before</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"radio_button_label_text" </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-2" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_group_horizontal_dark {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_group_horizontal</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  .radio_group_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">group_label_dark</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">  }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.radio_button_wrapper_horizontal_dark {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">   @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_horizontal</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   &.with_error</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @extend </span>
+                                                    <span class="token class">%radio_button_wrapper_with_error</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   input[type="radio"] {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_input_default_dark</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   .radio_button_label {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token pink">       @include </span>
+                                                    <span class="token class">radio_label_default_dark</span>
+                                                    <span class="token">;</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">   }</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
                 <div class="desc_text_con">
                     <p class="desc_text">Danu Blue를 모니터 스크린용으로 사용할 시, 다크 모드의 Primary Color와 라이트 모드의 Primary Color를 다르게 사용합니다.
@@ -611,7 +1367,7 @@
         </main>
     </div>
     <script src="js/accodion.js"></script>
-    <script src="js/color.js"></script>
+    <script src="js/radio.js"></script>
     <script src="js/topButton.js"></script>
     <script>
         function goToTop() {

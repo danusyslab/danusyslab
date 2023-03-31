@@ -1,5 +1,11 @@
 @charset "utf-8";
-@import 'reset.scss';
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
 
 @media (min-width: 1400px) and (max-width: 1600px) {
 
@@ -3371,7 +3377,7 @@ footer {
                     }
 
                     &.circle_yellow {
-                        background: $yellow20;
+                        background: $yellow_20;
                     }
 
                     &.circle_green {
@@ -4551,7 +4557,7 @@ footer {
                     }
 
                     .sementic_yellow {
-                        background: $yellow20;
+                        background: $yellow_20;
                     }
 
                     .sementic_green {
@@ -4924,7 +4930,7 @@ footer {
                         .focused_box_white {
                             background: $white;
                             padding: 16px;
-                            border: 1px solid $primary;
+                            border: 1px solid $danu_blue_60;
 
 
                             span {
