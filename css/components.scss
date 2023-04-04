@@ -75,6 +75,11 @@ $elem_color: (
         clip: rect(0,0,0,0);
         cursor: pointer;
 
+        &:focus-visible + label .radio_button_appearance {
+            outline-offset: max(2px, 0.12em);
+            outline: 1px solid map-get($elem_color, default_selected);
+        }
+
         &:checked + label .radio_button_appearance {
             border: 2px solid map-get($elem_color, default_selected);
 
@@ -110,12 +115,16 @@ $elem_color: (
             }
         }
 
-        &.error + label .radio_button_appearance {
+        &.error {
             border: 2px solid map-get($elem_color, error);
+
+            &:checked + label .radio_button_appearance {
+                border: 2px solid map-get($elem_color, error);
 
             &::before {
                 background-color: map-get($elem_color, error);
                 @include selector_circle;
+            }
             }
         }
 

@@ -90,49 +90,358 @@
             document.getElementById('html-tab-4').classList.remove('active');
             document.getElementById('scss-tab-4').classList.add('active');
         }
+
+        if(currentTab === document.getElementById('html-tab-5')) {
+            document.getElementById('html-5').style.display = 'block';
+            document.getElementById('scss-5').style.display = 'none';
+            document.getElementById('html-tab-5').classList.add('active');
+            document.getElementById('scss-tab-5').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-5')) {
+            document.getElementById('html-5').style.display = 'none';
+            document.getElementById('scss-5').style.display = 'block';
+            document.getElementById('html-tab-5').classList.remove('active');
+            document.getElementById('scss-tab-5').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-6')) {
+            document.getElementById('html-6').style.display = 'block';
+            document.getElementById('scss-6').style.display = 'none';
+            document.getElementById('html-tab-6').classList.add('active');
+            document.getElementById('scss-tab-6').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-6')) {
+            document.getElementById('html-6').style.display = 'none';
+            document.getElementById('scss-6').style.display = 'block';
+            document.getElementById('html-tab-6').classList.remove('active');
+            document.getElementById('scss-tab-6').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-7')) {
+            document.getElementById('html-7').style.display = 'block';
+            document.getElementById('scss-7').style.display = 'none';
+            document.getElementById('html-tab-7').classList.add('active');
+            document.getElementById('scss-tab-7').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-7')) {
+            document.getElementById('html-7').style.display = 'none';
+            document.getElementById('scss-7').style.display = 'block';
+            document.getElementById('html-tab-7').classList.remove('active');
+            document.getElementById('scss-tab-7').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-8')) {
+            document.getElementById('html-8').style.display = 'block';
+            document.getElementById('scss-8').style.display = 'none';
+            document.getElementById('html-tab-8').classList.add('active');
+            document.getElementById('scss-tab-8').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-8')) {
+            document.getElementById('html-8').style.display = 'none';
+            document.getElementById('scss-8').style.display = 'block';
+            document.getElementById('html-tab-8').classList.remove('active');
+            document.getElementById('scss-tab-8').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-9')) {
+            document.getElementById('html-9').style.display = 'block';
+            document.getElementById('scss-9').style.display = 'none';
+            document.getElementById('html-tab-9').classList.add('active');
+            document.getElementById('scss-tab-9').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-9')) {
+            document.getElementById('html-9').style.display = 'none';
+            document.getElementById('scss-9').style.display = 'block';
+            document.getElementById('html-tab-9').classList.remove('active');
+            document.getElementById('scss-tab-9').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-10')) {
+            document.getElementById('html-10').style.display = 'block';
+            document.getElementById('scss-10').style.display = 'none';
+            document.getElementById('html-tab-10').classList.add('active');
+            document.getElementById('scss-tab-10').classList.remove('active');
+        }
+
+        if(currentTab === document.getElementById('scss-tab-10')) {
+            document.getElementById('html-10').style.display = 'none';
+            document.getElementById('scss-10').style.display = 'block';
+            document.getElementById('html-tab-10').classList.remove('active');
+            document.getElementById('scss-tab-10').classList.add('active');
+        }
+        
     }
 
     document.getElementById('code-tab-area-1').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-2').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-3').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-4').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-5').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-6').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-7').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-8').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-9').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-10').addEventListener ('click', sourceTabHandler);
 
 
     // radio selectors
-    const directionRadio = document.querySelectorAll('#directionRadio input[name="option-1"]');
-    const directionRadioDark = document.querySelectorAll('#directionRadioDark input[name="option-101"]');
+    const directionRadioLight = document.getElementById('directionRadio');
+    const statesRadioLight = document.getElementById('statesRadio');
 
-    directionRadio.forEach((directRadio) => {
-        directRadio.addEventListener('click', ()=>{
-            if(directRadio.checked && directRadio.value === 'horizontal') {
+    const horizontalRadioLight = document.getElementById('light-radio-1');
+    const verticalRadioLight = document.getElementById('light-radio-2');
+    const defaultRadioLight = document.getElementById('light-radio-state-1');
+    const readonlyRadioLight = document.getElementById('light-radio-state-2');
+    const errorRadioLight = document.getElementById('light-radio-state-3');
+    const disabledRadioLight = document.getElementById('light-radio-state-4');
+
+
+
+    const directionRadioDark = document.getElementById('directionRadioDark');
+    const statesRadioDark = document.getElementById('statesRadioDark');
+
+    const horizontalRadioDark = document.getElementById('dark-radio-1');
+    const verticalRadioDark = document.getElementById('dark-radio-2');
+    const defaultRadioDark = document.getElementById('dark-radio-state-1');
+    const readonlyRadioDark = document.getElementById('dark-radio-state-2');
+    const errorRadioDark = document.getElementById('dark-radio-state-3');
+    const disabledRadioDark = document.getElementById('dark-radio-state-4');
+
+    function radioButtonHandler() {
+
+        if(horizontalRadioLight.checked) {
+            if(defaultRadioLight.checked) {
                 document.getElementById('horizontal_default').style.display = 'flex';
                 document.getElementById('vertical_default').style.display = 'none';
+                document.getElementById('horizontal_readonly').style.display = 'none';
+                document.getElementById('vertical_readonly').style.display = 'none';
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error').style.display = 'none';
+                
                 document.getElementById('horizontal_default_code').style.display = 'flex';
                 document.getElementById('vertical_default_code').style.display = 'none';
-            } else if(directRadio.checked && directRadio.value === 'vertical') {
+                document.getElementById('horizontal_readonly_code').style.display = 'none';
+                document.getElementById('vertical_readonly_code').style.display = 'none';
+                document.getElementById('horizontal_error_code').style.display = 'none';
+                document.getElementById('vertical_error_code').style.display = 'none';
+                
+
+            } else if(readonlyRadioLight.checked) {
+                document.getElementById('horizontal_default').style.display = 'none';
+                document.getElementById('vertical_default').style.display = 'none';
+                document.getElementById('horizontal_readonly').style.display = 'flex';
+                document.getElementById('vertical_readonly').style.display = 'none';
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error').style.display = 'none';
+                
+                document.getElementById('horizontal_default_code').style.display = 'none';
+                document.getElementById('vertical_default_code').style.display = 'none';
+                document.getElementById('horizontal_readonly_code').style.display = 'flex';
+                document.getElementById('vertical_readonly_code').style.display = 'none';
+                document.getElementById('horizontal_error_code').style.display = 'none'; 
+                document.getElementById('vertical_error_code').style.display = 'none';
+
+            } else if(errorRadioLight.checked) {
+                document.getElementById('horizontal_default').style.display = 'none';
+                document.getElementById('vertical_default').style.display = 'none';
+                document.getElementById('horizontal_readonly').style.display = 'none';
+                document.getElementById('vertical_readonly').style.display = 'none';
+                document.getElementById('horizontal_error').style.display = 'flex';
+                document.getElementById('vertical_error').style.display = 'none';
+                
+                document.getElementById('horizontal_default_code').style.display = 'none';
+                document.getElementById('vertical_default_code').style.display = 'none';
+                document.getElementById('horizontal_readonly_code').style.display = 'none';
+                document.getElementById('vertical_readonly_code').style.display = 'none';
+                document.getElementById('horizontal_error_code').style.display = 'flex';
+                document.getElementById('vertical_error_code').style.display = 'none';
+            }
+        }
+
+        if(verticalRadioLight.checked) {
+            if(defaultRadioLight.checked) {
                 document.getElementById('horizontal_default').style.display = 'none';
                 document.getElementById('vertical_default').style.display = 'flex';
+                document.getElementById('horizontal_readonly').style.display = 'none';
+                document.getElementById('vertical_readonly').style.display = 'none';
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error').style.display = 'none';
+                
                 document.getElementById('horizontal_default_code').style.display = 'none';
                 document.getElementById('vertical_default_code').style.display = 'flex';
-            }
-        });
-    });
+                document.getElementById('horizontal_readonly_code').style.display = 'none';
+                document.getElementById('vertical_readonly_code').style.display = 'none'; 
+                document.getElementById('horizontal_error_code').style.display = 'none';
+                document.getElementById('vertical_error_code').style.display = 'none';
 
-    directionRadioDark.forEach((directRadioDark) => {
-        directRadioDark.addEventListener('click', ()=>{
-            if(directRadioDark.checked && directRadioDark.value === 'horizontal2') {
+            } else if(readonlyRadioLight.checked) {
+                document.getElementById('horizontal_default').style.display = 'none';
+                document.getElementById('vertical_default').style.display = 'none';
+                document.getElementById('horizontal_readonly').style.display = 'none';
+                document.getElementById('vertical_readonly').style.display = 'flex';
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error').style.display = 'none';
+                
+                document.getElementById('horizontal_default_code').style.display = 'none';
+                document.getElementById('vertical_default_code').style.display = 'none';
+                document.getElementById('horizontal_readonly_code').style.display = 'none';
+                document.getElementById('vertical_readonly_code').style.display = 'flex'; 
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error_code').style.display = 'none';
+
+            } else if(errorRadioLight.checked) {
+                document.getElementById('horizontal_default').style.display = 'none';
+                document.getElementById('vertical_default').style.display = 'none';
+                document.getElementById('horizontal_readonly').style.display = 'none';
+                document.getElementById('vertical_readonly').style.display = 'none';
+                document.getElementById('horizontal_error').style.display = 'none';
+                document.getElementById('vertical_error').style.display = 'flex';
+                
+                document.getElementById('horizontal_default_code').style.display = 'none';
+                document.getElementById('vertical_default_code').style.display = 'none';
+                document.getElementById('horizontal_readonly_code').style.display = 'none';
+                document.getElementById('vertical_readonly_code').style.display = 'none'; 
+                document.getElementById('horizontal_error_code').style.display = 'none';
+                document.getElementById('vertical_error_code').style.display = 'flex';
+            }
+        }
+
+        if(horizontalRadioDark.checked) {
+            if(defaultRadioDark.checked) {
                 document.getElementById('horizontal_default2').style.display = 'flex';
                 document.getElementById('vertical_default2').style.display = 'none';
+                document.getElementById('horizontal_readonly2').style.display = 'none';
+                document.getElementById('vertical_readonly2').style.display = 'none';
+                
                 document.getElementById('horizontal_default_code2').style.display = 'flex';
                 document.getElementById('vertical_default_code2').style.display = 'none';
-            } else if(directRadioDark.checked && directRadioDark.value === 'vertical2') {
+                document.getElementById('horizontal_readonly_code2').style.display = 'none';
+                document.getElementById('vertical_readonly_code2').style.display = 'none';
+
+            } else if(readonlyRadioDark.checked) {
+                document.getElementById('horizontal_default2').style.display = 'none';
+                document.getElementById('vertical_default2').style.display = 'none';
+                document.getElementById('horizontal_readonly2').style.display = 'flex';
+                document.getElementById('vertical_readonly2').style.display = 'none';
+                
+                document.getElementById('horizontal_default_code2').style.display = 'none';
+                document.getElementById('vertical_default_code2').style.display = 'none';
+                document.getElementById('horizontal_readonly_code2').style.display = 'flex';
+                document.getElementById('vertical_readonly_code2').style.display = 'none'; 
+            }
+        }
+
+        if(verticalRadioDark.checked) {
+            if(defaultRadioDark.checked) {
                 document.getElementById('horizontal_default2').style.display = 'none';
                 document.getElementById('vertical_default2').style.display = 'flex';
+                document.getElementById('horizontal_readonly2').style.display = 'none';
+                document.getElementById('vertical_readonly2').style.display = 'none';
+                
                 document.getElementById('horizontal_default_code2').style.display = 'none';
                 document.getElementById('vertical_default_code2').style.display = 'flex';
+                document.getElementById('horizontal_readonly_code2').style.display = 'none';
+                document.getElementById('vertical_readonly_code2').style.display = 'none'; 
+
+            } else if(readonlyRadioDark.checked) {
+                document.getElementById('horizontal_default2').style.display = 'none';
+                document.getElementById('vertical_default2').style.display = 'none';
+                document.getElementById('horizontal_readonly2').style.display = 'none';
+                document.getElementById('vertical_readonly2').style.display = 'flex';
+                
+                document.getElementById('horizontal_default_code2').style.display = 'none';
+                document.getElementById('vertical_default_code2').style.display = 'none';
+                document.getElementById('horizontal_readonly_code2').style.display = 'none';
+                document.getElementById('vertical_readonly_code2').style.display = 'flex'; 
             }
-        });
-    });
+        }
+    }
+
+    directionRadioLight.addEventListener('change', radioButtonHandler);
+    statesRadioLight.addEventListener('change', radioButtonHandler);
+
+    horizontalRadioLight.addEventListener('change', radioButtonHandler);
+    verticalRadioLight.addEventListener('change', radioButtonHandler);
+    defaultRadioLight.addEventListener('change', radioButtonHandler);
+    errorRadioLight.addEventListener('change', radioButtonHandler);
+
+
+    directionRadioDark.addEventListener('change', radioButtonHandler);
+    statesRadioDark.addEventListener('change', radioButtonHandler);
+
+    horizontalRadioDark.addEventListener('change', radioButtonHandler);
+    verticalRadioDark.addEventListener('change', radioButtonHandler);
+    defaultRadioDark.addEventListener('change', radioButtonHandler);
+
+    radioButtonHandler();
+
+
+
+    // directionRadio.forEach((directRadio) => {
+    //     directRadio.addEventListener('click', ()=>{
+    //         if(directRadio.checked && directRadio.value === 'horizontal') {
+    //             document.getElementById('horizontal_default').style.display = 'flex';
+    //             document.getElementById('vertical_default').style.display = 'none';
+    //             document.getElementById('horizontal_default_code').style.display = 'flex';
+    //             document.getElementById('vertical_default_code').style.display = 'none';
+    //             document.getElementById('horizontal_readonly').style.display = 'none';
+    //                         document.getElementById('horizontal_readonly_code').style.display = 'none';
+
+
+    //             statesRadio.forEach(stateRadio => {
+    //                 stateRadio.addEventListener('click'), ()=>{
+    //                     if(stateRadio.value === 'readOnly') {
+    //                         document.getElementById('horizontal_default').style.display = 'none';
+    //                         document.getElementById('vertical_default').style.display = 'none';
+    //                         document.getElementById('horizontal_default_code').style.display = 'none';
+    //                         document.getElementById('vertical_default_code').style.display = 'none';
+    //                         document.getElementById('horizontal_readonly').style.display = 'flex';
+    //                         document.getElementById('horizontal_readonly_code').style.display = 'flex';
+    //                     }
+
+    //                     if(stateRadio.value === 'default') {
+    //                         document.getElementById('horizontal_default').style.display = 'flex';
+    //                         document.getElementById('vertical_default').style.display = 'none';
+    //                         document.getElementById('horizontal_default_code').style.display = 'flex';
+    //                         document.getElementById('vertical_default_code').style.display = 'none';
+    //                         document.getElementById('horizontal_readonly').style.display = 'none';
+    //                         document.getElementById('horizontal_readonly_code').style.display = 'none';
+    //                     }
+    //                 }
+    //             });
+
+
+    //         } else if(directRadio.checked && directRadio.value === 'vertical') {
+    //             document.getElementById('horizontal_default').style.display = 'none';
+    //             document.getElementById('vertical_default').style.display = 'flex';
+    //             document.getElementById('horizontal_default_code').style.display = 'none';
+    //             document.getElementById('vertical_default_code').style.display = 'flex';
+    //             document.getElementById('horizontal_readonly').style.display = 'none';
+    //                         document.getElementById('horizontal_readonly_code').style.display = 'none';
+    //         }
+    //     });
+    // });
+
+    // directionRadioDark.forEach((directRadioDark) => {
+    //     directRadioDark.addEventListener('click', ()=>{
+    //         if(directRadioDark.checked && directRadioDark.value === 'horizontal2') {
+    //             document.getElementById('horizontal_default2').style.display = 'flex';
+    //             document.getElementById('vertical_default2').style.display = 'none';
+    //             document.getElementById('horizontal_default_code2').style.display = 'flex';
+    //             document.getElementById('vertical_default_code2').style.display = 'none';
+    //         } else if(directRadioDark.checked && directRadioDark.value === 'vertical2') {
+    //             document.getElementById('horizontal_default2').style.display = 'none';
+    //             document.getElementById('vertical_default2').style.display = 'flex';
+    //             document.getElementById('horizontal_default_code2').style.display = 'none';
+    //             document.getElementById('vertical_default_code2').style.display = 'flex';
+    //         }
+    //     });
+    // });
 
 
 

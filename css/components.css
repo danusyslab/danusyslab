@@ -790,6 +790,10 @@ html, body {
   clip: rect(0, 0, 0, 0);
   cursor: pointer;
 }
+.radio_button_wrapper_horizontal input[type=radio]:focus-visible + label .radio_button_appearance {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #0F6BFF;
+}
 .radio_button_wrapper_horizontal input[type=radio]:checked + label .radio_button_appearance {
   border: 2px solid #0F6BFF;
 }
@@ -825,10 +829,13 @@ html, body {
   transform: scale(0.6);
   position: relative;
 }
-.radio_button_wrapper_horizontal input[type=radio].error + label .radio_button_appearance {
+.radio_button_wrapper_horizontal input[type=radio].error {
   border: 2px solid #E02C10;
 }
-.radio_button_wrapper_horizontal input[type=radio].error + label .radio_button_appearance::before {
+.radio_button_wrapper_horizontal input[type=radio].error:checked + label .radio_button_appearance {
+  border: 2px solid #E02C10;
+}
+.radio_button_wrapper_horizontal input[type=radio].error:checked + label .radio_button_appearance::before {
   background-color: #E02C10;
   border-radius: 50%;
   content: "";
@@ -958,6 +965,10 @@ html, body {
   clip: rect(0, 0, 0, 0);
   cursor: pointer;
 }
+.radio_button_wrapper_vertical input[type=radio]:focus-visible + label .radio_button_appearance {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #0F6BFF;
+}
 .radio_button_wrapper_vertical input[type=radio]:checked + label .radio_button_appearance {
   border: 2px solid #0F6BFF;
 }
@@ -993,10 +1004,13 @@ html, body {
   transform: scale(0.6);
   position: relative;
 }
-.radio_button_wrapper_vertical input[type=radio].error + label .radio_button_appearance {
+.radio_button_wrapper_vertical input[type=radio].error {
   border: 2px solid #E02C10;
 }
-.radio_button_wrapper_vertical input[type=radio].error + label .radio_button_appearance::before {
+.radio_button_wrapper_vertical input[type=radio].error:checked + label .radio_button_appearance {
+  border: 2px solid #E02C10;
+}
+.radio_button_wrapper_vertical input[type=radio].error:checked + label .radio_button_appearance::before {
   background-color: #E02C10;
   border-radius: 50%;
   content: "";
