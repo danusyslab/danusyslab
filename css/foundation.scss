@@ -38,7 +38,7 @@
     }
 
     .content_container {
-        padding: 40px 0 0px 0 !important;
+        padding: 0 !important;
         width: 980px !important;
 
         .sticky_con {
@@ -236,7 +236,7 @@
     }
 
     .content_container {
-        padding: 40px 0 0px 0 !important;
+        padding: 0 !important;
         width: 840px !important;
 
         .sticky_con {
@@ -801,6 +801,11 @@
 
 @media (min-width: 1024px) and (max-width: 1199px) {
 
+
+    .content_title {
+        margin-top: 80px !important;
+    }
+
     .contents_back {
         margin-left: 0 !important;
     }
@@ -836,7 +841,7 @@
     }
 
     .content_container {
-        padding: 40px 0 0px 0 !important;
+        padding: 0 !important;
         width: 920px !important;
 
         .sticky_con {
@@ -1270,6 +1275,12 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
+
+    .content_title {
+        margin-top: 60px !important;
+    }
+
+
     .contents_back {
         margin-left: 0 !important;
     }
@@ -1306,7 +1317,7 @@
     }
 
     .content_container {
-        padding: 40px 40px 0px 40px !important;
+        padding: 0 40px 0 40px !important;
         width: 100% !important;
 
         .gray_con {
@@ -1995,6 +2006,10 @@
 
 @media (max-width: 767px) {
 
+    .content_title {
+        margin-top: 60px !important;
+    }
+
     .contents_back {
         margin-left: 0 !important;
     }
@@ -2047,7 +2062,7 @@
     }
 
     .content_container {
-        padding: 40px 24px 0px 24px !important;
+        padding: 0 24px 0 24px !important;
         width: 100% !important;
 
         .primary_col_con {
@@ -3302,10 +3317,14 @@ footer {
     transform-origin: 0% 0% ;
 }
 
+.desc_text_strong {
+    @include heading-02;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
 .desc_text {
-    font-size: 16px;
-    color: $gray_110; 
-    line-height: 1.5;
+    @include body-02;
 }
 
 .black_text {
@@ -3329,18 +3348,17 @@ footer {
 
 .content_container {
     width: 1120px;
-    padding: 40px 0 0px 0;
-    margin-bottom: 40px;
+    padding: 0 0 0px 0;
 
     .content_title {
         color: $gray_110;
         font-size: 28px;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
+        margin-top: 80px;
     }
 
     .desc_text_con {
         width: 100%;
-        margin-bottom: 40px;
 
         .sementic_text_con {
             display: flex;
@@ -3416,6 +3434,7 @@ footer {
     .primary_col_con {
         width: 100%;
         margin-bottom: 40px;
+        margin-top: 40px;
 
         &:last-child {
             margin-bottom: 0;
@@ -3569,6 +3588,7 @@ footer {
         justify-content: center;
         margin-bottom: 40px;
         position: relative;
+        margin-top: 40px;
 
         .ratio_con {
             width: 100%;
@@ -3843,6 +3863,7 @@ footer {
         width: 100%;
         background: $gray_5;
         z-index: 997;
+        margin-top: 40px;
 
         .sticky_area {
             display: flex;
@@ -3905,6 +3926,7 @@ footer {
         width: 100%;
         height: 100%;
         position: relative;
+        margin-top: 40px;
 
 
         .color_con {
@@ -4512,6 +4534,7 @@ footer {
 
     .sementic_col_con {
         width: 100%;
+        margin-top: 40px;
 
         .sementic_col_area {
             width: 100%;
@@ -4583,6 +4606,7 @@ footer {
     .them_con {
         width: 100%;
         height: 100%;
+        margin-top: 40px;
 
         .them_area {
             background: $white;
@@ -4729,6 +4753,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
 
         .state_area {
             width: 50%;
@@ -4962,6 +4987,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
 
         .typo_color_area {
             display: flex;
@@ -5013,6 +5039,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
 
         .typo_scale_area {
             display: flex;
@@ -5089,6 +5116,7 @@ footer {
     }
 
     .typo_sets_con {
+        margin-top: 40px;
 
         .typo_sets_area {
             display: flex;
@@ -5175,6 +5203,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
 
         .icon_scale_area {
             display: flex;
@@ -5331,6 +5360,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
         
         .icon_padding_area {
             display: flex;
@@ -5376,6 +5406,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
         
         .icon_keyline_area {
             display: flex;
@@ -5414,6 +5445,7 @@ footer {
         width: 100%;
         height: 100%;
         display: flex;
+        margin-top: 40px;
 
         .icon_stroke_area {
             width: 100%;
@@ -5434,6 +5466,7 @@ footer {
     .icon_align_con {
         width: 100%;
         height: 100%;
+        margin-top: 40px;
 
         .icon_align_area {
             width: 100%;
@@ -5445,6 +5478,10 @@ footer {
                 width: 100%;
                 display: flex;
                 margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
                 li {
                     margin-right: 16px;
@@ -5511,12 +5548,14 @@ footer {
     .icon_color_con {
         width: 100%;
         height: 100%;
+        margin-top: 40px;
 
         .icon_color_area {
             width: 100%;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            margin-top: 40px;
 
             .icon_color_list {
                 width: 100%;
@@ -5592,6 +5631,7 @@ footer {
         height: 100%;
         display: flex;
         margin-bottom: 16px;
+        margin-top: 40px;
 
         .space_area {
             width: 100%;
@@ -5621,6 +5661,7 @@ footer {
         font-size: 14px;
         flex-direction: column;
         margin-bottom: 16px;
+        margin-top: 40px;
 
 
         .list_title_con {
@@ -5689,6 +5730,7 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        margin-top: 40px;
 
         .space_align_list {
             width: 100%;
@@ -5760,6 +5802,7 @@ footer {
         width: 100%;
         height: 100%;
         margin-bottom: 16px;
+        margin-top: 40px;
 
         .shadow_area {
             background: $white;
@@ -5893,6 +5936,7 @@ footer {
         font-size: 14px;
         flex-direction: column;
         margin-bottom: 16px;
+        margin-top: 40px;
 
 
         .list_title_con {
@@ -5957,6 +6001,7 @@ footer {
     }
 
     .grid_sets_con {
+        margin-top: 40px;
 
         .grid_sets_area {
             display: flex;

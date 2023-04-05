@@ -49,6 +49,30 @@
         bxTab.classList.remove('active');
         designList.style.display = 'block';
         bxList.style.display = 'none';
-      })
+      });
+
+
+
+      // config sel con
+
+      const openConfigBtn = document.getElementById('open_config_sel_btn');
+      const closeConfigBtn = document.getElementById('close_config_sel_btn');
+      const accodionConfig = document.querySelector('.config_sel_con');
+
+      function accodionConfigHandler(e) {
+
+        console.log(e.target);
+
+        if(e.target === openConfigBtn) {
+          accodionConfig.style.display = 'block';
+        }
+
+        if(e.target === closeConfigBtn) {
+          accodionConfig.style.display = 'none';
+        }
+      }
+
+      openConfigBtn.addEventListener('click', accodionConfigHandler);
+      closeConfigBtn.addEventListener('click', accodionConfigHandler);
 
 })();
