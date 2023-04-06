@@ -501,26 +501,7 @@ html, body {
     transform: none;
   }
 }
-.gototop {
-  width: 52px;
-  height: 52px;
-  background: rgba(11, 11, 11, 0.7);
-  border: none;
-  border-radius: 999px;
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 997;
-}
-.gototop.show {
-  opacity: 1;
-}
-.gototop svg path {
-  fill: white;
-}
+
 
 @keyframes loading {
   0% {
@@ -1087,26 +1068,7 @@ html, body {
     transform: none;
   }
 }
-.gototop {
-  width: 52px;
-  height: 52px;
-  background: rgba(11, 11, 11, 0.7);
-  border: none;
-  border-radius: 999px;
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 997;
-}
-.gototop.show {
-  opacity: 1;
-}
-.gototop svg path {
-  fill: white;
-}
+
 
 @keyframes loading {
   0% {
@@ -1696,6 +1658,7 @@ html, body {
 @media (max-width: 767px) {
   .image_container .image_con .image_area {
     padding: 60px 0 !important;
+    flex-direction: column;
   }
   .image_container .image_con .image_area .image_item {
     width: 90% !important;

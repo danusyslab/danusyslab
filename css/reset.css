@@ -510,7 +510,7 @@ html, body {
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  z-index: 997;
+  z-index: 998;
 }
 .gototop.show {
   opacity: 1;
