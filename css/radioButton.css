@@ -20,7 +20,6 @@
 }
 /* CSS Document */
 /* HTML5 display-role reset for older browsers */
-
 body {
   line-height: 1;
   word-break: keep-all;
@@ -737,11 +736,11 @@ html, body {
   opacity: 0.35;
   cursor: auto;
 }
-.radio_button_wrapper_horizontal input[type=radio].read-only + label .radio_button_appearance {
+.radio_button_wrapper_horizontal input[type=radio].read_only + label .radio_button_appearance {
   border: 2px solid #757575;
   cursor: auto;
 }
-.radio_button_wrapper_horizontal input[type=radio].read-only + label .radio_button_appearance::before {
+.radio_button_wrapper_horizontal input[type=radio].read_only + label .radio_button_appearance::before {
   background-color: #545454;
   border-radius: 50%;
   content: "";
@@ -828,11 +827,11 @@ html, body {
   opacity: 0.35;
   cursor: auto;
 }
-.radio_button_wrapper_horizontal_dark input[type=radio].read-only + label .radio_button_appearance {
+.radio_button_wrapper_horizontal_dark input[type=radio].read_only + label .radio_button_appearance {
   border: 2px solid #888888;
   cursor: auto;
 }
-.radio_button_wrapper_horizontal_dark input[type=radio].read-only + label .radio_button_appearance::before {
+.radio_button_wrapper_horizontal_dark input[type=radio].read_only + label .radio_button_appearance::before {
   background-color: #B1B1B1;
   border-radius: 50%;
   content: "";
@@ -916,11 +915,11 @@ html, body {
   opacity: 0.35;
   cursor: auto;
 }
-.radio_button_wrapper_vertical input[type=radio].read-only + label .radio_button_appearance {
+.radio_button_wrapper_vertical input[type=radio].read_only + label .radio_button_appearance {
   border: 2px solid #757575;
   cursor: auto;
 }
-.radio_button_wrapper_vertical input[type=radio].read-only + label .radio_button_appearance::before {
+.radio_button_wrapper_vertical input[type=radio].read_only + label .radio_button_appearance::before {
   background-color: #545454;
   border-radius: 50%;
   content: "";
@@ -1007,11 +1006,11 @@ html, body {
   opacity: 0.35;
   cursor: auto;
 }
-.radio_button_wrapper_vertical_dark input[type=radio].read-only + label .radio_button_appearance {
+.radio_button_wrapper_vertical_dark input[type=radio].read_only + label .radio_button_appearance {
   border: 2px solid #888888;
   cursor: auto;
 }
-.radio_button_wrapper_vertical_dark input[type=radio].read-only + label .radio_button_appearance::before {
+.radio_button_wrapper_vertical_dark input[type=radio].read_only + label .radio_button_appearance::before {
   background-color: #B1B1B1;
   border-radius: 50%;
   content: "";

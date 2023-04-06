@@ -107,7 +107,7 @@ $elem_color: (
             cursor: auto;
         }
 
-        &.read-only + label .radio_button_appearance {
+        &.read_only + label .radio_button_appearance {
             border: 2px solid map-get($elem_color, read_only_light);
             cursor: auto;
 
@@ -201,7 +201,7 @@ $elem_color: (
         cursor: auto;
     }
 
-    &.read-only + label .radio_button_appearance {
+    &.read_only + label .radio_button_appearance {
         border: 2px solid map-get($elem_color, read_only_dark);
         cursor: auto;
 
