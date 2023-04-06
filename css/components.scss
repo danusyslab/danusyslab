@@ -44,6 +44,26 @@
             }
         }
     }
+
+    .config_sel_con {
+        width: 25% !important;
+    }
+
+    .them_container {
+
+        .them_con {
+
+            .them_area_dark {
+                width: 50% !important;
+                padding: 80px 80px !important;
+            }
+
+            .them_area_light {
+                width: 50% !important;
+                padding: 80px 80px !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -78,6 +98,26 @@
                         width: 100% !important;
                     }
                 }
+            }
+        }
+    }
+
+    .config_sel_con {
+        width: 28% !important;
+    }
+
+    .them_container {
+
+        .them_con {
+
+            .them_area_dark {
+                width: 50% !important;
+                padding: 60px 60px !important;
+            }
+
+            .them_area_light {
+                width: 50% !important;
+                padding: 60px 60px !important;
             }
         }
     }
@@ -120,6 +160,26 @@
         }
     }
 
+    .config_sel_con {
+        width: 28% !important;
+    }
+
+    .them_container {
+
+        .them_con {
+
+            .them_area_dark {
+                width: 50% !important;
+                padding: 60px 60px !important;
+            }
+
+            .them_area_light {
+                width: 50% !important;
+                padding: 60px 60px !important;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -154,6 +214,26 @@
                         width: 100% !important;
                     }
                 }
+            }
+        }
+    }
+
+    .config_sel_con {
+        width: 35% !important;
+    }
+
+    .them_container {
+
+        .them_con {
+
+            .them_area_dark {
+                width: 50% !important;
+                padding: 60px 40px !important;
+            }
+
+            .them_area_light {
+                width: 50% !important;
+                padding: 60px 40px !important;
             }
         }
     }
