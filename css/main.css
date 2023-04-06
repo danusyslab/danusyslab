@@ -1699,7 +1699,6 @@ header .hd_mo {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
 }
 header .hd_mo .logo_title {
   display: flex;
