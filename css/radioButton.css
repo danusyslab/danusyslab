@@ -18,7 +18,8 @@
   font-weight: 700;
   font-style: normal;
 }
-
+/* CSS Document */
+/* HTML5 display-role reset for older browsers */
 
 body {
   line-height: 1;
@@ -484,7 +485,26 @@ html, body {
     transform: none;
   }
 }
-
+.gototop {
+  width: 52px;
+  height: 52px;
+  background: rgba(11, 11, 11, 0.7);
+  border: none;
+  border-radius: 999px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 998;
+}
+.gototop.show {
+  opacity: 1;
+}
+.gototop svg path {
+  fill: white;
+}
 
 @keyframes loading {
   0% {
