@@ -1,5 +1,13 @@
 @charset "UTF-8";
-@import 'reset.scss';
+
+// foundation
+@import 'color';
+@import 'typography';
+@import 'space_shadow';
+
+// components
+@import 'radioButton';
+
 
 
 @media (min-width: 1400px) and (max-width: 1600px){

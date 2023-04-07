@@ -56,23 +56,32 @@
       // config sel con
 
       const openConfigBtn = document.getElementById('open_config_sel_btn');
-      const closeConfigBtn = document.getElementById('close_config_sel_btn');
-      const accodionConfig = document.querySelector('.config_sel_con');
+      const openConfigBtnDark = document.getElementById('open_config_sel_btn2');
+      const closeConfigBtnLight = document.getElementById('closeConfigBtnLight');
+      const closeConfigBtnDark = document.getElementById('closeConfigBtnDark');
+      const accodionConfigLight = document.getElementById('sortingAreaLight');
+      const accodionConfigDark = document.getElementById('sortingAreaDark');
 
       function accodionConfigHandler(e) {
 
-        console.log(e.target);
-
         if(e.target === openConfigBtn) {
-          accodionConfig.style.display = 'block';
+          accodionConfigLight.style.display = 'block';
+        } else if(e.target === closeConfigBtnLight) {
+          accodionConfigLight.style.display = 'none';
         }
 
-        if(e.target === closeConfigBtn) {
-          accodionConfig.style.display = 'none';
+        if(e.target === openConfigBtnDark) {
+          accodionConfigDark.style.display = 'block';
+        } else if(e.target === closeConfigBtnDark) {
+          accodionConfigDark.style.display = 'none';
         }
       }
 
       openConfigBtn.addEventListener('click', accodionConfigHandler);
-      closeConfigBtn.addEventListener('click', accodionConfigHandler);
+      openConfigBtnDark.addEventListener('click', accodionConfigHandler);
+
+      closeConfigBtnLight.addEventListener('click', accodionConfigHandler);
+      closeConfigBtnDark.addEventListener('click', accodionConfigHandler);
+
 
 })();

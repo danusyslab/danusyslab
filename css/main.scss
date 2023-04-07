@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import 'reset.scss';
 
+// foundation
+@import 'color';
+@import 'typography';
+@import 'space_shadow';
+
+// components
+@import 'radioButton';
+
+
 
   @media (min-width: 1400px) and (max-width: 1600px) {
 
@@ -1519,6 +1528,408 @@ footer {
         padding: 24px 0 24px 0;
     }
 }
+
+.gototop {
+    width: 52px;
+    height: 52px;
+    background: rgba($color: $gray_120, $alpha: 0.7);
+    border: none;
+    border-radius: 999px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 998;
+  
+    &.show {
+      opacity: 1;
+    }
+  
+    svg {
+      
+      path {
+        fill: white;
+      }
+    }
+  }
+  
+
+// accodion
+.side_menu_wrapper {
+    // transform: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: transform .15s cubic-bezier(.2,.2,.38,.9),top .11s;
+    width: 260px;
+    height: 100%;
+    z-index: 998;
+    color: $gray_110;
+    overflow: hidden;
+  
+    nav {
+        background: $gray_0;
+        border-right: 1px solid $gray_10;
+        position: fixed;
+        overflow: auto;
+  
+        &.left_side {
+            display: flex;
+            flex-direction: column;
+            top: 48px;
+            height: 100%;
+            width: 260px;
+            padding-bottom: 50px;
+  
+            ul.list_con {
+                width: 100%;
+                padding: 16px 0;
+  
+                .acco_active {
+                    background: $gray_5 !important;
+                    color: $danu_blue_60 !important;
+                    border-left: 6px solid $danu_blue_60;
+                    font-weight: 600 !important;
+                }
+  
+                .one_menu {
+                    cursor: pointer;
+                    height: 32px;
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: left;
+                    color: $gray_70;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 4px 0 4px 0 !important;
+                    align-items: center;
+  
+                    &:hover {
+                        background: $gray_5;
+                        color: $gray_110;
+                    }
+  
+                    span {
+                        pointer-events: none;
+                    }
+  
+                    svg {
+                        pointer-events: none;
+                    }
+  
+                    a {
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      padding: 0 16px;
+                    }
+                }
+  
+                .side_submenu {
+                    cursor: pointer;
+                    height: 32px;
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: left;
+                    color: $gray_70;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 16px !important;
+                    margin: 4px 0 4px 0 !important;
+  
+                    &:hover {
+                        background: $gray_5;
+                        color: $gray_110;
+                    }
+  
+                    span {
+                        pointer-events: none;
+                    }
+  
+                    svg {
+                        pointer-events: none;
+                    }
+                }
+  
+                li.list_con_item {
+                    width: 100%;
+                    height: inherit;
+                    animation: accordionOpen 0.2s ease-in-out;
+  
+                    button {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+  
+                        &:hover {
+                            background-color: $gray_5;
+                            color: $gray_110;
+                        }
+  
+                        &.active {
+                            svg {
+                                transform: rotate(-180deg);
+                            }
+                        }
+  
+                        &:focus {
+                          outline: none;
+                          border: 1px solid $danu_blue_60;
+                        }
+  
+                    }
+  
+                    ul {
+                        width: 100%;
+                        padding: 0 0 16px 0;
+                        border-bottom: 1px solid $gray_10;
+                        margin-bottom: 16px;
+                        display: none;
+                        // animation: accordionOpen 0.2s ease-in-out;
+  
+                        li {
+                            cursor: pointer;
+                            height: inherit;
+                            width: 100%;
+                            font-size: 14px;
+  
+                            &:hover {
+                                background: $gray_5;
+                                color: $gray_110;
+                            }
+  
+                            a {
+                                cursor: pointer;
+                                padding: 8px 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+  
+                                svg {
+                                  width: 18px;
+                                  height: 18px;
+  
+                                  path {
+                                    fill: $gray_60;
+                                  }
+                                }
+  
+                                &:hover {
+                                  color: $gray_110;
+                                  svg {
+                                    path {
+                                      fill: $gray_100;
+                                    }
+                                  }
+                                }
+  
+                                &:focus {
+                                  outline: none;
+                                  border: 1px solid $danu_blue_60;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+  
+    }
+}
+  
+.side_menu_wrapper_mo {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    transition: transform .15s cubic-bezier(.2,.2,.38,.9),top .11s;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    color: $gray_110;
+    overflow: hidden;
+  
+    nav {
+        background: $gray_0;
+        position: fixed;
+        overflow: auto;
+  
+        &.left_side {
+            display: flex;
+            flex-direction: column;
+            top: 48px;
+            height: 100%;
+            width: 100%;
+  
+            .home_con {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              padding: 16px 16px 0 16px;
+  
+              .home_item {
+                color: $gray_110;
+                height: 48px;
+                font-size: 16px;
+                justify-content: center;
+                display: flex;
+                width: 50%;
+                // border-bottom: 1px solid $gray_10;
+                padding-bottom: 16px;
+  
+                &.active {
+                  border-bottom: 4px solid $danu_blue_60;
+                  font-weight: 600;
+                }
+  
+                a {
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+  
+                  span {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+  
+            ul.list_con {
+                width: 100%;
+                padding: 16px 0;
+                padding-bottom: 60px;
+  
+                .one_menu {
+                    cursor: pointer;
+                    height: 48px;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: left;
+                    color: $gray_70;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 4px 0 4px 0 !important;
+                    align-items: center;
+  
+                    a {
+                      padding: 0 16px !important;
+                      width: 100%;
+                      display: flex;
+                      align-items: center;
+                    }
+  
+                    &:hover {
+                        background: $gray_5;
+                        color: $gray_110;
+                    }
+  
+                    span {
+                        pointer-events: none;
+                    }
+  
+                    svg {
+                        pointer-events: none;
+                    }
+                }
+  
+                .side_submenu {
+                    cursor: pointer;
+                    height: 48px;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: left;
+                    color: $gray_70;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 16px !important;
+                    margin: 4px 0 4px 0 !important;
+  
+                    &:hover {
+                        background: $gray_5;
+                        color: $gray_110;
+                    }
+  
+                    span {
+                        pointer-events: none;
+                    }
+  
+                    svg {
+                        pointer-events: none;
+                    }
+                }
+  
+                li.list_con_item {
+                    width: 100%;
+                    height: inherit;
+  
+                    button {
+                        background: none;
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+  
+                        &:hover {
+                            background-color: $gray_5;
+                            color: $gray_110;
+                        }
+  
+                        &.active {
+                            svg {
+                                transform: rotate(-180deg);
+                            }
+                        }
+  
+                    }
+  
+                    ul {
+                        width: 100%;
+                        padding: 0 0 16px 0;
+                        border-bottom: 1px solid $gray_10;
+                        margin-bottom: 16px;
+                        display: none;
+                        animation: accordionOpen 0.2s ease-in-out;
+  
+                        li {
+                            cursor: pointer;
+                            height: inherit;
+                            width: 100%;
+                            font-size: 16px;
+  
+                            &:hover {
+                                background: $gray_5;
+                                color: $gray_110;
+                            }
+  
+                            a {
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              width: 100%;
+                              padding: 20px 16px;
+                              cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+  
+    }
+}
+
+
 
 .status_con {
     display: flex;

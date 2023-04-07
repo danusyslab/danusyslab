@@ -111,7 +111,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                         </button>
                         <ul class="sub_list_con" style="display: block;">
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="radioButton.html" class="side_item">
                                     <span class="submenu_item">Radio Button</span>
                                 </a>
@@ -126,8 +126,8 @@
                                     <span class="submenu_item">Toggle</span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="side_item">
+                            <li class="sub_list_con_item acco_active">
+                                <a href="button.html" class="side_item">
                                     <span class="submenu_item">Button</span>
                                 </a>
                             </li>
@@ -421,7 +421,7 @@
             <div class="top_sub_blue_con">
                 <div class="top_sub_container">
                     <span class="sub_top_text">
-                        Radio Button
+                        Button
                      </span>
                      <div class="status_con">
                          <ul class="status_area">
@@ -445,17 +445,17 @@
                              </li>
                          </ul>
                          <span class="date_updated">
-                             1.0.0 버전 / 2023년 4월 4일 업로드
+                             1.0.0 버전 / 2023년 4월 11일 업로드
                          </span>
                      </div>
                 </div>
             </div>
             <div class="sub_second_con">
-                <p class="desc_text">라디오 버튼은 두 개 이상의 옵션 중에서 단 하나의 항목을 선택해야 할 때 사용됩니다.
-                    복수의 항목을 선택해야할 경우, 라디오 버튼 대신 체크박스를 사용합니다.</p>
+                <p class="desc_text">버튼은 작업을 유발하는 데 사용되는 가장 기본적인 컴포넌트입니다. 사용자는 버튼을 클릭 또는 탭할 수 있습니다.</br>
+                    대화상자, 모달 창, 입력 양식, 카드, 도구 모음 등 UI 전반에 걸쳐서 고루 사용됩니다.</p>
                 <ul class="res_btn_area">
                     <li class="res_btn_item">
-                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2735%3A22967&t=HnoGy91fm5cJkBKB-1" target="_blank" class="res_btn_a">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2816%3A23513&t=Q2sVqtroG0YZMtIR-1" target="_blank" class="res_btn_a">
                             <span class="res_btn_name">
                                 디자인 파일 바로가기
                             </span>
@@ -470,7 +470,7 @@
                         </a>
                     </li>
                     <li class="res_btn_item">
-                        <a href="css/radioButton.scss" download="" class="res_btn_a">
+                        <a href="css/buttons.scss" download="" class="res_btn_a">
                             <span class="res_btn_name">
                                 SCSS 파일 다운로드
                             </span>
@@ -489,33 +489,72 @@
             <div class="content_container">
                 <h2 class="content_title">구성 요소</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">라디오 버튼은 원 형태의 라디오 버튼 입력과 그 오른쪽에 배치된 라디오 버튼 레이블로 구성됩니다. 필요한 경우 그룹 레이블을 추가할 수 있습니다.</p>
+                    <p class="desc_text">버튼은 버튼 레이블과 버튼 아이콘, 그것들을 감싸는 컨테이너로 구성됩니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/radio_1.png"/>
+                                <img src="images/button_1.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 그룹 레이블(선택 사항): 옵션 그룹의 범주나 선택 지침에 대해서 설명합니다.</br>
-2. 라디오 버튼 입력: 라디오 버튼의 선택 여부를 나타냅니다.</br>
-3. 라디오 버튼 레이블: 옵션에 대한 정보를 나타냅니다.
+                            1. 컨테이너: 버튼 레이블과 아이콘을 포함하는, 버튼의 영역을 나타냅니다.</br>
+2. 버튼 레이블: 버튼의 동작에 대한 정보를 나타냅니다.</br>
+3. 버튼 아이콘: 버튼의 동작에 대한 정보를 나타내는 아이콘입니다.
                         </span>
+                    </div>
+                </div>
+                <h2 class="content_title">유형</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/button_2.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desc_text_con">
+                        <h5 class="desc_text_strong">1. 크기</h5>
+                        <p class="desc_text">버튼은 그 크기에 따라 ‘small’, ‘medium’, ‘large’의 3가지 유형으로 나눌 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/button_3.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desc_text_con">
+                        <h5 class="desc_text_strong">2. 색상</h5>
+                    <p class="desc_text">버튼은 그 기능(긍정/일반/부정)에 따라 ‘primary’, ‘gray’, ‘red’의 3가지 색상 유형으로 나뉩니다.</p>
+                    </div>
+                </div>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/button_4.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desc_text_con">
+                        <h5 class="desc_text_strong">3. 형태 및 구성</h5>
+                    <p class="desc_text">버튼은 그 형태나 구성에 따라 ‘솔리드/아웃라인/고스트’ * ‘아이콘+레이블/레이블/아이콘’의 9가지 유형으로 나눌 수 있습니다.</p>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
                     <h5 class="desc_text_strong">1. 일반</h5>
-                    <p class="desc_text">- 사용 가능한 모든 옵션을 노출합니다.</br>
-                        - 또한 옵션은 포괄적이면서도 각 옵션이 명확하게 구분되어야 합니다. 즉 MECE(Mutually Exclusive, Collectively Exhaustive)해야 합니다.</br>
-                        - 옵션의 순서는 논리적(예. 가장 일반적으로 선택되는 옵션 순, 가장 안전한 옵션 순)으로 설정합니다. </br>
-                        - 기본값으로 첫 번째 옵션이 선택되어 있는 상태를 권장하며, 그렇지 않은 경우 미선택된 상태를 기본값으로 합니다.</br>
-                        - 가능한 경우 선택하지 않을 수 있는 옵션(“선택하지 않음”)을 제공하는 것을 권장합니다.</br>
-                        - 라디오 버튼에는 부모-자손 관계가 없습니다.</p>
+                    <p class="desc_text">- 솔리드&프라이머리 컬러 버튼은 한 화면에 하나만 있어야 합니다.</br>
+                        - 부정, 일반, 긍정 버튼이 함께 사용되는 경우에 부정 버튼은 좌측에, 일반 버튼은 중앙에, 긍정 버튼은 우측에 배치합니다.</br>
+                        - 일반 버튼 여러 개가 함께 사용되는 경우에 그 순서는 논리적(자주 사용되는 버튼 순)으로 설정하여 우선 순위가 높은 버튼을 우측에 배치합니다.</br>
+                        - 버튼 색상 또한 미리 설정한 규칙에 따라 결정합니다.(예. 긴급한 정보나 상태는 붉은색 계열 사용)</br>
+                        - 다른 곳으로 이동하는 데 버튼을 사용하지 않습니다. 링크를 사용합니다. ‘뒤로 가기’ 또는 ‘다음’ 버튼은 예외적으로 허용될 수 있습니다.</p>
                     <h5 class="desc_text_strong">2. 레이블</h5>
                     <p class="desc_text">- 항상 명확하고 간결한 레이블을 사용하십시오.</br>
                         - 레이블은 단어나 구를 사용하며, 세 단어 미만으로 가능한 짧게 작성합니다.</br>
