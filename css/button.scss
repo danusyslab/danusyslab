@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+// button colors
+
+$elem_color: (
+    gray_solid_default: $gray_90,
+    gray_solid_hover: $gray_80,
+    gray_solid_active: $gray_60,
+    primary_solid_default: $danu_blue_60,
+    primary_solid_hover: $blue_50,
+    primary_solid_active: $blue_30,
+    red_solid_default: $red_60,
+    red_solid_hover: $red_50,
+    red_solid_active: $red_30,
+    focus: $gray_20,
+    gray_line_default: $gray_30,
+    gray_line_hover: $gray_40,
+    gray_line_active: $gray_60,
+);
+
+
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+@mixin button_icon_label_sm {
+    padding: 0 $space_8;
+    border-radius: 4px;
+    outline: none;
+
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    span {
+        @include body_01;
+        margin-left: $space_8;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+@mixin button_icon_label_md {
+    padding: $space_4 $space_12;
+    border-radius: 4px;
+    outline: none;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    span {
+        @include body_02;
+
+        &:last-child {
+            margin-left: $space_8;
+        }
+    }
+}
+
+@mixin button_icon_label_lg {
+    padding: $space_6  $space_12;
+    border-radius: 4px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    span {
+        @include body_03;
+        margin-left: $space_8;
+
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+
+// gray buttons
+
+.gray_button_icon_label_solid_sm {
+    @include button_icon_label_sm;
+    background: map-get($elem_color, gray_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, gray_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, gray_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
+.gray_button_icon_label_solid_md {
+    @include button_icon_label_md;
+    background: $gray_90;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, gray_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, gray_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
+.gray_button_icon_label_solid_lg {
+    @include button_icon_label_lg;
+    background: $gray_90;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, gray_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, gray_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
+.gray_button_icon_label_outlined_sm_dark {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_line_default);
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_line_hover);
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_line_active);
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
+.gray_button_icon_label_outlined_md_dark {
+    @include button_icon_label_md;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_line_default);
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_line_hover);
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_line_active);
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
+.gray_button_icon_label_outlined_lg_dark {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_line_default);
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_line_hover);
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_line_active);
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus);
+    }
+}
+
