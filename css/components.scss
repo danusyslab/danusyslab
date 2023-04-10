@@ -290,6 +290,20 @@
         .them_con {
             flex-direction: column;
 
+            .them_area_ul {
+                display: flex;
+                flex-direction: column;
+    
+                .them_item {
+                    margin-right: 0 !important;
+                    margin-bottom: $space_24;
+
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+
             .them_area_dark {
                 width: 100% !important;
                 padding: 40px 24px !important;
@@ -303,7 +317,6 @@
     }
 
     .config_area {
-        height: 380px !important;
     }
 
     .config_sel_con {
@@ -399,6 +412,27 @@
         } 
     }
 
+    .buttons_area {
+
+        .buttons_item {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: $space_24 !important;
+            
+            button {
+                margin-bottom: $space_8;
+                margin-right: 0 !important;
+                
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -427,7 +461,7 @@
         transform: rotate(-90deg);
         cursor: pointer;
         path {
-            fill: $gray_110;
+            fill: $gray_90;
         }
     }
 }
@@ -438,10 +472,9 @@
     background: $white;
     border-radius: 0 0 0 4px;
     position: absolute;
+    display: none;
     top: 0;
     right: 0;
-    border: none;
-    display: none;
     align-items: center;
     justify-content: center;
 
@@ -450,7 +483,7 @@
         transform: rotate(90deg);
         cursor: pointer;
         path {
-            fill: $gray_110;
+            fill: $gray_60;
         }
     }
 }
@@ -726,6 +759,22 @@
         width: 100%;
         display: flex;
 
+        &.direction_col {
+            flex-direction: column;
+        }
+
+        .them_area_ul {
+            display: flex;
+
+            .them_item {
+                margin-right: $space_16;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
         .them_area_dark {
             background: $gray_120;
             display: flex;
@@ -733,6 +782,10 @@
             justify-content: center;
             width: 50%;
             padding: 120px;
+
+            &.full {
+                width: 100% !important;
+            }
 
             img {
                 width: 100%;
@@ -746,6 +799,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            &.full {
+                width: 100% !important;
+            }
 
             img{
                 width: 100%;
@@ -829,4 +886,27 @@
             }
         }
     }
+}
+
+.buttons_area {
+    display: flex;
+    flex-direction: column;
+
+    .buttons_item {
+        display: flex;
+        margin-bottom: $space-8;
+
+        &:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        button {
+            margin-right: $space-8;
+            
+            &:last-child {
+                margin-right: 0 !important;
+            }
+        } 
+    }
+
 }

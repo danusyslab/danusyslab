@@ -84,4 +84,16 @@
       closeConfigBtnDark.addEventListener('click', accodionConfigHandler);
 
 
+      // resize
+      window.addEventListener('resize', ()=>{
+
+        if(window.innerWidth > 768) {
+          accodionConfigLight.style.display = 'block';
+        } else if(window.innerWidth < 768) {
+          accodionConfigLight.style.display = 'none';
+        }
+    });
+
+
+
 })();

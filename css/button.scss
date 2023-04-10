@@ -24,7 +24,8 @@ $elem_color: (
     red_solid_default: $red_60,
     red_solid_hover: $red_50,
     red_solid_active: $red_30,
-    focus: $gray_20,
+    focus_white: white,
+    focus_black: black,
     gray_line_default: $gray_30,
     gray_line_hover: $gray_40,
     gray_line_active: $gray_60,
@@ -48,16 +49,17 @@ $elem_color: (
     
     span {
         @include body_01;
-        margin-left: $space_8;
+        display: flex;
+        align-items: center;
 
-        &:last-child {
-            margin-left: 0;
+        &.with_icon {
+            margin-left: $space_8;
         }
     }
 }
 
 @mixin button_icon_label_md {
-    padding: $space_4 $space_12;
+    padding: $space_2 $space_12;
     border-radius: 4px;
     outline: none;
 
@@ -68,15 +70,17 @@ $elem_color: (
     
     span {
         @include body_02;
+        display: flex;
+        align-items: center;
 
-        &:last-child {
+        &.with_icon {
             margin-left: $space_8;
         }
     }
 }
 
 @mixin button_icon_label_lg {
-    padding: $space_6  $space_12;
+    padding: $space_4  $space_12;
     border-radius: 4px;
 
     svg {
@@ -86,10 +90,11 @@ $elem_color: (
     
     span {
         @include body_03;
-        margin-left: $space_8;
+        display: flex;
+        align-items: center;
 
-        &:last-child {
-            margin-left: 0;
+        &.with_icon {
+            margin-left: $space_8;
         }
     }
 }
@@ -97,7 +102,7 @@ $elem_color: (
 
 // gray buttons
 
-.gray_button_icon_label_solid_sm {
+.gray_button_solid_sm {
     @include button_icon_label_sm;
     background: map-get($elem_color, gray_solid_default);
     color: white;
@@ -114,11 +119,16 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
 
-.gray_button_icon_label_solid_md {
+.gray_button_solid_md {
     @include button_icon_label_md;
     background: $gray_90;
     color: white;
@@ -135,11 +145,16 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
 
-.gray_button_icon_label_solid_lg {
+.gray_button_solid_lg {
     @include button_icon_label_lg;
     background: $gray_90;
     color: white;
@@ -156,11 +171,16 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
 
-.gray_button_icon_label_outlined_sm_dark {
+.gray_button_outlined_sm_dark {
     @include button_icon_label_sm;
     background: transparent;
     border: 2px solid map-get($elem_color, gray_line_default);
@@ -199,11 +219,16 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
 
-.gray_button_icon_label_outlined_md_dark {
+.gray_button_outlined_md_dark {
     @include button_icon_label_md;
     background: transparent;
     border: 2px solid map-get($elem_color, gray_line_default);
@@ -241,11 +266,16 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
 
-.gray_button_icon_label_outlined_lg_dark {
+.gray_button_outlined_lg_dark {
     @include button_icon_label_lg;
     background: transparent;
     border: 2px solid map-get($elem_color, gray_line_default);
@@ -283,7 +313,1177 @@ $elem_color: (
     }
 
     &:focus {
-        outline: 1px solid map-get($elem_color, focus);
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
     }
 }
+
+.gray_button_outlined_sm_light {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_solid_default);
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_solid_hover);
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_solid_active);
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_outlined_md_light {
+    @include button_icon_label_md;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_solid_default);
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_solid_hover);
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_solid_active);
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_outlined_lg_light {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: 2px solid map-get($elem_color, gray_solid_default);
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, gray_solid_hover);
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, gray_solid_active);
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_sm_dark {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_md_dark {
+    @include button_icon_label_md;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_lg_dark {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_line_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_line_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_line_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_line_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_line_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_sm_light {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_md_light {
+    @include button_icon_label_md;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.gray_button_ghost_lg_light {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, gray_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, gray_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, gray_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, gray_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, gray_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, primary_solid_default);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+
+
+// primary buttons
+
+.primary_button_solid_sm {
+    @include button_icon_label_sm;
+    background: map-get($elem_color, primary_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, primary_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, primary_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_solid_md {
+    @include button_icon_label_md;
+    background: map-get($elem_color, primary_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, primary_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, primary_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_solid_lg {
+    @include button_icon_label_lg;
+    background: map-get($elem_color, primary_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, primary_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, primary_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+}
+
+.primary_button_outlined_sm {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: 2px solid map-get($elem_color, primary_solid_default);
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, primary_solid_hover);
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, primary_solid_active);
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_outlined_md {
+    @include button_icon_label_md;
+    background: transparent;
+    border: 2px solid map-get($elem_color, primary_solid_default);
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, primary_solid_hover);
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, primary_solid_active);
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_outlined_lg {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: 2px solid map-get($elem_color, primary_solid_default);
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, primary_solid_hover);
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, primary_solid_active);
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_ghost_sm {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_ghost_md {
+    @include button_icon_label_md;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.primary_button_ghost_lg {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, primary_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, primary_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, primary_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, primary_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+
+
+// red buttons
+
+.red_button_solid_sm {
+    @include button_icon_label_sm;
+    background: map-get($elem_color, red_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, red_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, red_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_solid_md {
+    @include button_icon_label_md;
+    background: map-get($elem_color, red_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, red_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, red_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_solid_lg {
+    @include button_icon_label_lg;
+    background: map-get($elem_color, red_solid_default);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: map-get($elem_color, red_solid_hover);
+    }
+
+    &:active {
+        background: map-get($elem_color, pred_solid_active);
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+}
+
+.red_button_outlined_sm {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: 2px solid map-get($elem_color, red_solid_default);
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, red_solid_hover);
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, red_solid_active);
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_outlined_md {
+    @include button_icon_label_md;
+    background: transparent;
+    border: 2px solid map-get($elem_color, red_solid_default);
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, red_solid_hover);
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, red_solid_active);
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_outlined_lg {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: 2px solid map-get($elem_color, red_solid_default);
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: 2px solid map-get($elem_color, red_solid_hover);
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: 2px solid map-get($elem_color, red_solid_active);
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_ghost_sm {
+    @include button_icon_label_sm;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_ghost_md {
+    @include button_icon_label_md;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+.red_button_ghost_lg {
+    @include button_icon_label_lg;
+    background: transparent;
+    border: none;
+    color: map-get($elem_color, red_solid_default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    svg {
+        path {
+            fill: map-get($elem_color, red_solid_default);
+        }
+    }
+
+    &:hover {
+        border: none;
+        color: map-get($elem_color, red_solid_hover);
+
+        svg {
+            path {
+                fill: map-get($elem_color, red_solid_hover);
+            }
+        }
+    }
+
+    &:active {
+        border: none;
+        color: map-get($elem_color, red_solid_active);
+
+        svg {
+            path {
+                fill: map-get($elem_color, primary_solid_active);
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid map-get($elem_color, focus_black);
+    }
+
+    &:disabled {
+        @include disabled_state;
+        cursor: auto;
+    }
+}
+
+
+
 

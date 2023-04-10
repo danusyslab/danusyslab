@@ -9,7 +9,7 @@ window.addEventListener('scroll', ()=>{
     } else if(window.scrollY == 0) {
         gotoTopBtn.classList.remove('show');
     }
-})
+});
 
 
 

@@ -1173,6 +1173,17 @@ html, body {
   .them_container .them_con {
     flex-direction: column;
   }
+  .them_container .them_con .them_area_ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .them_container .them_con .them_area_ul .them_item {
+    margin-right: 0 !important;
+    margin-bottom: 24px;
+  }
+  .them_container .them_con .them_area_ul .them_item:last-child {
+    margin-bottom: 0 !important;
+  }
   .them_container .them_con .them_area_dark {
     width: 100% !important;
     padding: 40px 24px !important;
@@ -1180,9 +1191,6 @@ html, body {
   .them_container .them_con .them_area_light {
     width: 100% !important;
     padding: 40px 24px !important;
-  }
-  .config_area {
-    height: 380px !important;
   }
   .config_sel_con {
     width: 40% !important;
@@ -1254,6 +1262,20 @@ html, body {
     font-size: 12px;
     line-height: 1.3;
   }
+  .buttons_area .buttons_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px !important;
+  }
+  .buttons_area .buttons_item button {
+    margin-bottom: 8px;
+    margin-right: 0 !important;
+  }
+  .buttons_area .buttons_item button:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 .accodion_btn {
   width: 44px;
@@ -1274,7 +1296,7 @@ html, body {
   cursor: pointer;
 }
 .accodion_btn svg path {
-  fill: #212121;
+  fill: #444444;
 }
 
 .accodion_btn_cancel {
@@ -1283,10 +1305,9 @@ html, body {
   background: #FFFFFF;
   border-radius: 0 0 0 4px;
   position: absolute;
+  display: none;
   top: 0;
   right: 0;
-  border: none;
-  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -1296,7 +1317,7 @@ html, body {
   cursor: pointer;
 }
 .accodion_btn_cancel svg path {
-  fill: #212121;
+  fill: #757575;
 }
 
 .config_container {
@@ -1539,6 +1560,18 @@ html, body {
   width: 100%;
   display: flex;
 }
+.them_container .them_con.direction_col {
+  flex-direction: column;
+}
+.them_container .them_con .them_area_ul {
+  display: flex;
+}
+.them_container .them_con .them_area_ul .them_item {
+  margin-right: 16px;
+}
+.them_container .them_con .them_area_ul .them_item:last-child {
+  margin-right: 0;
+}
 .them_container .them_con .them_area_dark {
   background: #0B0B0B;
   display: flex;
@@ -1546,6 +1579,9 @@ html, body {
   justify-content: center;
   width: 50%;
   padding: 120px;
+}
+.them_container .them_con .them_area_dark.full {
+  width: 100% !important;
 }
 .them_container .them_con .them_area_dark img {
   width: 100%;
@@ -1557,6 +1593,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.them_container .them_con .them_area_light.full {
+  width: 100% !important;
 }
 .them_container .them_con .them_area_light img {
   width: 100%;
@@ -1619,4 +1658,22 @@ html, body {
   border-radius: 8px;
   font-size: 12px;
   line-height: 1.3;
+}
+
+.buttons_area {
+  display: flex;
+  flex-direction: column;
+}
+.buttons_area .buttons_item {
+  display: flex;
+  margin-bottom: 8px;
+}
+.buttons_area .buttons_item:last-child {
+  margin-bottom: 0 !important;
+}
+.buttons_area .buttons_item button {
+  margin-right: 8px;
+}
+.buttons_area .buttons_item button:last-child {
+  margin-right: 0 !important;
 }
