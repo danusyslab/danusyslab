@@ -1137,6 +1137,9 @@ html, body {
   .do_donot_con .do_donot_area .do_donot_list .do_donot_item img {
     width: 100% !important;
   }
+  .do_donot_con .do_donot_area .do_donot_list .do_donot_item p {
+    width: 88%;
+  }
   .config_sel_con {
     width: 35% !important;
   }
@@ -1551,6 +1554,8 @@ html, body {
 }
 .do_donot_con .do_donot_area .do_donot_list .do_donot_item p {
   margin-top: 20px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .them_container {
