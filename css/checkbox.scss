@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// check button
+
+$text_color: (
+    primary_dark: $gray_10,
+    secondary_dark: $gray_20,
+    third_dark: $gray_30,
+    primary_light: $gray_110,
+    secondary_light: $gray_100,
+    third_light: $gray_90
+);
+
+$elem_color: (
+    default_dark: $gray_30,
+    default_light: $gray_80,
+    default_selected: $danu_blue_60,
+    read_only_dark: $gray_50,
+    read_only_light: $gray_60,
+    error: $red_60 
+);
+
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+@mixin group_label {
+        display: inline-block;
+        @include label_01;
+        margin-bottom: $space-8;
+        vertical-align: baseline;
+}
+
+@mixin group_label_light {
+    @include group_label;
+    color: map-get($text_color, secondary_light);
+}
+
+@mixin group_label_dark {
+    @include group_label;
+    color: map-get($text_color, secondary_dark);
+}
+
+
+
+// Mode states
+
+@mixin check_label_text {
+    @include body_01;
+}
+
+
+
+// Extand elems
+
+%check_button_wrapper_with_error {
+    width: 150px;
+    height: 42px;
+
+    .error_message {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        top: 26px;
+
+        svg {
+            margin-right: $space_8;
+            min-width: 18px;
+            max-width: 18px;
+        }
+
+        span {
+            color: map-get($elem_color, error);
+            @include label_01;
+        }
+    }
+}
+
+@mixin check_button {
+    clip: rect(0,0,0,0);
+    border: 0;
+    height: 1px;
+    left: 0.7rem;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 1.25rem;
+    visibility: inherit;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@mixin check_button_label {
+    cursor: pointer;
+    display: flex;
+    padding-left: 1.25rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.check_button_wrapper {
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    @include body_01;
+
+    &.with_error {
+        @extend %check_button_wrapper_with_error;
+    }
+}
+
+
+.check_button_light {
+    @include check_button;
+
+    &:focus-visible + .check_button_label_light:before {
+        outline-offset: max(2px, 0.12em);
+        outline: 1px solid map-get($elem_color, default_selected);
+    }
+
+    &:disabled + .check_button_label_light:before {
+        @include disabled_state;
+        cursor: auto;
+    }
+
+    &:disabled + .check_button_label_light {
+        .check_button_label_text {
+            @include disabled_state;
+            cursor: auto;
+        }
+    }
+
+    &:checked + .check_button_label_light:before {
+        background-color: map-get($elem_color, default_selected);
+        border: 2px solid map-get($elem_color, default_selected);
+    }
+
+    &:checked + .check_button_label_light:after {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    &:checked + .error:before {
+        background-color: map-get($elem_color, error);
+        border: 2px solid map-get($elem_color, error);
+    }
+}
+
+.check_button_label_light {
+    @include check_button_label;
+
+    &::before {
+        background-color: transparent;
+        border-radius: 4px;
+        content: "";
+        height: 1rem;
+        left: 0;
+        position: absolute;
+        width: 1rem;
+        border: 2px solid $gray_80;
+    }
+
+    &:after {
+        background: none;
+        content: "";
+        height: 4px;
+        left: 6px;
+        position: absolute;
+        top: 3px;
+        transform: scale(0) rotate(-45deg);
+        transform-origin: bottom right;
+        width: 8px;
+        border-bottom: 2px solid $white;
+        border-left: 2px solid $white;
+    }
+
+    &.error {
+        &::before {
+            background-color: transparent;
+            border-radius: 4px;
+            content: "";
+            height: 1rem;
+            left: 0;
+            position: absolute;
+            width: 1rem;
+            border: 2px solid map-get($elem_color, error );
+        }
+    
+        &:after {
+            background: none;
+            content: "";
+            height: 4px;
+            left: 6px;
+            position: absolute;
+            top: 3px;
+            transform: scale(0) rotate(-45deg);
+            transform-origin: bottom right;
+            width: 8px;
+            border-bottom: 2px solid $white;
+            border-left: 2px solid $white;
+        }
+    }
+}
+
+.check_button_label_text {
+    @include body_01;
+    margin-left: $space_8;
+    padding: 2px 0;
+}

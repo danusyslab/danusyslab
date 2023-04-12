@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@font-face {
+  src: url("../fonts/IBMPlexSans-Light.ttf") format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/IBMPlexSans-Bold.ttf) format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-style: normal;
+}
+/* CSS Document */
+/* HTML5 display-role reset for older browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  word-break: keep-all;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "IBMPlexSansKR-Regular";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@keyframes accordionOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes accordionClose {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translateY(120px);
+  }
+}
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translatex(420px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade_right {
+  0% {
+    opacity: 0;
+    transform: translatex(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes change {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, -118%, 0);
+  }
+  35% {
+    transform: translate3d(0, -118%, 0);
+  }
+  50% {
+    transform: translate3d(0, -233%, 0);
+  }
+  60% {
+    transform: translate3d(0, -233%, 0);
+  }
+  75% {
+    transform: translate3d(0, -118%, 0);
+  }
+  85% {
+    transform: translate3d(0, -118%, 0);
+  }
+  95% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes colorPal {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(101%);
+  }
+  100% {
+    transform: scaleX(101%);
+  }
+}
+@keyframes colorNum {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani_opacity {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background_color {
+  0% {
+    transform: scaleY(0.9);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes loading {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+@keyframes loading_spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.before_load .loading {
+  opacity: 1;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  opacity: 0;
+  transition: 0.5s;
+}
+.loading .loading_circle {
+  width: 54px;
+  height: 54px;
+  animation: loading_spin 3s infinite;
+}
+.loading .loading_circle circle {
+  stroke: #0F6BFF;
+  stroke-width: 4;
+  stroke-dasharray: 157;
+  stroke-dashoffset: -157;
+  fill: none;
+  animation: loading 1s infinite;
+}
+
+@font-face {
+  src: url("../fonts/IBMPlexSans-Light.ttf") format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url(../fonts/IBMPlexSans-Bold.ttf) format("truetype");
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-style: normal;
+}
+.check_button_wrapper.with_error {
+  width: 150px;
+  height: 42px;
+}
+.check_button_wrapper.with_error .error_message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 26px;
+}
+.check_button_wrapper.with_error .error_message svg {
+  margin-right: 8px;
+  min-width: 18px;
+  max-width: 18px;
+}
+.check_button_wrapper.with_error .error_message span {
+  color: #E02C10;
+  font-family: "IBM Plex Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  letter-spacing: 0.02rem;
+}
+
+.check_button_wrapper {
+  position: relative;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: "IBM Plex Sans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+}
+.check_button_light {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  left: 0.7rem;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 1.25rem;
+  visibility: inherit;
+  white-space: nowrap;
+  width: 1px;
+}
+.check_button_light:focus-visible + .check_button_label_light:before {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #0F6BFF;
+}
+.check_button_light:disabled + .check_button_label_light:before {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_light:disabled + .check_button_label_light .check_button_label_text {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_light:checked + .check_button_label_light:before {
+  background-color: #0F6BFF;
+  border: 2px solid #0F6BFF;
+}
+.check_button_light:checked + .check_button_label_light:after {
+  transform: scale(1) rotate(-45deg);
+}
+.check_button_light:checked + .error:before {
+  background-color: #E02C10;
+  border: 2px solid #E02C10;
+}
+
+.check_button_label_light {
+  cursor: pointer;
+  display: flex;
+  padding-left: 1.25rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.check_button_label_light::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #545454;
+}
+.check_button_label_light:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.check_button_label_light.error::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #E02C10;
+}
+.check_button_label_light.error:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+
+.check_button_label_text {
+  font-family: "IBM Plex Sans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+  margin-left: 8px;
+  padding: 2px 0;
+}

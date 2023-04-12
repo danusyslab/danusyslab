@@ -1682,3 +1682,56 @@ html, body {
 .buttons_area .buttons_item button:last-child {
   margin-right: 0 !important;
 }
+
+.image_container_saper {
+  width: 100%;
+  margin-top: 40px;
+}
+.image_container_saper .image_con_saper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image_container_saper .image_con_saper.margintop {
+  margin-top: 8px;
+}
+.image_container_saper .image_con_saper.margintop ul li {
+  width: 50%;
+}
+.image_container_saper .image_con_saper.margintop ul li img {
+  width: 80%;
+}
+.image_container_saper .image_con_saper .image_area_saper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+.image_container_saper .image_con_saper .image_area_saper .image_item_saper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  padding: 120px;
+  margin-right: 8px;
+  border-right: 8px solid #EEEEEE;
+}
+.image_container_saper .image_con_saper .image_area_saper .image_item_saper:last-child {
+  margin-right: 0;
+  border-right: 0;
+}
+.image_container_saper .image_con_saper .image_area_saper .image_item_saper img {
+  width: 100%;
+}
+.image_container_saper .disc_con {
+  margin-top: 24px;
+}
+.image_container_saper .disc_con .disc_style {
+  font-family: "IBM Plex Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
