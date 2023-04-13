@@ -294,7 +294,6 @@ html, body {
 }
 .check_button_wrapper.with_error {
   width: 150px;
-  height: 42px;
 }
 .check_button_wrapper.with_error .error_message {
   display: flex;
@@ -419,6 +418,289 @@ html, body {
   width: 8px;
   border-bottom: 2px solid #FFFFFF;
   border-left: 2px solid #FFFFFF;
+}
+.check_button_label_light span {
+  color: #545454;
+}
+
+.check_button_indeterminate_light {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  left: 0.7rem;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 1.25rem;
+  visibility: inherit;
+  white-space: nowrap;
+  width: 1px;
+}
+.check_button_indeterminate_light:focus-visible + .check_button_label_light:before {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #0F6BFF;
+}
+.check_button_indeterminate_light:disabled + .check_button_label_light:before {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_indeterminate_light:disabled + .check_button_label_light .check_button_label_text {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_indeterminate_light:checked + .check_button_label_indeterminate_light:before {
+  background-color: #0F6BFF;
+  border: 2px solid #0F6BFF;
+}
+.check_button_indeterminate_light:checked + .error:before {
+  background-color: #E02C10;
+  border: 2px solid #E02C10;
+}
+
+.check_button_label_indeterminate_light {
+  cursor: pointer;
+  display: flex;
+  padding-left: 1.25rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.check_button_label_indeterminate_light::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #545454;
+}
+.check_button_label_indeterminate_light:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+}
+.check_button_label_indeterminate_light.error::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #E02C10;
+}
+.check_button_label_indeterminate_light.error:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.check_button_label_indeterminate_light span {
+  color: #545454;
+}
+
+.check_button_dark {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  left: 0.7rem;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 1.25rem;
+  visibility: inherit;
+  white-space: nowrap;
+  width: 1px;
+}
+.check_button_dark:focus-visible + .check_button_label_dark:before {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #FFFFFF;
+}
+.check_button_dark:disabled + .check_button_label_dark:before {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_dark:disabled + .check_button_label_dark .check_button_label_text {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_dark:checked + .check_button_label_dark:before {
+  background-color: #0F6BFF;
+  border: 2px solid #0F6BFF;
+}
+.check_button_dark:checked + .check_button_label_dark:after {
+  transform: scale(1) rotate(-45deg);
+}
+.check_button_dark:checked + .error:before {
+  background-color: #E02C10;
+  border: 2px solid #E02C10;
+}
+
+.check_button_label_dark {
+  cursor: pointer;
+  display: flex;
+  padding-left: 1.25rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.check_button_label_dark::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #B1B1B1;
+}
+.check_button_label_dark:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.check_button_label_dark.error::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #E02C10;
+}
+.check_button_label_dark.error:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.check_button_label_dark span {
+  color: #B1B1B1;
+}
+
+.check_button_indeterminate_dark {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  left: 0.7rem;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 1.25rem;
+  visibility: inherit;
+  white-space: nowrap;
+  width: 1px;
+}
+.check_button_indeterminate_dark:focus-visible + .check_button_label_dark:before {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid white;
+}
+.check_button_indeterminate_dark:disabled + .check_button_label_dark:before {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_indeterminate_dark:disabled + .check_button_label_dark .check_button_label_text {
+  opacity: 0.35;
+  cursor: auto;
+}
+.check_button_indeterminate_dark:checked + .check_button_label_indeterminate_dark:before {
+  background-color: #0F6BFF;
+  border: 2px solid #0F6BFF;
+}
+.check_button_indeterminate_dark:checked + .check_button_label_indeterminate_dark:after {
+  border-bottom: 2px solid #FFFFFF;
+}
+.check_button_indeterminate_dark:checked + .error:before {
+  background-color: #E02C10;
+  border: 2px solid #E02C10;
+}
+
+.check_button_label_indeterminate_dark {
+  cursor: pointer;
+  display: flex;
+  padding-left: 1.25rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.check_button_label_indeterminate_dark::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #B1B1B1;
+}
+.check_button_label_indeterminate_dark:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  transform-origin: bottom right;
+  width: 8px;
+}
+.check_button_label_indeterminate_dark.error::before {
+  background-color: transparent;
+  border-radius: 4px;
+  content: "";
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
+  border: 2px solid #E02C10;
+}
+.check_button_label_indeterminate_dark.error:after {
+  background: none;
+  content: "";
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  top: 3px;
+  transform: scale(0) rotate(-45deg);
+  transform-origin: bottom right;
+  width: 8px;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+}
+.check_button_label_indeterminate_dark span {
+  color: #B1B1B1;
 }
 
 .check_button_label_text {
