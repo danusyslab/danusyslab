@@ -1396,7 +1396,7 @@ html, body {
     width: 920px !important;
   }
   .main_container .btn_area ul li {
-    width: 25% !important;
+    width: 33.3% !important;
   }
   .main_container .btn_area ul li .btn_text {
     min-height: 230px !important;
@@ -1635,7 +1635,7 @@ html, body {
     justify-content: space-between !important;
   }
   .main_container .btn_area ul li {
-    width: 48% !important;
+    width: 32% !important;
     margin-right: 0 !important;
     margin-bottom: 24px;
   }
@@ -1646,10 +1646,7 @@ html, body {
     margin-bottom: 0 !important;
   }
   .main_container .btn_area ul li .btn_text {
-    min-height: 211px;
-  }
-  .main_container .btn_area ul li .btn_text {
-    min-height: 200px !important;
+    min-height: 204px;
   }
   .main_container .text_line {
     padding: 80px 40px !important;
@@ -2868,7 +2865,6 @@ main.main_container .btn_area ul {
   display: flex;
   margin-top: 40px;
   width: 100%;
-  align-items: center;
   justify-content: center;
 }
 main.main_container .btn_area ul li {
@@ -2876,21 +2872,22 @@ main.main_container .btn_area ul li {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 16px;
-  width: 25%;
+  width: 33.3%;
 }
 main.main_container .btn_area ul li:last-child {
   margin-right: 0;
 }
 main.main_container .btn_area ul li .btn_text {
   width: 100%;
-  min-height: 250px;
   display: flex;
+  min-height: 214px;
   flex-direction: column;
   border: 1px solid #E2E2E2;
   border-radius: 4px;
   padding: 40px 24px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  justify-content: space-between;
 }
 main.main_container .btn_area ul li .btn_text:hover {
   background: white;
@@ -2910,7 +2907,7 @@ main.main_container .btn_area ul li .btn_text h3 {
   color: #212121;
   font-weight: 600;
 }
-main.main_container .btn_area ul li .btn_text span {
+main.main_container .btn_area ul li .btn_text .sub_text {
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 16px;

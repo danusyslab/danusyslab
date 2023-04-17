@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// toggle button
+
+$elem_color: (
+    toggle_dark: $gray_30,
+    toggle_light: $gray_80,
+    toggle_selected: $danu_blue_60
+);
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+
+.toggle_group {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    .toggle_label_light {
+        @include body_01;
+        margin-right: $space_4;
+        color: $gray_90;
+    }
+
+    .toggle_label_dark {
+        @include body_01;
+        margin-right: $space_4;
+        color: map-get($elem_color, toggle_dark);
+    }
+
+    .toggle_wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &.disabled {
+            @include disabled_state;
+            cursor: auto;
+        }
+
+        .toggle_appearance {
+            width: 28px;
+            height: 18px;
+            border: 2px solid map-get($elem_color, toggle_light);
+            border-radius: 20px;
+            margin-right: $space_8;
+            background: none;
+    
+            .toggle_button {
+                background: map-get($elem_color, toggle_light);
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 50%;
+                left: 4px;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                transition: all 0.2s ease-in;
+            }
+        }
+
+        .state_label {
+            @include body_01;
+
+            &.off {
+                display: block;
+            }
+
+            &.on {
+                display: none;
+            }
+        }
+
+        &.active {
+            .toggle_appearance {
+                background: map-get($elem_color, toggle_selected);
+                border: none;
+
+                .toggle_button {
+                    left: calc(100% - 37px);
+                    background: $white;
+                }
+            }
+
+            .state_label {
+                &.off {
+                    display: none;
+                }
+    
+                &.on {
+                    display: block;
+                }
+            }
+        }
+    }
+}
