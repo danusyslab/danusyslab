@@ -326,7 +326,7 @@ html, body {
   opacity: 0.35;
   cursor: auto;
 }
-.toggle_group .toggle_wrapper .toggle_appearance {
+.toggle_group .toggle_wrapper .toggle_appearance_light {
   width: 28px;
   height: 18px;
   border: 2px solid #545454;
@@ -334,8 +334,35 @@ html, body {
   margin-right: 8px;
   background: none;
 }
-.toggle_group .toggle_wrapper .toggle_appearance .toggle_button {
+.toggle_group .toggle_wrapper .toggle_appearance_light:focus-visible {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #0F6BFF;
+}
+.toggle_group .toggle_wrapper .toggle_appearance_light .toggle_button {
   background: #545454;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.toggle_group .toggle_wrapper .toggle_appearance_dark {
+  width: 28px;
+  height: 18px;
+  border: 2px solid #B1B1B1;
+  border-radius: 20px;
+  margin-right: 8px;
+  background: none;
+}
+.toggle_group .toggle_wrapper .toggle_appearance_dark:focus-visible {
+  outline-offset: max(2px, 0.12em);
+  outline: 1px solid #FFFFFF;
+}
+.toggle_group .toggle_wrapper .toggle_appearance_dark .toggle_button {
+  background: #B1B1B1;
   width: 10px;
   height: 10px;
   position: absolute;

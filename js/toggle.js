@@ -14,16 +14,11 @@
 
     toggleBtns.forEach((toggleBtn)=>{
 
-        const toggleWrapper = toggleBtn.closest('.toggle_wrapper');
-        console.log('dd');
-        
-        toggleBtn.addEventListener('change', ()=>{
-            if(toggleBtn.disabled) {
-                toggleWrapper.classList.add('disabled');
-            } else if(toggleBtn.enabled) {
-                toggleWrapper.classList.remove('disabled');
-            }
-        });
-    });
+    const toggleWrapper = toggleBtn.closest('.toggle_wrapper');
+
+    if(toggleBtn.disabled) {
+        toggleWrapper.classList.add('disabled');
+    }
+});
 
 })();
