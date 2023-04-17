@@ -385,11 +385,11 @@ html, body {
 .toggle_group .toggle_wrapper .state_label.on {
   display: none;
 }
-.toggle_group .toggle_wrapper.active .toggle_appearance {
+.toggle_group .toggle_wrapper.active .toggle_appearance_light {
   background: #0F6BFF;
   border: none;
 }
-.toggle_group .toggle_wrapper.active .toggle_appearance .toggle_button {
+.toggle_group .toggle_wrapper.active .toggle_appearance_light .toggle_button {
   left: calc(100% - 37px);
   background: #FFFFFF;
 }

@@ -113,7 +113,7 @@ $elem_color: (
         }
 
         &.active {
-            .toggle_appearance {
+            .toggle_appearance_light {
                 background: map-get($elem_color, toggle_selected);
                 border: none;
 
