@@ -379,6 +379,9 @@ html, body {
   line-height: 1.25rem;
   letter-spacing: 0.01rem;
 }
+.toggle_group .toggle_wrapper .state_label.dark {
+  color: #B1B1B1;
+}
 .toggle_group .toggle_wrapper .state_label.off {
   display: block;
 }
@@ -390,6 +393,14 @@ html, body {
   border: none;
 }
 .toggle_group .toggle_wrapper.active .toggle_appearance_light .toggle_button {
+  left: calc(100% - 37px);
+  background: #FFFFFF;
+}
+.toggle_group .toggle_wrapper.active .toggle_appearance_dark {
+  background: #0F6BFF;
+  border: none;
+}
+.toggle_group .toggle_wrapper.active .toggle_appearance_dark .toggle_button {
   left: calc(100% - 37px);
   background: #FFFFFF;
 }

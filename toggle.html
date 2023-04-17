@@ -116,12 +116,12 @@
                                     <span class="submenu_item">Radio Button</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="checkbox.html" class="side_item">
                                     <span class="submenu_item">Checkbox</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="toggle.html" class="side_item">
                                     <span class="submenu_item">Toggle</span>
                                 </a>
@@ -715,7 +715,7 @@
                                         <li id="scss-tab-1" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li class="code_tab_item">
+                                        <li id="js-tab-1" class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -730,10 +730,25 @@
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">fieldset </span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">for</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle" </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_group"</span>
+                                                    <span class="token class_name">"toggle_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle_label_light"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
@@ -741,55 +756,55 @@
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_wrapper"</span>
+                                                    <span class="token class_name">"toggle_wrapper"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">input </span>
-                                                    <span class="token class">type</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"checkbox" </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_light" </span>
-                                                    <span class="token class">id </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"id_name"</span>
+                                                    <span class="token class_name">"toggle_appearance_light"</span>
                                                     <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"id_name" </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_label_light" </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">                ::before</span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">            <</span>
                                                     <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle_button"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
                                                     <span class="token class">class </span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_label_text" </span>
+                                                    <span class="token class_name">"state_label off" </span>
                                                     <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
+                                                    <span class="token">끔</span>
                                                     <span class="token tag"><</span>
                                                     <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token tag">                ::after</span>
-                                                </div>
-                                                <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">/label </span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"state_label on" </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">켬</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
@@ -799,7 +814,7 @@
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/fieldset</span>
+                                                    <span class="token name">/label</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
@@ -812,33 +827,53 @@
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_wrapper {</span>
+                                                    <span class="token class_list">.toggle_group {</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   &.with_error</span>
+                                                    <span class="token class_list">   .toggle_label_light</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token pink">       @extend </span>
-                                                    <span class="token class">%radio_button_wrapper_with_error</span>
-                                                    <span class="token">;</span>
+                                                    <span class="token class_list">   .toggle_label_dark</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   }</span>
+                                                    <span class="token class_list">   .toggle_wrapper</span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token class_list">}</span>
                                                 </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="js-1" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_light 
-                                                    </span>
+                                                    <span class="token">const toggleList = document.querySelectorAll('.toggle_wrapper');</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_label_light 
-                                                    </span>
+                                                    <span class="token">toggleList.forEach((toggle) => {</span>
                                                 </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">.check_button_label_text 
-                                                    </span>
+                                                <div class="token_line"><span class="token">    toggle.onclick = () => {</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    toggle.classList.toggle('active')</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    }</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">});</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">const toggleBtns = document.querySelectorAll('.toggle_appearance');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">toggleBtns.forEach((toggleBtn)=>{</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">const toggleWrapper = toggleBtn.closest('.toggle_wrapper');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">if(toggleBtn.disabled) {</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    toggleWrapper.classList.add('disabled');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">}</span>
                                                 </div>
                                             </pre>
                                         </div>
@@ -851,40 +886,30 @@
                         <div class="config_con">
                             <div id="toggle_dark" class="config_area dark">
                                 <div class="dark_mode_area">
-                                    <fieldset class="check_button_group">
-                                        <div class="check_button_wrapper" style="margin-bottom: 8px;">
-                                            <input type="checkbox" class="check_button_dark"  id="check-default-4" name="check-button-group-5">
-                                            <label for="check-default-4" class="check_button_label_dark">
-                                                <span class="check_button_label_text">Label 1</span>
-                                            </label>
+                                    <label for="toggle" class="toggle_group" style="width: 120px;">
+                                        <span class="toggle_label_dark">Label</span>
+                                        <div class="toggle_wrapper">
+                                            <button class="toggle_appearance_dark">
+                                                <span class="toggle_button"></span>
+                                            </button>
+                                            <span class="state_label dark off">끔</span>
+                                            <span class="state_label dark on">켬</span>
                                         </div>
-                                        <div class="check_button_wrapper" style="margin-bottom: 8px;">
-                                            <input type="checkbox" class="check_button_dark"  id="check-default-5" name="check-button-group-5">
-                                            <label for="check-default-5" class="check_button_label_dark">
-                                                <span class="check_button_label_text">Label 2</span>
-                                            </label>
-                                        </div>
-                                        <div class="check_button_wrapper">
-                                            <input type="checkbox" class="check_button_dark"  id="check-default-6" name="check-button-group-5">
-                                            <label for="check-default-6" class="check_button_label_dark">
-                                                <span class="check_button_label_text">Label 3</span>
-                                            </label>
-                                        </div>
-                                    </fieldset>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                         <div class="code_container">
                             <div id="toggle_dark_code" class="code_con">
                                 <div class="code_tab_con">
-                                    <ul id="code-tab-area-5" class="code_tab_area">
-                                        <li id="html-tab-5" class="code_tab_item active">
+                                    <ul id="code-tab-area-2" class="code_tab_area">
+                                        <li id="html-tab-2" class="code_tab_item active">
                                             <span>HTML</span>
                                         </li>
-                                        <li id="scss-tab-5" class="code_tab_item">
+                                        <li id="scss-tab-2" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li class="code_tab_item">
+                                        <li id="js-tab-2" class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -892,17 +917,32 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div id="html-5" class="code_source_container">
+                                <div id="html-2" class="code_source_container">
                                     <div class="code_source_con">
                                         <div class="code_source_con">
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">fieldset </span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">for</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle" </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_group"</span>
+                                                    <span class="token class_name">"toggle_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle_label_dark"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
@@ -910,55 +950,55 @@
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_wrapper"</span>
+                                                    <span class="token class_name">"toggle_wrapper"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">input </span>
-                                                    <span class="token class">type</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"checkbox" </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_dark" </span>
-                                                    <span class="token class">id </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"id_name"</span>
+                                                    <span class="token class_name">"toggle_appearance_dark"</span>
                                                     <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"id_name" </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_label_dark" </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">                ::before</span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">            <</span>
                                                     <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"toggle_button"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
                                                     <span class="token class">class </span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"check_button_label_text" </span>
+                                                    <span class="token class_name">"state_label dark off" </span>
                                                     <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
+                                                    <span class="token">끔</span>
                                                     <span class="token tag"><</span>
                                                     <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token tag">                ::after</span>
-                                                </div>
-                                                <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">/label </span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class </span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"state_label dark on" </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">켬</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
@@ -968,46 +1008,66 @@
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/fieldset</span>
+                                                    <span class="token name">/label</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="scss-5" class="code_source_container" style="display: none;">
+                                <div id="scss-2" class="code_source_container" style="display: none;">
                                     <div class="code_source_con">
                                         <div class="code_source_con">
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_wrapper {</span>
+                                                    <span class="token class_list">.toggle_group {</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   &.with_error</span>
+                                                    <span class="token class_list">   .toggle_label_light</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token pink">       @extend </span>
-                                                    <span class="token class">%radio_button_wrapper_with_error</span>
-                                                    <span class="token">;</span>
+                                                    <span class="token class_list">   .toggle_label_dark</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   }</span>
+                                                    <span class="token class_list">   .toggle_wrapper</span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token class_list">}</span>
                                                 </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="js-2" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_dark 
-                                                    </span>
+                                                    <span class="token">const toggleList = document.querySelectorAll('.toggle_wrapper');</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.check_button_label_dark 
-                                                    </span>
+                                                    <span class="token">toggleList.forEach((toggle) => {</span>
                                                 </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">.check_button_label_text 
-                                                    </span>
+                                                <div class="token_line"><span class="token">    toggle.onclick = () => {</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    toggle.classList.toggle('active')</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    }</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">});</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">const toggleBtns = document.querySelectorAll('.toggle_appearance');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">toggleBtns.forEach((toggleBtn)=>{</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">const toggleWrapper = toggleBtn.closest('.toggle_wrapper');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">if(toggleBtn.disabled) {</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">    toggleWrapper.classList.add('disabled');</span>
+                                                </div>
+                                                <div class="token_line"><span class="token">}</span>
                                                 </div>
                                             </pre>
                                         </div>
@@ -1027,6 +1087,7 @@
     </div>
     <script src="js/accodion.js"></script>
     <script src="js/toggle.js"></script>
+    <script src="js/toggleBtn.js"></script>
     <script src="js/topButton.js"></script>
     <script>
         function goToTop() {

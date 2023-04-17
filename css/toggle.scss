@@ -103,6 +103,10 @@ $elem_color: (
         .state_label {
             @include body_01;
 
+            &.dark {
+                color: map-get($elem_color, toggle_dark);
+            }
+
             &.off {
                 display: block;
             }
@@ -114,6 +118,16 @@ $elem_color: (
 
         &.active {
             .toggle_appearance_light {
+                background: map-get($elem_color, toggle_selected);
+                border: none;
+
+                .toggle_button {
+                    left: calc(100% - 37px);
+                    background: $white;
+                }
+            }
+
+            .toggle_appearance_dark {
                 background: map-get($elem_color, toggle_selected);
                 border: none;
 
