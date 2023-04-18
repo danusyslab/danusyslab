@@ -1416,6 +1416,7 @@ html, body {
 }
 .code_container .code_con .code_source_container .code_source_con pre.priview_code .token_line {
   display: flex;
+  color: #FFFFFF;
 }
 .code_container .code_con .code_source_container .code_source_con pre.priview_code .token_line .token {
   font-family: "IBM Plex Sans";

@@ -593,6 +593,7 @@
 
                     .token_line {
                         display: flex;
+                        color: $white;
 
                         .token {
                             @include body_01;
