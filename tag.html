@@ -728,21 +728,98 @@
                     </div>
                     <div id="lightCon" class="config_code">
                         <div class="config_con">
-                            <div id="toggle_light" class="config_area" style="display: flex;">
-                                <label for="toggle" class="toggle_group" style="width: 120px;">
-                                    <span class="toggle_label_light">Label</span>
-                                    <div class="toggle_wrapper">
-                                        <button class="toggle_appearance_light">
-                                            <span class="toggle_button"></span>
-                                        </button>
-                                        <span class="state_label off">끔</span>
-                                        <span class="state_label on">켬</span>
+                            <div id="tag-solid-light" class="config_area" style="display: flex;">
+                                <div class="tag_group">
+                                    <div class="tag_solid_red">
+                                        <span class="tag_label">Label</span>
                                     </div>
-                                </label>
+                                    <div class="tag_solid_orange">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_yellow">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_green">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_cyan">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_blue">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_purple">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_dark_gray">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_solid_black">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                </div>
                             </div>
+                            <div id="tag-outlined-light" class="config_area" style="display: none;">
+                                <div class="tag_group">
+                                    <div class="tag_outlined_red">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_orange">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_yellow">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_green">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_cyan">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_blue">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_purple">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_dark_gray">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                    <div class="tag_outlined_black">
+                                        <span class="tag_label">Label</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sortingAreaLight" class="config_sel_con">
+                                <button id="closeConfigBtnLight" class="accodion_btn_cancel">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                                </button>
+                                <div class="config_sel_area">
+                                    <fieldset id="styleTag" class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">스타일</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="tag-style-light-1" name="option-1" value="solid" checked>
+                                            <label for="tag-style-light-1" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Solid</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="tag-style-light-2" name="option-1" value="outlined">
+                                            <label for="tag-style-light-2" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Outlined</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button id="open_config_sel_btn" class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
                         </div>
                         <div class="code_container">
-                            <div id="toggle_light_code" class="code_con">
+                            <div id="tag-solid-light-code" class="code_con">
                                 <div class="code_tab_con">
                                     <ul id="code-tab-area-1" class="code_tab_area">
                                         <li id="html-tab-1" class="code_tab_item active">
@@ -751,7 +828,7 @@
                                         <li id="scss-tab-1" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li id="js-tab-1" class="code_tab_item">
+                                        <li class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -766,91 +843,294 @@
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle" </span>
+                                                    <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_group"</span>
+                                                    <span class="token class_name">"tag_group"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token tag">    <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_label_light"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span</span>
-                                                    <span class="token tag">></span>
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //레드 솔리드 태그</div>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_wrapper"</span>
+                                                    <span class="token class_name">"tag_solid_red"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_appearance_light"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">            <</span>
                                                     <span class="token name">span </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_button"</span>
+                                                    <span class="token class_name">"tag_label"</span>
                                                     <span class="token tag">></span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label off" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">끔</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label on" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">켬</span>
+                                                    <span class="token">Label</span>
                                                     <span class="token tag"><</span>
                                                     <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
-                                                    <span class="token name">/div</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //오렌지 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_orange"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //옐로우 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_yellow"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그린 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_green"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //사이언 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_cyan"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블루 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_blue"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //퍼플 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_purple"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //다크그레이 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_dark_gray"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블랙 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_black"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/label</span>
+                                                    <span class="token name">div</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
@@ -863,78 +1143,41 @@
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.toggle_group {</span>
+                                                    <span class="token class_list">.tag_group</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_light</span>
+                                                    <span class="token class_list">.tag_solid_red</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_dark</span>
+                                                    <span class="token class_list">.tag_solid_orange</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_wrapper</span>
+                                                    <span class="token class_list">.tag_solid_yellow</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">}</span>
-                                                </div>
-                                            </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="js-1" class="code_source_container" style="display: none;">
-                                    <div class="code_source_con">
-                                        <div class="code_source_con">
-                                            <pre class="priview_code" contenteditable="plaintext-only">
-                                                <div class="token_line">
-                                                    <span class="token name">const </span><span class="token class">toggleList </span>= document. <span class="token class_list"> querySelectorAll </span>( <span class="token class_name">'.toggle_wrapper'</span>);
+                                                    <span class="token class_list">.tag_solid_green</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class">toggleList</span>.<span class="token class_list">forEach</span>((toggle) <span class="token name"> => </span>{
+                                                    <span class="token class_list">.tag_solid_cyan</span>
                                                 </div>
-                                                <div class="token_line"><span class="token class">  toggle.</span><span class="token class_list"> onclick </span>= () <span class="token name"> => </span>{
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_blue</span>
                                                 </div>
-                                                <div class="token_line"><span class="token class">    toggle</span>.<span class="token name">classList</span>.<span class="token class_list">toggle</span>(<span class="token class_name">'active'</span>);
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_purple</span>
                                                 </div>
-                                                <div class="token_line"><span class="token">});</span>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_dark_gray</span>
                                                 </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleBtns</span> = document.<span class="token class_list"> querySelectorAll</span>(<span class="token class_list">'.toggle_appearance'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">toggleBtns</span>.<span class="token class_list">forEach</span>((toggleBtn) <span class="token name"> =></span> {
-                                                </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleWrapper</span> = <span class="token class">toggleBtn</span>.<span class="token class_list">closest</span>(<span class="token class_name">'.toggle_wrapper'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">if(</span>toggleBtn.disabled<span class="token class>)</span> {
-                                                </div>
-                                                <div class="token_line"><span class="token class">    toggleWrapper</span>.<span class="token class">classList</span>.<span class="token class_list">add</span>(<span class="token class_name">'disabled'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token">}</span>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_black</span>
                                                 </div>
                                             </pre>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id="darkCon" class="config_code" style="display: none;">
-                        <div class="config_con">
-                            <div id="toggle_dark" class="config_area dark">
-                                <div class="dark_mode_area">
-                                    <label for="toggle" class="toggle_group" style="width: 120px;">
-                                        <span class="toggle_label_dark">Label</span>
-                                        <div class="toggle_wrapper">
-                                            <button class="toggle_appearance_dark">
-                                                <span class="toggle_button"></span>
-                                            </button>
-                                            <span class="state_label dark off">끔</span>
-                                            <span class="state_label dark on">켬</span>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="code_container">
-                            <div id="toggle_dark_code" class="code_con">
+                            <div id="tag-outlined-light-code" class="code_con" style="display: none;">
                                 <div class="code_tab_con">
                                     <ul id="code-tab-area-2" class="code_tab_area">
                                         <li id="html-tab-2" class="code_tab_item active">
@@ -943,7 +1186,7 @@
                                         <li id="scss-tab-2" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li id="js-tab-2" class="code_tab_item">
+                                        <li class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -958,91 +1201,294 @@
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle" </span>
+                                                    <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_group"</span>
+                                                    <span class="token class_name">"tag_group"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token tag">    <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_label_dark"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span</span>
-                                                    <span class="token tag">></span>
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //레드 아웃라인 태그</div>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_wrapper"</span>
+                                                    <span class="token class_name">"tag_outlined_red"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_appearance_dark"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">            <</span>
                                                     <span class="token name">span </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_button"</span>
+                                                    <span class="token class_name">"tag_label"</span>
                                                     <span class="token tag">></span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label dark off" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">끔</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label dark on" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">켬</span>
+                                                    <span class="token">Label</span>
                                                     <span class="token tag"><</span>
                                                     <span class="token name">/span</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
-                                                    <span class="token name">/div</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //오렌지 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_orange"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //옐로우 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_yellow"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그린 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_green"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //사이언 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_cyan"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블루 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_blue"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //퍼플 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_purple"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //다크그레이 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_dark_gray"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블랙 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_black"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/label</span>
+                                                    <span class="token name">div</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
@@ -1055,51 +1501,849 @@
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.toggle_group {</span>
+                                                    <span class="token class_list">.tag_group</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_light</span>
+                                                    <span class="token class_list">.tag_outlined_red</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_dark</span>
+                                                    <span class="token class_list">.tag_outlined_orange</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">   .toggle_wrapper</span>
+                                                    <span class="token class_list">.tag_outlined_yellow</span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">}</span>
+                                                    <span class="token class_list">.tag_outlined_green</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_cyan</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_blue</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_purple</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_dark_gray</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_black</span>
                                                 </div>
                                             </pre>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="js-2" class="code_source_container" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="darkCon" class="config_code" style="display: none;">
+                        <div class="config_con">
+                            <div id="tag-solid-dark" class="config_area dark">
+                                <div class="dark_mode_area">
+                                    <div class="tag_group">
+                                        <div class="tag_solid_red">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_orange">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_yellow">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_green">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_cyan">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_blue">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_purple">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_gray">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_solid_white">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tag-outlined-dark" class="config_area dark" style="display: none;">
+                                <div class="dark_mode_area">
+                                    <div class="tag_group">
+                                        <div class="tag_outlined_red">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_orange">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_yellow">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_green">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_cyan">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_blue">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_purple">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_gray">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                        <div class="tag_outlined_white">
+                                            <span class="tag_label">Label</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sortingAreaDark" class="config_sel_con">
+                                <button id="closeConfigBtnDark" class="accodion_btn_cancel">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                                </button>
+                                <div class="config_sel_area">
+                                    <fieldset id="statesRadioDark" class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">스타일</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="tag-style-dark-1" name="option-21" value="true" checked>
+                                            <label for="tag-style-dark-1" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Solid</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="tag-style-dark-2" name="option-21" value="true">
+                                            <label for="tag-style-dark-2" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">Outlined</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button id="open_config_sel_btn2" class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
+                        </div>
+                        <div class="code_container">
+                            <div id="tag-solid-dark-code" class="code_con">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-3" class="code_tab_area">
+                                        <li id="html-tab-3" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-3" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>JS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-3" class="code_source_container">
                                     <div class="code_source_con">
                                         <div class="code_source_con">
                                             <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token name">const </span><span class="token class">toggleList </span>= document. <span class="token class_list"> querySelectorAll </span>( <span class="token class_name">'.toggle_wrapper'</span>);
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_group"</span>
+                                                    <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
-                                                    <span class="token class">toggleList</span>.<span class="token class_list">forEach</span>((toggle) <span class="token name"> => </span>{
+                                                    <div class="token">     </div>
                                                 </div>
-                                                <div class="token_line"><span class="token class">  toggle.</span><span class="token class_list"> onclick </span>= () <span class="token name"> => </span>{
+                                                <div class="token_line">
+                                                    <div class="token">     //레드 솔리드 태그</div>
                                                 </div>
-                                                <div class="token_line"><span class="token class">    toggle</span>.<span class="token name">classList</span>.<span class="token class_list">toggle</span>(<span class="token class_name">'active'</span>);
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_red"</span>
+                                                    <span class="token tag">></span>
                                                 </div>
-                                                <div class="token_line"><span class="token">});</span>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
                                                 </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleBtns</span> = document.<span class="token class_list"> querySelectorAll</span>(<span class="token class_list">'.toggle_appearance'</span>);
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
                                                 </div>
-                                                <div class="token_line"><span class="token class">toggleBtns</span>.<span class="token class_list">forEach</span>((toggleBtn) <span class="token name"> =></span> {
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
                                                 </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleWrapper</span> = <span class="token class">toggleBtn</span>.<span class="token class_list">closest</span>(<span class="token class_name">'.toggle_wrapper'</span>);
+                                                <div class="token_line">
+                                                    <div class="token">     //오렌지 솔리드 태그</div>
                                                 </div>
-                                                <div class="token_line"><span class="token class">if(</span>toggleBtn.disabled<span class="token class>)</span> {
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_orange"</span>
+                                                    <span class="token tag">></span>
                                                 </div>
-                                                <div class="token_line"><span class="token class">    toggleWrapper</span>.<span class="token class">classList</span>.<span class="token class_list">add</span>(<span class="token class_name">'disabled'</span>);
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
                                                 </div>
-                                                <div class="token_line"><span class="token">}</span>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //옐로우 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_yellow"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그린 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_green"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //사이언 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_cyan"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블루 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_blue"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //퍼플 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_purple"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그레이 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_gray"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //화이트 솔리드 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_solid_white"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-3" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_group</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_red</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_orange</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_yellow</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_green</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_cyan</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_blue</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_purple</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_gray</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_solid_white</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tag-outlined-dark-code" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-4" class="code_tab_area">
+                                        <li id="html-tab-4" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-4" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>JS</span>
+                                        </li>
+                                        <li class="code_tab_item">
+                                            <span>React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-4" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //레드 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_red"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //오렌지 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_orange"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //옐로우 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_yellow"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그린 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_green"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //사이언 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_cyan"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //블루 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_blue"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //퍼플 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_purple"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //그레이 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_gray"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     </div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <div class="token">     //화이트 아웃라인 태그</div>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_outlined_white"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"tag_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Label</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-4" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_group</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_red</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_orange</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_yellow</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_green</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_cyan</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_blue</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_purple</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_gray</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.tag_outlined_white</span>
                                                 </div>
                                             </pre>
                                         </div>
@@ -1118,8 +2362,7 @@
         </main>
     </div>
     <script src="js/accodion.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/toggleBtn.js"></script>
+    <script src="js/tag.js"></script>
     <script src="js/topButton.js"></script>
     <script>
         function goToTop() {

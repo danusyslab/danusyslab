@@ -1151,8 +1151,24 @@ html, body {
     width: 50% !important;
     padding: 60px 40px !important;
   }
+  .tag_group {
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+  }
+  .tag_group div {
+    margin-bottom: 8px;
+  }
 }
 @media (max-width: 767px) {
+  .tag_group {
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+  }
+  .tag_group div {
+    margin-bottom: 8px;
+  }
   .image_container .image_con .image_area {
     padding: 60px 0 !important;
     flex-direction: column;

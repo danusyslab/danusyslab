@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// tag
+
+$tag: (
+    red: $red_60,
+    orange: $orange_40,
+    yellow: $yellow_20,
+    green: $green_20,
+    cyan: $cyan_30,
+    blue: $danu_blue_60,
+    purple: $purple_60,
+    gray: $gray_30,
+    dark_gray: $gray_80,
+    white: $white,
+    black: $black
+);
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+@mixin tag_style {
+    padding: $space_4 $space_8;
+    border-radius: 20px;
+
+    .tag_label {
+        @include label_02;
+    }
+}
+
+.tag_group {
+    display: flex;
+
+    div {
+        margin-right: $space_8;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+    }
+}
+
+
+
+// solid style
+.tag_solid_red {
+    @include tag_style;
+    background: map-get($tag, red);
+    color: map-get($tag, white);
+}
+
+.tag_solid_orange {
+    @include tag_style;
+    background: map-get($tag, orange);
+    color: map-get($tag, black);
+}
+
+.tag_solid_yellow {
+    @include tag_style;
+    background: map-get($tag, yellow);
+    color: map-get($tag, black);
+}
+
+.tag_solid_green {
+    @include tag_style;
+    background: map-get($tag, green);
+    color: map-get($tag, black);
+}
+
+.tag_solid_cyan {
+    @include tag_style;
+    background: map-get($tag, cyan);
+    color: map-get($tag, black);
+}
+
+.tag_solid_blue {
+    @include tag_style;
+    background: map-get($tag, blue);
+    color: map-get($tag, white);
+}
+
+.tag_solid_purple {
+    @include tag_style;
+    background: map-get($tag, purple);
+    color: map-get($tag, white);
+}
+
+.tag_solid_gray {
+    @include tag_style;
+    background: map-get($tag, gray);
+    color: map-get($tag, black);
+}
+
+.tag_solid_dark_gray {
+    @include tag_style;
+    background: map-get($tag, dark_gray);
+    color: map-get($tag, white);
+}
+
+.tag_solid_white {
+    @include tag_style;
+    background: map-get($tag, white);
+    color: map-get($tag, black);
+}
+
+.tag_solid_black {
+    @include tag_style;
+    background: map-get($tag, black);
+    color: map-get($tag, white);
+}
+
+
+
+// outlined style
+.tag_outlined_red {
+    @include tag_style;
+    border: 2px solid map-get($tag, red);
+    color: map-get($tag, red);
+}
+
+.tag_outlined_orange {
+    @include tag_style;
+    border: 2px solid map-get($tag, orange);
+    color: map-get($tag, orange);
+}
+
+.tag_outlined_yellow {
+    @include tag_style;
+    border: 2px solid map-get($tag, yellow);
+    color: map-get($tag, yellow);
+}
+
+.tag_outlined_green {
+    @include tag_style;
+    border: 2px solid map-get($tag, green);
+    color: map-get($tag, green);
+}
+
+.tag_outlined_cyan {
+    @include tag_style;
+    border: 2px solid map-get($tag, cyan);
+    color: map-get($tag, cyan);
+}
+
+.tag_outlined_blue {
+    @include tag_style;
+    border: 2px solid map-get($tag, blue);
+    color: map-get($tag, blue);
+}
+
+.tag_outlined_purple {
+    @include tag_style;
+    border: 2px solid map-get($tag, purple);
+    color: map-get($tag, purple);
+}
+
+.tag_outlined_gray {
+    @include tag_style;
+    border: 2px solid map-get($tag, gray);
+    color: map-get($tag, gray);
+}
+
+.tag_outlined_dark_gray {
+    @include tag_style;
+    border: 2px solid map-get($tag, dark_gray);
+    color: map-get($tag, dark_gray);
+}
+
+.tag_outlined_white {
+    @include tag_style;
+    border: 2px solid map-get($tag, white);
+    color: map-get($tag, white);
+}
+
+.tag_outlined_black {
+    @include tag_style;
+    border: 2px solid map-get($tag, black);
+    color: map-get($tag, black);
+}

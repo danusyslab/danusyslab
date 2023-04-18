@@ -242,9 +242,29 @@
         }
     }
 
+    .tag_group {
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+
+        div {
+            margin-bottom: $space_8;
+        }
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    .tag_group {
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+
+        div {
+            margin-bottom: $space_8;
+        }
+    }
 
     .image_container {
 
@@ -608,7 +628,7 @@
                             }
 
                             &.class {
-                                color: $cyon_20;
+                                color: $cyan_20;
                             }
 
                             &.class_name {
