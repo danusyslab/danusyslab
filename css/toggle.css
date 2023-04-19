@@ -393,7 +393,7 @@ html, body {
   border: none;
 }
 .toggle_group .toggle_wrapper.active .toggle_appearance_light .toggle_button {
-  left: calc(100% - 37px);
+  left: calc(100% - 36px);
   background: #FFFFFF;
 }
 .toggle_group .toggle_wrapper.active .toggle_appearance_dark {
@@ -401,7 +401,7 @@ html, body {
   border: none;
 }
 .toggle_group .toggle_wrapper.active .toggle_appearance_dark .toggle_button {
-  left: calc(100% - 37px);
+  left: calc(100% - 36px);
   background: #FFFFFF;
 }
 .toggle_group .toggle_wrapper.active .state_label.off {
