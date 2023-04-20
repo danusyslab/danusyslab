@@ -113,6 +113,118 @@
             document.getElementById('html-tab-8').classList.remove('active');
             document.getElementById('scss-tab-8').classList.add('active');
         }
+
+        if(currentTab === document.getElementById('html-tab-9')) {
+            document.getElementById('html-9').style.display = 'block';
+            document.getElementById('scss-9').style.display = 'none';
+            document.getElementById('html-tab-9').classList.add('active');
+            document.getElementById('scss-tab-9').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-9')) {
+            document.getElementById('html-9').style.display = 'none';
+            document.getElementById('scss-9').style.display = 'block';
+            document.getElementById('html-tab-9').classList.remove('active');
+            document.getElementById('scss-tab-9').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-10')) {
+            document.getElementById('html-10').style.display = 'block';
+            document.getElementById('scss-10').style.display = 'none';
+            document.getElementById('html-tab-10').classList.add('active');
+            document.getElementById('scss-tab-10').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-10')) {
+            document.getElementById('html-10').style.display = 'none';
+            document.getElementById('scss-10').style.display = 'block';
+            document.getElementById('html-tab-10').classList.remove('active');
+            document.getElementById('scss-tab-10').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-11')) {
+            document.getElementById('html-11').style.display = 'block';
+            document.getElementById('scss-11').style.display = 'none';
+            document.getElementById('html-tab-11').classList.add('active');
+            document.getElementById('scss-tab-11').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-11')) {
+            document.getElementById('html-11').style.display = 'none';
+            document.getElementById('scss-11').style.display = 'block';
+            document.getElementById('html-tab-11').classList.remove('active');
+            document.getElementById('scss-tab-11').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-12')) {
+            document.getElementById('html-12').style.display = 'block';
+            document.getElementById('scss-12').style.display = 'none';
+            document.getElementById('html-tab-12').classList.add('active');
+            document.getElementById('scss-tab-12').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-12')) {
+            document.getElementById('html-12').style.display = 'none';
+            document.getElementById('scss-12').style.display = 'block';
+            document.getElementById('html-tab-12').classList.remove('active');
+            document.getElementById('scss-tab-12').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-13')) {
+            document.getElementById('html-13').style.display = 'block';
+            document.getElementById('scss-13').style.display = 'none';
+            document.getElementById('html-tab-13').classList.add('active');
+            document.getElementById('scss-tab-13').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-13')) {
+            document.getElementById('html-13').style.display = 'none';
+            document.getElementById('scss-13').style.display = 'block';
+            document.getElementById('html-tab-13').classList.remove('active');
+            document.getElementById('scss-tab-13').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-14')) {
+            document.getElementById('html-14').style.display = 'block';
+            document.getElementById('scss-14').style.display = 'none';
+            document.getElementById('html-tab-14').classList.add('active');
+            document.getElementById('scss-tab-14').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-14')) {
+            document.getElementById('html-14').style.display = 'none';
+            document.getElementById('scss-14').style.display = 'block';
+            document.getElementById('html-tab-14').classList.remove('active');
+            document.getElementById('scss-tab-14').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-15')) {
+            document.getElementById('html-15').style.display = 'block';
+            document.getElementById('scss-15').style.display = 'none';
+            document.getElementById('html-tab-15').classList.add('active');
+            document.getElementById('scss-tab-15').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-15')) {
+            document.getElementById('html-15').style.display = 'none';
+            document.getElementById('scss-15').style.display = 'block';
+            document.getElementById('html-tab-15').classList.remove('active');
+            document.getElementById('scss-tab-15').classList.add('active');
+        }
+
+        if(currentTab === document.getElementById('html-tab-16')) {
+            document.getElementById('html-16').style.display = 'block';
+            document.getElementById('scss-16').style.display = 'none';
+            document.getElementById('html-tab-16').classList.add('active');
+            document.getElementById('scss-tab-16').classList.remove('active');
+        }
+        
+        if(currentTab === document.getElementById('scss-tab-16')) {
+            document.getElementById('html-16').style.display = 'none';
+            document.getElementById('scss-16').style.display = 'block';
+            document.getElementById('html-tab-16').classList.remove('active');
+            document.getElementById('scss-tab-16').classList.add('active');
+        }
     }
 
     document.getElementById('code-tab-area-1').addEventListener ('click', sourceTabHandler);
@@ -123,6 +235,14 @@
     document.getElementById('code-tab-area-6').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-7').addEventListener ('click', sourceTabHandler);
     document.getElementById('code-tab-area-8').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-9').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-10').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-11').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-12').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-13').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-14').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-15').addEventListener ('click', sourceTabHandler);
+    document.getElementById('code-tab-area-16').addEventListener ('click', sourceTabHandler);
 
 
     // config selector
@@ -509,6 +629,16 @@
     readOnlyLight.addEventListener('change', radioButtonHandler);
     errorLight.addEventListener('change', radioButtonHandler);
     disabledLight.addEventListener('change', radioButtonHandler);
+
+
+
+    horizontalDark.addEventListener('change', radioButtonHandler);
+    verticalDark.addEventListener('change', radioButtonHandler);
+
+    defaultDark.addEventListener('change', radioButtonHandler);
+    readOnlyDark.addEventListener('change', radioButtonHandler);
+    errorDark.addEventListener('change', radioButtonHandler);
+    disabledDark.addEventListener('change', radioButtonHandler);
 
 
 

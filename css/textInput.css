@@ -347,6 +347,7 @@ html, body {
   width: 100%;
   padding: 7px 12px;
   min-width: 200px;
+  background: transparent;
 }
 .text_input_field_group .text_input_field_wrapper .text_input_field.light {
   border: 1px solid #545454;
@@ -367,6 +368,26 @@ html, body {
 .text_input_field_group .text_input_field_wrapper .text_input_field.light.read_only {
   border: 1px solid #888888;
   color: #212121;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark {
+  border: 1px solid #B1B1B1;
+  color: #B1B1B1;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark::placeholder {
+  color: #888888;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark:focus {
+  outline: none;
+  border: 1px solid #FFFFFF;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark.error {
+  border: 1px solid #E02C10;
+  color: #E02C10;
+  background: url(../images/error_sm.svg) 93% 50% no-repeat;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark.read_only {
+  border: 1px solid #888888;
+  color: #B1B1B1;
 }
 .text_input_field_group .text_input_field_wrapper .text_input_field:disabled {
   opacity: 0.35;
