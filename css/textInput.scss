@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// check button
+
+$text_color: (
+    dark: $gray_30,
+    light: $gray_110,
+    placeholder: $gray_50
+);
+
+$border_color: (
+    default_dark: $gray_30,
+    default_light: $gray_80,
+    focus_dark: $white,
+    focus_light: $danu_blue_60,
+    read_only: $gray_50,
+    error: $red_60 
+);
+
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+.text_input_group {
+    display: flex;
+
+    &.horizontal {
+        flex-direction: row;
+
+        .text_input_label_wrapper {
+            height: 36px;
+            margin-right: $space_8;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &.vertical {
+        flex-direction: column;
+
+        .text_input_label_wrapper {
+            margin-right: 0;
+            margin-bottom: $space_8;
+        }
+    }
+}
+
+.text_input_label_wrapper {
+
+    .text_input_group_label {
+        @include body_01;
+
+        &.light {
+            color: map-get($text_color, light);
+        }
+
+        &.dark {
+            color: map-get($text_color, dark);
+        }
+
+        &.disabled {
+            @include disabled_state;
+        }
+    }
+}
+
+.text_input_field_group {
+    display: flex;
+    flex-direction: column;
+
+    .text_input_field_wrapper {
+        margin-bottom: $space_8;
+
+        .text_input_field {
+            border-radius: 4px;
+            @include body_01;
+            width: 100%;
+            padding: 7px $space_12;
+            min-width: 200px;
+
+            &.light {
+                border: 1px solid map-get($border_color, default_light);
+                color: map-get($text_color, light);
+
+                &::placeholder {
+                    color: map-get($text_color, placeholder);
+                }
+    
+                &:focus {
+                    outline: none;
+                    border: 1px solid map-get($border_color, focus_light);
+                }
+
+                &.error {
+                    border: 1px solid map-get($border_color, error);
+                    color: map-get($border_color, error);
+                    background: url(../images/error_sm.svg) 93% 50% no-repeat;
+                }
+
+                &.read_only {
+                    border: 1px solid map-get($border_color, read_only);
+                    color: map-get($text_color, light);
+                }
+            }
+
+            &:disabled {
+                @include disabled_state;
+            }
+        }
+    }
+}
+
+.helper_text {
+    @include helper_text_01;
+
+    &.light {
+        color: map-get($text_color, light);
+    }
+
+    &.dark {
+        color: map-get($text_color, dark);
+    }
+
+    &.error {
+        color: map-get($border_color, error);
+    }
+
+    &.disabled {
+        @include disabled_state;
+    }
+}
