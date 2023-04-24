@@ -292,123 +292,50 @@ html, body {
   font-weight: 700;
   font-style: normal;
 }
-.text_input_group {
-  display: flex;
-}
-.text_input_group.horizontal {
-  flex-direction: row;
-}
-.text_input_group.horizontal .text_input_label_wrapper {
-  height: 36px;
-  margin-right: 8px;
-  margin-bottom: 0;
-  display: flex;
+.search_group {
+  width: 250px;
+  display: inline-flex;
   align-items: center;
+  position: relative;
 }
-.text_input_group.vertical {
-  flex-direction: column;
-}
-.text_input_group.vertical .text_input_label_wrapper {
-  margin-right: 0;
-  margin-bottom: 8px;
-}
-
-.text_input_label_wrapper .text_input_group_label {
-  font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
-}
-.text_input_label_wrapper .text_input_group_label.light {
-  color: #212121;
-}
-.text_input_label_wrapper .text_input_group_label.dark {
-  color: #E2E2E2;
-}
-.text_input_label_wrapper .text_input_group_label.disabled {
-  opacity: 0.35;
-}
-
-.text_input_field_group {
-  display: flex;
-  flex-direction: column;
-}
-.text_input_field_group .text_input_field_wrapper {
-  margin-bottom: 8px;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field {
-  border-radius: 4px;
-  font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+.search_group input {
   width: 100%;
-  padding: 7px 12px;
-  min-width: 200px;
+  border-radius: 4px;
+  text-align: left;
+  display: flex;
+  padding: 9.5px 12px 9.5px 36px;
   background: transparent;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.light {
-  border: 1px solid #545454;
-  color: #212121;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.light::placeholder {
-  color: #888888;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.light:focus {
-  outline: none;
-  border: 1px solid #0F6BFF;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.light.error {
-  border: 1px solid #E02C10;
-  color: #E02C10;
-  background: url(../images/error_sm.svg) 93% 50% no-repeat;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.light.read_only {
-  border: 1px solid #888888;
-  color: #212121;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.dark {
-  border: 1px solid #B1B1B1;
-  color: #E2E2E2;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.dark::placeholder {
-  color: #888888;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.dark:focus {
-  outline: none;
-  border: 1px solid #FFFFFF;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.dark.error {
-  border: 1px solid #E02C10;
-  color: #E02C10;
-  background: url(../images/error_sm.svg) 93% 50% no-repeat;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field.dark.read_only {
-  border: 1px solid #888888;
-  color: #E2E2E2;
-}
-.text_input_field_group .text_input_field_wrapper .text_input_field:disabled {
-  opacity: 0.35;
-}
-
-.helper_text {
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.25rem;
   letter-spacing: 0.01rem;
 }
-.helper_text.light {
+.search_group input.light {
   color: #212121;
+  border: 1px solid #545454;
 }
-.helper_text.dark {
+.search_group input.light:focus {
+  border: 1px solid #0F6BFF;
+  outline: none;
+}
+.search_group input.dark {
   color: #E2E2E2;
+  border: 1px solid #B1B1B1;
 }
-.helper_text.error {
-  color: #E02C10;
+.search_group input.dark:focus {
+  border: 1px solid #FFFFFF;
+  outline: none;
 }
-.helper_text.disabled {
-  opacity: 0.35;
+.search_group .icon_area {
+  position: absolute;
+  margin: 0 12px;
+  width: 18px;
+  height: 18px;
+}
+.search_group .icon_area.light path {
+  fill: #212121;
+}
+.search_group .icon_area.dark path {
+  fill: #E2E2E2;
 }

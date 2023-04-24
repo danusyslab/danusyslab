@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/toggle.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
     <title>Danusys Creative Lab</title>
 </head>
 <body class="before_load">
@@ -121,7 +121,7 @@
                                     <span class="submenu_item">Checkbox</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="toggle.html" class="side_item">
                                     <span class="submenu_item">Toggle</span>
                                 </a>
@@ -146,7 +146,7 @@
                                     <span class="submenu_item">Dropdown</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="search.html" class="side_item">
                                     <span class="submenu_item">Search</span>
                                 </a>
@@ -401,7 +401,7 @@
             <div class="top_sub_blue_con">
                 <div class="top_sub_container">
                     <span class="sub_top_text">
-                        Toggle
+                        Search
                      </span>
                      <div class="status_con">
                          <ul class="status_area">
@@ -425,16 +425,16 @@
                              </li>
                          </ul>
                          <span class="date_updated">
-                             1.0.0 버전 / 2023년 4월 17일 업로드
+                             1.0.0 버전 / 2023년 4월 24일 업로드
                          </span>
                      </div>
                 </div>
             </div>
             <div class="sub_second_con">
-                <p class="desc_text">토글은 두 가지 상태(예/아니오)를 빠르게 전환하고 즉각적인 결과가 나타나야 하는 상황에서 사용할 수 있습니다.</p>
+                <p class="desc_text">텍스트 입력을 통해 사용자는 텍스트를 입력하고 데이터를 검색할 수 있습니다.</p>
                 <ul class="res_btn_area">
                     <li class="res_btn_item">
-                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2899%3A29255&t=qZ7Ub2ngG8NQt86n-1" target="_blank" class="res_btn_a">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2940%3A27193&t=W1tutNRUMGejLVnM-1" target="_blank" class="res_btn_a">
                             <span class="res_btn_name">
                                 디자인 파일 바로가기
                             </span>
@@ -449,7 +449,7 @@
                         </a>
                     </li>
                     <li class="res_btn_item">
-                        <a href="css/toggle.scss" download="" class="res_btn_a">
+                        <a href="css/search.scss" download="" class="res_btn_a">
                             <span class="res_btn_name">
                                 SCSS 파일 다운로드
                             </span>
@@ -463,106 +463,47 @@
                             </div>
                         </a>
                     </li>
-                    <li class="res_btn_item">
-                        <a href="js/toggle.js" download="" class="res_btn_a">
-                            <span class="res_btn_name">
-                                JS 파일 다운로드
-                            </span>
-                            <div class="res_link_con">
-                                <span class="figma_link">
-                                    <img src="images/js.svg"/>
-                                </span>
-                                <span class="arrow_other_link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z"/></g></svg>
-                                </span>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
             <div class="content_container">
                 <h2 class="content_title">구성 요소</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">토글은 알약 형태의 토글 입력과 그 왼쪽에 배치된 토글 레이블, 오른쪽에 배치된 상태 레이블로 구성됩니다</p>
+                    <p class="desc_text">검색창은 박스 형태의 텍스트 입력 필드와 선행 아이콘으로 구성됩니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/toggle_1.png"/>
+                                <img src="images/search_1.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 토글 레이블: 옵션에 대한 정보를 나타냅니다.</br>
-2. 토글 입력: 토글의 선택 여부를 나타냅니다.</br>
-3. 상태 레이블(선택 사항): 토글의 동작 상태를 설명합니다.
+                            1. 선행 아이콘: 검색창의 정체성을 나타내는 검색 아이콘을 배치합니다.</br>
+2. 텍스트 입력 값: 사용자가 텍스트 필드에 입력한 내용(입력 텍스트)입니다. 텍스트를 입력하지 않았을 때는 자리 표시자가 나타날 수 있습니다.</br>
+3. 텍스트 입력 필드: 사용자가 검색 내용을 입력하는 컨테이너입니다.
                         </span>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
-                    <h5 class="desc_text_strong">1. 일반</h5>
                     <p class="desc_text">
-                        - 토글을 켜거나 끄면 즉각적으로 그 결과가 나타나야 합니다.</br>
-- 변경 사항을 적용하기 위해 추가 단계(ex. ‘확인’ 버튼을 클릭해야 하는 경우)에는 체크박스를 사용합니다.</br>
-- 옵션의 순서는 논리적(예. 가장 자주 조정되는 옵션 순)으로 설정합니다. </br>
-- 켬/끔 중 어느 것을 기본값으로 하여도 무방하나, 논리적으로 설정합니다.</br>
+                        검색 필드 내에 사용자가 텍스트를 입력하지 않은 경우, 해당 자리에 검색에 대한 사용자 컨텍스트를 줄 수 있는 자리 표시자 텍스트를 배치합니다.</br>
+검색 필드에 텍스트를 입력 후, 보편적으로 엔터 키를 누르면 검색이 되나, 때에 따라 우측에 별도의 검색 버튼을 둘 수 있습니다.
                     </p>
-                    <h5 class="desc_text_strong">2. 레이블</h5>
-                    <p class="desc_text">- 항상 명확하고 간결한 레이블을 사용하십시오.</br>
-                        - 레이블은 단어나 구를 사용하며, 세 단어 미만으로 가능한 짧게 작성합니다.</br>
-                        - 레이블에 긍정적이고 적극적인 표현을 사용합니다.</br>
-                        - 레이블에 말줄임표를 사용하지 마십시오. 불가피하게 긴 레이블을 사용해야 하는 경우 줄바꿈을 허용합니다.</br>
-                        - 더 구체적인 레이블이 있는 경우에만 켬/끔 상태 레이블을 교체할 수 있습니다.</br>  (ex. 레이블이 ‘이미지 보기’인 경우 보기/숨기기 상태 레이블을 사용할 수 있습니다.)</p>
-                </div>
-                <div class="do_donot_con">
-                    <div class="do_donot_area">
-                        <ul class="do_donot_list">
-                            <li class="do_donot_item">
-                                <div class="available_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
-                                </div>
-                                <img src="images/toggle_2.png"/>
-                                <p>상태 레이블 상시 유지</p>
-                            </li>
-                            <li class="do_donot_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/toggle_3.png"/>
-                                <p>임의로 레이블 레이아웃 변경 불가</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 class="content_title">간격 가이드</h2>
-                <div class="image_container">
-                    <div class="image_con">
-                        <ul class="image_area">
-                            <li class="image_item">
-                                <img src="images/toggle_4.png"/>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="disc_con">
-                        <span class="disc_style">
-                            토글 입력 버튼은 28x18 사이즈를 가지며 입력 버튼과 상태 레이블 사이 간격은 8px입니다.</br> 토글 레이블의 가로 길이는 변동되는 길이이며 토글 레이블과 토글 입력 버튼 사이 간격은 4px입니다.
-                        </span>
-                    </div>
                 </div>
                 <h2 class="content_title">버튼 상태</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">기본 상태인 Default, 마우스로 클릭한 상태인 Focus, 비활성화 상태인 Disabled 상태를 지원합니다.</p>
+                    <p class="desc_text">기본 상태인 Default, 마우스로 클릭한 상태인 Focus를 지원합니다.</p>
                 </div>
                 <div class="them_container">
                     <div class="them_con">
                         <div class="them_area_dark">
-                            <img src="images/toggle_dark_mode.png"/>
+                            <img src="images/search_dark_mode.png"/>
                         </div>
                         <div class="them_area_light">
-                            <img src="images/toggle_light_mode.png"/>
+                            <img src="images/search_light_mode.png"/>
                         </div>
                     </div>
                 </div>
@@ -582,7 +523,7 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
-                                <span class="list_text_text">토글 레이블</span>
+                                <span class="list_text_text">입력 값</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_text">타이포</span>
@@ -593,21 +534,10 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
-                                <span class="list_text_text">상태 레이블</span>
+                                <span class="list_text_text">텍스트 Dark</span>
                             </li>
                             <li class="list_text_item">
-                                <span class="list_text_text">타이포</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$body 01</span>
-                            </li>
-                        </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">입력 버튼 Dark</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">테두리 컬러</span>
+                                <span class="list_text_text">컬러</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_token">$gray 30</span>
@@ -615,10 +545,21 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
-                                <span class="list_text_text">입력 버튼 Dark</span>
+                                <span class="list_text_text">텍스트 Light</span>
                             </li>
                             <li class="list_text_item">
-                                <span class="list_text_text">버튼 컬러</span>
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 110</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Default Dark</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_token">$gray 30</span>
@@ -626,21 +567,10 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
-                                <span class="list_text_text">입력 버튼 Light</span>
+                                <span class="list_text_text">Default Light</span>
                             </li>
                             <li class="list_text_item">
-                                <span class="list_text_text">테두리 컬러</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$gray 80</span>
-                            </li>
-                        </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">입력 버튼 Light</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">버튼 컬러</span>
+                                <span class="list_text_text">컬러</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_token">$gray 80</span>
@@ -648,10 +578,21 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
-                                <span class="list_text_text">선택된 버튼</span>
+                                <span class="list_text_text">Focus Dark</span>
                             </li>
                             <li class="list_text_item">
-                                <span class="list_text_text">버튼 컬러</span>
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$white</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Focus Light</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_token">$danu blue 60</span>
@@ -672,21 +613,17 @@
                     </div>
                     <div id="lightCon" class="config_code">
                         <div class="config_con">
-                            <div id="toggle_light" class="config_area" style="display: flex;">
-                                <label for="toggle" class="toggle_group" style="width: 120px;">
-                                    <span class="toggle_label_light">Label</span>
-                                    <div class="toggle_wrapper">
-                                        <button class="toggle_appearance_light">
-                                            <span class="toggle_button"></span>
-                                        </button>
-                                        <span class="state_label off">끔</span>
-                                        <span class="state_label on">켬</span>
-                                    </div>
-                                </label>
+                            <div id="search-light" class="config_area" style="display: flex;">
+                                <div class="search_group">
+                                    <input class="light" type="text" placeholder="Search">
+                                    <span class="icon_area light">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#212121" d="m14.7 15.75-4.725-4.725a4.571 4.571 0 0 1-2.85.975c-1.362 0-2.515-.472-3.459-1.415-.944-.944-1.416-2.098-1.416-3.46s.472-2.516 1.416-3.46c.943-.943 2.097-1.415 3.459-1.415 1.363 0 2.516.472 3.46 1.415C11.528 4.61 12 5.763 12 7.125a4.571 4.571 0 0 1-.975 2.85L15.75 14.7l-1.05 1.05ZM7.125 10.5c.938 0 1.735-.328 2.391-.984.656-.656.984-1.454.984-2.391 0-.938-.328-1.734-.984-2.391-.656-.656-1.454-.984-2.391-.984-.938 0-1.734.328-2.391.984-.656.657-.984 1.454-.984 2.391 0 .938.328 1.735.984 2.391.657.656 1.454.984 2.391.984Z"/></g></svg>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="code_container">
-                            <div id="toggle_light_code" class="code_con">
+                            <div id="search-light-code" class="code_con">
                                 <div class="code_tab_con">
                                     <ul id="code-tab-area-1" class="code_tab_area">
                                         <li id="html-tab-1" class="code_tab_item active">
@@ -695,7 +632,7 @@
                                         <li id="scss-tab-1" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li id="js-tab-1" class="code_tab_item">
+                                        <li class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -710,91 +647,61 @@
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle" </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_group"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">    <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_label_light"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">    <</span>
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_wrapper"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_appearance_light"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">            <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_button"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label off" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">끔</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label on" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">켬</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
+                                                    <span class="token class_name">"search_group"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
-                                                    <span class="token name">/div</span>
+                                                    <span class="token name">input </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"light" </span>
+                                                    <span class="token class">text</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"text" </span>
+                                                    <span class="token class">placeholder</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"Search"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"icon_area light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">xmlns</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"http://www.w3.org/2000/svg" </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/svg </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/span </span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/label</span>
+                                                    <span class="token name">/div </span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
@@ -807,51 +714,7 @@
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.toggle_group {</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_light</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_dark</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_wrapper</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">}</span>
-                                                </div>
-                                            </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="js-1" class="code_source_container" style="display: none;">
-                                    <div class="code_source_con">
-                                        <div class="code_source_con">
-                                            <pre class="priview_code" contenteditable="plaintext-only">
-                                                <div class="token_line">
-                                                    <span class="token name">const </span><span class="token class">toggleList </span>= document. <span class="token class_list"> querySelectorAll </span>( <span class="token class_name">'.toggle_wrapper'</span>);
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class">toggleList</span>.<span class="token class_list">forEach</span>((toggle) <span class="token name"> => </span>{
-                                                </div>
-                                                <div class="token_line"><span class="token class">  toggle.</span><span class="token class_list"> onclick </span>= () <span class="token name"> => </span>{
-                                                </div>
-                                                <div class="token_line"><span class="token class">    toggle</span>.<span class="token name">classList</span>.<span class="token class_list">toggle</span>(<span class="token class_name">'active'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token">});</span>
-                                                </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleBtns</span> = document.<span class="token class_list"> querySelectorAll</span>(<span class="token class_list">'.toggle_appearance'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">toggleBtns</span>.<span class="token class_list">forEach</span>((toggleBtn) <span class="token name"> =></span> {
-                                                </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleWrapper</span> = <span class="token class">toggleBtn</span>.<span class="token class_list">closest</span>(<span class="token class_name">'.toggle_wrapper'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">if(</span>toggleBtn.disabled<span class="token class>)</span> {
-                                                </div>
-                                                <div class="token_line"><span class="token class">    toggleWrapper</span>.<span class="token class">classList</span>.<span class="token class_list">add</span>(<span class="token class_name">'disabled'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token">}</span>
+                                                    <span class="token class_list">.search_group</span>
                                                 </div>
                                             </pre>
                                         </div>
@@ -862,23 +725,19 @@
                     </div>
                     <div id="darkCon" class="config_code" style="display: none;">
                         <div class="config_con">
-                            <div id="toggle_dark" class="config_area dark">
+                            <div id="search-dark" class="config_area" style="display: flex;">
                                 <div class="dark_mode_area">
-                                    <label for="toggle" class="toggle_group" style="width: 120px;">
-                                        <span class="toggle_label_dark">Label</span>
-                                        <div class="toggle_wrapper">
-                                            <button class="toggle_appearance_dark">
-                                                <span class="toggle_button"></span>
-                                            </button>
-                                            <span class="state_label dark off">끔</span>
-                                            <span class="state_label dark on">켬</span>
-                                        </div>
-                                    </label>
+                                    <div class="search_group">
+                                        <input class="dark" type="text" placeholder="Search">
+                                        <span class="icon_area dark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#212121" d="m14.7 15.75-4.725-4.725a4.571 4.571 0 0 1-2.85.975c-1.362 0-2.515-.472-3.459-1.415-.944-.944-1.416-2.098-1.416-3.46s.472-2.516 1.416-3.46c.943-.943 2.097-1.415 3.459-1.415 1.363 0 2.516.472 3.46 1.415C11.528 4.61 12 5.763 12 7.125a4.571 4.571 0 0 1-.975 2.85L15.75 14.7l-1.05 1.05ZM7.125 10.5c.938 0 1.735-.328 2.391-.984.656-.656.984-1.454.984-2.391 0-.938-.328-1.734-.984-2.391-.656-.656-1.454-.984-2.391-.984-.938 0-1.734.328-2.391.984-.656.657-.984 1.454-.984 2.391 0 .938.328 1.735.984 2.391.657.656 1.454.984 2.391.984Z"/></g></svg>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="code_container">
-                            <div id="toggle_dark_code" class="code_con">
+                            <div id="search-dark-code" class="code_con">
                                 <div class="code_tab_con">
                                     <ul id="code-tab-area-2" class="code_tab_area">
                                         <li id="html-tab-2" class="code_tab_item active">
@@ -887,7 +746,7 @@
                                         <li id="scss-tab-2" class="code_tab_item">
                                             <span>SCSS</span>
                                         </li>
-                                        <li id="js-tab-2" class="code_tab_item">
+                                        <li class="code_tab_item">
                                             <span>JS</span>
                                         </li>
                                         <li class="code_tab_item">
@@ -902,91 +761,61 @@
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">label </span>
-                                                    <span class="token class">for</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle" </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_group"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">    <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_label_dark"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">Label 1</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">    <</span>
                                                     <span class="token name">div </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_wrapper"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_appearance_dark"</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">            <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class</span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"toggle_button"</span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">button </span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label dark off" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">끔</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
-                                                    <span class="token tag">></span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token tag">        <</span>
-                                                    <span class="token name">span </span>
-                                                    <span class="token class">class </span>
-                                                    <span class="token">= </span>
-                                                    <span class="token class_name">"state_label dark on" </span>
-                                                    <span class="token tag">></span>
-                                                    <span class="token">켬</span>
-                                                    <span class="token tag"><</span>
-                                                    <span class="token name">/span</span>
+                                                    <span class="token class_name">"search_group"</span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag">    <</span>
-                                                    <span class="token name">/div</span>
+                                                    <span class="token name">input </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dark" </span>
+                                                    <span class="token class">text</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"text" </span>
+                                                    <span class="token class">placeholder</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"Search"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"icon_area dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">xmlns</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"http://www.w3.org/2000/svg" </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/svg </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/span </span>
                                                     <span class="token tag">></span>
                                                 </div>
                                                 <div class="token_line">
                                                     <span class="token tag"><</span>
-                                                    <span class="token name">/label</span>
+                                                    <span class="token name">/div </span>
                                                     <span class="token tag">></span>
                                                 </div>
                                             </pre>
@@ -999,51 +828,7 @@
                                             <pre class="priview_code" contenteditable="plaintext-only">
                                                 <div class="token_line"></div>
                                                 <div class="token_line">
-                                                    <span class="token class_list">.toggle_group {</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_light</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_label_dark</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">   .toggle_wrapper</span>
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class_list">}</span>
-                                                </div>
-                                            </pre>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="js-2" class="code_source_container" style="display: none;">
-                                    <div class="code_source_con">
-                                        <div class="code_source_con">
-                                            <pre class="priview_code" contenteditable="plaintext-only">
-                                                <div class="token_line">
-                                                    <span class="token name">const </span><span class="token class">toggleList </span>= document. <span class="token class_list"> querySelectorAll </span>( <span class="token class_name">'.toggle_wrapper'</span>);
-                                                </div>
-                                                <div class="token_line">
-                                                    <span class="token class">toggleList</span>.<span class="token class_list">forEach</span>((toggle) <span class="token name"> => </span>{
-                                                </div>
-                                                <div class="token_line"><span class="token class">  toggle.</span><span class="token class_list"> onclick </span>= () <span class="token name"> => </span>{
-                                                </div>
-                                                <div class="token_line"><span class="token class">    toggle</span>.<span class="token name">classList</span>.<span class="token class_list">toggle</span>(<span class="token class_name">'active'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token">});</span>
-                                                </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleBtns</span> = document.<span class="token class_list"> querySelectorAll</span>(<span class="token class_list">'.toggle_appearance'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">toggleBtns</span>.<span class="token class_list">forEach</span>((toggleBtn) <span class="token name"> =></span> {
-                                                </div>
-                                                <div class="token_line"><span class="token name">const </span><span class="token class">toggleWrapper</span> = <span class="token class">toggleBtn</span>.<span class="token class_list">closest</span>(<span class="token class_name">'.toggle_wrapper'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token class">if(</span>toggleBtn.disabled<span class="token class>)</span> {
-                                                </div>
-                                                <div class="token_line"><span class="token class">    toggleWrapper</span>.<span class="token class">classList</span>.<span class="token class_list">add</span>(<span class="token class_name">'disabled'</span>);
-                                                </div>
-                                                <div class="token_line"><span class="token">}</span>
+                                                    <span class="token class_list">.search_group</span>
                                                 </div>
                                             </pre>
                                         </div>
@@ -1062,8 +847,7 @@
         </main>
     </div>
     <script src="js/accodion.js"></script>
-    <script src="js/toggle.js"></script>
-    <script src="js/toggleBtn.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/topButton.js"></script>
     <script>
         function goToTop() {

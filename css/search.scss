@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// check button
+
+$text_color: (
+    dark: $gray_10,
+    light: $gray_110,
+    placeholder: $gray_50
+);
+
+$border_color: (
+    default_dark: $gray_30,
+    default_light: $gray_80,
+    focus_dark: $white,
+    focus_light: $danu_blue_60,
+    read_only: $gray_50,
+    error: $red_60 
+);
+
+
+@mixin disabled_state {
+    opacity: 0.35;
+}
+
+.search_group {
+    // 변동 가능 width
+    width: 250px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        width: 100%;
+        border-radius: 4px;
+        text-align: left;
+        display: flex;
+        padding: 9.5px 12px 9.5px 36px;
+        background: transparent;
+
+        @include body_01;
+
+        &.light {
+            color: map-get($text_color, light);
+            border:  1px solid map-get($border_color, default_light);
+
+            &:focus {
+                border: 1px solid map-get($border_color, focus_light);
+                outline: none;
+            }
+        }
+
+        &.dark {
+            color: map-get($text_color, dark);
+            border:  1px solid map-get($border_color, default_dark);
+
+            &:focus {
+                border: 1px solid map-get($border_color, focus_dark);
+                outline: none;
+            }
+        }
+    }
+
+    .icon_area {
+        position: absolute;
+        margin: 0 $space_12;
+        width: 18px;
+        height: 18px;
+
+        &.light {
+            path{
+                fill: map-get($text_color, light);
+            }
+        }
+
+        &.dark {
+            path{
+                fill: map-get($text_color, dark);
+            }
+        }
+    }
+
+
+}
