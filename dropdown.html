@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/checkbox.css">
+    <title>Danusys Creative Lab</title>
+</head>
+<body class="before_load">
+    <div class="loading">
+        <svg class="loading_circle">
+            <circle cx="50%" cy="50%" r="25"></circle>
+        </svg>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="hd_pc">
+                <a href="main.html">
+                    <div class="logo_title">
+                        <img src="images/DANUSYS.svg"/>
+                        <img src="images/logo_text.svg"/>
+                    </div> 
+                </a>
+                <ul>
+                    <li>
+                        <a href="logo.html">BX Guide</a>
+                    </li>
+                    <li class="active">
+                        <a href="main.html">Design System</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd_mo">
+                <div class="logo_title">
+                    <a href="main.html">
+                        <img src="images/DANUSYS.svg"/>
+                        <img src="images/logo_text.svg"/>
+                    </a>
+                </div>
+                <div class="hamburger_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"/></g></svg>
+                </div>
+                <div class="ham_cancel_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5l5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19Z"/></g></svg>
+                </div>
+            </div>
+        </header>
+        <div class="side_menu_wrapper">
+            <nav class="left_side">
+                <ul class="list_con">
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul class="sub_list_con">
+                            <li class="sub_list_con_item">
+                                <a href="principle.html" class="side_item">
+                                    <span class="submenu_item">Principle</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="introduction.html" class="side_item">
+                                    <span class="submenu_item">Introduction</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Foundation</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="color.html" class="side_item">
+                                    <span class="submenu_item">Color</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="typography.html" class="side_item">
+                                    <span class="submenu_item">Typhography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="icon.html" class="side_item">
+                                    <span class="submenu_item">Iconography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="space.html" class="side_item">
+                                    <span class="submenu_item">Space&Grid</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu active">
+                            <span class="submenu_title">Components</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul class="sub_list_con" style="display: block;">
+                            <li>
+                                <a href="radioButton.html" class="side_item">
+                                    <span class="submenu_item">Radio Button</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="checkbox.html" class="side_item">
+                                    <span class="submenu_item">Checkbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="toggle.html" class="side_item">
+                                    <span class="submenu_item">Toggle</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="button.html" class="side_item">
+                                    <span class="submenu_item">Button</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tag.html" class="side_item">
+                                    <span class="submenu_item">Tag</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="textInput.html" class="side_item">
+                                    <span class="submenu_item">Text Input</span>
+                                </a>
+                            </li>
+                            <li class="sub_list_con_item acco_active">
+                                <a href="dropdown.html" class="side_item">
+                                    <span class="submenu_item">Dropdown</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search.html" class="side_item">
+                                    <span class="submenu_item">Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Patterns</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Popin</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Alert</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Table</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Design Resources</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=12%3A655&t=xnCMyobcl6TsNBbp-1" target="_blank" class="side_item">
+                                    <span class="submenu_item">Figma library</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M3.167 16.5c-.459 0-.851-.163-1.178-.49a1.607 1.607 0 0 1-.489-1.177V3.167c0-.459.163-.851.49-1.178.326-.326.718-.489 1.177-.489H9v1.667H3.167v11.666h11.666V9H16.5v5.833c0 .459-.163.851-.49 1.178-.326.326-.718.489-1.177.489H3.167Zm3.916-4.417-1.166-1.166 7.75-7.75h-3V1.5H16.5v5.833h-1.667v-3l-7.75 7.75Z"/></g></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/danusyslab/danusyslab/tree/main/foundation" target="_blank" class="side_item">
+                                    <span class="submenu_item">Github library</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M3.167 16.5c-.459 0-.851-.163-1.178-.49a1.607 1.607 0 0 1-.489-1.177V3.167c0-.459.163-.851.49-1.178.326-.326.718-.489 1.177-.489H9v1.667H3.167v11.666h11.666V9H16.5v5.833c0 .459-.163.851-.49 1.178-.326.326-.718.489-1.177.489H3.167Zm3.916-4.417-1.166-1.166 7.75-7.75h-3V1.5H16.5v5.833h-1.667v-3l-7.75 7.75Z"/></g></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side_menu_wrapper_mo">
+            <nav class="left_side">
+                <ul class="home_con">
+                    <li id="bxTab" class="home_item">
+                        <a href="#">
+                            <span>BX Guideline</span>
+                        </a>
+                    </li>
+                    <li id="designTab" class="home_item active">
+                        <a href="#">
+                            <span>Design System</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="bxList" class="list_con" style="display: none;">
+                    <li class="list_con_item">
+                        <button class="side_submenu active">
+                            <span class="submenu_title">Danusys</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul class="sub_list_con" style="display: block;">
+                            <li class="sub_list_con_item">
+                                <a href="logo.html" class="side_item">
+                                    <span class="submenu_item">Wordmark</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="businesscard.html" class="side_item">
+                                    <span class="submenu_item">Business card</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ci.html" class="side_item">
+                                    <span class="submenu_item">CI guideline</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="brandgoods.html" class="side_item">
+                                    <span class="submenu_item">Brandgoods</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul id="designList" class="list_con">
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul class="sub_list_con">
+                            <li class="sub_list_con_item">
+                                <a href="principle.html" class="side_item">
+                                    <span class="submenu_item">Principle</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="introduction.html" class="side_item">
+                                    <span class="submenu_item">Introduction</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Foundation</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul class="sub_list_con">
+                            <li class="sub_list_con_item">
+                                <a href="color.html" class="side_item">
+                                    <span class="submenu_item">Color</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="typography.html" class="side_item">
+                                    <span class="submenu_item">Typhography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="icon.html" class="side_item">
+                                    <span class="submenu_item">Iconography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="space.html" class="side_item">
+                                    <span class="submenu_item">Space&Grid</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Components</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="radioButton.html" class="side_item">
+                                    <span class="submenu_item">Radio Button</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="checkbox.html" class="side_item">
+                                    <span class="submenu_item">Checkbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="toggle.html" class="side_item">
+                                    <span class="submenu_item">Toggle</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="button.html" class="side_item">
+                                    <span class="submenu_item">Button</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tag.html" class="side_item">
+                                    <span class="submenu_item">Tag</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="textInput.html" class="side_item">
+                                    <span class="submenu_item">Text Input</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dropdown.html" class="side_item">
+                                    <span class="submenu_item">Dropdown</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="search.html" class="side_item">
+                                    <span class="submenu_item">Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Patterns</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Popin</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Alert</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side_item">
+                                    <span class="submenu_item">Table</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list_con_item">
+                        <button class="side_submenu">
+                            <span class="submenu_title">Design Resources</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=12%3A655&t=xnCMyobcl6TsNBbp-1" target="_blank" class="side_item">
+                                    <span class="submenu_item">Figma library</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M3.167 16.5c-.459 0-.851-.163-1.178-.49a1.607 1.607 0 0 1-.489-1.177V3.167c0-.459.163-.851.49-1.178.326-.326.718-.489 1.177-.489H9v1.667H3.167v11.666h11.666V9H16.5v5.833c0 .459-.163.851-.49 1.178-.326.326-.718.489-1.177.489H3.167Zm3.916-4.417-1.166-1.166 7.75-7.75h-3V1.5H16.5v5.833h-1.667v-3l-7.75 7.75Z"/></g></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/danusyslab/danusyslab/tree/main/foundation" target="_blank" class="side_item">
+                                    <span class="submenu_item">Github library</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M3.167 16.5c-.459 0-.851-.163-1.178-.49a1.607 1.607 0 0 1-.489-1.177V3.167c0-.459.163-.851.49-1.178.326-.326.718-.489 1.177-.489H9v1.667H3.167v11.666h11.666V9H16.5v5.833c0 .459-.163.851-.49 1.178-.326.326-.718.489-1.177.489H3.167Zm3.916-4.417-1.166-1.166 7.75-7.75h-3V1.5H16.5v5.833h-1.667v-3l-7.75 7.75Z"/></g></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main_container contents_back">
+            <button onclick="goToTop()" type="button" class="gototop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 24V0h24v24z"/></mask><g mask="url(#a)"><path fill="#333" d="m18 17-1.4 1.4-4.6-4.6-4.6 4.6L6 17l6-6 6 6Zm0-9H6V6h12v2Z"/></g></svg>
+            </button>
+            <div class="top_sub_blue_con">
+                <div class="top_sub_container">
+                    <span class="sub_top_text">
+                        Dropdown
+                     </span>
+                     <div class="status_con">
+                         <ul class="status_area">
+                             <li class="status_item">
+                                 <span class="name_work">
+                                     기획/디자인
+                                 </span>
+                                 <div class="status_current">
+                                     <span class="ongoing_status"></span>
+                                     <p class="text_status">진행 중</p>
+                                 </div>
+                             </li>
+                             <li class="status_item">
+                                 <span class="name_work">
+                                     코딩
+                                 </span>
+                                 <div class="status_current">
+                                     <span class="ongoing_status"></span>
+                                     <p class="text_status">진행 중</p>
+                                 </div>
+                             </li>
+                         </ul>
+                         <span class="date_updated">
+                             1.0.0 버전 / 2023년 4월 26일 업로드
+                         </span>
+                     </div>
+                </div>
+            </div>
+            <div class="sub_second_con">
+                <p class="desc_text">텍스트 입력을 통해 사용자는 텍스트를 입력하고 데이터를 검색할 수 있습니다.</p>
+                <ul class="res_btn_area">
+                    <li class="res_btn_item">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2940%3A27193&t=W1tutNRUMGejLVnM-1" target="_blank" class="res_btn_a">
+                            <span class="res_btn_name">
+                                디자인 파일 바로가기
+                            </span>
+                            <div class="res_link_con">
+                                <span class="figma_link">
+                                    <img src="images/figma.svg"/>
+                                </span>
+                                <span class="arrow_other_link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6.4 18 5 16.6 14.6 7H6V5h12v12h-2V8.4L6.4 18Z"/></g></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="res_btn_item">
+                        <a href="css/search.scss" download="" class="res_btn_a">
+                            <span class="res_btn_name">
+                                SCSS 파일 다운로드
+                            </span>
+                            <div class="res_link_con">
+                                <span class="figma_link">
+                                    <img src="images/css.svg"/>
+                                </span>
+                                <span class="arrow_other_link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z"/></g></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="res_btn_item">
+                        <a href="js/dropdown.js" download="" class="res_btn_a">
+                            <span class="res_btn_name">
+                                JS 파일 다운로드
+                            </span>
+                            <div class="res_link_con">
+                                <span class="figma_link">
+                                    <img src="images/js.svg"/>
+                                </span>
+                                <span class="arrow_other_link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z"/></g></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_container">
+                <h2 class="content_title">구성 요소</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">검색창은 박스 형태의 텍스트 입력 필드와 선행 아이콘으로 구성됩니다.</p>
+                </div>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/search_1.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            1. 선행 아이콘: 검색창의 정체성을 나타내는 검색 아이콘을 배치합니다.</br>
+2. 텍스트 입력 값: 사용자가 텍스트 필드에 입력한 내용(입력 텍스트)입니다. 텍스트를 입력하지 않았을 때는 자리 표시자가 나타날 수 있습니다.</br>
+3. 텍스트 입력 필드: 사용자가 검색 내용을 입력하는 컨테이너입니다.
+                        </span>
+                    </div>
+                </div>
+                <h2 class="content_title">사용 가이드</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">
+                        검색 필드 내에 사용자가 텍스트를 입력하지 않은 경우, 해당 자리에 검색에 대한 사용자 컨텍스트를 줄 수 있는 자리 표시자 텍스트를 배치합니다.</br>
+검색 필드에 텍스트를 입력 후, 보편적으로 엔터 키를 누르면 검색이 되나, 때에 따라 우측에 별도의 검색 버튼을 둘 수 있습니다.
+                    </p>
+                </div>
+                <h2 class="content_title">버튼 상태</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">기본 상태인 Default, 마우스로 클릭한 상태인 Focus를 지원합니다.</p>
+                </div>
+                <div class="them_container">
+                    <div class="them_con">
+                        <div class="them_area_dark">
+                            <img src="images/search_dark_mode.png"/>
+                        </div>
+                        <div class="them_area_light">
+                            <img src="images/search_light_mode.png"/>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="content_title">구성 스타일</h2>
+                <div class="token_sets_con">
+                    <div class="token_sets_area">
+                        <ul class="list_title_con">
+                            <li class="list_title_item">
+                                <span class="list_title_text">요소</span>
+                            </li>
+                            <li class="list_title_item">
+                                <span class="list_title_text">구성</span>
+                            </li>
+                            <li class="list_title_item">
+                                <span class="list_title_text">토큰</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">입력 값</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">타이포</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$body 01</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">텍스트 Dark</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 30</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">텍스트 Light</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 110</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Default Dark</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 30</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Default Light</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 80</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Focus Dark</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$white</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">Focus Light</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$danu blue 60</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="config_container">
+                    <div class="sticky_con">
+                        <div id="sticky1" class="sticky_area">
+                            <button id="lightTab" type="button" class="sticky_btn active">
+                                <span>Light</span>
+                            </button>
+                            <button id="darkTab" type="button" class="sticky_btn">
+                                <span>Dark</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="lightCon" class="config_code">
+                        <div class="config_con">
+                            <div id="dropdown-select-light" class="config_area" style="display: flex;">
+                                <div class="dropdown_group">
+                                    <div class="dropdown_wrapper">
+                                        <label class="dropdown_label">
+                                            Select
+                                        </label>
+                                        <div class="dropdown_select_field_wrapper">
+                                            <button class="dropdown_select_box light">
+                                                <span id="dropdown_select_btn" class="box_label light">Select menu options</span>
+                                                <div class="box_menu_icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                </div>
+                                            </button>
+                                            <div id="dropdown_select_list" class="dropdown_menu_list">
+                                                <ul class="dropdown_menu_wrapper light">
+                                                    <li class="menu_item">
+                                                        menu 1
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        menu 2
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        menu 3
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        menu 4
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-light" class="config_area" style="display: none;">
+                                <div class="dropdown_group">
+                                    <div class="dropdown_wrapper">
+                                        <label class="dropdown_label">
+                                            Select
+                                        </label>
+                                        <div class="dropdown_select_field_wrapper">
+                                            <button class="dropdown_select_box light">
+                                                <span id="dropdown_multi_btn" class="box_label light">Select menu options</span>
+                                                <div class="box_menu_icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                </div>
+                                            </button>
+                                            <div id="dropdown_multi_list" class="dropdown_menu_list">
+                                                <ul class="dropdown_menu_wrapper light">
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_1">
+                                                                <label for="check_1" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 1</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_2">
+                                                                <label for="check_2" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_3">
+                                                                <label for="check_3" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 3</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_4">
+                                                                <label for="check_4" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 4</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-light-2" class="config_area" style="display: none;">
+                                <div class="dropdown_group">
+                                    <div class="dropdown_wrapper">
+                                        <label class="dropdown_label">
+                                            Select
+                                        </label>
+                                        <div class="dropdown_select_field_wrapper">
+                                            <button class="dropdown_select_box light">
+                                                <span id="dropdown_multi_btn2" class="box_label light">Select menu options</span>
+                                                <div class="box_menu_icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                </div>
+                                            </button>
+                                            <div id="dropdown_multi_list2" class="dropdown_menu_list">
+                                                <ul class="dropdown_menu_wrapper light">
+                                                    <li id="all_select_btn" class="menu_item all_select_btn">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_indeterminate_light" id="check_5">
+                                                                <label for="check_5" class="check_button_label_indeterminate_light">
+                                                                    <span class="check_button_label_text">All</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                        <span class="dropbox_all_btn"></span>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_6">
+                                                                <label for="check_6" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 1</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_7">
+                                                                <label for="check_7" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_8">
+                                                                <label for="check_8" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 3</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                    <li class="menu_item">
+                                                        <fieldset class="check_button_group">
+                                                            <div class="check_button_wrapper">
+                                                                <input type="checkbox" class="check_button_light" id="check_9">
+                                                                <label for="check_9" class="check_button_label_light">
+                                                                    <span class="check_button_label_text">menu 4</span>
+                                                                </label>
+                                                            </div>
+                                                        </fieldset>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sortingAreaLight" class="config_sel_con">
+                                <button id="closeConfigBtnLight" class="accodion_btn_cancel">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                                </button>
+                                <div class="config_sel_area">
+                                    <fieldset class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">종류</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-light-1" name="option-1" value="solid" checked>
+                                            <label for="dropdown-variant-light-1" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">싱글 선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-light-2" name="option-1" value="solid">
+                                            <label for="dropdown-variant-light-2" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">다중 선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-light-3" name="option-1" value="solid">
+                                            <label for="dropdown-variant-light-3" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">전체 선택</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button id="open_config_sel_btn" class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
+                        </div>
+                        <div class="code_container">
+                            <div id="dropdown-select-light-code" class="code_con">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-1" class="code_tab_area">
+                                        <li id="html-tab-1" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-1" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-1" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label light"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_list" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">menu 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/li</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-1" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-light-code" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-2" class="code_tab_area">
+                                        <li id="html-tab-2" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-2" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-2" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label light"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_list" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">checkbox 컴포넌트 참고</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/li</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-2" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-light-code-2" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-3" class="code_tab_area">
+                                        <li id="html-tab-3" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-3" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-3" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_btn2" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label light"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_list2" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper light"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"all_select_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item all_select_btn"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                        <</span>
+                                                    <span class="token name">fieldset </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">checkbox 컴포넌트 참고</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/fieldset</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropbox_all_btn"</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">/li </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-3" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="darkCon" class="config_code" style="display: none;">
+                        <div class="config_con">
+                            <div id="dropdown-select-dark" class="config_area" style="display: flex;">
+                                <div class="dark_mode_area">
+                                    <div class="dropdown_group">
+                                        <div class="dropdown_wrapper">
+                                            <label class="dropdown_label dark">
+                                                Select
+                                            </label>
+                                            <div class="dropdown_select_field_wrapper">
+                                                <button class="dropdown_select_box dark">
+                                                    <span id="dropdown_select_btn" class="box_label dark">Select menu options</span>
+                                                    <div class="box_menu_icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                    </div>
+                                                </button>
+                                                <div id="dropdown_select_list" class="dropdown_menu_list">
+                                                    <ul class="dropdown_menu_wrapper dark">
+                                                        <li class="menu_item">
+                                                            menu 1
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            menu 2
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            menu 3
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            menu 4
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-dark" class="config_area" style="display: none;">
+                                <div class="dark_mode_area">
+                                    <div class="dropdown_group">
+                                        <div class="dropdown_wrapper">
+                                            <label class="dropdown_label dark">
+                                                Select
+                                            </label>
+                                            <div class="dropdown_select_field_wrapper">
+                                                <button class="dropdown_select_box dark">
+                                                    <span id="dropdown_multi_btn" class="box_label dark">Select menu options</span>
+                                                    <div class="box_menu_icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                    </div>
+                                                </button>
+                                                <div id="dropdown_multi_list" class="dropdown_menu_list">
+                                                    <ul class="dropdown_menu_wrapper dark">
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_1">
+                                                                    <label for="check_1" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 1</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_2">
+                                                                    <label for="check_2" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_3">
+                                                                    <label for="check_3" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 3</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_4">
+                                                                    <label for="check_4" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 4</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-dark-2" class="config_area" style="display: none;">
+                                <div class="dark_mode_area">
+                                    <div class="dropdown_group">
+                                        <div class="dropdown_wrapper">
+                                            <label class="dropdown_label dark">
+                                                Select
+                                            </label>
+                                            <div class="dropdown_select_field_wrapper">
+                                                <button class="dropdown_select_box dark">
+                                                    <span id="dropdown_multi_btn2" class="box_label dark">Select menu options</span>
+                                                    <div class="box_menu_icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
+                                                    </div>
+                                                </button>
+                                                <div id="dropdown_multi_list2" class="dropdown_menu_list">
+                                                    <ul class="dropdown_menu_wrapper dark">
+                                                        <li id="all_select_btn" class="menu_item all_select_btn">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_indeterminate_dark" id="check_5">
+                                                                    <label for="check_5" class="check_button_label_indeterminate_dark">
+                                                                        <span class="check_button_label_text">All</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                            <span class="dropbox_all_btn"></span>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_6">
+                                                                    <label for="check_6" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 1</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_7">
+                                                                    <label for="check_7" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_8">
+                                                                    <label for="check_8" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 3</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                        <li class="menu_item">
+                                                            <fieldset class="check_button_group">
+                                                                <div class="check_button_wrapper">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_9">
+                                                                    <label for="check_9" class="check_button_label_dark">
+                                                                        <span class="check_button_label_text">menu 4</span>
+                                                                    </label>
+                                                                </div>
+                                                            </fieldset>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sortingAreaLight" class="config_sel_con">
+                                <button id="closeConfigBtnLight" class="accodion_btn_cancel">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                                </button>
+                                <div class="config_sel_area">
+                                    <fieldset class="radio_button_group_vertical">
+                                        <legend class="radio_group_label">종류</legend>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-dark-1" name="option-2" value="solid" checked>
+                                            <label for="dropdown-variant-dark-1" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">싱글 선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-dark-2" name="option-2" value="solid">
+                                            <label for="dropdown-variant-dark-2" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">다중 선택</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio_button_wrapper_vertical">
+                                            <input type="radio" class="radio_button"  id="dropdown-variant-dark-3" name="option-2" value="solid">
+                                            <label for="dropdown-variant-dark-3" class="radio_button_label">
+                                            <span class="radio_button_appearance"></span>
+                                            <span class="radio_button_label_text">전체 선택</span>
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button id="open_config_sel_btn" class="accodion_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
+                            </button>
+                        </div>
+                        <div class="code_container">
+                            <div id="dropdown-select-dark-code" class="code_con">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-4" class="code_tab_area">
+                                        <li id="html-tab-4" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-4" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-4" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label dark"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_list" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">menu 1</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/li</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-4" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-dark-code" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-5" class="code_tab_area">
+                                        <li id="html-tab-5" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-5" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-5" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label dark"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_list" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">checkbox 컴포넌트 참고</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/li</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-5" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dropdown-multi-dark-code-2" class="code_con" style="display: none;">
+                                <div class="code_tab_con">
+                                    <ul id="code-tab-area-6" class="code_tab_area">
+                                        <li id="html-tab-6" class="code_tab_item active">
+                                            <span>HTML</span>
+                                        </li>
+                                        <li id="scss-tab-6" class="code_tab_item">
+                                            <span>SCSS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="html-6" class="code_source_container">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_group"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">label </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/label</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_field_wrapper"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">button </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_select_box dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_btn2" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_label dark"</span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">Select menu options</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"box_menu_icon"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">svg </span>
+                                                    <span class="token class">width</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18" </span>
+                                                    <span class="token class">height</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"18"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/button </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">div </span>
+                                                    <span class="token name">id </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_multi_list2" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_list"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">ul </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropdown_menu_wrapper dark"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">li </span>
+                                                    <span class="token class">id</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"all_select_btn" </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"menu_item all_select_btn"</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                        <</span>
+                                                    <span class="token name">fieldset </span>
+                                                    <span class="token tag">></span>
+                                                    <span class="token">checkbox 컴포넌트 참고</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/fieldset</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                        <</span>
+                                                    <span class="token name">span </span>
+                                                    <span class="token class">class</span>
+                                                    <span class="token">= </span>
+                                                    <span class="token class_name">"dropbox_all_btn"</span>
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/span</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                    <</span>
+                                                    <span class="token name">/li </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">                <</span>
+                                                    <span class="token name">/ul </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">            <</span>
+                                                    <span class="token name">/div</span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">        <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag">    <</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token tag"><</span>
+                                                    <span class="token name">/div </span>
+                                                    <span class="token tag">></span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="scss-6" class="code_source_container" style="display: none;">
+                                    <div class="code_source_con">
+                                        <div class="code_source_con">
+                                            <pre class="priview_code" contenteditable="plaintext-only">
+                                                <div class="token_line"></div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">.dropdown_group {</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_label</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">     .dropdown_select_field_wrapper</span>
+                                                </div>
+                                                <div class="token_line">
+                                                    <span class="token class_list">}</span>
+                                                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <footer class="content_footer">
+                <div class="footer_inner">
+                    <p class="copyright">Copyright © 2023 Danusys</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/accodion.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/topButton.js"></script>
+    <script>
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script src="js/loading.js"></script>
+    <script src="js/themSticky.js"></script>
+    <script src="js/dropdownBtn.js"></script>
+</body>
+</html>

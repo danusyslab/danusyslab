@@ -244,6 +244,7 @@ $elem_color: (
     }
 
     &:checked + .check_button_label_indeterminate_light:after {
+        border-bottom: 2px solid $white;
     }
 
     &:checked + .error:before {
@@ -275,7 +276,7 @@ $elem_color: (
         top: 6px;
         transform-origin: bottom right;
         width: 8px;
-        border-bottom: 2px solid $white;
+        border-bottom: none;
     }
 
     &.error {

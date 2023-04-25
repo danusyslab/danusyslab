@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
+
+
+// dropdown
+
+$text_color: (
+    dark: $gray_10,
+    light: $gray_110,
+    placeholder: $gray_50
+);
+
+$border_color: (
+    default_dark: $gray_30,
+    default_light: $gray_80,
+    focus_dark: $white,
+    focus_light: $danu_blue_60,
+    read_only: $gray_50,
+    error: $red_60 
+);
+
+
+.dropdown_group {
+    
+    .dropdown_wrapper {
+        display: flex;
+
+        .dropdown_label {
+
+            @include body_01;
+            color: $gray_110;
+            display: flex;
+            align-items: center;
+            margin-right: $space_8;
+
+            &.light {
+                color: map-get($text_color, light);
+            }
+
+            &.dark {
+                color: map-get($text_color, dark);
+            }
+        }
+
+        .dropdown_select_field_wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .dropdown_select_box {
+                background: none;
+                padding: 7px $space_12;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                border-radius: 4px;
+                min-width: 118px;
+
+                &.error {
+                    border: 1px solid map-get($border_color, error);
+                }
+
+                &.light {
+                    border: 1px solid map-get($border_color, default_light);
+
+                    &:focus {
+                        border:1px solid map-get($border_color, focus_light);
+                        outline: none;
+                    }
+                }
+
+                &.dark {
+                    border: 1px solid map-get($border_color, default_dark);
+
+                    &:focus {
+                        border:1px solid map-get($border_color, focus_dark);
+                        outline: none;
+                    }
+                }
+
+                &.active {
+
+                    .box_menu_icon {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .box_label {
+                    color: $gray_50;
+
+                    &.light {
+                        &.active {
+                            color: map-get($text_color, light);
+                        } 
+                    }
+
+                    &.dark {
+                        &.active {
+                            color: map-get($text_color, dark);
+                        } 
+                    }
+                }
+
+                .box_menu_icon {
+                    width: 18px;
+                    height: 18px;
+                    margin-left: $space_8;
+                }
+            }
+
+            .dropdown_menu_list {
+                display: none;
+                position: absolute;
+                top: 36px;
+                width: 100%;
+
+                &.show {
+                    display: flex;
+                }
+
+                .dropdown_menu_wrapper {
+                    display: flex;
+                    @include soft_shadow_8;
+                    flex-direction: column;
+                    width: 100%;
+                    max-height: 160px;
+                    overflow: auto;
+                    border-radius: 4px;
+
+                    &.light {
+                        background: $gray_0;
+
+                        .menu_item {
+                            padding: 8px $space_12;
+                            color: map-get($text_color, light);
+                            cursor: pointer;
+                            @include body_01;
+    
+                            &.all_select_btn {
+                                display: flex;
+                                flex-direction: column;
+                                padding-bottom: $space_4;
+    
+                                .dropbox_all_btn {
+                                    border-bottom: 1px solid $gray_20;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-top: $space_8;
+                                }
+                            }
+    
+                            &.active {
+                                background: $gray_10;
+                            }
+    
+                            &:hover {
+                                background: $gray_10;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
