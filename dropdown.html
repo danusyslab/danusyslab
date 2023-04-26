@@ -484,42 +484,109 @@
             <div class="content_container">
                 <h2 class="content_title">구성 요소</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">검색창은 박스 형태의 텍스트 입력 필드와 선행 아이콘으로 구성됩니다.</p>
+                    <p class="desc_text">드롭다운은 박스 형태의 드롭다운 입력 필드와 그 왼쪽 또는 위에 배치된 드롭다운 레이블, 밑에 배치된 도움말로 구성되며, 입력 필드 클릭 시 옵션 목록이 나타납니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/search_1.png"/>
+                                <img src="images/dropdown_1.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/dropdown_2.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 선행 아이콘: 검색창의 정체성을 나타내는 검색 아이콘을 배치합니다.</br>
-2. 텍스트 입력 값: 사용자가 텍스트 필드에 입력한 내용(입력 텍스트)입니다. 텍스트를 입력하지 않았을 때는 자리 표시자가 나타날 수 있습니다.</br>
-3. 텍스트 입력 필드: 사용자가 검색 내용을 입력하는 컨테이너입니다.
+                            1. 드롭다운 레이블: 선택해야 하는 내용(옵션)에 대한 정보를 나타냅니다.</br>
+2. 드롭다운 입력 값: 사용자가 드롭다운에 입력한 내용(선택 옵션)입니다. 아무것도 선택되지 않았을 때는 자리 표시자가 나타날 수 있습니다.</br>
+3. 드롭다운 아이콘: 이 입력 필드가 드롭다운임을 암시하며, 메뉴가 열린 상태인지 닫힌 상태인지를 알려줍니다.</br>
+4. 드롭다운 입력 필드: 드롭다운 입력 값과 아이콘을 포함하는 컨테이너입니다.</br>
+5. 옵션: 사용자가 선택할 수 있는 항목입니다. 드롭다운 유형에 따라 하나 또는 복수의 옵션을 선택할 수 있습니다.</br>
+6. 옵션 레이블: 해당 옵션에 대한 정보를 나타냅니다.</br>
+7. 옵션 체크박스: 복수의 옵션을 선택할 수 있는 경우에 나타납니다.</br>
+8. 메뉴: 선택할 수 있는 옵션들의 목록으로, 열고 닫을 수 있습니다.
                         </span>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
+                    <h5 class="desc_text_strong">1. 일반</h5>
                     <p class="desc_text">
-                        검색 필드 내에 사용자가 텍스트를 입력하지 않은 경우, 해당 자리에 검색에 대한 사용자 컨텍스트를 줄 수 있는 자리 표시자 텍스트를 배치합니다.</br>
-검색 필드에 텍스트를 입력 후, 보편적으로 엔터 키를 누르면 검색이 되나, 때에 따라 우측에 별도의 검색 버튼을 둘 수 있습니다.
+                        - 드롭다운 입력 필드의 너비는 예상되는 입력 값의 길이를 반영하여 설정합니다.</br>
+- 레이블이 수평으로 배치된 드롭다운과 수직으로 배치된 드롭다운을 함께 사용하지 않습니다.</br>
+- 아무것도 입력되지 않은 상태를 기본값으로 하는 것을 권장하나, 대부분의 사용자가 선택할 것으로 예측되는 항목이 있는 경우에 한하여 예측값을 기본값으로 할 수 있습니다.
                     </p>
+                    <h5 class="desc_text_strong">2. 레이블</h5>
+                    <p class="desc_text">- 레이블은 간결하고 명확하게 작성합니다.</br>
+                        - 필수 항목에 대해서는 레이블 뒤에 ‘*’를 붙혀 필수임을 인지할 수 있도록 합니다.</br>
+                        - 레이블에 긍정적이고 적극적인 표현을 사용합니다.</br>
+                        - 경우에 따라 레이블이 포함되지 않을 수 있습니다. 그때에는 레이블을 텍스트 필드 안 입력 보조 텍스트를 대체하여 사용해주세요.</p>
+                    <h5 class="desc_text_strong">3. 자리표시자</h5>
+                    <p class="desc_text">- 입력 값에 대한 예시 또는 힌트를 제공합니다.</br>
+                        - 사용자에게 도움이 되는 경우에 한해서 자리 표시자를 제공합니다.
+                    </p>
+                    <h5 class="desc_text_strong">4. 메뉴/옵션</h5>
+                    <p class="desc_text">- 드롭다운이 화면에 나타나는 위치에 따라 메뉴 드롭다운 상단 또는 하단에 위치할 수 있습니다. </br>
+                        - 모든 옵션을 동일한 품사 또는 동사 시제를 사용하여 표현합니다.</br>
+                        - 옵션 레이블은 간결하고 명확하게 작성합니다. </br>
+                        - ‘선택하지 않음’ 또는 ‘없음’ 옵션을 포함할 수 있습니다.</br>
+                        - 옵션 개수가 많아(6개 이상) 스크롤 되어야 하는 경우, 스크롤을 생성하여 다른 옵션들이 더 있음을 알립니다.</br>
+                        - 메뉴를 열 때, 현재 선택한 옵션이 있으며 메뉴가 스크롤이 가능한 경우에는 선택된 옵션이 메뉴 상단에 보일 수 있도록 메뉴가 스크롤이 된 상태로 열립니다.</br>
+                        - 옵션의 순서는 가나다순으로 제공하는 것을 권장합니다.
+                    </p>
+                </div>
+                <div class="do_donot_con">
+                    <div class="do_donot_area">
+                        <ul class="do_donot_list">
+                            <li class="do_donot_item">
+                                <div class="available_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
+                                </div>
+                                <img src="images/dropdown_3.png"/>
+                                <p>같은 스타일 사용</p>
+                            </li>
+                            <li class="do_donot_item donot_item">
+                                <div class="donot_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
+                                </div>
+                                <img src="images/dropdown_4.png"/>
+                                <p>스타일 병용하여 사용 불가</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="content_title">간격 가이드</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/dropdown_6.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            레이블과 입력 버튼 사이 간격은 8px이며 컨테이너 좌우 패딩 값은 12px 입니다.
+                        </span>
+                    </div>
                 </div>
                 <h2 class="content_title">버튼 상태</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">기본 상태인 Default, 마우스로 클릭한 상태인 Focus를 지원합니다.</p>
+                    <p class="desc_text">기본 상태인 Default, 마우스로 클릭한 상태인 Focus 상태를 지원합니다.</p>
                 </div>
                 <div class="them_container">
                     <div class="them_con">
                         <div class="them_area_dark">
-                            <img src="images/search_dark_mode.png"/>
+                            <img src="images/dropdown_dark_mode.png"/>
                         </div>
                         <div class="them_area_light">
-                            <img src="images/search_light_mode.png"/>
+                            <img src="images/dropdown_light_mode.png"/>
                         </div>
                     </div>
                 </div>
@@ -550,13 +617,24 @@
                         </ul>
                         <ul class="list_text_con">
                             <li class="list_text_item">
+                                <span class="list_text_text">레이블</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">타이포</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$label 02</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
                                 <span class="list_text_text">텍스트 Dark</span>
                             </li>
                             <li class="list_text_item">
                                 <span class="list_text_text">컬러</span>
                             </li>
                             <li class="list_text_item">
-                                <span class="list_text_token">$gray 30</span>
+                                <span class="list_text_token">$gray 10</span>
                             </li>
                         </ul>
                         <ul class="list_text_con">
@@ -1428,12 +1506,12 @@
                                             </label>
                                             <div class="dropdown_select_field_wrapper">
                                                 <button class="dropdown_select_box dark">
-                                                    <span id="dropdown_select_btn" class="box_label dark">Select menu options</span>
+                                                    <span id="dropdown_select_btn_dark" class="box_label dark">Select menu options</span>
                                                     <div class="box_menu_icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
                                                     </div>
                                                 </button>
-                                                <div id="dropdown_select_list" class="dropdown_menu_list">
+                                                <div id="dropdown_select_list_dark" class="dropdown_menu_list">
                                                     <ul class="dropdown_menu_wrapper dark">
                                                         <li class="menu_item">
                                                             menu 1
@@ -1463,18 +1541,18 @@
                                             </label>
                                             <div class="dropdown_select_field_wrapper">
                                                 <button class="dropdown_select_box dark">
-                                                    <span id="dropdown_multi_btn" class="box_label dark">Select menu options</span>
+                                                    <span id="dropdown_multi_btn_dark" class="box_label dark">Select menu options</span>
                                                     <div class="box_menu_icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
                                                     </div>
                                                 </button>
-                                                <div id="dropdown_multi_list" class="dropdown_menu_list">
+                                                <div id="dropdown_multi_list_dark" class="dropdown_menu_list">
                                                     <ul class="dropdown_menu_wrapper dark">
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_1">
-                                                                    <label for="check_1" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_100">
+                                                                    <label for="check_100" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 1</span>
                                                                     </label>
                                                                 </div>
@@ -1483,8 +1561,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_2">
-                                                                    <label for="check_2" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_101">
+                                                                    <label for="check_101" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 2</span>
                                                                     </label>
                                                                 </div>
@@ -1493,8 +1571,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_3">
-                                                                    <label for="check_3" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_102">
+                                                                    <label for="check_102" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 3</span>
                                                                     </label>
                                                                 </div>
@@ -1503,8 +1581,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_4">
-                                                                    <label for="check_4" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_103">
+                                                                    <label for="check_103" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 4</span>
                                                                     </label>
                                                                 </div>
@@ -1526,18 +1604,18 @@
                                             </label>
                                             <div class="dropdown_select_field_wrapper">
                                                 <button class="dropdown_select_box dark">
-                                                    <span id="dropdown_multi_btn2" class="box_label dark">Select menu options</span>
+                                                    <span id="dropdown_multi_btn2_dark" class="box_label dark">Select menu options</span>
                                                     <div class="box_menu_icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h18v18H0z"/></mask><g mask="url(#a)"><path fill="#444" d="M9 11.25 5.25 7.5h7.5L9 11.25Z"/></g></svg>
                                                     </div>
                                                 </button>
-                                                <div id="dropdown_multi_list2" class="dropdown_menu_list">
+                                                <div id="dropdown_multi_list2_dark" class="dropdown_menu_list">
                                                     <ul class="dropdown_menu_wrapper dark">
-                                                        <li id="all_select_btn" class="menu_item all_select_btn">
+                                                        <li id="all_select_btn_dark" class="menu_item all_select_btn">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_indeterminate_dark" id="check_5">
-                                                                    <label for="check_5" class="check_button_label_indeterminate_dark">
+                                                                    <input type="checkbox" class="check_button_indeterminate_dark" id="check_104">
+                                                                    <label for="check_104" class="check_button_label_indeterminate_dark">
                                                                         <span class="check_button_label_text">All</span>
                                                                     </label>
                                                                 </div>
@@ -1547,8 +1625,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_6">
-                                                                    <label for="check_6" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_105">
+                                                                    <label for="check_105" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 1</span>
                                                                     </label>
                                                                 </div>
@@ -1557,8 +1635,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_7">
-                                                                    <label for="check_7" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_106">
+                                                                    <label for="check_106" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 2</span>
                                                                     </label>
                                                                 </div>
@@ -1567,8 +1645,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_8">
-                                                                    <label for="check_8" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_107">
+                                                                    <label for="check_107" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 3</span>
                                                                     </label>
                                                                 </div>
@@ -1577,8 +1655,8 @@
                                                         <li class="menu_item">
                                                             <fieldset class="check_button_group">
                                                                 <div class="check_button_wrapper">
-                                                                    <input type="checkbox" class="check_button_dark" id="check_9">
-                                                                    <label for="check_9" class="check_button_label_dark">
+                                                                    <input type="checkbox" class="check_button_dark" id="check_108">
+                                                                    <label for="check_108" class="check_button_label_dark">
                                                                         <span class="check_button_label_text">menu 4</span>
                                                                     </label>
                                                                 </div>
@@ -1591,8 +1669,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="sortingAreaLight" class="config_sel_con">
-                                <button id="closeConfigBtnLight" class="accodion_btn_cancel">
+                            <div id="sortingAreaDark" class="config_sel_con">
+                                <button id="closeConfigBtnDark" class="accodion_btn_cancel">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                                 </button>
                                 <div class="config_sel_area">
@@ -1622,7 +1700,7 @@
                                     </fieldset>
                                 </div>
                             </div>
-                            <button id="open_config_sel_btn" class="accodion_btn">
+                            <button id="open_config_sel_btn2" class="accodion_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                             </button>
                         </div>
@@ -1664,7 +1742,7 @@
                                                     <span class="token name">label </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token class_name">"dropdown_label dark"</span>
                                                     <span class="token tag">></span>
                                                     <span class="token">Select</span>
                                                     <span class="token tag"><</span>
@@ -1692,7 +1770,7 @@
                                                     <span class="token name">span </span>
                                                     <span class="token class">id</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"dropdown_select_btn" </span>
+                                                    <span class="token class_name">"dropdown_select_btn_dark" </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
                                                     <span class="token class_name">"box_label dark"</span>
@@ -1737,7 +1815,7 @@
                                                     <span class="token name">id </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"dropdown_select_list" </span>
+                                                    <span class="token class_name">"dropdown_select_list_dark" </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
                                                     <span class="token class_name">"dropdown_menu_list"</span>
@@ -1851,7 +1929,7 @@
                                                     <span class="token name">label </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"dropdown_label"</span>
+                                                    <span class="token class_name">"dropdown_label dark"</span>
                                                     <span class="token tag">></span>
                                                     <span class="token">Select</span>
                                                     <span class="token tag"><</span>
@@ -1879,7 +1957,7 @@
                                                     <span class="token name">span </span>
                                                     <span class="token class">id</span>
                                                     <span class="token">= </span>
-                                                    <span class="token class_name">"dropdown_multi_btn" </span>
+                                                    <span class="token class_name">"dropdown_multi_btn_dark" </span>
                                                     <span class="token class">class</span>
                                                     <span class="token">= </span>
                                                     <span class="token class_name">"box_label dark"</span>

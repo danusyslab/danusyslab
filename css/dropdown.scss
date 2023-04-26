@@ -72,22 +72,39 @@ $border_color: (
                         border:1px solid map-get($border_color, focus_light);
                         outline: none;
                     }
+
+                    &.active {
+
+                        .box_menu_icon {
+                            svg {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
                 }
 
                 &.dark {
                     border: 1px solid map-get($border_color, default_dark);
 
+                    .box_menu_icon {
+                        svg {
+                            path {
+                                fill: $gray_30;
+                            }
+                        }
+                    }
+
                     &:focus {
                         border:1px solid map-get($border_color, focus_dark);
                         outline: none;
                     }
-                }
 
-                &.active {
+                    &.active {
 
-                    .box_menu_icon {
-                        svg {
-                            transform: rotate(180deg);
+                        .box_menu_icon {
+                            svg {
+                                transform: rotate(180deg);
+                            }
                         }
                     }
                 }
@@ -162,6 +179,38 @@ $border_color: (
     
                             &:hover {
                                 background: $gray_10;
+                            }
+                        }
+                    }
+
+                    &.dark {
+                        background: $gray_100;
+
+                        .menu_item {
+                            padding: 8px $space_12;
+                            color: map-get($text_color, dark);
+                            cursor: pointer;
+                            @include body_01;
+    
+                            &.all_select_btn {
+                                display: flex;
+                                flex-direction: column;
+                                padding-bottom: $space_4;
+    
+                                .dropbox_all_btn {
+                                    border-bottom: 1px solid $gray_80;
+                                    display: inline-block;
+                                    width: 100%;
+                                    margin-top: $space_8;
+                                }
+                            }
+    
+                            &.active {
+                                background: $gray_90;
+                            }
+    
+                            &:hover {
+                                background: $gray_90;
                             }
                         }
                     }

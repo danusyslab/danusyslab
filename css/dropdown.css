@@ -337,14 +337,20 @@ html, body {
   border: 1px solid #0F6BFF;
   outline: none;
 }
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.light.active .box_menu_icon svg {
+  transform: rotate(180deg);
+}
 .dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.dark {
   border: 1px solid #B1B1B1;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.dark .box_menu_icon svg path {
+  fill: #B1B1B1;
 }
 .dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.dark:focus {
   border: 1px solid #FFFFFF;
   outline: none;
 }
-.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.active .box_menu_icon svg {
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box.dark.active .box_menu_icon svg {
   transform: rotate(180deg);
 }
 .dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_select_box .box_label {
@@ -408,4 +414,34 @@ html, body {
 }
 .dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.light .menu_item:hover {
   background: #E2E2E2;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark {
+  background: #333333;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark .menu_item {
+  padding: 8px 12px;
+  color: #E2E2E2;
+  cursor: pointer;
+  font-family: "IBM Plex Sans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark .menu_item.all_select_btn {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4px;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark .menu_item.all_select_btn .dropbox_all_btn {
+  border-bottom: 1px solid #545454;
+  display: inline-block;
+  width: 100%;
+  margin-top: 8px;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark .menu_item.active {
+  background: #444444;
+}
+.dropdown_group .dropdown_wrapper .dropdown_select_field_wrapper .dropdown_menu_list .dropdown_menu_wrapper.dark .menu_item:hover {
+  background: #444444;
 }
