@@ -314,10 +314,10 @@ button {
 }
 .gray_button_solid_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -354,9 +354,9 @@ button {
 }
 .gray_button_solid_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -393,9 +393,9 @@ button {
 }
 .gray_button_solid_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -434,10 +434,10 @@ button {
 }
 .gray_button_outlined_sm_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -486,9 +486,9 @@ button {
 }
 .gray_button_outlined_md_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -537,9 +537,9 @@ button {
 }
 .gray_button_outlined_lg_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -589,10 +589,10 @@ button {
 }
 .gray_button_outlined_sm_light span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -641,9 +641,9 @@ button {
 }
 .gray_button_outlined_md_light span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -692,9 +692,9 @@ button {
 }
 .gray_button_outlined_lg_light span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -744,10 +744,10 @@ button {
 }
 .gray_button_ghost_sm_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -796,9 +796,9 @@ button {
 }
 .gray_button_ghost_md_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -847,9 +847,9 @@ button {
 }
 .gray_button_ghost_lg_dark span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -899,10 +899,10 @@ button {
 }
 .gray_button_ghost_sm_light span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -951,9 +951,9 @@ button {
 }
 .gray_button_ghost_md_light span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1002,9 +1002,9 @@ button {
 }
 .gray_button_ghost_lg_light span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1053,10 +1053,10 @@ button {
 }
 .primary_button_solid_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1093,9 +1093,9 @@ button {
 }
 .primary_button_solid_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1132,9 +1132,9 @@ button {
 }
 .primary_button_solid_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1169,10 +1169,10 @@ button {
 }
 .primary_button_outlined_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1221,9 +1221,9 @@ button {
 }
 .primary_button_outlined_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1272,9 +1272,9 @@ button {
 }
 .primary_button_outlined_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1324,10 +1324,10 @@ button {
 }
 .primary_button_ghost_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1376,9 +1376,9 @@ button {
 }
 .primary_button_ghost_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1427,9 +1427,9 @@ button {
 }
 .primary_button_ghost_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1478,10 +1478,10 @@ button {
 }
 .red_button_solid_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1518,9 +1518,9 @@ button {
 }
 .red_button_solid_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1557,9 +1557,9 @@ button {
 }
 .red_button_solid_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1591,10 +1591,10 @@ button {
 }
 .red_button_outlined_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1643,9 +1643,9 @@ button {
 }
 .red_button_outlined_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1694,9 +1694,9 @@ button {
 }
 .red_button_outlined_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1746,10 +1746,10 @@ button {
 }
 .red_button_ghost_sm span {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   display: flex;
   align-items: center;
 }
@@ -1798,9 +1798,9 @@ button {
 }
 .red_button_ghost_md span {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;
@@ -1849,9 +1849,9 @@ button {
 }
 .red_button_ghost_lg span {
   font-family: "IBM Plex Sans";
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.8rem;
   letter-spacing: 0;
   display: flex;
   align-items: center;

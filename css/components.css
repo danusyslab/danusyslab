@@ -638,10 +638,10 @@ html, body {
 .radio_button_wrapper_vertical_dark.with_error .error_message span, .radio_button_wrapper_vertical.with_error .error_message span, .radio_button_wrapper_horizontal_dark.with_error .error_message span, .radio_button_wrapper_horizontal.with_error .error_message span {
   color: #E02C10;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
 }
 
 .radio_button_group_horizontal_dark, .radio_button_group_horizontal {
@@ -670,10 +670,10 @@ html, body {
 .radio_button_group_horizontal .radio_group_label {
   display: inline-block;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
   margin-bottom: 8px;
   vertical-align: baseline;
   color: #333333;
@@ -682,10 +682,10 @@ html, body {
 .radio_button_group_horizontal_dark .radio_group_label {
   display: inline-block;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
   margin-bottom: 8px;
   vertical-align: baseline;
   color: #C9C9C9;
@@ -694,10 +694,10 @@ html, body {
 .radio_button_group_vertical .radio_group_label {
   display: inline-block;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
   margin-bottom: 8px;
   vertical-align: baseline;
   color: #333333;
@@ -706,10 +706,10 @@ html, body {
 .radio_button_group_vertical_dark .radio_group_label {
   display: inline-block;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
   margin-bottom: 8px;
   vertical-align: baseline;
   color: #C9C9C9;
@@ -1399,10 +1399,10 @@ html, body {
 }
 .code_container .code_con .code_tab_con .code_tab_area .code_tab_item {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.125rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.016rem;
   padding: 0 16px 16px 16px;
   border-bottom: 2px solid #212121;
   cursor: pointer;
@@ -1436,10 +1436,10 @@ html, body {
 }
 .code_container .code_con .code_source_container .code_source_con pre.priview_code .token_line .token {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   color: #E2E2E2;
 }
 .code_container .code_con .code_source_container .code_source_con pre.priview_code .token_line .token.tag {
@@ -1496,9 +1496,9 @@ html, body {
 }
 .image_container .disc_con .disc_style {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
 }
 
@@ -1747,8 +1747,8 @@ html, body {
 }
 .image_container_saper .disc_con .disc_style {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
 }

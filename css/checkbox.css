@@ -310,10 +310,10 @@ html, body {
 .check_button_wrapper.with_error .error_message span {
   color: #E02C10;
   font-family: "IBM Plex Sans";
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1rem;
-  letter-spacing: 0.02rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.032rem;
 }
 
 .check_button_wrapper {
@@ -322,10 +322,10 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
 }
 .check_button_light {
   clip: rect(0, 0, 0, 0);
@@ -708,10 +708,10 @@ html, body {
 
 .check_button_label_text {
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
   margin-left: 8px;
   padding: 2px 0;
 }

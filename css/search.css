@@ -306,10 +306,10 @@ html, body {
   padding: 9.5px 12px 9.5px 36px;
   background: transparent;
   font-family: "IBM Plex Sans";
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.25rem;
-  letter-spacing: 0.01rem;
+  line-height: 2rem;
+  letter-spacing: 0.016rem;
 }
 .search_group input.light {
   color: #212121;

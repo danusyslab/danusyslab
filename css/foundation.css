@@ -36,7 +36,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 10px;
   font: inherit;
   vertical-align: baseline;
 }
@@ -2670,9 +2670,9 @@ footer {
 
 .desc_text_strong {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
   margin-bottom: 8px;
   margin-top: 16px;
@@ -2680,9 +2680,9 @@ footer {
 
 .desc_text {
   font-family: "IBM Plex Sans";
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   letter-spacing: 0;
 }
 
