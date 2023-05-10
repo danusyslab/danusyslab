@@ -1176,6 +1176,57 @@ html, body {
   .image_container .image_con .image_area .image_item {
     width: 90% !important;
   }
+  .use_image_container {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .use_image_container .use_image_con {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .use_image_container .use_image_con:last-child {
+    margin-bottom: 0;
+  }
+  .use_image_container .use_image_con .use_image_area {
+    flex-direction: column;
+  }
+  .use_image_container .use_image_con .use_image_area .use_image_item {
+    width: 100% !important;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+  .use_image_container .use_image_con .use_image_area .use_image_item:last-child {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .use_image_container .use_image_con .use_image_area .use_image_item.horizon_type {
+    width: 100%;
+  }
+  .use_image_container .use_image_con .use_image_area .use_image_item.horizon_type img {
+    width: 100% !important;
+  }
+  .use_image_container .use_image_con .use_image_area .use_image_item img {
+    width: 100%;
+  }
+  .use_image_container .disc_con {
+    margin-top: 24px;
+  }
+  .use_image_container .disc_con .disc_style {
+    font-family: "IBM Plex Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0;
+  }
   .do_donot_con .do_donot_area .do_donot_list {
     flex-direction: column;
   }
@@ -1296,6 +1347,14 @@ html, body {
     margin-bottom: 0 !important;
   }
 }
+.disc_style {
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
 .accodion_btn {
   width: 44px;
   height: 44px;
@@ -1492,6 +1551,9 @@ html, body {
 .image_container .image_con .image_area .image_item:last-child {
   margin-right: 0;
 }
+.image_container .image_con .image_area .image_item.horizon_type {
+  width: 100% !important;
+}
 .image_container .image_con .image_area .image_item img {
   width: 100%;
 }
@@ -1499,6 +1561,59 @@ html, body {
   margin-top: 24px;
 }
 .image_container .disc_con .disc_style {
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
+
+.use_image_container {
+  width: 100%;
+  margin-top: 40px;
+}
+.use_image_container .use_image_con {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.use_image_container .use_image_con:last-child {
+  margin-bottom: 0;
+}
+.use_image_container .use_image_con .use_image_area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item {
+  width: 50%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 60px;
+  margin-right: 16px;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item:last-child {
+  margin-right: 0;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item.horizon_type {
+  width: 100%;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item.horizon_type img {
+  width: 50%;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item img {
+  width: 100%;
+}
+.use_image_container .disc_con {
+  margin-top: 24px;
+}
+.use_image_container .disc_con .disc_style {
   font-family: "IBM Plex Sans";
   font-size: 1.6rem;
   font-weight: 400;
