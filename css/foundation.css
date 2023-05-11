@@ -2323,6 +2323,11 @@ html, body {
   }
   .content_container .space_align_area .space_align_list .space_align_item p {
     margin-top: 20px;
+    font-family: "IBM Plex Sans";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0;
   }
   .content_container .shadow_con {
     width: 100%;
@@ -4479,6 +4484,11 @@ footer {
 }
 .content_container .icon_align_con .icon_align_area .icon_align_list .icon_align_item p {
   margin-top: 20px;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
 }
 .content_container .icon_color_con {
   width: 100%;
@@ -4547,6 +4557,11 @@ footer {
 }
 .content_container .icon_color_con .icon_color_area .icon_color_list .icon_color_item p {
   margin-top: 20px;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
 }
 .content_container .space_con {
   width: 100%;
@@ -4689,6 +4704,11 @@ footer {
 }
 .content_container .space_align_area .space_align_list .space_align_item p {
   margin-top: 20px;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
 }
 .content_container .shadow_con {
   width: 100%;

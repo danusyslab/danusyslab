@@ -2884,6 +2884,7 @@
     
                     p {
                         margin-top: 20px;
+                        @include body_02;
                     }
                 }
             }
@@ -5539,6 +5540,7 @@ footer {
 
                     p {
                         margin-top: 20px;
+                        @include body_02;
                     }
                 }
             }
@@ -5618,6 +5620,7 @@ footer {
 
                     p {
                         margin-top: 20px;
+                        @include body_02;
                     }
                 }
             }
@@ -5793,6 +5796,7 @@ footer {
 
                 p {
                     margin-top: 20px;
+                    @include body_02;
                 }
             }
         }
