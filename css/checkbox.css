@@ -377,10 +377,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #545454;
 }
 .check_button_label_light:after {
@@ -400,10 +400,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #E02C10;
 }
 .check_button_label_light.error:after {
@@ -473,10 +473,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #545454;
 }
 .check_button_label_indeterminate_light:after {
@@ -494,10 +494,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #E02C10;
 }
 .check_button_label_indeterminate_light.error:after {
@@ -567,10 +567,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #B1B1B1;
 }
 .check_button_label_dark:after {
@@ -590,10 +590,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #E02C10;
 }
 .check_button_label_dark.error:after {
@@ -663,10 +663,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #B1B1B1;
 }
 .check_button_label_indeterminate_dark:after {
@@ -683,10 +683,10 @@ html, body {
   background-color: transparent;
   border-radius: 4px;
   content: "";
-  height: 1rem;
+  height: 1.6rem;
   left: 0;
   position: absolute;
-  width: 1rem;
+  width: 1.6rem;
   border: 2px solid #E02C10;
 }
 .check_button_label_indeterminate_dark.error:after {
@@ -712,6 +712,6 @@ html, body {
   font-weight: 400;
   line-height: 2rem;
   letter-spacing: 0.016rem;
-  margin-left: 8px;
+  margin-left: 16px;
   padding: 2px 0;
 }

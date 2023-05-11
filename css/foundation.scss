@@ -3420,6 +3420,7 @@ footer {
 
         .shadow_text_con {
             margin-top: 16px;
+            @include body_02;
 
             dt {
                 font-weight: 600;

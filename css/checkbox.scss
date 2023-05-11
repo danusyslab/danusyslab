@@ -164,10 +164,10 @@ $elem_color: (
         background-color: transparent;
         border-radius: 4px;
         content: "";
-        height: 1rem;
+        height: 1.6rem;
         left: 0;
         position: absolute;
-        width: 1rem;
+        width: 1.6rem;
         border: 2px solid map-get($elem_color, default_light);
     }
 
@@ -190,10 +190,10 @@ $elem_color: (
             background-color: transparent;
             border-radius: 4px;
             content: "";
-            height: 1rem;
+            height: 1.6rem;
             left: 0;
             position: absolute;
-            width: 1rem;
+            width: 1.6rem;
             border: 2px solid map-get($elem_color, error );
         }
     
@@ -260,10 +260,10 @@ $elem_color: (
         background-color: transparent;
         border-radius: 4px;
         content: "";
-        height: 1rem;
+        height: 1.6rem;
         left: 0;
         position: absolute;
-        width: 1rem;
+        width: 1.6rem;
         border: 2px solid $gray_80;
     }
 
@@ -284,10 +284,10 @@ $elem_color: (
             background-color: transparent;
             border-radius: 4px;
             content: "";
-            height: 1rem;
+            height: 1.6rem;
             left: 0;
             position: absolute;
-            width: 1rem;
+            width: 1.6rem;
             border: 2px solid map-get($elem_color, error );
         }
     
@@ -355,10 +355,10 @@ $elem_color: (
         background-color: transparent;
         border-radius: 4px;
         content: "";
-        height: 1rem;
+        height: 1.6rem;
         left: 0;
         position: absolute;
-        width: 1rem;
+        width: 1.6rem;
         border: 2px solid map-get($elem_color, default_dark);
     }
 
@@ -381,10 +381,10 @@ $elem_color: (
             background-color: transparent;
             border-radius: 4px;
             content: "";
-            height: 1rem;
+            height: 1.6rem;
             left: 0;
             position: absolute;
-            width: 1rem;
+            width: 1.6rem;
             border: 2px solid map-get($elem_color, error);
         }
     
@@ -451,10 +451,10 @@ $elem_color: (
         background-color: transparent;
         border-radius: 4px;
         content: "";
-        height: 1rem;
+        height: 1.6rem;
         left: 0;
         position: absolute;
-        width: 1rem;
+        width: 1.6rem;
         border: 2px solid map-get($elem_color, default_dark);
     }
 
@@ -474,10 +474,10 @@ $elem_color: (
             background-color: transparent;
             border-radius: 4px;
             content: "";
-            height: 1rem;
+            height: 1.6rem;
             left: 0;
             position: absolute;
-            width: 1rem;
+            width: 1.6rem;
             border: 2px solid map-get($elem_color, error);
         }
     
@@ -503,6 +503,6 @@ $elem_color: (
 
 .check_button_label_text {
     @include body_01;
-    margin-left: $space_8;
+    margin-left: $space_16;
     padding: 2px 0;
 }

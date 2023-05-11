@@ -2771,6 +2771,11 @@ footer {
 }
 .content_container .desc_text_con .shadow_text_con {
   margin-top: 16px;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
 }
 .content_container .desc_text_con .shadow_text_con dt {
   font-weight: 600;
