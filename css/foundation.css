@@ -115,7 +115,7 @@ html, body {
   padding: 0;
   font-family: "IBMPlexSansKR-Regular";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 10px !important;
 }
 
 @keyframes accordionOpen {
