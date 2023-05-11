@@ -1458,9 +1458,9 @@ html, body {
 }
 .code_container .code_con .code_tab_con .code_tab_area .code_tab_item {
   font-family: "IBM Plex Sans";
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.125rem;
+  line-height: 1.8rem;
   letter-spacing: 0.016rem;
   padding: 0 16px 16px 16px;
   border-bottom: 2px solid #212121;
