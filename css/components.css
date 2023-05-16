@@ -1601,6 +1601,17 @@ html, body {
 .use_image_container .use_image_con .use_image_area .use_image_item:last-child {
   margin-right: 0;
 }
+.use_image_container .use_image_con .use_image_area .use_image_item.dark {
+  background: #0B0B0B;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item.dark .disc_style {
+  color: #B1B1B1;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
+}
 .use_image_container .use_image_con .use_image_area .use_image_item.horizon_type {
   width: 100%;
 }
@@ -1609,6 +1620,14 @@ html, body {
 }
 .use_image_container .use_image_con .use_image_area .use_image_item img {
   width: 100%;
+}
+.use_image_container .use_image_con .use_image_area .use_image_item .disc_style {
+  color: #212121;
+  font-family: "IBM Plex Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0;
 }
 .use_image_container .disc_con {
   margin-top: 24px;

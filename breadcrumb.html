@@ -11,8 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/radioButton.css">
     <title>Danusys Creative Lab</title>
 </head>
 <body class="before_load">
@@ -76,11 +78,11 @@
                         </ul>
                     </li>
                     <li class="list_con_item">
-                        <button class="side_submenu active">
+                        <button class="side_submenu">
                             <span class="submenu_title">Foundation</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                         </button>
-                        <ul class="sub_list_con" style="display: block;">
+                        <ul>
                             <li>
                                 <a href="color.html" class="side_item">
                                     <span class="submenu_item">Color</span>
@@ -91,7 +93,7 @@
                                     <span class="submenu_item">Typhography</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="icon.html" class="side_item">
                                     <span class="submenu_item">Iconography</span>
                                 </a>
@@ -104,7 +106,7 @@
                         </ul>
                     </li>
                     <li class="list_con_item">
-                        <button class="side_submenu">
+                        <button class="side_submenu active">
                             <span class="submenu_title">Components</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                         </button>
@@ -120,7 +122,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="side_item">
+                                <a href="toggle.html" class="side_item">
                                     <span class="submenu_item">Toggle</span>
                                 </a>
                             </li>
@@ -156,13 +158,13 @@
                             <span class="submenu_title">Patterns</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"><mask id="a" width="18" height="18" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M18 18V0H0v18z"/></mask><g mask="url(#a)"><path fill="#212121" d="M4.5 7.5 9 12l4.5-4.5-1.05-1.05L9 9.9 5.55 6.45 4.5 7.5Z"/></g></svg>
                         </button>
-                        <ul>
+                        <ul class="sub_list_con" style="display: block;">
                             <li>
                                 <a href="datePicker.html" class="side_item">
                                     <span class="submenu_item">Date picker</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="breadcrumb.html" class="side_item">
                                     <span class="submenu_item">Breadcrumb</span>
                                 </a>
@@ -406,291 +408,219 @@
             <button onclick="goToTop()" type="button" class="gototop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 24V0h24v24z"/></mask><g mask="url(#a)"><path fill="#333" d="m18 17-1.4 1.4-4.6-4.6-4.6 4.6L6 17l6-6 6 6Zm0-9H6V6h12v2Z"/></g></svg>
             </button>
-            <div id="scrollSection0" class="top_sub_blue_con">
+            <div class="top_sub_blue_con">
                 <div class="top_sub_container">
                     <span class="sub_top_text">
-                            Iconography
-                    </span>
-                    <div class="status_con">
-                        <ul class="status_area">
-                            <li class="status_item">
-                                <span class="name_work">
-                                         기획/디자인
+                        Breadcrumb
+                     </span>
+                     <div class="status_con">
+                         <ul class="status_area">
+                             <li class="status_item">
+                                 <span class="name_work">
+                                     기획/디자인
+                                 </span>
+                                 <div class="status_current">
+                                     <span class="ongoing_status"></span>
+                                     <p class="text_status">진행 중</p>
+                                 </div>
+                             </li>
+                             <li class="status_item">
+                                 <span class="name_work">
+                                     코딩
+                                 </span>
+                                 <div class="status_current">
+                                     <span class="not_ongoing_status"></span>
+                                     <p class="not_text_status">시작 안함</p>
+                                 </div>
+                             </li>
+                         </ul>
+                         <span class="date_updated">
+                             1.0.0 버전 / 2023년 5월 16일 업로드
+                         </span>
+                     </div>
+                </div>
+            </div>
+            <div class="sub_second_con">
+                <p class="desc_text">브레드크럼을 통해 사용자가 현재 있는 페이지의 위치를 시각적으로 보여줍니다.</p>
+                <ul class="res_btn_area">
+                    <li class="res_btn_item">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2735%3A22967&t=HnoGy91fm5cJkBKB-1" target="_blank" class="res_btn_a">
+                            <span class="res_btn_name">
+                                디자인 파일 바로가기
+                            </span>
+                            <div class="res_link_con">
+                                <span class="figma_link">
+                                    <img src="images/figma.svg"/>
                                 </span>
-                                <div class="status_current">
-                                    <span class="ongoing_status"></span>
-                                    <p class="text_status">진행 중</p>
-                                </div>
+                                <span class="arrow_other_link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6.4 18 5 16.6 14.6 7H6V5h12v12h-2V8.4L6.4 18Z"/></g></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="res_btn_item">
+                        <a href="#" download="" class="res_btn_a">
+                            <span class="res_btn_name">
+                                SCSS 파일 다운로드
+                            </span>
+                            <div class="res_link_con">
+                                <span class="figma_link">
+                                    <img src="images/css.svg"/>
+                                </span>
+                                <span class="arrow_other_link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z"/></g></svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_container">
+                <h2 class="content_title">구성 요소</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">브레드크럼은 위치한 페이지의 정체성을 보여줄 수 있는 아이콘과 카테고리 depth로 구성됩니다..</p>
+                </div>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/breadcrumb_1.png"/>
                             </li>
                         </ul>
-                        <span class="date_updated">
-                                 1.0.0 버전 / 2023년 3월 31일 업로드
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            1. 아이콘 : 페이지의 정체성을 보여줄 수 있는 아이콘을 사용합니다.</br>
+2. 방향 아이콘 : 페이지의 뎁스를 보여 줄 수 있는 방향 아이콘을 사용합니다.</br>
+3. 페이지 명 : 위치한 페이지 메뉴 명을 보여줍니다.
                         </span>
                     </div>
                 </div>
-            </div>
-            <div id="scrollSection1" class="sub_second_con">
-                <p class="desc_text">가능한 다누시스 디자인 시스템에 미리 정의되어 있는 아이콘 아이템을 활용하여 제작합니다.
-                    필요한 아이콘이 없을 시 구글 머테리얼 디자인, IBM의 카본 디자인 스타일을 차용하여 제작합니다.
-                    원하는 의미를 전달할 수 있는 범위에서 최대한 단순한 형태로 제작하여 사용자에게 아이콘이 바로 인식되도록 합니다.
-                    정사각형 프레임 안에 패딩을 포함하여 제작합니다.</p>
-                    <ul class="res_btn_area">
-                        <li class="res_btn_item">
-                            <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=366%3A4767&t=79WLweNt8Orhzdxw-1" target="_blank" class="res_btn_a">
-                                <span class="res_btn_name">
-                                    디자인 파일 바로가기
-                                </span>
-                                <div class="res_link_con">
-                                    <span class="figma_link">
-                                        <img src="images/figma.svg"/>
-                                    </span>
-                                    <span class="arrow_other_link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6.4 18 5 16.6 14.6 7H6V5h12v12h-2V8.4L6.4 18Z"/></g></svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="res_btn_item">
-                            <a href="images/Icons.zip" download="" class="res_btn_a">
-                                <span class="res_btn_name">
-                                    아이콘 팩 zip 파일 다운로드
-                                </span>
-                                <div class="res_link_con">
-                                    <span class="figma_link">
-                                        <img src="images/zip.svg"/>
-                                    </span>
-                                    <span class="arrow_other_link">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#333" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z"/></g></svg>
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
-            <div id="scrollSection2" class="content_container">
-                <h2 class="content_title">Icon Scale</h2>
+                <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">아이콘 기본 사이즈는 24*24 사이즈입니다. 상황에 따라 18*18 사이즈, 36*36 사이즈, 48*48 사이즈를 사용할 수 있습니다.
-                        기본 아이콘 24*24 사이즈의 비율에 비례하여 사용해주세요. 아이콘 포맷은 SVG로만 사용 가능합니다.</p>
+                    <h5 class="desc_text_strong">1. 일반</h5>
+                    <p class="desc_text">- 2 depth 이상을 가진 메뉴 영역 페이지의 상단에 브레드크럼을 사용하여 현재 페이지 위치를 노출합니다.</br>
+                        - depth가 없는 메뉴에는 사용하지 않습니다.</br></p>
                 </div>
-                <div class="icon_scale_con">
-                    <div class="icon_scale_area">
-                        <div class="icon_scale_back">
-                            <ul class="icon_scale_list">
-                                <li class="icon_back">
-                                    <span class="icon_setting_18"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_info_18"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_map_18"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_search_18"></span>
-                                </li>
-                            </ul>
-                            <p>18px</p>
-                        </div>
-                        <div class="icon_scale_back">
-                            <ul class="icon_scale_list">
-                                <li class="icon_back">
-                                    <span class="icon_setting_24"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_info_24"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_map_24"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_search_24"></span>
-                                </li>
-                            </ul>
-                            <p>24px</p>
-                        </div>
-                        <div class="icon_scale_back">
-                            <ul class="icon_scale_list">
-                                <li class="icon_back">
-                                    <span class="icon_setting_36"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_info_36"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_map_36"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_search_36"></span>
-                                </li>
-                            </ul>
-                            <p>36px</p>
-                        </div>
-                        <div class="icon_scale_back">
-                            <ul class="icon_scale_list">
-                                <li class="icon_back">
-                                    <span class="icon_setting_48"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_info_48"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_map_48"></span>
-                                </li>
-                                <li class="icon_back">
-                                    <span class="icon_search_48"></span>
-                                </li>
-                            </ul>
-                            <p>48px</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="scrollSection3" class="content_container">
-                <h2 class="content_title">Padding & Space</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">기본 사이즈 24*24 기준, 최대 20*20 프레임 안에 아이콘을 그리며 위 아래, 양 옆 패딩 값은 2를 확보하여 아이콘을 그려줍니다. </p>
-                </div>
-                <div class="icon_padding_con">
-                    <div class="icon_padding_area">
-                        <ul class="icon_padding_list">
-                            <li class="icon_padding_item">
-                                <img src="images/padding_1.png"/>
-                            </li>
-                            <li class="icon_padding_item">
-                                <img src="images/padding_2.png"/>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="scrollSection4" class="content_container">
-                <h2 class="content_title">Key Lines</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">기본 사이즈 24*24 기준, 최대 20*20 프레임 안에 아이콘을 그리며 위 아래, 양 옆 패딩 값은 2를 확보하여 아이콘을 그려줍니다.</p>
-                </div>
-                <div class="icon_keyline_con">
-                    <div class="icon_keyline_area">
-                        <ul class="icon_keyline_list">
-                            <li class="icon_keyline_item">
-                                <img src="images/key_lines_1.png"/>
-                            </li>
-                            <li class="icon_keyline_item">
-                                <img src="images/key_lines_2.png"/>
-                            </li>
-                            <li class="icon_keyline_item">
-                                <img src="images/key_lines_3.png"/>
-                            </li>
-                            <li class="icon_keyline_item">
-                                <img src="images/key_lines_4.png"/>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="scrollSection5" class="content_container">
-                <h2 class="content_title">Stroke</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">기본 Stroke는 2이며 기본 사이즈(24*24)에서 제작 가능한 다른 사이즈를 변형하여 사용해주세요.</p>
-                </div>
-                <div class="icon_stroke_con">
-                    <div class="icon_stroke_area">
-                        <img src="images/stroke_img.png"/>
-                    </div>
-                </div>
-            </div>
-            <div id="scrollSection6" class="content_container">
-                <h2 class="content_title">Alignment</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">아이콘 프레임 안에서 아이콘을 항상 가운데 정렬로 배치해주세요. 텍스트와 함께 병용하여 사용할 때에도 가운데 정렬에 맞춰 제작해주세요.</p>
-                </div>
-                <div class="icon_align_con">
-                    <div class="icon_align_area">
-                        <ul class="icon_align_list">
-                            <li class="icon_align_item">
+                <div class="do_donot_con">
+                    <div class="do_donot_area">
+                        <ul class="do_donot_list">
+                            <li class="do_donot_item">
                                 <div class="available_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/align_img_1.png"/>
-                                <p>사용 가능한 정렬</p>
+                                <img src="images/breadcrumb_2.png"/>
+                                <p>2 depth 이상의 페이지에 사용 가능</p>
                             </li>
-                            <li class="icon_align_item donot_item">
+                            <li class="do_donot_item donot_item">
                                 <div class="donot_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
                                 </div>
-                                <img src="images/align_img_2.png"/>
-                                <p>사용 불가능한 정렬</p>
-                            </li>
-                        </ul>
-                        <ul class="icon_align_list">
-                            <li class="icon_align_item">
-                                <div class="available_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
-                                </div>
-                                <img src="images/align_img_3.png"/>
-                                <p>사용 가능한 정렬</p>
-                            </li>
-                            <li class="icon_align_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/align_img_4.png"/>
-                                <p>사용 불가능한 정렬</p>
+                                <img src="images/breadcrumb_3.png"/>
+                                <p>1 depth 페이지에 사용 불가능</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div id="scrollSection8" class="content_container">
-                <h2 class="content_title">Color</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">아이콘 컬러는 통일하여 사용해주세요. 한 가지 아이콘 내에서 2~3가지 컬러 사용을 하지마세요.</p>
-                </div>
-                <div class="icon_color_con">
-                    <div class="icon_color_area">
-                        <ul class="icon_color_list">
-                            <li class="icon_color_item">
-                                <div class="available_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
-                                </div>
-                                <img src="images/align_img_5.png"/>
-                                <p>무채색 컬러 사용 허용 범위</p>
-                            </li>
-                            <li class="icon_color_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/align_img_6.png"/>
-                                <p>무채색 컬러 사용 불가 범위</p>
+                <h2 class="content_title">간격 가이드</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/breadcrumb_4.png"/>
                             </li>
                         </ul>
-                        <ul class="icon_color_list">
-                            <li class="icon_color_item">
-                                <div class="available_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
-                                </div>
-                                <img src="images/align_img_7.png"/>
-                                <p>유채색 컬러 사용 허용 범위</p>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            아이콘은 18px 사이즈로 사용하며 아이콘과 페이지 명 텍스트 사이 간격은 8px 입니다.
+                        </span>
+                    </div>
+                </div>
+                <h2 class="content_title">테마</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">Dark 테마와 Light 테마 스타일을 지원합니다.</p>
+                </div>
+                <div class="use_image_container">
+                    <div class="use_image_con">
+                        <ul class="use_image_area">
+                            <li class="use_image_item horizon_type">
+                                <img src="images/breadcrumb_5.png">
+                                <span class="disc_style">Light 테마</span>
                             </li>
-                            <li class="icon_color_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/align_img_8.png"/>
-                                <p>유채색 컬러 사용 불가 범위</p>
+                        </ul>
+                    </div>
+                    <div class="use_image_con">
+                        <ul class="use_image_area">
+                            <li class="use_image_item dark horizon_type">
+                                <img src="images/breadcrumb_6.png">
+                                <span class="disc_style">Dark 테마</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div id="scrollSection5" class="content_container">
-                <h2 class="content_title">Angles</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">앵글은 기본 45°를 기본으로 하되, 15° 단위까지 허용합니다.</p>
+                <h2 class="content_title">아이콘 종류</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/breadcrumb_7.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            통계, 조회, 환경설정 페이지에 대해서는 정해진 아이콘을 사용합니다.
+                        </span>
+                    </div>
                 </div>
-                <div class="icon_stroke_con">
-                    <div class="icon_stroke_area">
-                        <img src="images/angles_img.png"/>
+                <h2 class="content_title">구성 스타일</h2>
+                <div class="token_sets_con">
+                    <div class="token_sets_area">
+                        <ul class="list_title_con">
+                            <li class="list_title_item">
+                                <span class="list_title_text">요소</span>
+                            </li>
+                            <li class="list_title_item">
+                                <span class="list_title_text">구성</span>
+                            </li>
+                            <li class="list_title_item">
+                                <span class="list_title_text">토큰</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">페이지 명</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">타이포</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$label 01</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">텍스트 Dark</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 30</span>
+                            </li>
+                        </ul>
+                        <ul class="list_text_con">
+                            <li class="list_text_item">
+                                <span class="list_text_text">텍스트 Light</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_text">컬러</span>
+                            </li>
+                            <li class="list_text_item">
+                                <span class="list_text_token">$gray 110</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -702,6 +632,7 @@
         </main>
     </div>
     <script src="js/accodion.js"></script>
+    <script src="js/radio.js"></script>
     <script src="js/topButton.js"></script>
     <script>
         function goToTop() {
@@ -711,7 +642,7 @@
             });
         }
     </script>
-    <script src="js/typography.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/themSticky.js"></script>
 </body>
 </html>

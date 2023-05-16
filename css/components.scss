@@ -801,6 +801,15 @@
                     margin-right: 0;
                 }
 
+                &.dark {
+                    background: $gray_120;
+
+                    .disc_style {
+                        color: $gray_30;
+                        @include body_02;
+                    }
+                }
+
                 &.horizon_type {
                     width: 100%;
 
@@ -811,6 +820,11 @@
 
                 img {
                     width: 100%;
+                }
+
+                .disc_style {
+                    color: $gray_110;
+                    @include body_02;
                 }
             }
         }
