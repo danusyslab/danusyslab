@@ -1,5 +1,9 @@
 @charset "utf-8";
-@import 'reset.scss';
+
+@import "reset";
+@import "space_shadow";
+@import "typography";
+@import "color";
 
 
 @media (min-width: 1400px) and (max-width: 1600px) {
@@ -165,9 +169,7 @@
     background: $white;
 
     .desc_text {
-        font-size: 16px;
-        color: $gray_110;
-        line-height: 1.5;
+        @include body_02;
     }
 
     .top_title_container {
