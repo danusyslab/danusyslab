@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/radioButton.css">
     <title>Danusys Creative Lab</title>
 </head>
 <body class="before_load">
@@ -164,7 +163,7 @@
                                     <span class="submenu_item">Date picker</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="breadcrumb.html" class="side_item">
                                     <span class="submenu_item">Breadcrumb</span>
                                 </a>
@@ -174,12 +173,12 @@
                                     <span class="submenu_item">Button group</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="notification.html" class="side_item">
                                     <span class="submenu_item">Notification</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a class="side_item">
                                     <span class="submenu_item">Table</span>
                                 </a>
@@ -365,6 +364,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="buttongroup.html" class="side_item">
+                                    <span class="submenu_item">Button group</span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="notification.html" class="side_item">
                                     <span class="submenu_item">Notification</span>
                                 </a>
@@ -406,7 +410,7 @@
             <div class="top_sub_blue_con">
                 <div class="top_sub_container">
                     <span class="sub_top_text">
-                        Breadcrumb
+                        Notification
                      </span>
                      <div class="status_con">
                          <ul class="status_area">
@@ -430,16 +434,16 @@
                              </li>
                          </ul>
                          <span class="date_updated">
-                             1.0.0 버전 / 2023년 5월 16일 업로드
+                             1.0.0 버전 / 2023년 5월 24일 업로드
                          </span>
                      </div>
                 </div>
             </div>
             <div class="sub_second_con">
-                <p class="desc_text">브레드크럼을 통해 사용자가 현재 있는 페이지의 위치를 시각적으로 보여줍니다.</p>
+                <p class="desc_text">사용자 경험 중 중요한 정보에 대해서 토스트 혹은 모달창을 띄워 유저에게 전달할 수 있습니다.</p>
                 <ul class="res_btn_area">
                     <li class="res_btn_item">
-                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2735%3A22967&t=HnoGy91fm5cJkBKB-1" target="_blank" class="res_btn_a">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?type=design&node-id=3296%3A31318&t=dIKobEmaJGqupYpg-1" target="_blank" class="res_btn_a">
                             <span class="res_btn_name">
                                 디자인 파일 바로가기
                             </span>
@@ -471,31 +475,34 @@
                 </ul>
             </div>
             <div class="content_container">
-                <h2 class="content_title">구성 요소</h2>
+                <h2 class="content_title">토스트</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">브레드크럼은 위치한 페이지의 정체성을 보여줄 수 있는 아이콘과 카테고리 depth로 구성됩니다..</p>
+                    <p class="desc_text">현재 상태에 대해 가시적으로 보여줄 수 있는 아이콘과 메세지 내용, 닫기 버튼으로 토스트를 구성할 수 있습니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_1.png"/>
+                                <img src="images/notification_1.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 아이콘 : 페이지의 정체성을 보여줄 수 있는 아이콘을 사용합니다.</br>
-2. 방향 아이콘 : 페이지의 뎁스를 보여 줄 수 있는 방향 아이콘을 사용합니다.</br>
-3. 페이지 명 : 위치한 페이지 메뉴 명을 보여줍니다.
+                            1. 선행 아이콘 : 현재 상태에 대해 가시적으로 보여줄 수 있는 아이콘입니다.</br>
+                            2. 메세지 내용 : 해당 알람을 통해 전달하려는 텍스트 메세지 입니다.</br>
+                            3. 닫기 버튼 : 누르면 해당 알림이 즉각적으로 닫히는 닫기 버튼입니다.
                         </span>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
-                    <h5 class="desc_text_strong">1. 일반</h5>
-                    <p class="desc_text">- 2 depth 이상을 가진 메뉴 영역 페이지의 상단에 브레드크럼을 사용하여 현재 페이지 위치를 노출합니다.</br>
-                        - depth가 없는 메뉴에는 사용하지 않습니다.</br></p>
+                    <p class="desc_text">
+                        - 사용자에게 알릴 메세지나 시스템 상태 상의 변화가 있을 때 사용합니다. </br>
+- 토스트의 경우 닫기 버튼을 함께 사용할 수도 있고, 토스트 버튼이 즉각적으로(3초 내외) 사라지는 경우 닫기 버튼을 제외하고 사용할 수 있습니다.</br>
+- 토스트를 통해 다른 페이지로 이동 기능을 사용할 수 있으며 이때는 메세지와 닫기 버튼 사이에 버튼을 병용하여 사용합니다.</br>
+- 알림 상태에 따라 에러, 경고, 성공, 정보로 사용할 수 있습니다.
+                    </p>
                 </div>
                 <div class="do_donot_con">
                     <div class="do_donot_area">
@@ -504,15 +511,15 @@
                                 <div class="available_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/breadcrumb_2.png"/>
-                                <p>2 depth 이상의 페이지에 사용 가능</p>
+                                <img src="images/notification_2.png"/>
+                                <p>즉각적으로 사라지지 않는 경우, 닫기 버튼을 함께 사용</p>
                             </li>
-                            <li class="do_donot_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
+                            <li class="do_donot_item">
+                                <div class="available_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/breadcrumb_3.png"/>
-                                <p>1 depth 페이지에 사용 불가능</p>
+                                <img src="images/notification_3.png"/>
+                                <p>즉각적으로 사라지는 경우, 닫기 버튼을 제외하고 사용 가능</p>
                             </li>
                         </ul>
                     </div>
@@ -522,100 +529,107 @@
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_4.png"/>
+                                <img src="images/notification_4.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            아이콘은 18px 사이즈로 사용하며 아이콘과 페이지 명 텍스트 사이 간격은 8px 입니다.
+                            좌측에 8px의 상태 컬러를 적용한 상태 바와 상하, 좌우에 16px의 패딩 값을 줍니다.
                         </span>
                     </div>
                 </div>
-                <h2 class="content_title">테마</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">Dark 테마와 Light 테마 스타일을 지원합니다.</p>
-                </div>
-                <div class="use_image_container">
-                    <div class="use_image_con">
-                        <ul class="use_image_area">
-                            <li class="use_image_item horizon_type">
-                                <img src="images/breadcrumb_5.png">
-                                <span class="disc_style">Light 테마</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="use_image_con">
-                        <ul class="use_image_area">
-                            <li class="use_image_item dark horizon_type">
-                                <img src="images/breadcrumb_6.png">
-                                <span class="disc_style">Dark 테마</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 class="content_title">아이콘 종류</h2>
+                <h2 class="content_title">상태</h2>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_7.png"/>
+                                <img src="images/notification_5.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            통계, 조회, 환경설정 페이지에 대해서는 정해진 아이콘을 사용합니다.
+                            에러 알람, 경고 알람, 정보 알람, 성공 알람을 지원합니다.
                         </span>
                     </div>
                 </div>
-                <h2 class="content_title">구성 스타일</h2>
-                <div class="token_sets_con">
-                    <div class="token_sets_area">
-                        <ul class="list_title_con">
-                            <li class="list_title_item">
-                                <span class="list_title_text">요소</span>
-                            </li>
-                            <li class="list_title_item">
-                                <span class="list_title_text">구성</span>
-                            </li>
-                            <li class="list_title_item">
-                                <span class="list_title_text">토큰</span>
+                <h2 class="content_title">스타일</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/notification_6.png"/>
                             </li>
                         </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">페이지 명</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">타이포</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$label 01</span>
-                            </li>
-                        </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">텍스트 Dark</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">컬러</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$gray 30</span>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            기본 스타일은 닫기 버튼까지 포함된 상태이며 상황에 따라 닫기 버튼을 제외하고 사용할 수 있고 사이에 버튼을 병용하여 사용할 수 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <h2 class="content_title">모달창</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">사용자 행동에 대한 피드백을 모달창을 통해 전달할 수 있습니다.</p>
+                </div>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/notification_7.png"/>
                             </li>
                         </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">텍스트 Light</span>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            1. 모달 제목(선택 사항) : 모달창의 제목입니다.</br>
+                            2. 메세지 내용 : 해당 알람을 통해 전달하려는 텍스트 메세지 입니다.</br>
+                            3. 버튼 영역 : 취소, 닫기, 확인 등의 버튼을 두어 사용자와 소통할 수 있습니다.
+                        </span>
+                    </div>
+                </div>
+                <h2 class="content_title">사용 가이드</h2>
+                <div class="desc_text_con">
+                    <p class="desc_text">
+                        - 사용자의 행동에 대해 피드백을 주거나 시스템 상태의 변화를 알리기 위해 사용합니다.</br>
+- 사용자에게 버튼 클릭을 유도하여 보다 확실한 소통이 필요할 때 사용합니다.</br>
+- 모달창의 제목 영역은 선택적으로 사용할 수도 있고 사용하지 않을 수 있습니다.
+                    </p>
+                </div>
+                <div class="do_donot_con">
+                    <div class="do_donot_area">
+                        <ul class="do_donot_list">
+                            <li class="do_donot_item">
+                                <div class="available_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
+                                </div>
+                                <img src="images/notification_8.png"/>
+                                <p>제목 영역을 함께 사용 가능</p>
                             </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">컬러</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$gray 110</span>
+                            <li class="do_donot_item">
+                                <div class="available_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
+                                </div>
+                                <img src="images/notification_9.png"/>
+                                <p>제목 영역을 제외하여 사용 가능</p>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <h2 class="content_title">간격 가이드</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/notification_10.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            상하, 좌우에 28px의 패딩 값을 주고 제목 영역과 메세지 영역 간의 간격 또한 28px을 줍니다. 메세지 영역과 버튼 영역 사이 간격, 버튼 끼리의 간격은 16px 입니다.
+                        </span>
                     </div>
                 </div>
             </div>
