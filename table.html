@@ -435,7 +435,7 @@
                 </div>
             </div>
             <div class="sub_second_con">
-                <p class="desc_text">버튼 그룹을 통해 버튼을 한 그룹으로 묶어 제공합니다.</p>
+                <p class="desc_text">테이블은 정보를 나열하여 전달하는 컨테이너 입니다. 테이블을 통해 유저가 빠르고 쉽게 정보를 인지하고 분석할 수 있도록 합니다.</p>
                 <ul class="res_btn_area">
                     <li class="res_btn_item">
                         <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?type=design&node-id=3258%3A29622&t=KWL1JAk9I9sXHBus-1" target="_blank" class="res_btn_a">
@@ -472,29 +472,32 @@
             <div class="content_container">
                 <h2 class="content_title">구성 요소</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">버튼 그룹은 선택되지 않은 Default 버튼 상태와 선택된 Active 버튼 상태로 구성됩니다.</p>
+                    <p class="desc_text">테이블은 헤더와 바디로 구성됩니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/buttongroup_1.png">
+                                <img src="images/table_1.png">
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 선택되지 않은 버튼 : 사용자가 선택하지 않은 옵션 값을 나타내는 버튼입니다.</br>
-2. 선택된 버튼 : 사용자가 선택한 옵션 값을 나타내는 버튼입니다.</br>
+                            1. 헤더 컨테이너 : 테이블 칼럼의 헤더로 구성된 컨테이너 입니다.</br>
+                            2. 헤어 텍스트 : 테이블 헤더 텍스트 입니다.</br>
+                            3. 바디 컨테이너 : 테이블 칼럼의 바디로 구성된 컨테이너 입니다.</br>
+                            4. 바디 텍스트 : 테이블 바디 텍스트 입니다.
                         </span>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
-                    <h5 class="desc_text_strong">1. 일반</h5>
-                    <p class="desc_text">- 서로 다른 다양한 기간을 선택하는 옵션 버튼에 사용할 수 있습니다. (ex. 1개월, 3개월, 6개월)</br>
-                        - 서로 다른 다양한 기간 단위를 선택하는 옵션 버튼에 사용할 수 있습니다. (ex. 시, 일, 주, 월)</br>
-                        - 3개 이상의 옵션 값을 제공하는 단일 선택 버튼에 사용할 수 있습니다.</br>
+                    <p class="desc_text">
+                        - 정렬 된 데이터 정보를 보여줄 때 사용합니다.</br>
+- 페이지네이션을 포함할 수 있습니다.</br>
+- 종류, 검색, 필터링 된 데이터를 표출할 수 있습니다.</br>
+- 헤더 컨테이너를 고정형으로 사용할 수 있습니다.</br>
                     </p>
                 </div>
                 <div class="do_donot_con">
@@ -504,79 +507,106 @@
                                 <div class="available_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/buttongroup_2.png"/>
-                                <p>기간 선택 옵션 버튼에 사용 가능</p>
+                                <img src="images/table_2.png"/>
+                                <p>테이블만 사용 가능</p>
                             </li>
-                            <li class="do_donot_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/buttongroup_3.png"/>
-                                <p>일반 옵션 버튼에 사용 불가능</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="do_donot_con">
-                    <div class="do_donot_area">
-                        <ul class="do_donot_list">
                             <li class="do_donot_item">
                                 <div class="available_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/buttongroup_4.png"/>
-                                <p>단일 선택 가능</p>
-                            </li>
-                            <li class="do_donot_item donot_item">
-                                <div class="donot_con">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
-                                </div>
-                                <img src="images/buttongroup_5.png"/>
-                                <p>다중 선택 불가능</p>
+                                <img src="images/table_3.png"/>
+                                <p>페이지네이션과 함께 사용 가능</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <h2 class="content_title">스타일</h2>
+                <h2 class="content_title">간격 가이드</h2>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/buttongroup_6.png"/>
+                                <img src="images/table_4.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            기존의 버튼을 옵션 갯수에 맞게 붙혀서 사용하며 버튼 그룹을 하나로 생각하여 상하, 좌우에 4px의 둥글기를 넣습니다.
+                            테이블 텍스트는 각 칼럼에서 가운데 정렬, 테이블과 페이지네이션 사이 간격은 16px을 사용합니다.
                         </span>
                     </div>
                 </div>
+                <h2 class="content_title">상태</h2>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/buttongroup_7.png"/>
+                                <img src="images/table_5.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            기본 버튼 그룹 : 기본적으로 Solid 버튼 스타일로 동일하게 버튼 그룹을 배치하여 사용할 수 있습니다. 이떄 선택된 버튼의 값은 Active 버튼 상태 값을 적용하여 사용합니다.
+                            기본 스타일인 Default 와 마우스를 올린 상태인 Hover 상태를 지원합니다.
                         </span>
+                    </div>
+                </div>
+                <h2 class="content_title">테마</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item horizon_type">
+                                <img src="images/table_6.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item horizon_type">
+                                <img src="images/table_7.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            Light 모드와 Dark 모드를 지원합니다.
+                        </span>
+                    </div>
+                </div>
+                <h2 class="content_title">종류</h2>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item horizon_type">
+                                <img src="images/table_8.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item horizon_type">
+                                <img src="images/table_9.png"/>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
-                            <li class="image_item">
-                                <img src="images/buttongroup_8.png"/>
+                            <li class="image_item horizon_type">
+                                <img src="images/table_10.png"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item horizon_type">
+                                <img src="images/table_11.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            혼합 버튼 그룹 : Outlined 스타일과 Solid 스타일 버튼을 혼합하여 사용하는 버튼 그룹 스타일입니다. 이때 선택된 버튼의 스타일은 반드시 Solid 스타일로 적용하여 사용합니다.
+                            Default 와 같은 스타일 종류로 Compact 스타일을 지원합니다.
                         </span>
                     </div>
                 </div>
