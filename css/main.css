@@ -2164,7 +2164,6 @@ header .hd_pc .logo_title {
   display: flex;
   margin-right: 40px;
   justify-content: center;
-  padding: 16px;
 }
 header .hd_pc .logo_title img {
   margin-right: 8px;
