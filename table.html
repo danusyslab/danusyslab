@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/radioButton.css">
     <title>Danusys Creative Lab</title>
 </head>
 <body class="before_load">
@@ -164,7 +163,7 @@
                                     <span class="submenu_item">Date picker</span>
                                 </a>
                             </li>
-                            <li class="sub_list_con_item acco_active">
+                            <li>
                                 <a href="breadcrumb.html" class="side_item">
                                     <span class="submenu_item">Breadcrumb</span>
                                 </a>
@@ -179,7 +178,7 @@
                                     <span class="submenu_item">Notification</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sub_list_con_item acco_active">
                                 <a href="table.html" class="side_item">
                                     <span class="submenu_item">Table</span>
                                 </a>
@@ -360,6 +359,11 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="buttongroup.html" class="side_item">
+                                    <span class="submenu_item">Button group</span>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="notification.html" class="side_item">
                                     <span class="submenu_item">Notification</span>
                                 </a>
@@ -401,7 +405,7 @@
             <div class="top_sub_blue_con">
                 <div class="top_sub_container">
                     <span class="sub_top_text">
-                        Breadcrumb
+                        Table
                      </span>
                      <div class="status_con">
                          <ul class="status_area">
@@ -425,16 +429,16 @@
                              </li>
                          </ul>
                          <span class="date_updated">
-                             1.0.0 버전 / 2023년 5월 16일 업로드
+                             1.0.0 버전 / 2023년 6월 5일 업로드
                          </span>
                      </div>
                 </div>
             </div>
             <div class="sub_second_con">
-                <p class="desc_text">브레드크럼을 통해 사용자가 현재 있는 페이지의 위치를 시각적으로 보여줍니다.</p>
+                <p class="desc_text">버튼 그룹을 통해 버튼을 한 그룹으로 묶어 제공합니다.</p>
                 <ul class="res_btn_area">
                     <li class="res_btn_item">
-                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?node-id=2735%3A22967&t=HnoGy91fm5cJkBKB-1" target="_blank" class="res_btn_a">
+                        <a href="https://www.figma.com/file/p0JSFKOf47X3e2RxHpRw0O/Design-System?type=design&node-id=3258%3A29622&t=KWL1JAk9I9sXHBus-1" target="_blank" class="res_btn_a">
                             <span class="res_btn_name">
                                 디자인 파일 바로가기
                             </span>
@@ -468,29 +472,30 @@
             <div class="content_container">
                 <h2 class="content_title">구성 요소</h2>
                 <div class="desc_text_con">
-                    <p class="desc_text">브레드크럼은 위치한 페이지의 정체성을 보여줄 수 있는 아이콘과 카테고리 depth로 구성됩니다..</p>
+                    <p class="desc_text">버튼 그룹은 선택되지 않은 Default 버튼 상태와 선택된 Active 버튼 상태로 구성됩니다.</p>
                 </div>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_1.png"/>
+                                <img src="images/buttongroup_1.png">
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            1. 아이콘 : 페이지의 정체성을 보여줄 수 있는 아이콘을 사용합니다.</br>
-2. 방향 아이콘 : 페이지의 뎁스를 보여 줄 수 있는 방향 아이콘을 사용합니다.</br>
-3. 페이지 명 : 위치한 페이지 메뉴 명을 보여줍니다.
+                            1. 선택되지 않은 버튼 : 사용자가 선택하지 않은 옵션 값을 나타내는 버튼입니다.</br>
+2. 선택된 버튼 : 사용자가 선택한 옵션 값을 나타내는 버튼입니다.</br>
                         </span>
                     </div>
                 </div>
                 <h2 class="content_title">사용 가이드</h2>
                 <div class="desc_text_con">
                     <h5 class="desc_text_strong">1. 일반</h5>
-                    <p class="desc_text">- 2 depth 이상을 가진 메뉴 영역 페이지의 상단에 브레드크럼을 사용하여 현재 페이지 위치를 노출합니다.</br>
-                        - depth가 없는 메뉴에는 사용하지 않습니다.</br></p>
+                    <p class="desc_text">- 서로 다른 다양한 기간을 선택하는 옵션 버튼에 사용할 수 있습니다. (ex. 1개월, 3개월, 6개월)</br>
+                        - 서로 다른 다양한 기간 단위를 선택하는 옵션 버튼에 사용할 수 있습니다. (ex. 시, 일, 주, 월)</br>
+                        - 3개 이상의 옵션 값을 제공하는 단일 선택 버튼에 사용할 수 있습니다.</br>
+                    </p>
                 </div>
                 <div class="do_donot_con">
                     <div class="do_donot_area">
@@ -499,118 +504,80 @@
                                 <div class="available_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
                                 </div>
-                                <img src="images/breadcrumb_2.png"/>
-                                <p>2 depth 이상의 페이지에 사용 가능</p>
+                                <img src="images/buttongroup_2.png"/>
+                                <p>기간 선택 옵션 버튼에 사용 가능</p>
                             </li>
                             <li class="do_donot_item donot_item">
                                 <div class="donot_con">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
                                 </div>
-                                <img src="images/breadcrumb_3.png"/>
-                                <p>1 depth 페이지에 사용 불가능</p>
+                                <img src="images/buttongroup_3.png"/>
+                                <p>일반 옵션 버튼에 사용 불가능</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <h2 class="content_title">간격 가이드</h2>
+                <div class="do_donot_con">
+                    <div class="do_donot_area">
+                        <ul class="do_donot_list">
+                            <li class="do_donot_item">
+                                <div class="available_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" fill="#fff"><path d="m5 12 9-9 6 6-9 9-6-6Z"/></mask><path fill="#fff" d="m11 18-1.414 1.414L11 20.828l1.414-1.414L11 18Zm7.586-10.414-9 9 2.828 2.828 9-9-2.828-2.828Zm-6.172 9-6-6-2.828 2.828 6 6 2.828-2.828Z" mask="url(#a)"/></svg>
+                                </div>
+                                <img src="images/buttongroup_4.png"/>
+                                <p>단일 선택 가능</p>
+                            </li>
+                            <li class="do_donot_item donot_item">
+                                <div class="donot_con">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)"><path fill="#fff" stroke="#fff" stroke-width=".2" d="m6.33 19.07.07.071.07-.07L12 13.54l5.53 5.53.07.07.07-.07 1.4-1.4.071-.071-.07-.07L13.54 12l5.53-5.53.07-.07-.07-.07-1.4-1.4-.071-.071-.07.07L12 10.46l-5.53-5.53-.07-.07-.07.07-1.4 1.4-.071.071.07.07L10.46 12l-5.53 5.53-.07.07.07.07 1.4 1.4Z"/></g></svg>
+                                </div>
+                                <img src="images/buttongroup_5.png"/>
+                                <p>다중 선택 불가능</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="content_title">스타일</h2>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_4.png"/>
+                                <img src="images/buttongroup_6.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            아이콘은 18px 사이즈로 사용하며 아이콘과 페이지 명 텍스트 사이 간격은 8px 입니다.
+                            기존의 버튼을 옵션 갯수에 맞게 붙혀서 사용하며 버튼 그룹을 하나로 생각하여 상하, 좌우에 4px의 둥글기를 넣습니다.
                         </span>
                     </div>
                 </div>
-                <h2 class="content_title">테마</h2>
-                <div class="desc_text_con">
-                    <p class="desc_text">Dark 테마와 Light 테마 스타일을 지원합니다.</p>
-                </div>
-                <div class="use_image_container">
-                    <div class="use_image_con">
-                        <ul class="use_image_area">
-                            <li class="use_image_item horizon_type">
-                                <img src="images/breadcrumb_5.png">
-                                <span class="disc_style">Light 테마</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="use_image_con">
-                        <ul class="use_image_area">
-                            <li class="use_image_item dark horizon_type">
-                                <img src="images/breadcrumb_6.png">
-                                <span class="disc_style">Dark 테마</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h2 class="content_title">아이콘 종류</h2>
                 <div class="image_container">
                     <div class="image_con">
                         <ul class="image_area">
                             <li class="image_item">
-                                <img src="images/breadcrumb_7.png"/>
+                                <img src="images/buttongroup_7.png"/>
                             </li>
                         </ul>
                     </div>
                     <div class="disc_con">
                         <span class="disc_style">
-                            통계, 조회, 환경설정 페이지에 대해서는 정해진 아이콘을 사용합니다.
+                            기본 버튼 그룹 : 기본적으로 Solid 버튼 스타일로 동일하게 버튼 그룹을 배치하여 사용할 수 있습니다. 이떄 선택된 버튼의 값은 Active 버튼 상태 값을 적용하여 사용합니다.
                         </span>
                     </div>
                 </div>
-                <h2 class="content_title">구성 스타일</h2>
-                <div class="token_sets_con">
-                    <div class="token_sets_area">
-                        <ul class="list_title_con">
-                            <li class="list_title_item">
-                                <span class="list_title_text">요소</span>
-                            </li>
-                            <li class="list_title_item">
-                                <span class="list_title_text">구성</span>
-                            </li>
-                            <li class="list_title_item">
-                                <span class="list_title_text">토큰</span>
+                <div class="image_container">
+                    <div class="image_con">
+                        <ul class="image_area">
+                            <li class="image_item">
+                                <img src="images/buttongroup_8.png"/>
                             </li>
                         </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">페이지 명</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">타이포</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$label 01</span>
-                            </li>
-                        </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">텍스트 Dark</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">컬러</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$gray 30</span>
-                            </li>
-                        </ul>
-                        <ul class="list_text_con">
-                            <li class="list_text_item">
-                                <span class="list_text_text">텍스트 Light</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_text">컬러</span>
-                            </li>
-                            <li class="list_text_item">
-                                <span class="list_text_token">$gray 110</span>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="disc_con">
+                        <span class="disc_style">
+                            혼합 버튼 그룹 : Outlined 스타일과 Solid 스타일 버튼을 혼합하여 사용하는 버튼 그룹 스타일입니다. 이때 선택된 버튼의 스타일은 반드시 Solid 스타일로 적용하여 사용합니다.
+                        </span>
                     </div>
                 </div>
             </div>
