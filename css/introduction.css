@@ -882,14 +882,14 @@ html, body {
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_title {
     color: #EEEEEE;
     font-size: 36px;
-    line-height: 2.75rem;
+    line-height: 4.4rem;
     font-weight: 300;
     margin-bottom: 28px;
   }
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_text {
     color: #B1B1B1;
     font-size: 16px;
-    line-height: 1.375rem;
+    line-height: 2.5rem;
   }
   .scroll_show_container {
     display: none !important;
@@ -957,14 +957,14 @@ html, body {
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_title {
     color: #EEEEEE;
     font-size: 36px;
-    line-height: 2.75rem;
+    line-height: 4.4rem;
     font-weight: 300;
     margin-bottom: 28px;
   }
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_text {
     color: #B1B1B1;
     font-size: 16px;
-    line-height: 1.375rem;
+    line-height: 2.5rem;
   }
   .scroll_show_container {
     display: none !important;
@@ -1038,14 +1038,14 @@ html, body {
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_title {
     color: #EEEEEE;
     font-size: 32px !important;
-    line-height: 2.75rem;
+    line-height: 4.4rem;
     font-weight: 300;
     margin-bottom: 20px !important;
   }
   .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_text {
     color: #B1B1B1;
     font-size: 16px;
-    line-height: 1.375rem;
+    line-height: 2.5rem;
   }
   .scroll_show_container {
     display: none !important;
@@ -1246,14 +1246,14 @@ header .hd_mo .ham_cancel_btn {
 .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_title {
   color: #EEEEEE;
   font-size: 36px;
-  line-height: 2.75rem;
+  line-height: 4.4rem;
   font-weight: 300;
   margin-bottom: 28px;
 }
 .normal_content_container .content_section_con .content_section_area .content_section_item .content_section_text_con .intro_text {
   color: #B1B1B1;
   font-size: 16px;
-  line-height: 1.375rem;
+  line-height: 2.5rem;
 }
 
 .scroll_show_container {
@@ -1281,14 +1281,14 @@ header .hd_mo .ham_cancel_btn {
 .scroll_show_container .left_text_con .left_text_area .intro_title {
   color: #EEEEEE;
   font-size: 36px;
-  line-height: 2.75rem;
+  line-height: 4.4rem;
   font-weight: 300;
   margin-bottom: 28px;
 }
 .scroll_show_container .left_text_con .left_text_area .intro_text {
   color: #B1B1B1;
   font-size: 16px;
-  line-height: 1.375rem;
+  line-height: 2.5rem;
 }
 .scroll_show_container .right_img_con {
   position: -webkit-sticky;
@@ -1381,7 +1381,7 @@ header .hd_mo .ham_cancel_btn {
 }
 .asis_tobe_container .asis_tobe_con .asis_tobe_area .asis_item span {
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -1435,7 +1435,7 @@ header .hd_mo .ham_cancel_btn {
 }
 .asis_tobe_container .asis_tobe_con .asis_tobe_area .tobe_item span {
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   font-weight: 400;
   margin-bottom: 32px;
 }
