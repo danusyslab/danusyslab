@@ -353,6 +353,9 @@ html, body {
   border: 1px solid #545454;
   color: #212121;
 }
+.text_input_field_group .text_input_field_wrapper .text_input_field.light::-moz-placeholder {
+  color: #888888;
+}
 .text_input_field_group .text_input_field_wrapper .text_input_field.light::placeholder {
   color: #888888;
 }
@@ -372,6 +375,9 @@ html, body {
 .text_input_field_group .text_input_field_wrapper .text_input_field.dark {
   border: 1px solid #B1B1B1;
   color: #E2E2E2;
+}
+.text_input_field_group .text_input_field_wrapper .text_input_field.dark::-moz-placeholder {
+  color: #888888;
 }
 .text_input_field_group .text_input_field_wrapper .text_input_field.dark::placeholder {
   color: #888888;
@@ -411,4 +417,4 @@ html, body {
 }
 .helper_text.disabled {
   opacity: 0.35;
-}
+}/*# sourceMappingURL=textInput.css.map */

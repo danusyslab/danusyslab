@@ -1170,7 +1170,7 @@ html, body {
     margin-bottom: 8px;
   }
   .image_container .image_con .image_area {
-    padding: 60px 0 !important;
+    padding: 60px 20px !important;
     flex-direction: column;
   }
   .image_container .image_con .image_area .image_item {
@@ -1891,4 +1891,4 @@ html, body {
   font-weight: 400;
   line-height: 2.4rem;
   letter-spacing: 0;
-}
+}/*# sourceMappingURL=components.css.map */

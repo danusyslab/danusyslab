@@ -1291,7 +1291,6 @@ header .hd_mo .ham_cancel_btn {
   line-height: 2.5rem;
 }
 .scroll_show_container .right_img_con {
-  position: -webkit-sticky;
   position: sticky;
   top: 48px;
   height: 100vh;
@@ -1462,4 +1461,4 @@ header .hd_mo .ham_cancel_btn {
 .asis_tobe_container .asis_tobe_con .asis_tobe_area .tobe_item .img_area .img_item img {
   width: 100%;
   background-size: contain;
-}
+}/*# sourceMappingURL=introduction.css.map */
